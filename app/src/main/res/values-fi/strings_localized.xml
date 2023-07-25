@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><resources>
+    <!-- XTIT: The title of the create Activity, will appear at the top of the screen -->
+    <string name="title_create_fragment">"Luo kohde %1$s"</string>
+
+    <!-- XTIT: The title of the update Activity, will appear at the top of the screen -->
+    <string name="title_update_fragment">"Päivitä"</string>
+
+    <!-- XMSG: Error message for the mandatory input fields, will appear in the edit field left empty -->
+    <string name="mandatory_warning">"Tämä on pakollinen kenttä"</string>
+
+    <!-- XTIT: The title of the welcome screen, will appear at the top of the screen -->
+    <string name="welcome_screen_headline_label">"Tervetuloa"</string>
+
+    <!-- YINS: Short description on the welcome screen -->
+    <string name="welcome_screen_detail_label">"Tutustu SAP BTP SDK for Android -työkaluihin tämän generoidun sovelluksen avulla."</string>
+
+    <!-- XFLD: label at the bottom of the welcome screen -->
+    <string name="welcome_screen_footnote_label">"Voit kokeilla SDK:n toimintoja demotilassa."</string>
+
+    <!-- XFLD: label of the primary button on the welcome screen -->
+    <string name="welcome_screen_primary_button_label">"Aloita"</string>
+
+    <!-- XBUT: Text of the Save button -->
+    <string name="save">"Tallenna"</string>
+
+    <!-- XBUT: Text of the Update button -->
+    <string name="update">"Päivitä"</string>
+
+    <!-- XBUT: Text of the Delete button -->
+    <string name="delete">"Poista"</string>
+
+    <!-- XBUT: Text of the Cancel button -->
+    <string name="cancel">"Peruuta"</string>
+
+    <!-- XBUT: Text of the OK button -->
+    <string name="ok">"OK"</string>
+
+    <!-- XBUT: Text of the Delete button -->
+    <string name="yes">"Kyllä"</string>
+
+    <!-- XBUT: Text of the Add New button -->
+    <string name="add_new">"Lisää uusi"</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="delete_dialog_title">"Poista"</string>
+
+    <!-- XMSG: The message of the delete dialog -->
+    <string name="delete_one_item">"Haluatko todella poistaa valitun rivin?"</string>
+
+    <!-- XMSG: The message of the delete dialog in case of multiple selection -->
+    <string name="delete_more_items">"Haluatko todella poistaa valitut rivit?"</string>
+
+    <!-- XMSG: Error message, can be presented in a Toast or Dialog -->
+    <string name="entity_download_error">"Taustatapahtuman aikana on tapahtunut virhe."</string>
+
+    <!-- XMIT: Refresh menu item -->
+    <string name="menu_refresh">"Päivitä"</string>
+
+    <!-- XMIT: Refresh menu item -->
+    <string name="menu_home">"Aloitussivu"</string>
+
+    <!-- XMIT: Update menu item -->
+    <string name="menu_update">"Päivitä"</string>
+
+    <!-- XMIT: Delete menu item -->
+    <string name="menu_delete">"Poista"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_headline">"Headline"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_subheadline">"Subheadline"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_body">"Body Text"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_footnote">"Footnote"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_tag1">"TAG1"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_tag2">"TAG2"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_tag3">"TAG3"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_description">"Item Description"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_status">"Status"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="error">"Error"</string>
+
+    <!-- error messages -->
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="read_failed">"Lataus epäonnistui"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="format_error">"Syöttö ei sovi tietotyyppiin."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="read_failed_detail">"Lataustapahtuma epäonnistui, yritä käynnistää sovellus uudelleen."</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="create_failed">"Luonti epäonnistui"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="create_failed_detail">"Luontitapahtuma epäonnistui, yritä suorittaa se myöhemmin uudelleen."</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="update_failed">"Päivitys epäonnistui"</string>
+    <string name="update_failed_detail">"Päivitystapahtuma epäonnistui, päivitä paikalliset tiedot ja yritä suorittaa se myöhemmin uudelleen."</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="delete_failed">"Poisto epäonnistui"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="delete_failed_detail">"Poistotapahtuma epäonnistui, päivitä paikalliset tiedot ja yritä suorittaa se myöhemmin uudelleen."</string>
+
+    <!-- XTIT: The message of the upload toast in case of success -->
+    <string name="log_upload_ok">"Lokia ladataan palvelimeen."</string>
+
+    <!-- XTIT: The message of the upload toast in case of failing -->
+    <string name="log_upload_failed">"Lokin lataaminen palvelimeen epäonnistui."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="log_upload_failed_detail">"Lokin palvelimeen lataamista varten vastaanotettiin väärän muotoinen URL. Sovellus saattaa toimia, mutta lokeja ei ladata palvelimeen."</string>
+
+    <!-- XTIT: The message of the upload toast in case of success -->
+    <string name="usage_upload_ok">"Käyttötietoja ladataan palvelimeen."</string>
+
+    <!-- XTIT: The message of the upload toast in case of failing -->
+    <string name="usage_upload_failed">"Käyttötietojen lataaminen palvelimeen epäonnistui."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="usage_init_failed">"Käyttöä ei voitu alustaa."</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="push_error">"Push-virhe"</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="push_message">"Push-viesti vastaanotettu"</string>
+
+    <!-- XTIT: The Notification Text -->
+    <string name="push_text">"Ilmoitus"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="push_token_upload_failed_detail">"Push-tunnistetta ei voitu ladata SAP-palvelimeen, push-ominaisuus ei toimi. Et saa push-viestejä."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="push_invalid_push_format">"Push-viesti vastaanotettu, mutta sen muoto oli virheellinen, joten sitä ei voitu käsitellä."</string>
+
+    <!-- XMSG: AlertDialog before navigation - Title -->
+    <string name="before_navigation_dialog_title">"Potentiaalinen tietojen häviäminen"</string>
+
+    <!-- XMSG: AlertDialog before navigation - Message -->
+    <string name="before_navigation_dialog_message">"Jos poistut tältä sivulta, mitään tietoja ei tallenneta."</string>
+
+    <!-- XMSG: AlertDialog before navigation - Positive button (navigation occurs) -->
+    <string name="before_navigation_dialog_positive_button">"Poistu"</string>
+
+    <!-- XMSG: AlertDialog before navigation - Negative button (cancelled navigation) -->
+    <string name="before_navigation_dialog_negative_button">"Jää"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_loader_complete_error_description">"Konfiguraation lataaja epäonnistui hakemaan konfigurointitietoja."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_loader_on_error_description">"Konfiguraation tarjoajassa, \"%1$s\", on tapahtunut virhe. %2$s"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_data_build_json_description">"JSON-objektin muodostus epäonnistui."</string>
+    <string name="error_unknown_app_config">"Sovelluskonfiguraation valmistelu epäonnistui, tuntematon virhe."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="server_auth_not_supported_saml">"Virhe: tämä sovellus ei tue SAML-todentamista."</string>
+
+	<!-- XTIT: The title of the error dialog -->
+	<string name="bind_error">"Sidontavirhe"</string>
+
+	<!-- XMSG: Detailed error description -->
+    <string name="bind_error_detail">"Sidonta offline-OData-synkronointipalveluun epäonnistui."</string>
+
+	<!-- XTIT: The title of the error dialog -->
+	<string name="offline_provider_error">"Offline-alustusvirhe"</string>
+
+ 	<!-- XMSG: Detailed error description -->
+	<string name="offline_provider_error_detail">"Offline-OData-tarjoajan alustus epäonnistui."</string>
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="offline_initial_open_error">"Alkuperäinen offline-avausvirhe"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_initial_open_error_detail">"Offline-arkiston alkuperäinen avaaminen epäonnistui."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_backend_big_data_error_detail">"Hyötykuorma taustasta oli liian suuri, SAP Mobile Services -hyötykuorman oletuskokorajoitus on 64 Mt. Voit yrittää korjata sitä seuraavilla ratkaisuilla:\n\t1) nosta kokorajoitusta offline.ini:ssä\n\t2) ota käyttöön suurten tietojoukkojen synkronointi lohkoissa toteuttamalla palvelinpuolen sivutus\n\t3) määritä $top-pyyntöjen avulla kyselyjä tai suodattimia, joilla rajoitetaan asiakkaan lataamien tietojen kokonaismäärää."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_backend_time_out_error_detail">"Kasvata tämän sovelluksen taustayhteyden aikakatkaisua SAP Mobile Servicesissä ja yritä uudelleen."</string>
+
+    <!-- XTIT: The title of the error dialog -->
+	<string name="synchronize_failure">"Synkronointivirhe"</string>
+
+	<!-- XMSG: Detailed error description -->
+	<string name="synchronize_failure_detail">"Synkronointi Mobile Servicesin kanssa epäonnistui."</string>
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="offline_reset_store_error">"Offline-arkiston palautus epäonnistui"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_reset_store_error_detail">"Offline-tietoarkiston palautus/poisto epäonnistui."</string>
+    <!-- error messages -->
+
+    <!-- offline -->
+
+    <!-- XTIT: The title of initial opening of offline store failed -->
+    <string name="initializing_offline_store_failed">"Synkronointi epäonnistui"</string>
+
+    <!-- XMSG: Offline AlertDialog before navigation - Title -->
+    <string name="offline_navigation_dialog_title">"Peruuta synkronoinnin vahvistus"</string>
+
+    <!-- XMSG: Offline AlertDialog before navigation - Message -->
+    <string name="offline_navigation_dialog_message">"Haluatko varmasti peruuttaa käynnissä olevan synkronoinnin ja palata tervetulonäyttöön?"</string>
+
+    <!-- XMSG: Offline AlertDialog before navigation - Positive button (navigation occurs) -->
+    <string name="offline_navigation_dialog_positive_option">"Vahvista"</string>
+
+    <!-- XMSG: Offline AlertDialog before navigation - Negative button (cancelled navigation) -->
+    <string name="offline_navigation_dialog_negative_option">"Ei nyt"</string>
+
+    <!-- NOTR: No translation needed, Label for entity state in offline -->
+	<string name="local_state">"Local"</string>
+
+    <!-- NOTR: No translation needed, Label for entity state in offline -->
+	<string name="error_state">"Error"</string>
+
+	<!-- NOTR: No translation needed, Label for entity state in offline -->
+	<string name="updated_state">"Updated"</string>
+
+	<!-- NOTR: No translation needed, Label for entity state in offline -->
+	<string name="download_state">"Download"</string>
+
+    <!-- XMIT: Menu item to trigger synchronization -->
+	<string name="synchronize_action">"Synkronoi"</string>
+
+    <!-- offline -->
+
+    <!-- XTIT: The title of the settings dialog -->
+    <string name="settings_activity_name">"Asetukset"</string>
+    <!-- XTIT: The title of the settings menu -->
+    <string name="menu_item_settings">"Asetukset"</string>
+
+    <!-- XTIT: The title of the passcode group -->
+    <string name="passcode">"Pääsykoodi"</string>
+    <!-- XTIT: The title of the change passcode menu item -->
+    <string name="manage_passcode">"Muuta pääsykoodia"</string>
+    <!-- XTIT: The title of the reset group -->
+    <string name="reset">"Palauta sovellus"</string>
+    <!-- XTIT: The title of the reset app menu item -->
+    <string name="reset_app">"Tyhjennä sovelluksen asetukset"</string>
+    <!-- XTIT: The title of a confirmation dialog -->
+    <string name="reset_app_confirmation">"Kaikki tähän sovellukseen liittyvät tiedot poistetaan. Haluatko jatkaa?"</string>
+    <!-- XMSG: The message of reset client -->
+    <string name="reset_client">"Palauta asiakas"</string>
+    <!-- XTIT: The title of the logout item -->
+    <string name="logout">"Kirjaudu ulos"</string>
+    <!-- XTIT: The title of the delete registration item -->
+    <string name="delete_registration">"Poista rekisteröinti"</string>
+    <!-- XTIT: The title of a warning dialog -->
+    <string name="delete_registration_warning">"Kaikki tähän rekisteröintiin liittyvät synkronoimattomat odottavat muutokset poistetaan. Haluatko jatkaa?"</string>
+
+    <!-- XTIT: The title of a menu item -->
+    <string name="upload_usage">"Lataa käyttötiedot palvelimeen"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="set_usage_consent">"Suostumus käytön keräykseen"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="set_crash_report_consent">"Suostumus kaatumisraporttien keräykseen"</string>
+
+    <!-- XTIT: The title of a menu group -->
+    <string name="crash_report">"Kaatumisraportti"</string>
+    <!-- XTIT: The title of a menu group -->
+    <string name="usage">"Käyttö"</string>
+    <!-- XTIT: The title of a menu group -->
+    <string name="logging">"Lokiin kirjaaminen"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="upload_log">"Lataa loki"</string>
+    <!-- XTIT: The description of a menu item -->
+    <string name="upload_log_summary">"Lataa loki palvelimeen."</string>
+    <!-- XMSG: The message of a log level toast -->
+    <string name="log_level_changed">"Oletuslokitaso muutettu palvelinkäytännön mukaan seuraavaksi: %s"</string>
+    <!-- XMSG: The message of a log level toast -->
+    <string name="log_level_default">"Lokikäytäntöä ei ole määritetty palvelimessa, oletuslokitaso: %s"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="log_level">"Lokitaso"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="dialog_title_choose_log_level">"Valitse lokitaso"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_none">"Ei mikään"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_fatal">"Vakava"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_error">"Virhe"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_warning">"Varoitus"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_info">"Tiedot"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_debug">"Virheenpoisto"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_path">"Polku"</string>
+    <!-- XMSG: Authentication error message -->
+    <string name="authentication_failed">"Todentaminen epäonnistui."</string>
+    <!-- XMSG: Authentication progress description -->
+    <string name="authentication_progress">"Todennetaan palvelimen kanssa..."</string>
+
+    <!-- restrictions -->
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="restriction_service_url_title">"Palvelun URL"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="restriction_service_url_description">"OData-palvelun URL."</string>
+    <!-- restrictions -->
+
+    <!-- XMSG: Detailed error description -->
+    <string name="error_back_navigation">"Sovellus on suojattu salasanalla, se ei käynnisty syöttämättä oikeaa salasanaa."</string>
+
+    <!-- XTIT: The id of the push notification channel -->
+    <string name="push_channel_id">"sap_btp_android_sdk_foundation_push_channel"</string>
+    <!-- XTIT: The name of the push notification channel -->
+    <string name="push_channel_name">"SAP BTP Android SDK"</string>
+    <!-- XTIT: The description of the badge channel -->
+    <string name="push_badge_channel_description">"Badge-ilmoitusten hallinta"</string>
+    <!-- XTIT: The name of the badge channel -->
+    <string name="push_badge_channel_name">"SAP BTP Android SDK Badge -kanava"</string>
+    <!-- XMSG: push message alert -->
+    <string name="push_message_alert">"Ilmoitus"</string>
+    <!-- XMSG: push message title -->
+    <string name="push_message_title">"Push-ilmoitusviesti vastaanotettu"</string>
+    <!-- XBUT: Text of the OK button -->
+    <string name="push_message_dlg_ok">"OK"</string>
+    <!-- XBUT: Text of the Cancel button -->
+    <string name="push_message_dlg_cancel">"Peruuta"</string>
+    <!-- XTIT: The title of Push topics -->
+    <string name="settings_push_topics">"Tilaa suosikkiaiheesi"</string>
+
+    <!-- XTIT: The title of Eula dialog -->
+    <string name="launch_screen_dialog_title">"Palvelusopimus ja tietosuojakäytäntö"</string>
+    <!-- XBUT: Text of the Agree button -->
+    <string name="launch_screen_dialog_button_agree">"Hyväksyn"</string>
+    <!-- XBUT: Text of the Disagree button -->
+    <string name="launch_screen_dialog_button_disagree">"En hyväksy"</string>
+    <!-- XBUT: Text of the Got it button -->
+    <string name="launch_screen_dialog_disagree_confirm">"Selvä"</string>
+    <!-- XTIT: The content text of Eula dialog -->
+    <string name="launch_screen_dialog_eula_text">"Kiitos, että käytät sovellusta. Kun käytät sovellusta, henkilötietojasi voidaan kerätä ja käsitellä. Noudata &lt;a href=http://www.sap.com&gt;loppukäyttäjän käyttöoikeussopimusta&lt;/a&gt; ja &lt;a href=http://www.sap.com&gt;tietosuojaselostetta&lt;/a&gt; varmistaaksesi, että ymmärrät, miten SAP käsittelee henkilötietojasi. Jos hyväksyt loppukäyttäjän käyttöoikeussopimuksen ja tietosuojaselosteen, napsauta hyväksyn ja käynnistä sovellus. SAP tekee parhaansa henkilötietojesi suojelemiseksi."</string>
+    <!-- XTIT: The content text of Eula dialog -->
+    <string name="launch_screen_dialog_disagree_text">"Jos et hyväksy &lt;a href=http://www.sap.com&gt;loppukäyttäjän käyttöoikeussopimusta&lt;/a&gt; ja &lt;a href=http://www.sap.com&gt;tietosuojakäytäntöä&lt;/a&gt;, voit käyttää sovellusta vain demotilassa."</string>
+    <!-- XTIT: The content text of Eula dialog -->
+    <string name="privacy_dialog_content">"Kiitos, että käytät sovellusta. Kun käytät sovellusta, henkilötietojasi voidaan kerätä ja käsitellä. Noudata "<annotation key="eula">"loppukäyttäjän käyttöoikeussopimusta"</annotation>" ja "<annotation key="term">"tietosuojaselostetta"</annotation>" varmistaaksesi, että ymmärrät, miten SAP käsittelee henkilötietojasi. Jos hyväksyt \"loppukäyttäjän käyttöoikeussopimuksen\" ja \"tietosuojaselosteen\", napsauta \"hyväksyn\" ja käynnistä sovellus. SAP tekee parhaansa henkilötietojesi suojelemiseksi."</string>
+    <!-- XTIT: The content text of Eula dialog -->
+    <string name="privacy_confirmation_dialog_content">"Jos et hyväksy "<annotation key="eula">"loppukäyttäjän käyttöoikeussopimusta"</annotation>" ja "<annotation key="term">"tietosuojaselostetta"</annotation>", voit käyttää sovellusta vain demotilassa."</string>
+    <!-- XTIT: The title of Demo dialog -->
+    <string name="launch_screen_demo_dialog_title">"Demotila"</string>
+    <!-- XTIT: The content text of demo dialog -->
+    <string name="launch_screen_demo_dialog_message">"Demotilaa ei ole otettu käyttöön generoidussa sovelluksessa."</string>
+    <!-- XBUT: Text of the Go back button -->
+    <string name="launch_screen_demo_dialog_button_goback">"Palaa takaisin"</string>
+</resources>

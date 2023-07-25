@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData">
+    <edmx:DataServices m:DataServiceVersion="2.0">
+        <Schema Namespace="Z_API_SERVICE_ORDER_SRV" xml:lang="fr" sap:schema-version="1" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+            <EntityType Name="Header" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="ServiceOrder"/>
+                </Key>
+                <Property Name="CatDesc" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Description" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ServiceObjectType" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Type opération" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ServiceOrder" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="ID d'opération" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Origin" Type="Edm.String" Nullable="false" MaxLength="3" sap:unicode="false" sap:label="Catégorie" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="RequestedServiceStartDate" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Date comptable" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ServiceOrderType" Type="Edm.String" Nullable="false" MaxLength="4" sap:unicode="false" sap:label="Type d'opération" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Description" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Description" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="SoldToParty" Type="Edm.String" Nullable="false" MaxLength="32" sap:unicode="false" sap:label="Numéro de partenaire" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="PurchaseOrderByCustomer" Type="Edm.String" Nullable="false" MaxLength="35" sap:unicode="false" sap:label="Référence ext." sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Schema" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="ID schéma" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Category" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="ID catégorie" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Status" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Statut" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="IrisCode" Type="Edm.String" Nullable="false" MaxLength="50" sap:unicode="false" sap:label="Code Iris" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="RejectStatus" Type="Edm.String" Nullable="false" MaxLength="2" sap:unicode="false" sap:label="Motif de rejet" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="RejectStatusShort" Type="Edm.String" Nullable="false" MaxLength="60" sap:unicode="false" sap:label="Motif de rejet (Descr.)" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="RejectStatusLong" Type="Edm.String" Nullable="false" MaxLength="255" sap:unicode="false" sap:label="Texte" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <NavigationProperty Name="Pricing" Relationship="Z_API_SERVICE_ORDER_SRV.Header_Pricing" FromRole="FromRole_Header_Pricing" ToRole="ToRole_Header_Pricing"/>
+                <NavigationProperty Name="Customers" Relationship="Z_API_SERVICE_ORDER_SRV.Header_Customer" FromRole="FromRole_Header_Customer" ToRole="ToRole_Header_Customer"/>
+                <NavigationProperty Name="Partners" Relationship="Z_API_SERVICE_ORDER_SRV.Header_Partner" FromRole="FromRole_Header_Partner" ToRole="ToRole_Header_Partner"/>
+                <NavigationProperty Name="Items" Relationship="Z_API_SERVICE_ORDER_SRV.Header_item" FromRole="FromRole_Header_item" ToRole="ToRole_Header_item"/>
+                <NavigationProperty Name="Attachments" Relationship="Z_API_SERVICE_ORDER_SRV.Header_Attachment" FromRole="FromRole_Header_Attachment" ToRole="ToRole_Header_Attachment"/>
+            </EntityType>
+            <EntityType Name="Item" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="ServiceOrder"/>
+                    <PropertyRef Name="OrderItem"/>
+                </Key>
+                <Property Name="ServiceObjectType" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Type opération" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ServiceOrder" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="ID d'opération" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="OrderItem" Type="Edm.String" Nullable="false" MaxLength="6" sap:unicode="false" sap:label="Nº poste ds document" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Product" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Produit" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="PartnerProduct" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Produit parten." sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ItemDescription" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Désignation" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="CommercialReference" Type="Edm.String" Nullable="false" MaxLength="35" sap:unicode="false" sap:label="Référence ext." sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ItemQty" Type="Edm.Decimal" Nullable="false" Precision="13" Scale="3" sap:unicode="false" sap:label="Qtité commandée" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ItemType" Type="Edm.String" Nullable="false" MaxLength="4" sap:unicode="false" sap:label="Type de poste" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ItemSchema" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="ID schéma" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ItemCategory" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="ID catégorie" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ItemStatus" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Statut" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityType Name="Partner" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="ServiceOrder"/>
+                    <PropertyRef Name="PartnerNumber"/>
+                </Key>
+                <Property Name="ServiceObjectType" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Type opération" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ServiceOrder" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="ID d'opération" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="PartnerNumber" Type="Edm.String" Nullable="false" MaxLength="32" sap:unicode="false" sap:label="Numéro de partenaire" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="FirstName" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Prénom" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="LastName" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Nom" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="PartnerFct" Type="Edm.String" Nullable="false" MaxLength="8" sap:unicode="false" sap:label="Fonction parten." sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="AddrNr" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Numéro adresse" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="AddrNp" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Nº de personne" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="HouseNo" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Nº de rue" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Street" Type="Edm.String" Nullable="false" MaxLength="60" sap:unicode="false" sap:label="Rue" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="StrSuppl3" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Rue 4" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="PostlCod1" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Code postal" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="City" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Ville" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Country" Type="Edm.String" Nullable="false" MaxLength="3" sap:unicode="false" sap:label="Pays/Région" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Region" Type="Edm.String" Nullable="false" MaxLength="3" sap:unicode="false" sap:label="Région" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityType Name="Attachment" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="ServiceOrder"/>
+                    <PropertyRef Name="DocNumber"/>
+                </Key>
+                <Property Name="ServiceOrder" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="ID d'opération" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="DocNumber" Type="Edm.String" Nullable="false" MaxLength="25" sap:unicode="false" sap:label="Document" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="FileName" Type="Edm.String" Nullable="false" MaxLength="255" sap:unicode="false" sap:label="Nom composante" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="DocumentUrl" Type="Edm.String" Nullable="false" MaxLength="4096" sap:unicode="false" sap:label="URI" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="DocType" Type="Edm.String" Nullable="false" MaxLength="20" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityType Name="Customer" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="ServiceOrder"/>
+                    <PropertyRef Name="Customernumber"/>
+                </Key>
+                <Property Name="ServiceOrder" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="ID d'opération" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Customernumber" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Nº de personne" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Title" Type="Edm.String" Nullable="false" MaxLength="4" sap:unicode="false" sap:label="Titre" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="FirstName" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Prénom" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="LastName" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Nom" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="HouseNo" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Nº de rue" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Street" Type="Edm.String" Nullable="false" MaxLength="60" sap:unicode="false" sap:label="Rue" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="StrSuppl3" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Rue 4" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="PostalCode" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Code postal" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="City" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Ville" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Country" Type="Edm.String" Nullable="false" MaxLength="3" sap:unicode="false" sap:label="Pays/Région" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Region" Type="Edm.String" Nullable="false" MaxLength="3" sap:unicode="false" sap:label="Région" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="TelNumber" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Téléphone" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Email" Type="Edm.String" Nullable="false" MaxLength="241" sap:unicode="false" sap:label="Adresse e-mail" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityType Name="Pricing" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="ServiceOrder"/>
+                    <PropertyRef Name="OrderItem"/>
+                    <PropertyRef Name="PricingCondition"/>
+                    <PropertyRef Name="PricingItem"/>
+                </Key>
+                <Property Name="ServiceOrder" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="ID d'opération" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="OrderItem" Type="Edm.String" Nullable="false" MaxLength="6" sap:unicode="false" sap:label="Nº poste ds document" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="PricingCondition" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Condition doc." sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="PricingItem" Type="Edm.String" Nullable="false" MaxLength="6" sap:unicode="false" sap:label="Poste" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="StepNumber" Type="Edm.String" Nullable="false" MaxLength="3" sap:unicode="false" sap:label="Numéro niveau" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Counter" Type="Edm.String" Nullable="false" MaxLength="3" sap:unicode="false" sap:label="Compteur" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Application" Type="Edm.String" Nullable="false" MaxLength="2" sap:unicode="false" sap:label="Application" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ConditionType" Type="Edm.String" Nullable="false" MaxLength="4" sap:unicode="false" sap:label="Type condition" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Amount" Type="Edm.Decimal" Nullable="false" Precision="24" Scale="9" sap:unicode="false" sap:label="Montant" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Currency" Type="Edm.String" Nullable="false" MaxLength="5" sap:unicode="false" sap:label="Devise" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="currency-code"/>
+            </EntityType>
+            <EntityType Name="HeaderQuery" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="ContactNo"/>
+                    <PropertyRef Name="ServiceOrder"/>
+                </Key>
+                <Property Name="ContactNo" Type="Edm.String" Nullable="false" MaxLength="32" sap:unicode="false" sap:label="Numéro de partenaire" sap:creatable="false" sap:updatable="false" sap:semantics="Contact"/>
+                <Property Name="StatusDesc" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Statut" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ModifStatusDate" Type="Edm.DateTime" Precision="7" sap:unicode="false" sap:label="Date" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="RepairNo" Type="Edm.String" MaxLength="32" sap:unicode="false" sap:label="Numéro de partenaire" sap:semantics="Repairer"/>
+                <Property Name="RepairFirstName" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Prénom" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="Repairer First Name"/>
+                <Property Name="RepairLastName" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Nom" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="Reparirer Last Name"/>
+                <Property Name="SubContractNo" Type="Edm.String" Nullable="false" MaxLength="32" sap:unicode="false" sap:label="Numéro de partenaire" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="SubContractor"/>
+                <Property Name="ServiceOrder" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="ID d'opération" sap:creatable="false" sap:updatable="false" sap:semantics="Service Order"/>
+                <Property Name="Description" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Description" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="Description"/>
+                <Property Name="CreationDate" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Date comptable" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="Creation Date"/>
+                <Property Name="ExternalRef" Type="Edm.String" Nullable="false" MaxLength="35" sap:unicode="false" sap:label="Référence ext." sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="External Reference"/>
+                <Property Name="RepairDate" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Date comptable" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="Repair Date"/>
+                <Property Name="Product" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Produit" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="Product"/>
+                <Property Name="ProductDescription" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Désignation" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="Product Label"/>
+                <Property Name="Status" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Statut" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="Status"/>
+                <Property Name="WorkshopNo" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Numéro de partenaire" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="Workshop Number"/>
+                <Property Name="WorkshopFirstName" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Prénom" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="Workshop First Name"/>
+                <Property Name="WorkshopLastName" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Nom" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="Workshop Last Name"/>
+                <Property Name="WorkshopHouseNo" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Nº de rue" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="Workshop House Numbe"/>
+                <Property Name="WorkshopStreet" Type="Edm.String" Nullable="false" MaxLength="60" sap:unicode="false" sap:label="Rue" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="Workshop Street"/>
+                <Property Name="WorkshopStrSuppl3" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Rue 4" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="Workshop Street 4"/>
+                <Property Name="WorkshopPostlCod1" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Code postal" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="Workshop Postal Code"/>
+                <Property Name="WorkshopCity" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Ville" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="Workshop City"/>
+                <Property Name="WorkshopCountry" Type="Edm.String" Nullable="false" MaxLength="3" sap:unicode="false" sap:label="Pays/Région" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="Workshop Country"/>
+                <Property Name="WorkshopRegion" Type="Edm.String" Nullable="false" MaxLength="3" sap:unicode="false" sap:label="Région" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="Workshop Region"/>
+                <Property Name="SubContractFirstName" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Prénom" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="SubContract F. Name"/>
+                <Property Name="SubContractLastName" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Nom" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="SubContract L. Name"/>
+                <Property Name="SubContractHouseNo" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Nº de rue" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="SubContract House No"/>
+                <Property Name="SubcontractStreet" Type="Edm.String" Nullable="false" MaxLength="60" sap:unicode="false" sap:label="Nº de rue" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="Subcontract Street"/>
+                <Property Name="SubcontractStrSuppl3" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Rue 4" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="Subcontract Str4"/>
+                <Property Name="SubcontractPostlCod1" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Code postal" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="Subcontract Post Cd"/>
+                <Property Name="SubcontractCity" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Ville" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="Subcontract City"/>
+                <Property Name="SubcontractCountry" Type="Edm.String" Nullable="false" MaxLength="3" sap:unicode="false" sap:label="Pays/Région" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="Subcontract Country"/>
+                <Property Name="SubcontractRegion" Type="Edm.String" Nullable="false" MaxLength="3" sap:unicode="false" sap:label="Région" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="Subcontract Region"/>
+                <Property Name="Origin" Type="Edm.String" Nullable="false" MaxLength="3" sap:unicode="false" sap:label="Catégorie" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <NavigationProperty Name="Item" Relationship="Z_API_SERVICE_ORDER_SRV.HeaderQuery_Item" FromRole="FromRole_HeaderQuery_Item" ToRole="ToRole_HeaderQuery_Item"/>
+                <NavigationProperty Name="Pricing" Relationship="Z_API_SERVICE_ORDER_SRV.HeaderQuery_Pricing" FromRole="FromRole_HeaderQuery_Pricing" ToRole="ToRole_HeaderQuery_Pricing"/>
+                <NavigationProperty Name="Header" Relationship="Z_API_SERVICE_ORDER_SRV.HeaderQuery_Header" FromRole="FromRole_HeaderQuery_Header" ToRole="ToRole_HeaderQuery_Header"/>
+                <NavigationProperty Name="PartnerCustomer" Relationship="Z_API_SERVICE_ORDER_SRV.HeaderQuery_Customer" FromRole="FromRole_HeaderQuery_Customer" ToRole="ToRole_HeaderQuery_Customer"/>
+                <NavigationProperty Name="Partner" Relationship="Z_API_SERVICE_ORDER_SRV.HeaderQuery_Partner" FromRole="FromRole_HeaderQuery_Partner" ToRole="ToRole_HeaderQuery_Partner"/>
+            </EntityType>
+            <EntityType Name="HeaderContact" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="ContactNo"/>
+                </Key>
+                <Property Name="ContactNo" Type="Edm.String" Nullable="false" MaxLength="32" sap:unicode="false" sap:label="Numéro de partenaire" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="RepairNo" Type="Edm.String" MaxLength="32" sap:unicode="false" sap:label="Numéro de partenaire"/>
+                <NavigationProperty Name="Query" Relationship="Z_API_SERVICE_ORDER_SRV.Contact_Query" FromRole="FromRole_Contact_Query" ToRole="ToRole_Contact_Query"/>
+            </EntityType>
+            <ComplexType Name="Message">
+                <Property Name="message" Type="Edm.String"/>
+            </ComplexType>
+            <Association Name="Contact_Query" sap:content-version="1">
+                <End Type="Z_API_SERVICE_ORDER_SRV.HeaderContact" Multiplicity="1" Role="FromRole_Contact_Query"/>
+                <End Type="Z_API_SERVICE_ORDER_SRV.HeaderQuery" Multiplicity="*" Role="ToRole_Contact_Query"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_Contact_Query">
+                        <PropertyRef Name="ContactNo"/>
+                    </Principal>
+                    <Dependent Role="ToRole_Contact_Query">
+                        <PropertyRef Name="ContactNo"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="Header_Partner" sap:content-version="1">
+                <End Type="Z_API_SERVICE_ORDER_SRV.Header" Multiplicity="1" Role="FromRole_Header_Partner"/>
+                <End Type="Z_API_SERVICE_ORDER_SRV.Partner" Multiplicity="*" Role="ToRole_Header_Partner"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_Header_Partner">
+                        <PropertyRef Name="ServiceOrder"/>
+                    </Principal>
+                    <Dependent Role="ToRole_Header_Partner">
+                        <PropertyRef Name="ServiceOrder"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="Header_Customer" sap:content-version="1">
+                <End Type="Z_API_SERVICE_ORDER_SRV.Header" Multiplicity="1" Role="FromRole_Header_Customer"/>
+                <End Type="Z_API_SERVICE_ORDER_SRV.Customer" Multiplicity="*" Role="ToRole_Header_Customer"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_Header_Customer">
+                        <PropertyRef Name="ServiceOrder"/>
+                    </Principal>
+                    <Dependent Role="ToRole_Header_Customer">
+                        <PropertyRef Name="ServiceOrder"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="Header_Pricing" sap:content-version="1">
+                <End Type="Z_API_SERVICE_ORDER_SRV.Header" Multiplicity="1" Role="FromRole_Header_Pricing"/>
+                <End Type="Z_API_SERVICE_ORDER_SRV.Pricing" Multiplicity="*" Role="ToRole_Header_Pricing"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_Header_Pricing">
+                        <PropertyRef Name="ServiceOrder"/>
+                    </Principal>
+                    <Dependent Role="ToRole_Header_Pricing">
+                        <PropertyRef Name="ServiceOrder"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="Header_Attachment" sap:content-version="1">
+                <End Type="Z_API_SERVICE_ORDER_SRV.Header" Multiplicity="1" Role="FromRole_Header_Attachment"/>
+                <End Type="Z_API_SERVICE_ORDER_SRV.Attachment" Multiplicity="*" Role="ToRole_Header_Attachment"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_Header_Attachment">
+                        <PropertyRef Name="ServiceOrder"/>
+                    </Principal>
+                    <Dependent Role="ToRole_Header_Attachment">
+                        <PropertyRef Name="ServiceOrder"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="Header_item" sap:content-version="1">
+                <End Type="Z_API_SERVICE_ORDER_SRV.Header" Multiplicity="1" Role="FromRole_Header_item"/>
+                <End Type="Z_API_SERVICE_ORDER_SRV.Item" Multiplicity="*" Role="ToRole_Header_item"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_Header_item">
+                        <PropertyRef Name="ServiceOrder"/>
+                    </Principal>
+                    <Dependent Role="ToRole_Header_item">
+                        <PropertyRef Name="ServiceOrder"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="HeaderQuery_Partner" sap:content-version="1">
+                <End Type="Z_API_SERVICE_ORDER_SRV.HeaderQuery" Multiplicity="1" Role="FromRole_HeaderQuery_Partner"/>
+                <End Type="Z_API_SERVICE_ORDER_SRV.Partner" Multiplicity="*" Role="ToRole_HeaderQuery_Partner"/>
+            </Association>
+            <Association Name="HeaderQuery_Customer" sap:content-version="1">
+                <End Type="Z_API_SERVICE_ORDER_SRV.HeaderQuery" Multiplicity="1" Role="FromRole_HeaderQuery_Customer"/>
+                <End Type="Z_API_SERVICE_ORDER_SRV.Customer" Multiplicity="*" Role="ToRole_HeaderQuery_Customer"/>
+            </Association>
+            <Association Name="HeaderQuery_Header" sap:content-version="1">
+                <End Type="Z_API_SERVICE_ORDER_SRV.HeaderQuery" Multiplicity="*" Role="FromRole_HeaderQuery_Header"/>
+                <End Type="Z_API_SERVICE_ORDER_SRV.Header" Multiplicity="1" Role="ToRole_HeaderQuery_Header"/>
+            </Association>
+            <Association Name="HeaderQuery_Pricing" sap:content-version="1">
+                <End Type="Z_API_SERVICE_ORDER_SRV.HeaderQuery" Multiplicity="1" Role="FromRole_HeaderQuery_Pricing"/>
+                <End Type="Z_API_SERVICE_ORDER_SRV.Pricing" Multiplicity="*" Role="ToRole_HeaderQuery_Pricing"/>
+            </Association>
+            <Association Name="HeaderQuery_Item" sap:content-version="1">
+                <End Type="Z_API_SERVICE_ORDER_SRV.HeaderQuery" Multiplicity="1" Role="FromRole_HeaderQuery_Item"/>
+                <End Type="Z_API_SERVICE_ORDER_SRV.Item" Multiplicity="*" Role="ToRole_HeaderQuery_Item"/>
+            </Association>
+            <EntityContainer Name="Z_API_SERVICE_ORDER_SRV_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx">
+                <EntitySet Name="HeaderSet" EntityType="Z_API_SERVICE_ORDER_SRV.Header" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+                <EntitySet Name="ItemSet" EntityType="Z_API_SERVICE_ORDER_SRV.Item" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
+                <EntitySet Name="PartnerSet" EntityType="Z_API_SERVICE_ORDER_SRV.Partner" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
+                <EntitySet Name="AttachmentSet" EntityType="Z_API_SERVICE_ORDER_SRV.Attachment" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
+                <EntitySet Name="CustomerSet" EntityType="Z_API_SERVICE_ORDER_SRV.Customer" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
+                <EntitySet Name="PricingSet" EntityType="Z_API_SERVICE_ORDER_SRV.Pricing" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
+                <EntitySet Name="HeaderQuerySet" EntityType="Z_API_SERVICE_ORDER_SRV.HeaderQuery" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
+                <EntitySet Name="HeaderContactSet" EntityType="Z_API_SERVICE_ORDER_SRV.HeaderContact" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
+                <AssociationSet Name="Header_AttachmentSet" Association="Z_API_SERVICE_ORDER_SRV.Header_Attachment" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="HeaderSet" Role="FromRole_Header_Attachment"/>
+                    <End EntitySet="AttachmentSet" Role="ToRole_Header_Attachment"/>
+                </AssociationSet>
+                <AssociationSet Name="Header_PricingSet" Association="Z_API_SERVICE_ORDER_SRV.Header_Pricing" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="HeaderSet" Role="FromRole_Header_Pricing"/>
+                    <End EntitySet="PricingSet" Role="ToRole_Header_Pricing"/>
+                </AssociationSet>
+                <AssociationSet Name="HeaderQuery_PartnerSet" Association="Z_API_SERVICE_ORDER_SRV.HeaderQuery_Partner" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="HeaderQuerySet" Role="FromRole_HeaderQuery_Partner"/>
+                    <End EntitySet="PartnerSet" Role="ToRole_HeaderQuery_Partner"/>
+                </AssociationSet>
+                <AssociationSet Name="HeaderQuery_CustomerSet" Association="Z_API_SERVICE_ORDER_SRV.HeaderQuery_Customer" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="HeaderQuerySet" Role="FromRole_HeaderQuery_Customer"/>
+                    <End EntitySet="CustomerSet" Role="ToRole_HeaderQuery_Customer"/>
+                </AssociationSet>
+                <AssociationSet Name="HeaderQuery_HeaderSet" Association="Z_API_SERVICE_ORDER_SRV.HeaderQuery_Header" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="HeaderQuerySet" Role="FromRole_HeaderQuery_Header"/>
+                    <End EntitySet="HeaderSet" Role="ToRole_HeaderQuery_Header"/>
+                </AssociationSet>
+                <AssociationSet Name="HeaderQuery_ItemSet" Association="Z_API_SERVICE_ORDER_SRV.HeaderQuery_Item" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="HeaderQuerySet" Role="FromRole_HeaderQuery_Item"/>
+                    <End EntitySet="ItemSet" Role="ToRole_HeaderQuery_Item"/>
+                </AssociationSet>
+                <AssociationSet Name="Header_itemSet" Association="Z_API_SERVICE_ORDER_SRV.Header_item" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="HeaderSet" Role="FromRole_Header_item"/>
+                    <End EntitySet="ItemSet" Role="ToRole_Header_item"/>
+                </AssociationSet>
+                <AssociationSet Name="Contact_QuerySet" Association="Z_API_SERVICE_ORDER_SRV.Contact_Query" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="HeaderContactSet" Role="FromRole_Contact_Query"/>
+                    <End EntitySet="HeaderQuerySet" Role="ToRole_Contact_Query"/>
+                </AssociationSet>
+                <AssociationSet Name="Header_PartnerSet" Association="Z_API_SERVICE_ORDER_SRV.Header_Partner" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="HeaderSet" Role="FromRole_Header_Partner"/>
+                    <End EntitySet="PartnerSet" Role="ToRole_Header_Partner"/>
+                </AssociationSet>
+                <AssociationSet Name="HeaderQuery_PricingSet" Association="Z_API_SERVICE_ORDER_SRV.HeaderQuery_Pricing" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="HeaderQuerySet" Role="FromRole_HeaderQuery_Pricing"/>
+                    <End EntitySet="PricingSet" Role="ToRole_HeaderQuery_Pricing"/>
+                </AssociationSet>
+                <AssociationSet Name="Header_CustomerSet" Association="Z_API_SERVICE_ORDER_SRV.Header_Customer" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="HeaderSet" Role="FromRole_Header_Customer"/>
+                    <End EntitySet="CustomerSet" Role="ToRole_Header_Customer"/>
+                </AssociationSet>
+                <FunctionImport Name="UpdateItems" ReturnType="Z_API_SERVICE_ORDER_SRV.Message" m:HttpMethod="POST">
+                    <Parameter Name="Status" Type="Edm.String" Mode="In" MaxLength="5"/>
+                    <Parameter Name="ServiceOrder" Type="Edm.String" Mode="In" MaxLength="10"/>
+                    <Parameter Name="Reject" Type="Edm.String" Mode="In"/>
+                </FunctionImport>
+                <FunctionImport Name="UpdateStatus" ReturnType="Z_API_SERVICE_ORDER_SRV.Header" EntitySet="HeaderSet" m:HttpMethod="POST">
+                    <Parameter Name="ServiceOrder" Type="Edm.String" Mode="In" MaxLength="10"/>
+                    <Parameter Name="Status" Type="Edm.String" Mode="In" MaxLength="5"/>
+                </FunctionImport>
+            </EntityContainer>
+            <atom:link rel="self" href="https://vhesyd1sci.sap.ecosystem.eco:44300/sap/opu/odata/sap/Z_API_SERVICE_ORDER_SRV/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>
+            <atom:link rel="latest-version" href="https://vhesyd1sci.sap.ecosystem.eco:44300/sap/opu/odata/sap/Z_API_SERVICE_ORDER_SRV/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>

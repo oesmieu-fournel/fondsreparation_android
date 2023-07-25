@@ -1,0 +1,176 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'com.sap.odata.android'
+
+buildscript {
+    repositories rootProject.ext.repos
+    dependencies {
+        classpath group: 'com.sap.cloud.android', name:'odata-android-gradle-plugin', version:sdkVersion
+    }
+}
+
+odata {
+    verbose true
+    services {
+        //connection id: com.ecosystem.mobile.reparation
+    z_api_service_order_srv_entities {
+        schemaFile file("src/main/res/raw/com_ecosystem_mobile_reparation.xml")
+        packageName "com.sap.cloud.android.odata.z_api_service_order_srv_entities"
+        serviceClass "Z_API_SERVICE_ORDER_SRV_Entities"
+    }
+        //connection id: com.ecosystem.mobile.bp
+    z_business_partner_srv_entities {
+        schemaFile file("src/main/res/raw/com_ecosystem_mobile_bp.xml")
+        packageName "com.sap.cloud.android.odata.z_business_partner_srv_entities"
+        serviceClass "Z_BUSINESS_PARTNER_SRV_Entities"
+    }
+        //connection id: com.ecosystem.mobile.product
+    z_api_produits_marques_srv_entities {
+        schemaFile file("src/main/res/raw/com_ecosystem_mobile_product.xml")
+        packageName "com.sap.cloud.android.odata.z_api_produits_marques_srv_entities"
+        serviceClass "Z_API_PRODUITS_MARQUES_SRV_Entities"
+    }
+   }
+}
+
+android {
+    compileSdkVersion 33
+    defaultConfig {
+        ndk {
+        // Filter for architectures supported by Flutter.
+        abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86_64'
+            }
+        multiDexEnabled true
+        applicationId "com.ecosystem.mobile.reparation"
+        minSdkVersion 26
+        targetSdkVersion 33
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunnerArguments clearPackageData: 'true'
+		vectorDrawables {
+		            useSupportLibrary true
+		}
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    buildFeatures {
+        compose true
+    }
+	composeOptions {
+	    kotlinCompilerExtensionVersion "1.4.7"
+	}
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_11.toString()
+    }
+	
+	packagingOptions {
+	    resources {
+	        excludes += '/META-INF/{AL2.0,LGPL2.1}'
+	    }
+	}
+
+    testOptions {
+        execution 'ANDROIDX_TEST_ORCHESTRATOR'
+    }
+
+    flavorDimensions "appStore"
+    productFlavors {
+        create("googlePlayStoreforGlobalMarket") {
+            dimension = "appStore"
+            getIsDefault().set(true)
+        }
+        create("tencentAppStoreforChinaMarket") {
+            dimension = "appStore"
+        }
+    }
+}
+
+configurations {
+    all {
+        exclude module: 'httpclient'
+        exclude module: 'commons-logging'
+        exclude module: 'opengl-api'
+        exclude module: 'xmlParserAPIs'
+        exclude module: 'xpp3'
+        exclude module: 'android'
+    }
+}
+
+dependencies {
+	implementation 'androidx.core:core-ktx:1.9.0'
+	implementation 'androidx.core:core-splashscreen:1.0.0'
+    implementation 'androidx.compose.material3:material3:1.0.1'
+    implementation "androidx.compose.material3:material3-window-size-class:1.0.1"
+	
+    // Android framework dependencies
+	implementation "androidx.compose.ui:ui:$compose_version"
+	implementation "androidx.compose.ui:ui-tooling-preview:$compose_version"
+	implementation "androidx.compose.runtime:runtime:$compose_version"
+	implementation "androidx.compose.runtime:runtime-livedata:$compose_version"
+	implementation "androidx.navigation:navigation-compose:2.5.2"
+	implementation 'androidx.activity:activity-compose:1.5.1'
+
+	// Android Architecture Components
+	implementation "androidx.lifecycle:lifecycle-viewmodel:2.5.1"
+	implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.5.1'
+	implementation "androidx.lifecycle:lifecycle-viewmodel-compose:2.5.1"
+	implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.5.1"
+	
+	implementation "androidx.datastore:datastore-preferences:1.0.0"
+	implementation 'androidx.paging:paging-common-ktx:3.0.0'
+	implementation "androidx.paging:paging-compose:1.0.0-alpha16"
+	
+	implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.3"
+	implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.3"
+	implementation "org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.0"
+	implementation "androidx.work:work-runtime-ktx:$work_version"
+	implementation "com.google.guava:guava:$guava_android_version"
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.5.0'
+
+    // JUnit dependency
+    testImplementation 'junit:junit:4.13'
+
+    // SAP Cloud Android SDK dependencies
+	implementation group: 'com.sap.cloud.android', name: 'foundation', version: sdkVersion
+	implementation group: 'com.sap.cloud.android', name: 'foundation-app-security', version: sdkVersion
+	implementation group: 'com.sap.cloud.android', name: 'onboarding-compose', version: sdkVersion
+	implementation group: 'com.sap.cloud.android', name: 'flows-compose', version: sdkVersion
+	implementation group: 'com.sap.cloud.android', name: 'fiori-composable-theme', version: sdkVersion
+	implementation group: 'com.sap.cloud.android', name: 'fiori-compose-ui', version: sdkVersion
+    implementation group:'com.sap.cloud.android', name:'odata', version: sdkVersion
+
+    // Logging dependency
+    implementation 'org.slf4j:slf4j-api:1.7.30'
+    implementation 'com.github.tony19:logback-android:2.0.0'
+
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    androidTestImplementation 'androidx.test:runner:1.3.0'
+    androidTestImplementation 'androidx.test:rules:1.3.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+
+    // For UI testing
+    androidTestImplementation 'com.pgs-soft:espressodoppio:1.0.0'
+    androidTestImplementation 'androidx.test.uiautomator:uiautomator:2.2.0'
+    androidTestUtil 'androidx.test:orchestrator:1.3.0'
+
+    //Java code also need this library to convert java class to kotlin class
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
+
+    implementation project(':flutter')
+}
+
+
+

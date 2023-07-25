@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><resources>
+    <!-- XTIT: The title of the create Activity, will appear at the top of the screen -->
+    <string name="title_create_fragment">"Kurti %1$s elementą"</string>
+
+    <!-- XTIT: The title of the update Activity, will appear at the top of the screen -->
+    <string name="title_update_fragment">"Naujinti"</string>
+
+    <!-- XMSG: Error message for the mandatory input fields, will appear in the edit field left empty -->
+    <string name="mandatory_warning">"Tai būtinas laukas"</string>
+
+    <!-- XTIT: The title of the welcome screen, will appear at the top of the screen -->
+    <string name="welcome_screen_headline_label">"Sveiki!"</string>
+
+    <!-- YINS: Short description on the welcome screen -->
+    <string name="welcome_screen_detail_label">"Apžiūrėkite „SAP BTP SDK for Android“ naudodami šią sugeneruotą programą."</string>
+
+    <!-- XFLD: label at the bottom of the welcome screen -->
+    <string name="welcome_screen_footnote_label">"Galite išbandyti SDK funkcijas demonstraciniu režimu."</string>
+
+    <!-- XFLD: label of the primary button on the welcome screen -->
+    <string name="welcome_screen_primary_button_label">"Pradėti"</string>
+
+    <!-- XBUT: Text of the Save button -->
+    <string name="save">"Įrašyti"</string>
+
+    <!-- XBUT: Text of the Update button -->
+    <string name="update">"Naujinti"</string>
+
+    <!-- XBUT: Text of the Delete button -->
+    <string name="delete">"Naikinti"</string>
+
+    <!-- XBUT: Text of the Cancel button -->
+    <string name="cancel">"Atšaukti"</string>
+
+    <!-- XBUT: Text of the OK button -->
+    <string name="ok">"Gerai"</string>
+
+    <!-- XBUT: Text of the Delete button -->
+    <string name="yes">"Taip"</string>
+
+    <!-- XBUT: Text of the Add New button -->
+    <string name="add_new">"Pridėti naują"</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="delete_dialog_title">"Naikinti"</string>
+
+    <!-- XMSG: The message of the delete dialog -->
+    <string name="delete_one_item">"Ar tikrai norite panaikinti pasirinktą elementą?"</string>
+
+    <!-- XMSG: The message of the delete dialog in case of multiple selection -->
+    <string name="delete_more_items">"Ar tikrai norite naikinti pasirinktus elementus?"</string>
+
+    <!-- XMSG: Error message, can be presented in a Toast or Dialog -->
+    <string name="entity_download_error">"Vykdant foninę operaciją įvyko klaida."</string>
+
+    <!-- XMIT: Refresh menu item -->
+    <string name="menu_refresh">"Atnaujinti"</string>
+
+    <!-- XMIT: Refresh menu item -->
+    <string name="menu_home">"Pagrindinis puslapis"</string>
+
+    <!-- XMIT: Update menu item -->
+    <string name="menu_update">"Naujinti"</string>
+
+    <!-- XMIT: Delete menu item -->
+    <string name="menu_delete">"Naikinti"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_headline">"Headline"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_subheadline">"Subheadline"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_body">"Body Text"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_footnote">"Footnote"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_tag1">"TAG1"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_tag2">"TAG2"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_tag3">"TAG3"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_description">"Item Description"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_status">"Status"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="error">"Error"</string>
+
+    <!-- error messages -->
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="read_failed">"Atsisiųsti nepavyko"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="format_error">"Pagal duomenų tipą įvestis netinkama."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="read_failed_detail">"Atsisiuntimo operacija nepavyko. Pabandykite iš naujo paleisti programą."</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="create_failed">"Sukurti nepavyko"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="create_failed_detail">"Kūrimo operacija nepavyko. Bandykite ją vykdyti dar kartą vėliau."</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="update_failed">"Atnaujinti nepavyko"</string>
+    <string name="update_failed_detail">"Atnaujinimo operacija nepavyko. Atnaujinkite vietinius duomenis ir bandykite ją vykdyti dar kartą vėliau."</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="delete_failed">"Panaikinti nepavyko"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="delete_failed_detail">"Naikinimo operacija nepavyko. Atnaujinkite vietinius duomenis ir bandykite ją vykdyti dar kartą vėliau."</string>
+
+    <!-- XTIT: The message of the upload toast in case of success -->
+    <string name="log_upload_ok">"Žurnalas įkeltas į serverį."</string>
+
+    <!-- XTIT: The message of the upload toast in case of failing -->
+    <string name="log_upload_failed">"Žurnalo įkelti nepavyko"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="log_upload_failed_detail">"Gautas netinkamai suformuotas žurnalo įkėlimo URL. Programa vis dar gali veikti, bet žurnalai nebus įkeliami į serverį."</string>
+
+    <!-- XTIT: The message of the upload toast in case of success -->
+    <string name="usage_upload_ok">"Naudojimo duomenys įkelti į serverį."</string>
+
+    <!-- XTIT: The message of the upload toast in case of failing -->
+    <string name="usage_upload_failed">"Naudojimo duomenų įkelti nepavyko."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="usage_init_failed">"Naudojimo inicijuoti nepavyko."</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="push_error">"Aktyviojo duomenų perdavimo klaida"</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="push_message">"Gautas automatinis pranešimas"</string>
+
+    <!-- XTIT: The Notification Text -->
+    <string name="push_text">"Pranešimas"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="push_token_upload_failed_detail">"Į SAP serverį neįkeltas aktyviojo duomenų perdavimo vietaženklis, aktyviojo duomenų perdavimo funkcija neveiks. Negausite automatinių pranešimų."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="push_invalid_push_format">"Gautas automatinis pranešimas, bet jo formatas neleistinas, todėl jis nebuvo apdorotas."</string>
+
+    <!-- XMSG: AlertDialog before navigation - Title -->
+    <string name="before_navigation_dialog_title">"Galimybė prarasti duomenis"</string>
+
+    <!-- XMSG: AlertDialog before navigation - Message -->
+    <string name="before_navigation_dialog_message">"Išėjus iš šio puslapio, nebus įrašyti jokie duomenys."</string>
+
+    <!-- XMSG: AlertDialog before navigation - Positive button (navigation occurs) -->
+    <string name="before_navigation_dialog_positive_button">"Išeiti"</string>
+
+    <!-- XMSG: AlertDialog before navigation - Negative button (cancelled navigation) -->
+    <string name="before_navigation_dialog_negative_button">"Likti"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_loader_complete_error_description">"Konfigūracijos įkėlimo priemonei nepavyko gauti konfigūracijos duomenų."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_loader_on_error_description">"Konfigūracijos teikėjas, „%1$s“, susidūrė su klaida. %2$s"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_data_build_json_description">"Nepavyko sukurti JSON objekto."</string>
+    <string name="error_unknown_app_config">"Nepavyko paruošti programos konfigūracijos įvykus nežinomai klaidai."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="server_auth_not_supported_saml">"Klaida: ši programa nepalaiko SAML autentifikavimo."</string>
+
+	<!-- XTIT: The title of the error dialog -->
+	<string name="bind_error">"Susiejimo klaida"</string>
+
+	<!-- XMSG: Detailed error description -->
+    <string name="bind_error_detail">"Nepavyko susieti atjungtinės „OData“ sinchronizavimo paslaugos."</string>
+
+	<!-- XTIT: The title of the error dialog -->
+	<string name="offline_provider_error">"Atjungtinio inicijavimo klaida"</string>
+
+ 	<!-- XMSG: Detailed error description -->
+	<string name="offline_provider_error_detail">"Nepavyko inicijuoti atjungtinio „OData“ teikėjo."</string>
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="offline_initial_open_error">"Atjungtinio pradinio atidarymo klaida"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_initial_open_error_detail">"Nepavyko atidaryti atjungtinės saugyklos."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_backend_big_data_error_detail">"Galutinio apdorojimo sistemos naudingoji apkrova buvo per didelė, numatytasis „SAP Mobile Services“ apkrovos apribojimo dydis yra 64M. Galite bandyt tai ištaisyti, pasinaudoję vienu iš šių sprendimų:\n\t1) padidinkite atjungtinio.ini dydžio apribojimą;\n\t2) įdiekite laužymą puslapiais serverio pusėje, kad būtų galima sinchronizuoti didelius duomenų rinkinius blokais;\n\t3) naudokite $pagrindines užklausas, apibrėždami užklausas arba filtrus, kad apribotumėte bendrą kliento atsisiunčiamų duomenų kiekį."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_backend_time_out_error_detail">"„SAP Mobile Services“ padidinkite galutinio apdorojimo sistemos ryšio skirtąjį laiką, kuris skirtas šiai programai, ir bandykite dar kartą."</string>
+
+    <!-- XTIT: The title of the error dialog -->
+	<string name="synchronize_failure">"Sinchronizavimo triktis"</string>
+
+	<!-- XMSG: Detailed error description -->
+	<string name="synchronize_failure_detail">"Sinchronizuoti su „Mobile Services“ nepavyko."</string>
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="offline_reset_store_error">"Atjungtinės saugyklos nustatymo iš naujo triktis"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_reset_store_error_detail">"Nepavyko iš naujo nustatyti / pašalinti atjungtinės duomenų saugyklos."</string>
+    <!-- error messages -->
+
+    <!-- offline -->
+
+    <!-- XTIT: The title of initial opening of offline store failed -->
+    <string name="initializing_offline_store_failed">"Sinchronizuoti nepavyko"</string>
+
+    <!-- XMSG: Offline AlertDialog before navigation - Title -->
+    <string name="offline_navigation_dialog_title">"Atšaukti sinchronizavimo patvirtinimą"</string>
+
+    <!-- XMSG: Offline AlertDialog before navigation - Message -->
+    <string name="offline_navigation_dialog_message">"Ar tikrai norite atšaukti vykdomą sinchronizavimą ir grįžti į pasisveikinimo ekraną?"</string>
+
+    <!-- XMSG: Offline AlertDialog before navigation - Positive button (navigation occurs) -->
+    <string name="offline_navigation_dialog_positive_option">"Patvirtinti"</string>
+
+    <!-- XMSG: Offline AlertDialog before navigation - Negative button (cancelled navigation) -->
+    <string name="offline_navigation_dialog_negative_option">"Ne dabar"</string>
+
+    <!-- NOTR: No translation needed, Label for entity state in offline -->
+	<string name="local_state">"Local"</string>
+
+    <!-- NOTR: No translation needed, Label for entity state in offline -->
+	<string name="error_state">"Error"</string>
+
+	<!-- NOTR: No translation needed, Label for entity state in offline -->
+	<string name="updated_state">"Updated"</string>
+
+	<!-- NOTR: No translation needed, Label for entity state in offline -->
+	<string name="download_state">"Download"</string>
+
+    <!-- XMIT: Menu item to trigger synchronization -->
+	<string name="synchronize_action">"Sinchronizuoti"</string>
+
+    <!-- offline -->
+
+    <!-- XTIT: The title of the settings dialog -->
+    <string name="settings_activity_name">"Parametrai"</string>
+    <!-- XTIT: The title of the settings menu -->
+    <string name="menu_item_settings">"Parametrai"</string>
+
+    <!-- XTIT: The title of the passcode group -->
+    <string name="passcode">"Prieigos kodas"</string>
+    <!-- XTIT: The title of the change passcode menu item -->
+    <string name="manage_passcode">"Keisti prieigos kodą"</string>
+    <!-- XTIT: The title of the reset group -->
+    <string name="reset">"Iš naujo nustatyti programą"</string>
+    <!-- XTIT: The title of the reset app menu item -->
+    <string name="reset_app">"Valyti programos parametrus"</string>
+    <!-- XTIT: The title of a confirmation dialog -->
+    <string name="reset_app_confirmation">"Visa informacija, susijusi su šia programa, bus pašalinta. Ar norite tęsti?"</string>
+    <!-- XMSG: The message of reset client -->
+    <string name="reset_client">"Iš naujo nustatyti klientą"</string>
+    <!-- XTIT: The title of the logout item -->
+    <string name="logout">"Atsijungti"</string>
+    <!-- XTIT: The title of the delete registration item -->
+    <string name="delete_registration">"Naikinti registraciją"</string>
+    <!-- XTIT: The title of a warning dialog -->
+    <string name="delete_registration_warning">"Visi nesinchronizuoti laukinatys keitimai, susiję su šia programa, bus pašalinti. Ar norite tęsti?"</string>
+
+    <!-- XTIT: The title of a menu item -->
+    <string name="upload_usage">"Įkelti naudojimo duomenis"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="set_usage_consent">"Sutikimas rinkti naudojimo duomenis"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="set_crash_report_consent">"Sutikimas rinkti gedimų ataskaitas"</string>
+
+    <!-- XTIT: The title of a menu group -->
+    <string name="crash_report">"Gedimų ataskaita"</string>
+    <!-- XTIT: The title of a menu group -->
+    <string name="usage">"Naudojimas"</string>
+    <!-- XTIT: The title of a menu group -->
+    <string name="logging">"Prisijungiama"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="upload_log">"Įkelti žurnalą"</string>
+    <!-- XTIT: The description of a menu item -->
+    <string name="upload_log_summary">"Įkelti žurnalą į serverį."</string>
+    <!-- XMSG: The message of a log level toast -->
+    <string name="log_level_changed">"Numatytasis žurnalo lygis pakeistas iš serverio politikos į: %s"</string>
+    <!-- XMSG: The message of a log level toast -->
+    <string name="log_level_default">"Serveryje nenustatyta žurnalų politika, numatytasis žurnalo lygis nustatytas kaip: %s"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="log_level">"Žurnalo lygis"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="dialog_title_choose_log_level">"Pasirinkti žurnalo lygį"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_none">"Nėra"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_fatal">"Lemtinga"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_error">"Klaida"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_warning">"Įspėjimas"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_info">"Informacija"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_debug">"Derinti"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_path">"Kelias"</string>
+    <!-- XMSG: Authentication error message -->
+    <string name="authentication_failed">"Autentifikuoti nepavyko."</string>
+    <!-- XMSG: Authentication progress description -->
+    <string name="authentication_progress">"Autentifikuojama naudojant serverį..."</string>
+
+    <!-- restrictions -->
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="restriction_service_url_title">"Paslaugos URL"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="restriction_service_url_description">"„OData“ paslaugos URL."</string>
+    <!-- restrictions -->
+
+    <!-- XMSG: Detailed error description -->
+    <string name="error_back_navigation">"Programa apsaugota prieigos kodu. Nepateikus tinkamo prieigos kodo ji nebus paleista."</string>
+
+    <!-- XTIT: The id of the push notification channel -->
+    <string name="push_channel_id">"sap_btp_android_sdk_foundation_push_channel"</string>
+    <!-- XTIT: The name of the push notification channel -->
+    <string name="push_channel_name">"SAP BTP „Android“ SDK"</string>
+    <!-- XTIT: The description of the badge channel -->
+    <string name="push_badge_channel_description">"„Badge“ pranešimų valdymas"</string>
+    <!-- XTIT: The name of the badge channel -->
+    <string name="push_badge_channel_name">"SAP BTP „Android“ SDK „Badge“ kanalas"</string>
+    <!-- XMSG: push message alert -->
+    <string name="push_message_alert">"Pranešimas"</string>
+    <!-- XMSG: push message title -->
+    <string name="push_message_title">"Gautas aktyvusis pranešimas"</string>
+    <!-- XBUT: Text of the OK button -->
+    <string name="push_message_dlg_ok">"Gerai"</string>
+    <!-- XBUT: Text of the Cancel button -->
+    <string name="push_message_dlg_cancel">"Atšaukti"</string>
+    <!-- XTIT: The title of Push topics -->
+    <string name="settings_push_topics">"Prenumeruokite mėgstamą temą"</string>
+
+    <!-- XTIT: The title of Eula dialog -->
+    <string name="launch_screen_dialog_title">"Paslaugų sutartis ir privatumo politika"</string>
+    <!-- XBUT: Text of the Agree button -->
+    <string name="launch_screen_dialog_button_agree">"Sutikti"</string>
+    <!-- XBUT: Text of the Disagree button -->
+    <string name="launch_screen_dialog_button_disagree">"Nesutikti"</string>
+    <!-- XBUT: Text of the Got it button -->
+    <string name="launch_screen_dialog_disagree_confirm">"Supratau"</string>
+    <!-- XTIT: The content text of Eula dialog -->
+    <string name="launch_screen_dialog_eula_text">"Dėkojame, kad naudojatės šia taikomąja programa. Kai naudojate šią taikomąją programą, gali būti renkama ir tvarkoma jūsų asmeninė informacija. Laikykitės &lt;a href=http://www.sap.com&gt;Galutinio vartotojo licencijos sutarties&lt;/a&gt; ir &lt;a href=http://www.sap.com&gt;Privatumo pranešimo&lt;/a&gt; sąlygų, užtikrinančių, kad iki galo suprantate, kaip SAP tvarko jūsų asmeninę informaciją. Jei sutinkate su Galutinio vartotojo licencijos sutartimi ir Privatumo pranešimu, spustelėkite „Sutinku“ ir taikomoji programa bus paleista. SAP deda visas pastangas, kad apsaugotų jūsų asmeninę informaciją."</string>
+    <!-- XTIT: The content text of Eula dialog -->
+    <string name="launch_screen_dialog_disagree_text">"Jei nesutinkate su &lt;a href=http://www.sap.com&gt;Galutinio vartotojo licencijos sutartimi&lt;/a&gt; ir &lt;a href=http://www.sap.com&gt;Privatumo politika&lt;/a&gt;, galite išbandyti tik demonstracinį režimą."</string>
+    <!-- XTIT: The content text of Eula dialog -->
+    <string name="privacy_dialog_content">"Dėkojame, kad naudojatės šia taikomąja programa. Kai naudojate šią taikomąją programą, gali būti renkama ir tvarkoma jūsų asmeninė informacija. Laikykitės "<annotation key="eula">"Galutinio vartotojo licencijos sutarties"</annotation>" ir "<annotation key="term">"Privatumo pranešimo"</annotation>" sąlygų, užtikrinančių, kad iki galo suprantate, kaip SAP tvarko jūsų asmeninę informaciją. Jei sutinkate su Galutinio vartotojo licencijos sutartimi ir Privatumo pranešimu, spustelėkite „Sutinku“ ir taikomoji programa bus paleista. SAP deda visas pastangas, kad apsaugotų jūsų asmeninę informaciją."</string>
+    <!-- XTIT: The content text of Eula dialog -->
+    <string name="privacy_confirmation_dialog_content">"Jei nesutinkate su "<annotation key="eula">"Galutinio vartotojo licencijos sutartimi"</annotation>" ir "<annotation key="term">"Privatumo pranešimu"</annotation>", galite išbandyti tik demonstracinį režimą."</string>
+    <!-- XTIT: The title of Demo dialog -->
+    <string name="launch_screen_demo_dialog_title">"Demonstracinis režimas"</string>
+    <!-- XTIT: The content text of demo dialog -->
+    <string name="launch_screen_demo_dialog_message">"Demonstracinis režimas neįdiegtas sugeneruotoje taikomojoje programoje."</string>
+    <!-- XBUT: Text of the Go back button -->
+    <string name="launch_screen_demo_dialog_button_goback">"Grįžti atgal"</string>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="selected_item">@color/sap_ui_list_picker_select</color>
+    <color name="default_item">@color/sap_ui_background_color</color>
+    <color name="active_item">@color/sap_ui_content_non_interactive_icon_color</color>
+    <color name="red">#FF0000</color>
+    <color name="grey_300">#e0e0e0</color>
+    <color name="link_text">@color/sap_custom_morning_t4</color>
+    <!-- Avatar background -->
+    <color name="onboarding_avatar_background">@color/colorPrimary</color>
+</resources>

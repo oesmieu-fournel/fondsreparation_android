@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><resources>
+    <!-- XTIT: The title of the create Activity, will appear at the top of the screen -->
+    <string name="title_create_fragment">"Vytvoriť položku %1$s"</string>
+
+    <!-- XTIT: The title of the update Activity, will appear at the top of the screen -->
+    <string name="title_update_fragment">"Aktualizovať"</string>
+
+    <!-- XMSG: Error message for the mandatory input fields, will appear in the edit field left empty -->
+    <string name="mandatory_warning">"Toto je povinné pole"</string>
+
+    <!-- XTIT: The title of the welcome screen, will appear at the top of the screen -->
+    <string name="welcome_screen_headline_label">"Vitajte"</string>
+
+    <!-- YINS: Short description on the welcome screen -->
+    <string name="welcome_screen_detail_label">"S touto vygenerovanou aplikáciou preskúmajte službu SAP BTP SDK pre Android."</string>
+
+    <!-- XFLD: label at the bottom of the welcome screen -->
+    <string name="welcome_screen_footnote_label">"Môžete vyskúšať funkcie SDK v predvádzacom režime."</string>
+
+    <!-- XFLD: label of the primary button on the welcome screen -->
+    <string name="welcome_screen_primary_button_label">"Začíname"</string>
+
+    <!-- XBUT: Text of the Save button -->
+    <string name="save">"Uložiť"</string>
+
+    <!-- XBUT: Text of the Update button -->
+    <string name="update">"Aktualizovať"</string>
+
+    <!-- XBUT: Text of the Delete button -->
+    <string name="delete">"Odstrániť"</string>
+
+    <!-- XBUT: Text of the Cancel button -->
+    <string name="cancel">"Zrušiť"</string>
+
+    <!-- XBUT: Text of the OK button -->
+    <string name="ok">"OK"</string>
+
+    <!-- XBUT: Text of the Delete button -->
+    <string name="yes">"Áno"</string>
+
+    <!-- XBUT: Text of the Add New button -->
+    <string name="add_new">"Pridať nové"</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="delete_dialog_title">"Odstrániť"</string>
+
+    <!-- XMSG: The message of the delete dialog -->
+    <string name="delete_one_item">"Naozaj chcete odstrániť vybranú položku?"</string>
+
+    <!-- XMSG: The message of the delete dialog in case of multiple selection -->
+    <string name="delete_more_items">"Naozaj chcete odstrániť vybrané položky?"</string>
+
+    <!-- XMSG: Error message, can be presented in a Toast or Dialog -->
+    <string name="entity_download_error">"Počas operácie na pozadí sa vyskytla chyba."</string>
+
+    <!-- XMIT: Refresh menu item -->
+    <string name="menu_refresh">"Obnoviť"</string>
+
+    <!-- XMIT: Refresh menu item -->
+    <string name="menu_home">"Domov"</string>
+
+    <!-- XMIT: Update menu item -->
+    <string name="menu_update">"Aktualizovať"</string>
+
+    <!-- XMIT: Delete menu item -->
+    <string name="menu_delete">"Odstrániť"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_headline">"Headline"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_subheadline">"Subheadline"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_body">"Body Text"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_footnote">"Footnote"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_tag1">"TAG1"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_tag2">"TAG2"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_tag3">"TAG3"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_description">"Item Description"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_status">"Status"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="error">"Error"</string>
+
+    <!-- error messages -->
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="read_failed">"Preberanie neúspešné"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="format_error">"Zadanie nie je vhodné pre typ údajov."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="read_failed_detail">"Operácia preberania zlyhala. Skúste reštartovať aplikáciu."</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="create_failed">"Vytvorenie zlyhalo."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="create_failed_detail">"Operácia vytvorenia zlyhala. Skúste ju vykonať znovu neskôr."</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="update_failed">"Aktualizácia sa nepodarila"</string>
+    <string name="update_failed_detail">"Operácia aktualizácie zlyhala. Obnovte lokálne údaje a skúste ju vykonať znovu neskôr."</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="delete_failed">"Odstránenie sa nepodarilo"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="delete_failed_detail">"Operácia odstránenia zlyhala. Obnovte lokálne údaje a skúste ju vykonať znovu neskôr."</string>
+
+    <!-- XTIT: The message of the upload toast in case of success -->
+    <string name="log_upload_ok">"Protokol je odovzdaný na server."</string>
+
+    <!-- XTIT: The message of the upload toast in case of failing -->
+    <string name="log_upload_failed">"Odovzdanie protokolu zlyhalo."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="log_upload_failed_detail">"Na odoslanie protokolu bola prijatá chybná adresa URL. Aplikácia môže ešte fungovať, ale protokoly nebudú odovzdané na server."</string>
+
+    <!-- XTIT: The message of the upload toast in case of success -->
+    <string name="usage_upload_ok">"Údaje o použití boli odovzdané na server."</string>
+
+    <!-- XTIT: The message of the upload toast in case of failing -->
+    <string name="usage_upload_failed">".Odovzdanie údajov použitia zlyhalo"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="usage_init_failed">"Použitie nebolo možné inicializovať."</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="push_error">"Chyba push"</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="push_message">"Správa push bola prijatá"</string>
+
+    <!-- XTIT: The Notification Text -->
+    <string name="push_text">"Notifikácia"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="push_token_upload_failed_detail">"Token push nebolo možné odovzdať na server SAP, funkcia push nebude fungovať. Nebudete môcť prijímať správy push."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="push_invalid_push_format">"Správa push bola prijatá, ale jej formát je neplatný, preto ju nebolo možné spracovať."</string>
+
+    <!-- XMSG: AlertDialog before navigation - Title -->
+    <string name="before_navigation_dialog_title">"Potencionálna strata dát"</string>
+
+    <!-- XMSG: AlertDialog before navigation - Message -->
+    <string name="before_navigation_dialog_message">"Po opustení tejto stránky sa neuložia žiadne dáta."</string>
+
+    <!-- XMSG: AlertDialog before navigation - Positive button (navigation occurs) -->
+    <string name="before_navigation_dialog_positive_button">"Opustiť"</string>
+
+    <!-- XMSG: AlertDialog before navigation - Negative button (cancelled navigation) -->
+    <string name="before_navigation_dialog_negative_button">"Zostať"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_loader_complete_error_description">"Programu na načítanie konfigurácie sa nepodarilo načítať údaje konfigurácie."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_loader_on_error_description">"Poskytovateľ konfigurácie \"%1$s\", zaznamenal chybu. %2$s"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_data_build_json_description">"Objekt JSON sa nepodarilo zostaviť."</string>
+    <string name="error_unknown_app_config">"Nepodarilo sa pripraviť konfiguráciu aplikácie s neznámou chybou."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="server_auth_not_supported_saml">"Chyba: Táto aplikácia nepodporuje autentifikáciu SAML."</string>
+
+	<!-- XTIT: The title of the error dialog -->
+	<string name="bind_error">"Chyba väzby"</string>
+
+	<!-- XMSG: Detailed error description -->
+    <string name="bind_error_detail">"Nepodarilo sa pripojiť k službe synchronizácie OData offline."</string>
+
+	<!-- XTIT: The title of the error dialog -->
+	<string name="offline_provider_error">"Chyba inicializácie offline"</string>
+
+ 	<!-- XMSG: Detailed error description -->
+	<string name="offline_provider_error_detail">"Nepodarilo sa inicializovať poskytovateľa OData offline."</string>
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="offline_initial_open_error">"Chyba prvého otvorenia offline"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_initial_open_error_detail">"Prvé otvorenie ukladacieho priestoru offline sa nepodarilo dokončiť."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_backend_big_data_error_detail">"Dátová časť z backendu bola príliš veľká, predvolená veľkosť obmedzenia dátovej časti SAP Mobile Services je 64M. Môžete to skúsiť opraviť jedným z nasledujúcich riešení:\n\t1) Zvýšenie limitu veľkosti v offline.ini;\n\t2) Implementácia stránkovania na strane servera, aby sa umožnila synchronizácia veľkých dátových súborov v blokoch;\n\t3) Pomocou požiadaviek na zastavenie pri definovaní dotazov alebo filtrov obmedzte celkové množstvo údajov, ktoré klient prevezme."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_backend_time_out_error_detail">"Predĺžte časový limit backendového pripojenia pre túto aplikáciu v SAP Mobile Services a skúste to znova."</string>
+
+    <!-- XTIT: The title of the error dialog -->
+	<string name="synchronize_failure">"Chyba synchronizácie"</string>
+
+	<!-- XMSG: Detailed error description -->
+	<string name="synchronize_failure_detail">"Synchronizácia s mobilnými službami zlyhala."</string>
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="offline_reset_store_error">"Zlyhanie resetovania ukladacieho priestoru offline"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_reset_store_error_detail">"Ukladací priestor údajov offline sa nepodarilo resetovať/odstrániť."</string>
+    <!-- error messages -->
+
+    <!-- offline -->
+
+    <!-- XTIT: The title of initial opening of offline store failed -->
+    <string name="initializing_offline_store_failed">"Synchronizácia zlyhala"</string>
+
+    <!-- XMSG: Offline AlertDialog before navigation - Title -->
+    <string name="offline_navigation_dialog_title">"Potvrdenie zrušenia synchronizácie"</string>
+
+    <!-- XMSG: Offline AlertDialog before navigation - Message -->
+    <string name="offline_navigation_dialog_message">"Naozaj chcete zrušiť prebiehajúcu synchronizáciu a vrátiť sa späť do uvítacej obrazovky?"</string>
+
+    <!-- XMSG: Offline AlertDialog before navigation - Positive button (navigation occurs) -->
+    <string name="offline_navigation_dialog_positive_option">"Potvrdiť"</string>
+
+    <!-- XMSG: Offline AlertDialog before navigation - Negative button (cancelled navigation) -->
+    <string name="offline_navigation_dialog_negative_option">"Nie teraz"</string>
+
+    <!-- NOTR: No translation needed, Label for entity state in offline -->
+	<string name="local_state">"Local"</string>
+
+    <!-- NOTR: No translation needed, Label for entity state in offline -->
+	<string name="error_state">"Error"</string>
+
+	<!-- NOTR: No translation needed, Label for entity state in offline -->
+	<string name="updated_state">"Updated"</string>
+
+	<!-- NOTR: No translation needed, Label for entity state in offline -->
+	<string name="download_state">"Download"</string>
+
+    <!-- XMIT: Menu item to trigger synchronization -->
+	<string name="synchronize_action">"Synchronizovať"</string>
+
+    <!-- offline -->
+
+    <!-- XTIT: The title of the settings dialog -->
+    <string name="settings_activity_name">"Nastavenia"</string>
+    <!-- XTIT: The title of the settings menu -->
+    <string name="menu_item_settings">"Nastavenia"</string>
+
+    <!-- XTIT: The title of the passcode group -->
+    <string name="passcode">"Prístupový kód"</string>
+    <!-- XTIT: The title of the change passcode menu item -->
+    <string name="manage_passcode">"Zmeniť prístupový kód"</string>
+    <!-- XTIT: The title of the reset group -->
+    <string name="reset">"Resetovať aplikáciu"</string>
+    <!-- XTIT: The title of the reset app menu item -->
+    <string name="reset_app">"Vymazať nastavenia aplikácie"</string>
+    <!-- XTIT: The title of a confirmation dialog -->
+    <string name="reset_app_confirmation">"Všetky informácie súvisiace s touto aplikáciou sa odstránia. Chcete pokračovať?"</string>
+    <!-- XMSG: The message of reset client -->
+    <string name="reset_client">"Resetovať klienta"</string>
+    <!-- XTIT: The title of the logout item -->
+    <string name="logout">"Odhlásiť"</string>
+    <!-- XTIT: The title of the delete registration item -->
+    <string name="delete_registration">"Odstrániť registráciu"</string>
+    <!-- XTIT: The title of a warning dialog -->
+    <string name="delete_registration_warning">"Všetky nesynchronizované čakajúce zmeny spojené s touto registráciou budú odstránené. Chcete pokračovať?"</string>
+
+    <!-- XTIT: The title of a menu item -->
+    <string name="upload_usage">"Odovzdať dáta použitia"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="set_usage_consent">"Súhlas so zhromažďovaním údajov o použití"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="set_crash_report_consent">"Súhlas so zhromažďovaním hlásení o zlyhaní"</string>
+
+    <!-- XTIT: The title of a menu group -->
+    <string name="crash_report">"Hlásenie zlyhania"</string>
+    <!-- XTIT: The title of a menu group -->
+    <string name="usage">"Použitie"</string>
+    <!-- XTIT: The title of a menu group -->
+    <string name="logging">"Protokolovanie"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="upload_log">"Odovzdať protokol"</string>
+    <!-- XTIT: The description of a menu item -->
+    <string name="upload_log_summary">"Odovzdať protokol na server."</string>
+    <!-- XMSG: The message of a log level toast -->
+    <string name="log_level_changed">"Predvolená úroveň protokolu sa podľa stratégie servera zmenila na: %s"</string>
+    <!-- XMSG: The message of a log level toast -->
+    <string name="log_level_default">"Stratégia protokolovania nie je nastavená na server, predvolená úroveň protokolu je nastavená na: %s"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="log_level">"Úroveň protokolu"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="dialog_title_choose_log_level">"Vybrať úroveň protokolu"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_none">"Žiadne"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_fatal">"Závažné"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_error">"Chyba"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_warning">"Upozornenie"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_info">"Informácie"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_debug">"Ladiť"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_path">"Cesta"</string>
+    <!-- XMSG: Authentication error message -->
+    <string name="authentication_failed">"Autentifikácia sa nepodarila."</string>
+    <!-- XMSG: Authentication progress description -->
+    <string name="authentication_progress">"Autentifikácia so serverom..."</string>
+
+    <!-- restrictions -->
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="restriction_service_url_title">"Adresa URL služby"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="restriction_service_url_description">"Adresa URL služby OData."</string>
+    <!-- restrictions -->
+
+    <!-- XMSG: Detailed error description -->
+    <string name="error_back_navigation">"Aplikácia je chránená prístupovým kódom, bez zadania správneho prístupového kódu sa nespustí."</string>
+
+    <!-- XTIT: The id of the push notification channel -->
+    <string name="push_channel_id">"sap_btp_android_sdk_foundation_push_channel"</string>
+    <!-- XTIT: The name of the push notification channel -->
+    <string name="push_channel_name">"SAP BTP Android SDK"</string>
+    <!-- XTIT: The description of the badge channel -->
+    <string name="push_badge_channel_description">"Riadenie oznámení označenia"</string>
+    <!-- XTIT: The name of the badge channel -->
+    <string name="push_badge_channel_name">"Kanál označenia SAP BTP Android SDK"</string>
+    <!-- XMSG: push message alert -->
+    <string name="push_message_alert">"Notifikácia"</string>
+    <!-- XMSG: push message title -->
+    <string name="push_message_title">"Správa push bola prijatá"</string>
+    <!-- XBUT: Text of the OK button -->
+    <string name="push_message_dlg_ok">"OK"</string>
+    <!-- XBUT: Text of the Cancel button -->
+    <string name="push_message_dlg_cancel">"Zrušiť"</string>
+    <!-- XTIT: The title of Push topics -->
+    <string name="settings_push_topics">"Prihláste sa na odber svojej obľúbenej témy"</string>
+
+    <!-- XTIT: The title of Eula dialog -->
+    <string name="launch_screen_dialog_title">"Zmluva o poskytovaní služieb a zásady ochrany osobných údajov"</string>
+    <!-- XBUT: Text of the Agree button -->
+    <string name="launch_screen_dialog_button_agree">"Súhlasím"</string>
+    <!-- XBUT: Text of the Disagree button -->
+    <string name="launch_screen_dialog_button_disagree">"Nesúhlasím"</string>
+    <!-- XBUT: Text of the Got it button -->
+    <string name="launch_screen_dialog_disagree_confirm">"Rozumiem"</string>
+    <!-- XTIT: The content text of Eula dialog -->
+    <string name="launch_screen_dialog_eula_text">"Ďakujeme, že používate túto aplikáciu. Keď používate túto aplikáciu, môžu sa zhromažďovať a spracovávať vaše osobné údaje. Prosím dodržujte &lt;a href=http://www.sap.com&gt;Licenčnú zmluvu s koncovým používateľom&lt;/a&gt; a &lt;a href=http://www.sap.com&gt;Vyhlásenie o ochrane osobných údajov&lt;/a&gt;, aby ste sa uistili, že plne rozumiete tomu, ako spoločnosť SAP spracúva vaše osobné údaje. Ak súhlasíte s licenčnou zmluvou koncového používateľa a vyhlásením o ochrane osobných údajov, kliknutím na tlačidlo Súhlasím spustíte aplikáciu. Spoločnosť SAP sa bude snažiť čo najlepšie chrániť vaše osobné údaje."</string>
+    <!-- XTIT: The content text of Eula dialog -->
+    <string name="launch_screen_dialog_disagree_text">"Ak nesúhlasíte s &lt;a href=http://www.sap.com&gt;Licenčnou zmluvou s koncovým používateľom&lt;/a&gt; a &lt;a href=http://www.sap.com&gt;Zásadami ochrany osobných údajov&lt;/a&gt;, môžete vyskúšať iba demo režim."</string>
+    <!-- XTIT: The content text of Eula dialog -->
+    <string name="privacy_dialog_content">"Ďakujeme, že používate túto aplikáciu. Keď používate túto aplikáciu, môžu sa zhromažďovať a spracovávať vaše osobné údaje. Prosím dodržujte "<annotation key="eula">"Licenčnú zmluvu s koncovým používateľom"</annotation>" a "<annotation key="term">"Vyhlásenie o ochrane osobných údajov"</annotation>", aby ste sa uistili, že plne rozumiete tomu, ako spoločnosť SAP spracúva vaše osobné údaje. Ak súhlasíte s \'Licenčnou zmluvou koncového používateľa\' a \'Vyhlásením o ochrane osobných údajov\', kliknutím na tlačidlo \'súhlasím\' spustíte aplikáciu. Spoločnosť SAP sa bude snažiť čo najlepšie chrániť vaše osobné údaje."</string>
+    <!-- XTIT: The content text of Eula dialog -->
+    <string name="privacy_confirmation_dialog_content">"Ak nesúhlasíte s "<annotation key="eula">"Licenčnou zmluvou s koncovým používateľom"</annotation>" a "<annotation key="term">"Zásadami ochrany osobných údajov"</annotation>", môžete vyskúšať iba demo režim."</string>
+    <!-- XTIT: The title of Demo dialog -->
+    <string name="launch_screen_demo_dialog_title">"Demo režim"</string>
+    <!-- XTIT: The content text of demo dialog -->
+    <string name="launch_screen_demo_dialog_message">"Demo režim nie je naimplementovaný vo vygenerovanej aplikácii."</string>
+    <!-- XBUT: Text of the Go back button -->
+    <string name="launch_screen_demo_dialog_button_goback">"Späť"</string>
+</resources>

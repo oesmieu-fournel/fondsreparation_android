@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><resources>
+    <!-- XTIT: The title of the create Activity, will appear at the top of the screen -->
+    <string name="title_create_fragment">"สร้างรายการ \'%1$s\'"</string>
+
+    <!-- XTIT: The title of the update Activity, will appear at the top of the screen -->
+    <string name="title_update_fragment">"อัพเดท"</string>
+
+    <!-- XMSG: Error message for the mandatory input fields, will appear in the edit field left empty -->
+    <string name="mandatory_warning">"ฟิลด์นี้เป็นฟิลด์บังคับ"</string>
+
+    <!-- XTIT: The title of the welcome screen, will appear at the top of the screen -->
+    <string name="welcome_screen_headline_label">"ยินดีต้อนรับ"</string>
+
+    <!-- YINS: Short description on the welcome screen -->
+    <string name="welcome_screen_detail_label">"สำรวจ SAP BTP SDK สำหรับ Android ด้วยแอพที่สร้างขึ้นนี้"</string>
+
+    <!-- XFLD: label at the bottom of the welcome screen -->
+    <string name="welcome_screen_footnote_label">"คุณสามารถลองใช้ฟีเจอร์ของ SDK ในโหมดสาธิต"</string>
+
+    <!-- XFLD: label of the primary button on the welcome screen -->
+    <string name="welcome_screen_primary_button_label">"เริ่มต้นใช้งาน"</string>
+
+    <!-- XBUT: Text of the Save button -->
+    <string name="save">"เก็บบันทึก"</string>
+
+    <!-- XBUT: Text of the Update button -->
+    <string name="update">"อัพเดท"</string>
+
+    <!-- XBUT: Text of the Delete button -->
+    <string name="delete">"ลบ"</string>
+
+    <!-- XBUT: Text of the Cancel button -->
+    <string name="cancel">"ยกเลิก"</string>
+
+    <!-- XBUT: Text of the OK button -->
+    <string name="ok">"ตกลง"</string>
+
+    <!-- XBUT: Text of the Delete button -->
+    <string name="yes">"ใช่"</string>
+
+    <!-- XBUT: Text of the Add New button -->
+    <string name="add_new">"เพิ่มใหม่"</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="delete_dialog_title">"ลบ"</string>
+
+    <!-- XMSG: The message of the delete dialog -->
+    <string name="delete_one_item">"คุณแน่ใจหรือไม่ว่าต้องการลบรายการที่เลือก?"</string>
+
+    <!-- XMSG: The message of the delete dialog in case of multiple selection -->
+    <string name="delete_more_items">"คุณแน่ใจหรือไม่ว่าต้องการลบรายการที่เลือก?"</string>
+
+    <!-- XMSG: Error message, can be presented in a Toast or Dialog -->
+    <string name="entity_download_error">"มีข้อผิดพลาดเกิดขึ้นระหว่างการดำเนินการแบคกราวน์"</string>
+
+    <!-- XMIT: Refresh menu item -->
+    <string name="menu_refresh">"รีเฟรช"</string>
+
+    <!-- XMIT: Refresh menu item -->
+    <string name="menu_home">"หน้าหลัก"</string>
+
+    <!-- XMIT: Update menu item -->
+    <string name="menu_update">"อัพเดท"</string>
+
+    <!-- XMIT: Delete menu item -->
+    <string name="menu_delete">"ลบ"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_headline">"Headline"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_subheadline">"Subheadline"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_body">"Body Text"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_footnote">"Footnote"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_tag1">"TAG1"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_tag2">"TAG2"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_tag3">"TAG3"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_description">"Item Description"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_status">"Status"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="error">"Error"</string>
+
+    <!-- error messages -->
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="read_failed">"การดาวน์โหลดล้มเหลว"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="format_error">"ข้อมูลที่ป้อนไม่เหมาะสมสำหรับประเภทข้อมูลนี้"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="read_failed_detail">"การดำเนินการดาวน์โหลดล้มเหลว กรุณาลองเริ่มการทำงานของแอพพลิเคชันใหม่"</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="create_failed">"การสร้างล้มเหลว"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="create_failed_detail">"การดำเนินการสร้างล้มเหลว กรุณาลองดำเนินการอีกครั้งภายหลัง"</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="update_failed">"การอัพเดทล้มเหลว"</string>
+    <string name="update_failed_detail">"การดำเนินการอัพเดทล้มเหลว กรุณารีเฟรชข้อมูลภายในแล้วลองดำเนินการอีกครั้งภายหลัง"</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="delete_failed">"การลบล้มเหลว"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="delete_failed_detail">"การดำเนินการลบล้มเหลว กรุณารีเฟรชข้อมูลภายในแล้วลองดำเนินการอีกครั้งภายหลัง"</string>
+
+    <!-- XTIT: The message of the upload toast in case of success -->
+    <string name="log_upload_ok">"อัพโหลดล็อกไปยังเซิร์ฟเวอร์แล้ว"</string>
+
+    <!-- XTIT: The message of the upload toast in case of failing -->
+    <string name="log_upload_failed">"การอัพโหลดล็อกล้มเหลว"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="log_upload_failed_detail">"ได้รับ URL ที่มีรูปแบบไม่ถูกต้องสำหรับการอัพโหลดล็อก แอพพลิเคชันอาจยังคงทำงานได้ แต่จะไม่มีการอัพโหลดล็อกไปยังเซิร์ฟเวอร์"</string>
+
+    <!-- XTIT: The message of the upload toast in case of success -->
+    <string name="usage_upload_ok">"อัพโหลดข้อมูลการใช้ไปยังเซิร์ฟเวอร์แล้ว"</string>
+
+    <!-- XTIT: The message of the upload toast in case of failing -->
+    <string name="usage_upload_failed">"การอัพโหลดข้อมูลการใช้ล้มเหลว"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="usage_init_failed">"ไม่สามารถกำหนดค่าเริ่มต้นของการใช้"</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="push_error">"ข้อผิดพลาดในการพุช"</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="push_message">"ได้รับข้อความแบบพุช"</string>
+
+    <!-- XTIT: The Notification Text -->
+    <string name="push_text">"การแจ้งเตือน"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="push_token_upload_failed_detail">"ไม่สามารถอัพโหลด Token พุชไปยังเซิร์ฟเวอร์ SAP ฟีเจอร์พุชจะไม่ทำงาน คุณจะไม่ได้รับข้อความแบบพุช"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="push_invalid_push_format">"ได้รับข้อความแบบพุช แต่ข้อความดังกล่าวมีรูปแบบที่ไม่ถูกต้อง ดังนั้นจึงไม่สามารถดำเนินการได้"</string>
+
+    <!-- XMSG: AlertDialog before navigation - Title -->
+    <string name="before_navigation_dialog_title">"ข้อมูลอาจสูญหาย"</string>
+
+    <!-- XMSG: AlertDialog before navigation - Message -->
+    <string name="before_navigation_dialog_message">"เมื่อออกจากหน้านี้ จะไม่มีการเก็บบันทึกข้อมูลใดๆ"</string>
+
+    <!-- XMSG: AlertDialog before navigation - Positive button (navigation occurs) -->
+    <string name="before_navigation_dialog_positive_button">"ออก"</string>
+
+    <!-- XMSG: AlertDialog before navigation - Negative button (cancelled navigation) -->
+    <string name="before_navigation_dialog_negative_button">"อยู่ต่อ"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_loader_complete_error_description">"ตัวโหลดการกำหนดรูปแบบไม่สามารถดึงข้อมูลการกำหนดรูปแบบ"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_loader_on_error_description">"ตัวให้บริการกำหนดรูปแบบ \"%1$s\" พบข้อผิดพลาด %2$s"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_data_build_json_description">"ไม่สามารถสร้างออบเจค JSON"</string>
+    <string name="error_unknown_app_config">"ไม่สามารถจัดเตรียมการกำหนดรูปแบบแอพพลิเคชันที่มีข้อผิดพลาดที่ไม่รู้จัก"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="server_auth_not_supported_saml">"ข้อผิดพลาด: แอพพลิเคชันนี้ไม่รองรับการรับรองความถูกต้องด้วย SAML"</string>
+
+	<!-- XTIT: The title of the error dialog -->
+	<string name="bind_error">"ข้อผิดพลาดในการรวม"</string>
+
+	<!-- XMSG: Detailed error description -->
+    <string name="bind_error_detail">"ไม่สามารถรวมกับบริการซิงค์ OData แบบออฟไลน์"</string>
+
+	<!-- XTIT: The title of the error dialog -->
+	<string name="offline_provider_error">"ข้อผิดพลาดในการกำหนดค่าเริ่มต้นแบบออฟไลน์"</string>
+
+ 	<!-- XMSG: Detailed error description -->
+	<string name="offline_provider_error_detail">"ไม่สามารถกำหนดค่าเริ่มต้นของตัวให้บริการ Odata แบบออฟไลน์"</string>
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="offline_initial_open_error">"ข้อผิดพลาดในการเปิดครั้งแรกแบบออฟไลน์"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_initial_open_error_detail">"ไม่สามารถดำเนินการเปิดที่เก็บแบบออฟไลน์ครั้งแรกให้เสร็จสมบูรณ์"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_backend_big_data_error_detail">"Payload จากแบคเอนด์ใหญ๋เกินไป ขนาดตั้งต้นของขีดจำกัด Payload สำหรับ SAP Mobile Services อยู่ที่ 64M คุณสามารถแก้ไขได้ด้วยวิธีใดวิธีหนึ่งต่อไปนี้\n\t1) เพิ่มขีดจำกัดขนาดใน offline.ini\n\t2) อิมพลีเมนต์การแบ่งหน้าทางด้านเซิร์ฟเวอร์เพื่อเปิดใช้งานการซิงค์ชุดข้อมูลขนาดใหญ่ในกลุ่มข้อมูล\n\t3) ใช้คำขอ $top ในการกำหนดคิวรีหรือฟิลเตอร์เพื่อจำกัดยอดรวมของข้อมูลที่ไคลเอนท์ดาวน์โหลด"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_backend_time_out_error_detail">"เพิ่มการหมดเวลาเชื่อมต่อแบคเอนด์สำหรับแอพพลิเคชันนี้ใน SAP Mobile Services แล้วลองอีกครั้ง"</string>
+
+    <!-- XTIT: The title of the error dialog -->
+	<string name="synchronize_failure">"การซิงโครไนซ์ล้มเหลว"</string>
+
+	<!-- XMSG: Detailed error description -->
+	<string name="synchronize_failure_detail">"การซิงโครไนซ์กับ Mobile Services ล้มเหลว"</string>
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="offline_reset_store_error">"การรีเซ็ตที่เก็บแบบออฟไลน์ล้มเหลว"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_reset_store_error_detail">"ไม่สามารถรีเซ็ต/ย้ายที่เก็บข้อมูลแบบออฟไลน์ออก"</string>
+    <!-- error messages -->
+
+    <!-- offline -->
+
+    <!-- XTIT: The title of initial opening of offline store failed -->
+    <string name="initializing_offline_store_failed">"การซิงค์ล้มเหลว"</string>
+
+    <!-- XMSG: Offline AlertDialog before navigation - Title -->
+    <string name="offline_navigation_dialog_title">"การยืนยันการยกเลิกการซิงค์"</string>
+
+    <!-- XMSG: Offline AlertDialog before navigation - Message -->
+    <string name="offline_navigation_dialog_message">"คุณแน่ใจหรือไม่ว่าต้องการยกเลิกการซิงค์ที่อยู่ระหว่างดำเนินการแล้วกลับไปยังจอภาพแสดงการต้อนรับ?"</string>
+
+    <!-- XMSG: Offline AlertDialog before navigation - Positive button (navigation occurs) -->
+    <string name="offline_navigation_dialog_positive_option">"ยืนยัน"</string>
+
+    <!-- XMSG: Offline AlertDialog before navigation - Negative button (cancelled navigation) -->
+    <string name="offline_navigation_dialog_negative_option">"ภายหลัง"</string>
+
+    <!-- NOTR: No translation needed, Label for entity state in offline -->
+	<string name="local_state">"Local"</string>
+
+    <!-- NOTR: No translation needed, Label for entity state in offline -->
+	<string name="error_state">"Error"</string>
+
+	<!-- NOTR: No translation needed, Label for entity state in offline -->
+	<string name="updated_state">"Updated"</string>
+
+	<!-- NOTR: No translation needed, Label for entity state in offline -->
+	<string name="download_state">"Download"</string>
+
+    <!-- XMIT: Menu item to trigger synchronization -->
+	<string name="synchronize_action">"ซิงโครไนซ์"</string>
+
+    <!-- offline -->
+
+    <!-- XTIT: The title of the settings dialog -->
+    <string name="settings_activity_name">"การกำหนดค่า"</string>
+    <!-- XTIT: The title of the settings menu -->
+    <string name="menu_item_settings">"การกำหนดค่า"</string>
+
+    <!-- XTIT: The title of the passcode group -->
+    <string name="passcode">"รหัสผ่านอุปกรณ์"</string>
+    <!-- XTIT: The title of the change passcode menu item -->
+    <string name="manage_passcode">"เปลี่ยนรหัสผ่านอุปกรณ์"</string>
+    <!-- XTIT: The title of the reset group -->
+    <string name="reset">"รีเซ็ตแอพพลิเคชัน"</string>
+    <!-- XTIT: The title of the reset app menu item -->
+    <string name="reset_app">"ล้างการกำหนดค่าแอพ"</string>
+    <!-- XTIT: The title of a confirmation dialog -->
+    <string name="reset_app_confirmation">"ข้อมูลทั้งหมดที่เกี่ยวข้องกับแอพพลิเคชันนี้จะถูกย้ายออก คุณต้องการดำเนินการต่อหรือไม่?"</string>
+    <!-- XMSG: The message of reset client -->
+    <string name="reset_client">"รีเซ็ตไคลเอนท์"</string>
+    <!-- XTIT: The title of the logout item -->
+    <string name="logout">"ออกจากระบบ"</string>
+    <!-- XTIT: The title of the delete registration item -->
+    <string name="delete_registration">"ลบการลงทะเบียน"</string>
+    <!-- XTIT: The title of a warning dialog -->
+    <string name="delete_registration_warning">"การเปลี่ยนแปลงทั้งหมดที่ค้างอยู่และยังไม่ได้ซิงค์ที่เกี่ยวข้องกับแอพพลิเคชันนี้จะถูกย้ายออก คุณต้องการดำเนินการต่อหรือไม่?"</string>
+
+    <!-- XTIT: The title of a menu item -->
+    <string name="upload_usage">"อัพโหลดข้อมูลการใช้"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="set_usage_consent">"ยินยอมให้รวบรวมการใช้"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="set_crash_report_consent">"ยินยอมให้รวบรวมรายงานความล้มเหลว"</string>
+
+    <!-- XTIT: The title of a menu group -->
+    <string name="crash_report">"รายงานความล้มเหลว"</string>
+    <!-- XTIT: The title of a menu group -->
+    <string name="usage">"การใช้"</string>
+    <!-- XTIT: The title of a menu group -->
+    <string name="logging">"การบันทึกล็อก"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="upload_log">"อัพโหลดล็อก"</string>
+    <!-- XTIT: The description of a menu item -->
+    <string name="upload_log_summary">"อัพโหลดล็อกไปยังเซิร์ฟเวอร์"</string>
+    <!-- XMSG: The message of a log level toast -->
+    <string name="log_level_changed">"ระดับล็อกตั้งต้นเปลี่ยนแปลงจากนโยบายเซิร์ฟเวอร์มาเป็น: %s"</string>
+    <!-- XMSG: The message of a log level toast -->
+    <string name="log_level_default">"ไม่ได้กำหนดค่านโยบายล็อกในเซิร์ฟเวอร์ ระดับล็อกตั้งต้นถูกกำหนดค่าเป็น: %s"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="log_level">"ระดับล็อก"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="dialog_title_choose_log_level">"เลือกระดับล็อก"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_none">"ไม่มี"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_fatal">"ร้ายแรง"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_error">"ข้อผิดพลาด"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_warning">"คำเตือน"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_info">"ข้อมูล"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_debug">"ดีบัก"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_path">"พาธ"</string>
+    <!-- XMSG: Authentication error message -->
+    <string name="authentication_failed">"การรับรองความถูกต้องล้มเหลว"</string>
+    <!-- XMSG: Authentication progress description -->
+    <string name="authentication_progress">"กำลังรับรองความถูกต้องกับเซิร์ฟเวอร์..."</string>
+
+    <!-- restrictions -->
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="restriction_service_url_title">"URL สำหรับการบริการ"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="restriction_service_url_description">"URL ของบริการ OData"</string>
+    <!-- restrictions -->
+
+    <!-- XMSG: Detailed error description -->
+    <string name="error_back_navigation">"แอพพลิเคชันนี้ได้รับการป้องกันด้วยรหัสผ่านอุปกรณ์ และจะไม่เริ่มทำงานหากไม่มีการระบุรหัสผ่านอุปกรณ์ที่ถูกต้อง"</string>
+
+    <!-- XTIT: The id of the push notification channel -->
+    <string name="push_channel_id">"sap_btp_android_sdk_foundation_push_channel"</string>
+    <!-- XTIT: The name of the push notification channel -->
+    <string name="push_channel_name">"SAP BTP Android SDK"</string>
+    <!-- XTIT: The description of the badge channel -->
+    <string name="push_badge_channel_description">"การจัดการการแจ้งเตือนแบบป้าย"</string>
+    <!-- XTIT: The name of the badge channel -->
+    <string name="push_badge_channel_name">"ช่องทางแบบป้ายของ SAP BTP Android SDK"</string>
+    <!-- XMSG: push message alert -->
+    <string name="push_message_alert">"การแจ้งเตือน"</string>
+    <!-- XMSG: push message title -->
+    <string name="push_message_title">"ได้รับข้อความการแจ้งเตือนแบบพุช"</string>
+    <!-- XBUT: Text of the OK button -->
+    <string name="push_message_dlg_ok">"ตกลง"</string>
+    <!-- XBUT: Text of the Cancel button -->
+    <string name="push_message_dlg_cancel">"ยกเลิก"</string>
+    <!-- XTIT: The title of Push topics -->
+    <string name="settings_push_topics">"สมัครรับข้อมูลหัวข้อโปรดของคุณ"</string>
+
+    <!-- XTIT: The title of Eula dialog -->
+    <string name="launch_screen_dialog_title">"ข้อตกลงการให้บริการและนโยบายความเป็นส่วนตัว"</string>
+    <!-- XBUT: Text of the Agree button -->
+    <string name="launch_screen_dialog_button_agree">"ยอมรับ"</string>
+    <!-- XBUT: Text of the Disagree button -->
+    <string name="launch_screen_dialog_button_disagree">"ไม่ยอมรับ"</string>
+    <!-- XBUT: Text of the Got it button -->
+    <string name="launch_screen_dialog_disagree_confirm">"เข้าใจแล้ว"</string>
+    <!-- XTIT: The content text of Eula dialog -->
+    <string name="launch_screen_dialog_eula_text">"ขอบคุณที่เลือกใช้แอพนี้ เมื่อคุณใช้แอพนี้ อาจมีการรวบรวมและประมวลผลข้อมูลส่วนบุคคลของคุณ กรุณาปฏิบัติตาม&lt;a href=http://www.sap.com&gt;ข้อตกลงสิทธิการใช้งานสำหรับผู้ใช้&lt;/a&gt;และ&lt;a href=http://www.sap.com&gt;คำชี้แจงความเป็นส่วนตัว&lt;/a&gt; เพื่อให้แน่ใจว่าคุณเข้าใจอย่างครบถ้วนถึงวิธีที่ SAP ประมวลผลข้อมูลส่วนบุคคลของคุณ ถ้าคุณยอมรับข้อตกลงสิทธิการใช้งานสำหรับผู้ใช้และคำชี้แจงความเป็นส่วนตัว กรุณาคลิก \'ยอมรับ\' เพื่อเริ่มการทำงานของแอพ โดยที่ SAP จะพยายามอย่างสุดความสามารถเพื่อปกป้องข้อมูลส่วนบุคคลของคุณ"</string>
+    <!-- XTIT: The content text of Eula dialog -->
+    <string name="launch_screen_dialog_disagree_text">"ถ้าคุณไม่ยอมรับ&lt;a href=http://www.sap.com&gt;ข้อตกลงสิทธิการใช้งานสำหรับผู้ใช้&lt;/a&gt;และ&lt;a href=http://www.sap.com&gt;นโยบายความเป็นส่วนตัว&lt;/a&gt; คุณจะสามารถทดลองใช้ได้เฉพาะโหมดสาธิต"</string>
+    <!-- XTIT: The content text of Eula dialog -->
+    <string name="privacy_dialog_content">"ขอบคุณที่เลือกใช้แอพนี้ เมื่อคุณใช้แอพนี้ อาจมีการรวบรวมและประมวลผลข้อมูลส่วนบุคคลของคุณ กรุณาปฏิบัติตาม"<annotation key="eula">"ข้อตกลงสิทธิการใช้งานสำหรับผู้ใช้"</annotation>"และ"<annotation key="term">"คำชี้แจงความเป็นส่วนตัว"</annotation>" เพื่อให้แน่ใจว่าคุณเข้าใจอย่างครบถ้วนถึงวิธีที่ SAP ประมวลผลข้อมูลส่วนบุคคลของคุณ ถ้าคุณยอมรับข้อตกลงสิทธิการใช้งานสำหรับผู้ใช้และคำชี้แจงความเป็นส่วนตัว กรุณาคลิก \'ยอมรับ\' เพื่อเริ่มการทำงานของแอพ โดยที่ SAP จะพยายามอย่างสุดความสามารถเพื่อปกป้องข้อมูลส่วนบุคคลของคุณ"</string>
+    <!-- XTIT: The content text of Eula dialog -->
+    <string name="privacy_confirmation_dialog_content">"ถ้าคุณไม่ยอมรับ"<annotation key="eula">"ข้อตกลงสิทธิการใช้งานสำหรับผู้ใช้"</annotation>"และ"<annotation key="term">"คำชี้แจงความเป็นส่วนตัว"</annotation>" คุณจะสามารถทดลองใช้ได้เฉพาะโหมดสาธิต"</string>
+    <!-- XTIT: The title of Demo dialog -->
+    <string name="launch_screen_demo_dialog_title">"โหมดสาธิต"</string>
+    <!-- XTIT: The content text of demo dialog -->
+    <string name="launch_screen_demo_dialog_message">"โหมดสาธิตไม่ได้อิมพลีเมนต์ในแอพพลิเคชันที่สร้าง"</string>
+    <!-- XBUT: Text of the Go back button -->
+    <string name="launch_screen_demo_dialog_button_goback">"ย้อนกลับ"</string>
+</resources>

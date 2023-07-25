@@ -1,0 +1,375 @@
+<resources>
+    <!-- XTIT: The title of the create Activity, will appear at the top of the screen -->
+    <string name="title_create_fragment">Create %1$s Item</string>
+
+    <!-- XTIT: The title of the update Activity, will appear at the top of the screen -->
+    <string name="title_update_fragment">Update</string>
+
+    <!-- XMSG: Error message for the mandatory input fields, will appear in the edit field left empty -->
+    <string name="mandatory_warning">This is a mandatory field</string>
+
+    <!-- XTIT: The title of the welcome screen, will appear at the top of the screen -->
+    <string name="welcome_screen_headline_label">Welcome</string>
+
+    <!-- YINS: Short description on the welcome screen -->
+    <string name="welcome_screen_detail_label">Explore the SAP BTP SDK for Android with this generated app.</string>
+
+    <!-- XFLD: label at the bottom of the welcome screen -->
+    <string name="welcome_screen_footnote_label">You can try out the SDK features in demo mode.</string>
+
+    <!-- XFLD: label of the primary button on the welcome screen -->
+    <string name="welcome_screen_primary_button_label">Get Started</string>
+
+    <!-- XBUT: Text of the Save button -->
+    <string name="save">Save</string>
+
+    <!-- XBUT: Text of the Update button -->
+    <string name="update">Update</string>
+
+    <!-- XBUT: Text of the Delete button -->
+    <string name="delete">Delete</string>
+
+    <!-- XBUT: Text of the Cancel button -->
+    <string name="cancel">Cancel</string>
+
+    <!-- XBUT: Text of the OK button -->
+    <string name="ok">OK</string>
+
+    <!-- XBUT: Text of the Delete button -->
+    <string name="yes">Yes</string>
+
+    <!-- XBUT: Text of the Add New button -->
+    <string name="add_new">Add new</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="delete_dialog_title">Delete</string>
+
+    <!-- XMSG: The message of the delete dialog -->
+    <string name="delete_one_item">Do you really want to delete the selected item?</string>
+
+    <!-- XMSG: The message of the delete dialog in case of multiple selection -->
+    <string name="delete_more_items">Do you really want to delete the selected items?</string>
+
+    <!-- XMSG: Error message, can be presented in a Toast or Dialog -->
+    <string name="entity_download_error">Error occurred during background operation.</string>
+
+    <!-- XMIT: Refresh menu item -->
+    <string name="menu_refresh">Refresh</string>
+
+    <!-- XMIT: Refresh menu item -->
+    <string name="menu_home">Home</string>
+
+    <!-- XMIT: Update menu item -->
+    <string name="menu_update">Update</string>
+
+    <!-- XMIT: Delete menu item -->
+    <string name="menu_delete">Delete</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_headline">Headline</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_subheadline">Subheadline</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_body">Body Text</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_footnote">Footnote</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_tag1">TAG1</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_tag2">TAG2</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_tag3">TAG3</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_description">Item Description</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_status">Status</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="error">Error</string>
+
+    <!-- error messages -->
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="read_failed">Download Failed</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="format_error">"Input is not suitable for the data type."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="read_failed_detail">Download operation failed, please try to restart the application.</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="create_failed">Create Failed</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="create_failed_detail">Create operation failed, please try to execute it again later.</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="update_failed">Update Failed</string>
+    <string name="update_failed_detail">Update operation failed, please refresh the local data and try to perform it again later.</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="delete_failed">Delete Failed</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="delete_failed_detail">Delete operation failed, please refresh the local data and try to perform it again later.</string>
+
+    <!-- XTIT: The message of the upload toast in case of success -->
+    <string name="log_upload_ok">Log is uploaded to the server.</string>
+
+    <!-- XTIT: The message of the upload toast in case of failing -->
+    <string name="log_upload_failed">Log upload failed.</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="log_upload_failed_detail">Mal-formed URL was received for log upload. The application might still work, but logs won\'t be uploaded to the server.</string>
+
+    <!-- XTIT: The message of the upload toast in case of success -->
+    <string name="usage_upload_ok">Usage data is uploaded to the server.</string>
+
+    <!-- XTIT: The message of the upload toast in case of failing -->
+    <string name="usage_upload_failed">Usage data upload failed.</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="usage_init_failed">Usage could not initialize.</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="push_error">Push Error</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="push_message">Push Message Received</string>
+
+    <!-- XTIT: The Notification Text -->
+    <string name="push_text">Notification</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="push_token_upload_failed_detail">Push token couldn\'t be uploaded to the SAP server, the push feature won\'t work. You won\'t receive push messages.</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="push_invalid_push_format">Push message received, but its format was invalid, so it couldn\'t be processed.</string>
+
+    <!-- XMSG: AlertDialog before navigation - Title -->
+    <string name="before_navigation_dialog_title">Potential Data Loss</string>
+
+    <!-- XMSG: AlertDialog before navigation - Message -->
+    <string name="before_navigation_dialog_message">By leaving this page, none of the data will be saved.</string>
+
+    <!-- XMSG: AlertDialog before navigation - Positive button (navigation occurs) -->
+    <string name="before_navigation_dialog_positive_button">Leave</string>
+
+    <!-- XMSG: AlertDialog before navigation - Negative button (cancelled navigation) -->
+    <string name="before_navigation_dialog_negative_button">Stay</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_loader_complete_error_description">Configuration loader failed to get configuration data.</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_loader_on_error_description">Configuration provider, \"%1$s\", encountered an error. %2$s</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_data_build_json_description">Failed to build the JSON object.</string>
+    <string name="error_unknown_app_config">Failed to prepare application config with unknown error.</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="server_auth_not_supported_saml">Error: This application doesn\'t support SAML authentication.</string>
+
+	<!-- XTIT: The title of the error dialog -->
+	<string name="bind_error">Bind Error</string>
+
+	<!-- XMSG: Detailed error description -->
+    <string name="bind_error_detail">Failed to bind to Offline OData Sync Service.</string>
+
+	<!-- XTIT: The title of the error dialog -->
+	<string name="offline_provider_error">Offline Initialization Error</string>
+
+ 	<!-- XMSG: Detailed error description -->
+	<string name="offline_provider_error_detail">Failed to initialize offline OData provider.</string>
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="offline_initial_open_error">Offline Initial Open Error</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_initial_open_error_detail">Failed to complete initial opening of Offline store.</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_backend_big_data_error_detail">The Payload from back-end was too big, the default size of SAP Mobile Services payload limitation is 64M. You can try to fix it with one of the following resolutions:\n\t1) Increase size limit in offline.ini;\n\t2) Implement server-side pagination to enable syncing of large data sets in chunks;\n\t3) Use $top requests in defining queries or filters to limit total amount of data the client downloads.</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_backend_time_out_error_detail">Increase back-end connection timeout for this application in SAP Mobile Services and try again.</string>
+
+    <!-- XTIT: The title of the error dialog -->
+	<string name="synchronize_failure">Synchronization Failure</string>
+
+	<!-- XMSG: Detailed error description -->
+	<string name="synchronize_failure_detail">Synchronization with Mobile Services failed.</string>
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="offline_reset_store_error">Offline Store Reset Failure</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_reset_store_error_detail">Failed to reset/remove offline data store.</string>
+    <!-- error messages -->
+
+    <!-- offline -->
+
+    <!-- XTIT: The title of initial opening of offline store failed -->
+    <string name="initializing_offline_store_failed">Sync Failed</string>
+
+    <!-- XMSG: Offline AlertDialog before navigation - Title -->
+    <string name="offline_navigation_dialog_title">Cancel Sync Confirmation</string>
+
+    <!-- XMSG: Offline AlertDialog before navigation - Message -->
+    <string name="offline_navigation_dialog_message">Are you sure you want to cancel the sync in progress and return to the Welcome screen?</string>
+
+    <!-- XMSG: Offline AlertDialog before navigation - Positive button (navigation occurs) -->
+    <string name="offline_navigation_dialog_positive_option">Confirm</string>
+
+    <!-- XMSG: Offline AlertDialog before navigation - Negative button (cancelled navigation) -->
+    <string name="offline_navigation_dialog_negative_option">Not Now</string>
+
+    <!-- NOTR: No translation needed, Label for entity state in offline -->
+	<string name="local_state">Local</string>
+
+    <!-- NOTR: No translation needed, Label for entity state in offline -->
+	<string name="error_state">Error</string>
+
+	<!-- NOTR: No translation needed, Label for entity state in offline -->
+	<string name="updated_state">Updated</string>
+
+	<!-- NOTR: No translation needed, Label for entity state in offline -->
+	<string name="download_state">Download</string>
+
+    <!-- XMIT: Menu item to trigger synchronization -->
+	<string name="synchronize_action">Synchronize</string>
+
+    <!-- offline -->
+
+    <!-- XTIT: The title of the settings dialog -->
+    <string name="settings_activity_name">Settings</string>
+    <!-- XTIT: The title of the settings menu -->
+    <string name="menu_item_settings">Settings</string>
+
+    <!-- XTIT: The title of the passcode group -->
+    <string name="passcode">Passcode</string>
+    <!-- XTIT: The title of the change passcode menu item -->
+    <string name="manage_passcode">Change Passcode</string>
+    <!-- XTIT: The title of the reset group -->
+    <string name="reset">Reset Application</string>
+    <!-- XTIT: The title of the reset app menu item -->
+    <string name="reset_app">Clear App Settings</string>
+    <!-- XTIT: The title of a confirmation dialog -->
+    <string name="reset_app_confirmation">All information associated with this application will be removed. Do you wish to continue?</string>
+    <!-- XMSG: The message of reset client -->
+    <string name="reset_client">Reset Client</string>
+    <!-- XTIT: The title of the logout item -->
+    <string name="logout">Logout</string>
+    <!-- XTIT: The title of the delete registration item -->
+    <string name="delete_registration">Delete Registration</string>
+    <!-- XTIT: The title of a warning dialog -->
+    <string name="delete_registration_warning">All unsynced pending changes associated with this registration will be removed. Do you wish to continue?</string>
+
+    <!-- XTIT: The title of a menu item -->
+    <string name="upload_usage">Upload Usage Data</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="set_usage_consent">Consent to Usage Collection</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="set_crash_report_consent">Consent to Crash Report Collection</string>
+
+    <!-- XTIT: The title of a menu group -->
+    <string name="crash_report">Crash Report</string>
+    <!-- XTIT: The title of a menu group -->
+    <string name="usage">Usage</string>
+    <!-- XTIT: The title of a menu group -->
+    <string name="logging">Logging</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="upload_log">Upload Log</string>
+    <!-- XTIT: The description of a menu item -->
+    <string name="upload_log_summary">Upload log to the server.</string>
+    <!-- XMSG: The message of a log level toast -->
+    <string name="log_level_changed">Default log level changed from the server policy to: %s</string>
+    <!-- XMSG: The message of a log level toast -->
+    <string name="log_level_default">Log policy is not set on the server, default log level is set to: %s</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="log_level">Log Level</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="dialog_title_choose_log_level">Choose Log Level</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_none">None</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_fatal">Fatal</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_error">Error</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_warning">Warn</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_info">Info</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_debug">Debug</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_path">Path</string>
+    <!-- XMSG: Authentication error message -->
+    <string name="authentication_failed">Authentication failed.</string>
+    <!-- XMSG: Authentication progress description -->
+    <string name="authentication_progress">Authenticating with server...</string>
+
+    <!-- restrictions -->
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="restriction_service_url_title">Service URL</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="restriction_service_url_description">The URL of the OData service.</string>
+    <!-- restrictions -->
+
+    <!-- XMSG: Detailed error description -->
+    <string name="error_back_navigation">"The application is passcode protected, it won\'t start without providing the proper passcode."</string>
+
+    <!-- XTIT: The id of the push notification channel -->
+    <string name="push_channel_id">sap_btp_android_sdk_foundation_push_channel</string>
+    <!-- XTIT: The name of the push notification channel -->
+    <string name="push_channel_name">SAP BTP Android SDK</string>
+    <!-- XTIT: The description of the badge channel -->
+    <string name="push_badge_channel_description">Badge Notifications Management</string>
+    <!-- XTIT: The name of the badge channel -->
+    <string name="push_badge_channel_name">SAP BTP Android SDK Badge Channel</string>
+    <!-- XMSG: push message alert -->
+    <string name="push_message_alert">Notification</string>
+    <!-- XMSG: push message title -->
+    <string name="push_message_title">Push notification message received</string>
+    <!-- XBUT: Text of the OK button -->
+    <string name="push_message_dlg_ok">OK</string>
+    <!-- XBUT: Text of the Cancel button -->
+    <string name="push_message_dlg_cancel">Cancel</string>
+    <!-- XTIT: The title of Push topics -->
+    <string name="settings_push_topics">Subscribe your favourite topic</string>
+
+    <!-- XTIT: The title of Eula dialog -->
+    <string name="launch_screen_dialog_title">Service Agreement and Privacy Policy</string>
+    <!-- XBUT: Text of the Agree button -->
+    <string name="launch_screen_dialog_button_agree">Agree</string>
+    <!-- XBUT: Text of the Disagree button -->
+    <string name="launch_screen_dialog_button_disagree">Disagree</string>
+    <!-- XBUT: Text of the Got it button -->
+    <string name="launch_screen_dialog_disagree_confirm">Got it</string>
+    <!-- XTIT: The content text of Eula dialog -->
+    <string name="launch_screen_dialog_eula_text">Thanks for using this app. When you use this app, your personal information might be collected and processed. Please adhere to &lt;a href="http://www.sap.com">End User License Agreement&lt;/a> and &lt;a href="http://www.sap.com">Privacy Statement&lt;/a> to ensure that you fully understand how SAP processes your personal information. If you agree with "End User License Agreement" and "Privacy Statement", please click "agree" to start the app. SAP will try our best to protect your personal information.</string>
+    <!-- XTIT: The content text of Eula dialog -->
+    <string name="launch_screen_dialog_disagree_text">If you do not agree to &lt;a href="http://www.sap.com">End User License Agreement&lt;/a> and &lt;a href="http://www.sap.com">Privacy Policy&lt;/a>, you can only try out the demo mode.</string>
+    <!-- XTIT: The content text of Eula dialog -->
+    <string name="privacy_dialog_content">Thanks for using this app. When you use this app, your personal information might be collected and processed. Please adhere to <annotation key="eula">End User License Agreement</annotation> and <annotation key="term">Privacy Statement</annotation> to ensure that you fully understand how SAP processes your personal information. If you agree with \'End User License Agreement\' and \'Privacy Statement\', please click \'agree\' to start the app. SAP will try our best to protect your personal information.</string>
+    <!-- XTIT: The content text of Eula dialog -->
+    <string name="privacy_confirmation_dialog_content">If you do not agree to <annotation key="eula">End User License Agreement</annotation> and <annotation key="term">Privacy Statement</annotation>, you can only try out the demo mode.</string>
+    <!-- XTIT: The title of Demo dialog -->
+    <string name="launch_screen_demo_dialog_title">Demo Mode</string>
+    <!-- XTIT: The content text of demo dialog -->
+    <string name="launch_screen_demo_dialog_message">The Demo mode is not implemented in the generated application.</string>
+    <!-- XBUT: Text of the Go back button -->
+    <string name="launch_screen_demo_dialog_button_goback">Go back</string>
+</resources>

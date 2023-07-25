@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><resources>
+    <!-- XTIT: The title of the create Activity, will appear at the top of the screen -->
+    <string name="title_create_fragment">"Üksuse %1$s loomine"</string>
+
+    <!-- XTIT: The title of the update Activity, will appear at the top of the screen -->
+    <string name="title_update_fragment">"Uuenda"</string>
+
+    <!-- XMSG: Error message for the mandatory input fields, will appear in the edit field left empty -->
+    <string name="mandatory_warning">"See on kohustuslik väli"</string>
+
+    <!-- XTIT: The title of the welcome screen, will appear at the top of the screen -->
+    <string name="welcome_screen_headline_label">"Tere tulemast!"</string>
+
+    <!-- YINS: Short description on the welcome screen -->
+    <string name="welcome_screen_detail_label">"Tutvuge SAP BTP SDK for Androidiga selle genereeritud rakenduse abil."</string>
+
+    <!-- XFLD: label at the bottom of the welcome screen -->
+    <string name="welcome_screen_footnote_label">"Saate SDK funktsioone katsetada demorežiimis."</string>
+
+    <!-- XFLD: label of the primary button on the welcome screen -->
+    <string name="welcome_screen_primary_button_label">"Alusta"</string>
+
+    <!-- XBUT: Text of the Save button -->
+    <string name="save">"Salvesta"</string>
+
+    <!-- XBUT: Text of the Update button -->
+    <string name="update">"Uuenda"</string>
+
+    <!-- XBUT: Text of the Delete button -->
+    <string name="delete">"Kustuta"</string>
+
+    <!-- XBUT: Text of the Cancel button -->
+    <string name="cancel">"Tühista"</string>
+
+    <!-- XBUT: Text of the OK button -->
+    <string name="ok">"OK"</string>
+
+    <!-- XBUT: Text of the Delete button -->
+    <string name="yes">"Jah"</string>
+
+    <!-- XBUT: Text of the Add New button -->
+    <string name="add_new">"Lisa uus"</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="delete_dialog_title">"Kustuta"</string>
+
+    <!-- XMSG: The message of the delete dialog -->
+    <string name="delete_one_item">"Kas soovite valitud üksuse kindlasti kustutada?"</string>
+
+    <!-- XMSG: The message of the delete dialog in case of multiple selection -->
+    <string name="delete_more_items">"Kas soovite valitud üksused kindlasti kustutada?"</string>
+
+    <!-- XMSG: Error message, can be presented in a Toast or Dialog -->
+    <string name="entity_download_error">"Tausttoimingu ajal ilmnes tõrge."</string>
+
+    <!-- XMIT: Refresh menu item -->
+    <string name="menu_refresh">"Värskenda"</string>
+
+    <!-- XMIT: Refresh menu item -->
+    <string name="menu_home">"Avaleht"</string>
+
+    <!-- XMIT: Update menu item -->
+    <string name="menu_update">"Uuenda"</string>
+
+    <!-- XMIT: Delete menu item -->
+    <string name="menu_delete">"Kustuta"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_headline">"Headline"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_subheadline">"Subheadline"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_body">"Body Text"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_footnote">"Footnote"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_tag1">"TAG1"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_tag2">"TAG2"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_tag3">"TAG3"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_description">"Item Description"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_status">"Status"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="error">"Error"</string>
+
+    <!-- error messages -->
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="read_failed">"Allalaadimine nurjus"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="format_error">"Sisend pole andmetüübi jaoks sobilik."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="read_failed_detail">"Allalaadimistoiming nurjus. Proovige rakendus taaskäivitada."</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="create_failed">"Loomine nurjus"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="create_failed_detail">"Loomistoiming nurjus. Proovige see hiljem uuesti käivitada."</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="update_failed">"Uuendamine nurjus"</string>
+    <string name="update_failed_detail">"Uuendamistoiming nurjus. Värskendage kohalikke andmeid ja proovige seda toimingut hiljem uuesti teha."</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="delete_failed">"Kustutamine nurjus"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="delete_failed_detail">"Kustutamistoiming nurjus. Värskendage kohalikke andmeid ja proovige seda toimingut hiljem uuesti teha."</string>
+
+    <!-- XTIT: The message of the upload toast in case of success -->
+    <string name="log_upload_ok">"Logi on serverisse üles laaditud."</string>
+
+    <!-- XTIT: The message of the upload toast in case of failing -->
+    <string name="log_upload_failed">"Logi üleslaadimine nurjus."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="log_upload_failed_detail">"Logi üleslaadimiseks saadi vigaselt koostatud URL. Rakendus võib küll töötada, kuid logisid ei laadita serverisse üles."</string>
+
+    <!-- XTIT: The message of the upload toast in case of success -->
+    <string name="usage_upload_ok">"Kasutusandmed on serverisse üles laaditud."</string>
+
+    <!-- XTIT: The message of the upload toast in case of failing -->
+    <string name="usage_upload_failed">"Kasutusandmete üleslaadimine nurjus."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="usage_init_failed">"Kasutust ei saanud lähtestada."</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="push_error">"Tõuketeate tõrge"</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="push_message">"Tõuketeade on saadud"</string>
+
+    <!-- XTIT: The Notification Text -->
+    <string name="push_text">"Teade"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="push_token_upload_failed_detail">"Tõuketeate luba ei saanud SAP-i serverisse üles laadida, tõuketeadete funktsioon ei tööta. Te ei saa tõuketeateid."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="push_invalid_push_format">"Tõuketeade on saadud, kuid selle vorming oli vale, nii et seda ei saanud töödelda."</string>
+
+    <!-- XMSG: AlertDialog before navigation - Title -->
+    <string name="before_navigation_dialog_title">"Võimalik andmete kadu"</string>
+
+    <!-- XMSG: AlertDialog before navigation - Message -->
+    <string name="before_navigation_dialog_message">"Sellelt lehelt lahkumise korral ei salvestata mingeid andmeid."</string>
+
+    <!-- XMSG: AlertDialog before navigation - Positive button (navigation occurs) -->
+    <string name="before_navigation_dialog_positive_button">"Lahku lehelt"</string>
+
+    <!-- XMSG: AlertDialog before navigation - Negative button (cancelled navigation) -->
+    <string name="before_navigation_dialog_negative_button">"Jää lehele"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_loader_complete_error_description">"Konfiguratsioonilaaduril nurjus konfiguratsiooniandmete toomine."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_loader_on_error_description">"Konfiguratsiooniteenuse pakkujal „%1$s“ ilmnes tõrge. %2$s"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_data_build_json_description">"JSON-objekti koostamine nurjus."</string>
+    <string name="error_unknown_app_config">"Rakenduse konfiguratsiooni ettevalmistamine nurjus tundmatu tõrkega."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="server_auth_not_supported_saml">"Tõrge. See rakendus ei toeta SAML-autentimist."</string>
+
+	<!-- XTIT: The title of the error dialog -->
+	<string name="bind_error">"Sidumistõrge"</string>
+
+	<!-- XMSG: Detailed error description -->
+    <string name="bind_error_detail">"Võrguühenduseta Odata sünkroonimise teenusega sidumine nurjus."</string>
+
+	<!-- XTIT: The title of the error dialog -->
+	<string name="offline_provider_error">"Võrguühenduseta lähtestamise tõrge"</string>
+
+ 	<!-- XMSG: Detailed error description -->
+	<string name="offline_provider_error_detail">"Võrguühenduseta OData pakkuja lähtestamine nurjus."</string>
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="offline_initial_open_error">"Võrguühendusega algse avamise tõrge"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_initial_open_error_detail">"Võrguühenduseta salve algne avamine nurjus."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_backend_big_data_error_detail">"Tagasüsteemist pärit last oli liiga suur; teenuse SAP Mobile Services lasti mahupiirangu vaikeväärtus on 64M. Saate proovida seda lahendada mõnel viisil järgmistest.\n\t1) Suurendage mahupiirangut failis offline.ini.\n\t2) Juurutage serveripoolne lehtjaotus, et lubada suurte andmekogumite sünkroonimine kogumitena.\n\t3) Kasutage päringute või filtrite määratlemisel $top-taotlusi, et piirata kliendi allalaaditavate andmete koguhulka."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_backend_time_out_error_detail">"Suurendage teenuses SAP Mobile Services selle rakenduse tagasüsteemiühenduse ajalõppu ja proovige uuesti."</string>
+
+    <!-- XTIT: The title of the error dialog -->
+	<string name="synchronize_failure">"Sünkroonimise nurjumine"</string>
+
+	<!-- XMSG: Detailed error description -->
+	<string name="synchronize_failure_detail">"Sünkroonimine teenusega Mobile Services nurjus."</string>
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="offline_reset_store_error">"Võrguühenduseta salve lähtestamise tõrge"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_reset_store_error_detail">"Võrguühenduseta andmesalve lähtestamine/eemaldamine nurjus."</string>
+    <!-- error messages -->
+
+    <!-- offline -->
+
+    <!-- XTIT: The title of initial opening of offline store failed -->
+    <string name="initializing_offline_store_failed">"Sünkroonimine nurjus"</string>
+
+    <!-- XMSG: Offline AlertDialog before navigation - Title -->
+    <string name="offline_navigation_dialog_title">"Sünkroonimise tühistamise kinnitus"</string>
+
+    <!-- XMSG: Offline AlertDialog before navigation - Message -->
+    <string name="offline_navigation_dialog_message">"Kas soovite poolelioleva sünkroonimise tühistada ja minna tagasi tervituskuvale?"</string>
+
+    <!-- XMSG: Offline AlertDialog before navigation - Positive button (navigation occurs) -->
+    <string name="offline_navigation_dialog_positive_option">"Kinnita"</string>
+
+    <!-- XMSG: Offline AlertDialog before navigation - Negative button (cancelled navigation) -->
+    <string name="offline_navigation_dialog_negative_option">"Mitte praegu"</string>
+
+    <!-- NOTR: No translation needed, Label for entity state in offline -->
+	<string name="local_state">"Local"</string>
+
+    <!-- NOTR: No translation needed, Label for entity state in offline -->
+	<string name="error_state">"Error"</string>
+
+	<!-- NOTR: No translation needed, Label for entity state in offline -->
+	<string name="updated_state">"Updated"</string>
+
+	<!-- NOTR: No translation needed, Label for entity state in offline -->
+	<string name="download_state">"Download"</string>
+
+    <!-- XMIT: Menu item to trigger synchronization -->
+	<string name="synchronize_action">"Sünkrooni"</string>
+
+    <!-- offline -->
+
+    <!-- XTIT: The title of the settings dialog -->
+    <string name="settings_activity_name">"Sätted"</string>
+    <!-- XTIT: The title of the settings menu -->
+    <string name="menu_item_settings">"Sätted"</string>
+
+    <!-- XTIT: The title of the passcode group -->
+    <string name="passcode">"Pääsukood"</string>
+    <!-- XTIT: The title of the change passcode menu item -->
+    <string name="manage_passcode">"Muuda pääsukoodi"</string>
+    <!-- XTIT: The title of the reset group -->
+    <string name="reset">"Lähtesta rakendus"</string>
+    <!-- XTIT: The title of the reset app menu item -->
+    <string name="reset_app">"Tühjenda rakenduse sätted"</string>
+    <!-- XTIT: The title of a confirmation dialog -->
+    <string name="reset_app_confirmation">"Kogu selle rakendusega seotud teave eemaldatakse. Kas soovite jätkata?"</string>
+    <!-- XMSG: The message of reset client -->
+    <string name="reset_client">"Lähtesta klient"</string>
+    <!-- XTIT: The title of the logout item -->
+    <string name="logout">"Logi välja"</string>
+    <!-- XTIT: The title of the delete registration item -->
+    <string name="delete_registration">"Kustuta registreerimine"</string>
+    <!-- XTIT: The title of a warning dialog -->
+    <string name="delete_registration_warning">"Kõik selle registreerimisega seotud sünkroonimata ootel muudatused eemaldatakse. Kas soovite jätkata?"</string>
+
+    <!-- XTIT: The title of a menu item -->
+    <string name="upload_usage">"Laadi üles kasutusandmed"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="set_usage_consent">"Nõustu kasutusandmete kogumisega"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="set_crash_report_consent">"Nõustu krahhiaruande kogumisega"</string>
+
+    <!-- XTIT: The title of a menu group -->
+    <string name="crash_report">"Krahhiaruanne"</string>
+    <!-- XTIT: The title of a menu group -->
+    <string name="usage">"Kasutus"</string>
+    <!-- XTIT: The title of a menu group -->
+    <string name="logging">"Logimine"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="upload_log">"Laadi logi üles"</string>
+    <!-- XTIT: The description of a menu item -->
+    <string name="upload_log_summary">"Saate logi serverisse üles laadida."</string>
+    <!-- XMSG: The message of a log level toast -->
+    <string name="log_level_changed">"Vaikelogitase on serveripoliitikas muudetud järgmiseks: %s"</string>
+    <!-- XMSG: The message of a log level toast -->
+    <string name="log_level_default">"Logipoliitikat pole serveris määratud. Vaikelogitasemeks on määratud: %s"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="log_level">"Logitase"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="dialog_title_choose_log_level">"Logitaseme valimine"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_none">"Puudub"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_fatal">"Pöördumatu"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_error">"Tõrge"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_warning">"Hoiatus"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_info">"Teave"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_debug">"Silumine"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_path">"Tee"</string>
+    <!-- XMSG: Authentication error message -->
+    <string name="authentication_failed">"Autentimine nurjus."</string>
+    <!-- XMSG: Authentication progress description -->
+    <string name="authentication_progress">"Autentimine serveris..."</string>
+
+    <!-- restrictions -->
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="restriction_service_url_title">"Teenuse URL"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="restriction_service_url_description">"OData teenuse URL."</string>
+    <!-- restrictions -->
+
+    <!-- XMSG: Detailed error description -->
+    <string name="error_back_navigation">"Rakendus on pääsukoodiga kaitstud. See ei käivitu õiget pääsukoodi sisestamata."</string>
+
+    <!-- XTIT: The id of the push notification channel -->
+    <string name="push_channel_id">"sap_btp_android_sdk_foundation_push_channel"</string>
+    <!-- XTIT: The name of the push notification channel -->
+    <string name="push_channel_name">"SAP BTP Android SDK"</string>
+    <!-- XTIT: The description of the badge channel -->
+    <string name="push_badge_channel_description">"Märgiteavituste haldamine"</string>
+    <!-- XTIT: The name of the badge channel -->
+    <string name="push_badge_channel_name">"SAP BTP Android SDK märgikanal"</string>
+    <!-- XMSG: push message alert -->
+    <string name="push_message_alert">"Teade"</string>
+    <!-- XMSG: push message title -->
+    <string name="push_message_title">"Tõuketeade on vastu võetud"</string>
+    <!-- XBUT: Text of the OK button -->
+    <string name="push_message_dlg_ok">"OK"</string>
+    <!-- XBUT: Text of the Cancel button -->
+    <string name="push_message_dlg_cancel">"Tühista"</string>
+    <!-- XTIT: The title of Push topics -->
+    <string name="settings_push_topics">"Tellige oma lemmikteema"</string>
+
+    <!-- XTIT: The title of Eula dialog -->
+    <string name="launch_screen_dialog_title">"Teenuselepe ja privaatsuspoliitika"</string>
+    <!-- XBUT: Text of the Agree button -->
+    <string name="launch_screen_dialog_button_agree">"Nõustun"</string>
+    <!-- XBUT: Text of the Disagree button -->
+    <string name="launch_screen_dialog_button_disagree">"Ei nõustu"</string>
+    <!-- XBUT: Text of the Got it button -->
+    <string name="launch_screen_dialog_disagree_confirm">"Selge"</string>
+    <!-- XTIT: The content text of Eula dialog -->
+    <string name="launch_screen_dialog_eula_text">"Aitäh, et kasutate seda rakendust! On võimalik, et rakenduse kasutamisel kogutakse ja töödeldakse teie isikuandmeid. Veendumaks, et mõistate, kuidas SAP teie isikuandmeid töötleb, lugege läbi &lt;a href=http://www.sap.com&gt;lõppkasutaja litsentsileping&lt;/a&gt; ja &lt;a href=http://www.sap.com&gt;privaatsusavaldus&lt;/a&gt;. Kui nõustute lõppkasutaja litsentsilepingu ja privaatsusavaldusega, klõpsake rakenduse käivitamiseks nuppu „Nõustun“. SAP annab endast parima, et teie isikuandmeid kaitsta."</string>
+    <!-- XTIT: The content text of Eula dialog -->
+    <string name="launch_screen_dialog_disagree_text">"Kui te ei nõustu &lt;a href=http://www.sap.com&gt;lõppkasutaja litsentsilepingu&lt;/a&gt; ja &lt;a href=http://www.sap.com&gt;privaatsuspoliitikaga&lt;/a&gt;, saate üksnes demorežiimi katsetada."</string>
+    <!-- XTIT: The content text of Eula dialog -->
+    <string name="privacy_dialog_content">"Aitäh, et kasutate seda rakendust! On võimalik, et rakenduse kasutamisel kogutakse ja töödeldakse teie isikuandmeid. Veendumaks, et mõistate, kuidas SAP teie isikuandmeid töötleb, lugege läbi "<annotation key="eula">"lõppkasutaja litsentsileping"</annotation>" ja "<annotation key="term">"privaatsusavaldus"</annotation>". Kui nõustute lõppkasutaja litsentsilepingu ja privaatsusavaldusega, klõpsake rakenduse käivitamiseks nuppu „Nõustun“. SAP annab endast parima, et teie isikuandmeid kaitsta."</string>
+    <!-- XTIT: The content text of Eula dialog -->
+    <string name="privacy_confirmation_dialog_content">"Kui te ei nõustu "<annotation key="eula">"lõppkasutaja litsentsilepingu"</annotation>" ja "<annotation key="term">"privaatsuspoliitikaga"</annotation>", saate üksnes demorežiimi katsetada."</string>
+    <!-- XTIT: The title of Demo dialog -->
+    <string name="launch_screen_demo_dialog_title">"Demorežiim"</string>
+    <!-- XTIT: The content text of demo dialog -->
+    <string name="launch_screen_demo_dialog_message">"Demorežiim pole genereeritud rakenduses kasutusel."</string>
+    <!-- XBUT: Text of the Go back button -->
+    <string name="launch_screen_demo_dialog_button_goback">"Tagasi"</string>
+</resources>

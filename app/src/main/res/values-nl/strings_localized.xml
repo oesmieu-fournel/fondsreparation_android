@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><resources>
+    <!-- XTIT: The title of the create Activity, will appear at the top of the screen -->
+    <string name="title_create_fragment">"Item %1$s creëren"</string>
+
+    <!-- XTIT: The title of the update Activity, will appear at the top of the screen -->
+    <string name="title_update_fragment">"Bijwerken"</string>
+
+    <!-- XMSG: Error message for the mandatory input fields, will appear in the edit field left empty -->
+    <string name="mandatory_warning">"Dit is een verplicht veld"</string>
+
+    <!-- XTIT: The title of the welcome screen, will appear at the top of the screen -->
+    <string name="welcome_screen_headline_label">"Welkom"</string>
+
+    <!-- YINS: Short description on the welcome screen -->
+    <string name="welcome_screen_detail_label">"Maak kennis met SAP BTP SDK voor Android met deze gegenereerde app."</string>
+
+    <!-- XFLD: label at the bottom of the welcome screen -->
+    <string name="welcome_screen_footnote_label">"U kunt de SDK-functies uitproberen in de demomodus."</string>
+
+    <!-- XFLD: label of the primary button on the welcome screen -->
+    <string name="welcome_screen_primary_button_label">"Aan de slag"</string>
+
+    <!-- XBUT: Text of the Save button -->
+    <string name="save">"Opslaan"</string>
+
+    <!-- XBUT: Text of the Update button -->
+    <string name="update">"Bijwerken"</string>
+
+    <!-- XBUT: Text of the Delete button -->
+    <string name="delete">"Verwijderen"</string>
+
+    <!-- XBUT: Text of the Cancel button -->
+    <string name="cancel">"Annuleren"</string>
+
+    <!-- XBUT: Text of the OK button -->
+    <string name="ok">"OK"</string>
+
+    <!-- XBUT: Text of the Delete button -->
+    <string name="yes">"Ja"</string>
+
+    <!-- XBUT: Text of the Add New button -->
+    <string name="add_new">"Nieuwe toevoegen"</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="delete_dialog_title">"Verwijderen"</string>
+
+    <!-- XMSG: The message of the delete dialog -->
+    <string name="delete_one_item">"Wilt u het geselecteerde item echt verwijderen?"</string>
+
+    <!-- XMSG: The message of the delete dialog in case of multiple selection -->
+    <string name="delete_more_items">"Wilt u de geselecteerde items echt verwijderen?"</string>
+
+    <!-- XMSG: Error message, can be presented in a Toast or Dialog -->
+    <string name="entity_download_error">"Fout opgetreden tijdens achtergrondbewerking."</string>
+
+    <!-- XMIT: Refresh menu item -->
+    <string name="menu_refresh">"Vernieuwen"</string>
+
+    <!-- XMIT: Refresh menu item -->
+    <string name="menu_home">"Start"</string>
+
+    <!-- XMIT: Update menu item -->
+    <string name="menu_update">"Bijwerken"</string>
+
+    <!-- XMIT: Delete menu item -->
+    <string name="menu_delete">"Verwijderen"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_headline">"Headline"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_subheadline">"Subheadline"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_body">"Body Text"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_footnote">"Footnote"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_tag1">"TAG1"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_tag2">"TAG2"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_tag3">"TAG3"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_description">"Item Description"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_status">"Status"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="error">"Error"</string>
+
+    <!-- error messages -->
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="read_failed">"Downloaden is mislukt"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="format_error">"Invoer is niet geschikt voor het gegevenstype."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="read_failed_detail">"Downloadbewerking mislukt; probeer de applicatie opnieuw te starten."</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="create_failed">"Aanmaak mislukt"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="create_failed_detail">"Aanmaak mislukt, probeer het later opnieuw."</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="update_failed">"Bijwerken mislukt"</string>
+    <string name="update_failed_detail">"Bijwerken mislukt; vernieuw de lokale gegevens en probeer het later opnieuw."</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="delete_failed">"Verwijderen mislukt"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="delete_failed_detail">"Verwijderen mislukt; vernieuw de lokale gegevens en probeer het later opnieuw."</string>
+
+    <!-- XTIT: The message of the upload toast in case of success -->
+    <string name="log_upload_ok">"Verslag wordt geüpload naar de server."</string>
+
+    <!-- XTIT: The message of the upload toast in case of failing -->
+    <string name="log_upload_failed">"Verslagupload mislukt"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="log_upload_failed_detail">"Foutieve URL ontvangen voor verslagupload. De applicatie werkt mogelijk nog steeds, maar verslagen worden niet naar de server geüpload."</string>
+
+    <!-- XTIT: The message of the upload toast in case of success -->
+    <string name="usage_upload_ok">"Gebruiksgegevens worden geüpload naar de server."</string>
+
+    <!-- XTIT: The message of the upload toast in case of failing -->
+    <string name="usage_upload_failed">"Gebruiksgegevens uploaden mislukt."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="usage_init_failed">"Gebruik kan niet worden geïnitialiseerd."</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="push_error">"Pushfout"</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="push_message">"Pushbericht ontvangen"</string>
+
+    <!-- XTIT: The Notification Text -->
+    <string name="push_text">"Melding"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="push_token_upload_failed_detail">"Pushtoken kan niet worden geüpload naar de SAP-server; pushfunctie werkt niet. U ontvangt geen pushberichten."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="push_invalid_push_format">"Pushbericht ontvangen, maar formaat was ongeldig. Het bericht kon daarom niet worden verwerkt."</string>
+
+    <!-- XMSG: AlertDialog before navigation - Title -->
+    <string name="before_navigation_dialog_title">"Mogelijk gegevensverlies"</string>
+
+    <!-- XMSG: AlertDialog before navigation - Message -->
+    <string name="before_navigation_dialog_message">"Als u deze pagina verlaat, worden uw gegevens niet opgeslagen."</string>
+
+    <!-- XMSG: AlertDialog before navigation - Positive button (navigation occurs) -->
+    <string name="before_navigation_dialog_positive_button">"Verlaten"</string>
+
+    <!-- XMSG: AlertDialog before navigation - Negative button (cancelled navigation) -->
+    <string name="before_navigation_dialog_negative_button">"Blijven"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_loader_complete_error_description">"Configuratieloader kan geen configuratiegegevens ophalen."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_loader_on_error_description">"Configuratieprovider, \"%1$s\", heeft een fout vastgesteld. %2$s"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_data_build_json_description">"JSON-object kan niet worden gecreëerd."</string>
+    <string name="error_unknown_app_config">"Voorbereiden van applicatieconfiguratie is mislukt met onbekende fout."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="server_auth_not_supported_saml">"Fout: de applicatie ondersteunt geen SAML-verificatie."</string>
+
+	<!-- XTIT: The title of the error dialog -->
+	<string name="bind_error">"Bindingfout"</string>
+
+	<!-- XMSG: Detailed error description -->
+    <string name="bind_error_detail">"Binding van offline OData-synchronisatieservice mislukt."</string>
+
+	<!-- XTIT: The title of the error dialog -->
+	<string name="offline_provider_error">"Fout bij offline initialisatie"</string>
+
+ 	<!-- XMSG: Detailed error description -->
+	<string name="offline_provider_error_detail">"Offline OData-provider kan niet worden geïnitialiseerd."</string>
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="offline_initial_open_error">"Fout bij eerste keer openen offline opslag"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_initial_open_error_detail">"Eerste keer openen van offline opslag mislukt."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_backend_big_data_error_detail">"De payload van de backend was te groot; de standaardgrootte van de payloadbeperking van SAP Mobile Services is 64 MB. U kunt proberen dit op te lossen met een van de volgende opties:\n\t1) De omvanglimiet vergroten in offline.ini;\n\t2) Server-side paginering implementeren om synchronisatie van grote gegevenssets in segmenten mogelijk te maken;\n\t3) $toprequests gebruiken bij het definiëren van query’s of filters om de totale hoeveelheid gegevens die door de client wordt gedownload te beperken."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_backend_time_out_error_detail">"Vergroot de backendverbindingstime-out voor deze applicatie in SAP Mobile Services en probeer het opnieuw."</string>
+
+    <!-- XTIT: The title of the error dialog -->
+	<string name="synchronize_failure">"Synchronisatiefout"</string>
+
+	<!-- XMSG: Detailed error description -->
+	<string name="synchronize_failure_detail">"Synchronisatie met Mobile Services mislukt."</string>
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="offline_reset_store_error">"Fout bij resetten offline opslag"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_reset_store_error_detail">"Offline gegevensopslag kan niet worden gereset/verwijderd."</string>
+    <!-- error messages -->
+
+    <!-- offline -->
+
+    <!-- XTIT: The title of initial opening of offline store failed -->
+    <string name="initializing_offline_store_failed">"Synchronisatie is mislukt"</string>
+
+    <!-- XMSG: Offline AlertDialog before navigation - Title -->
+    <string name="offline_navigation_dialog_title">"Bevestiging van annulering synchronisatie"</string>
+
+    <!-- XMSG: Offline AlertDialog before navigation - Message -->
+    <string name="offline_navigation_dialog_message">"Weet u zeker dat u de synchronisatie die wordt uitgevoerd wilt annuleren en wilt terugkeren naar het welkomstscherm?"</string>
+
+    <!-- XMSG: Offline AlertDialog before navigation - Positive button (navigation occurs) -->
+    <string name="offline_navigation_dialog_positive_option">"Bevestigen"</string>
+
+    <!-- XMSG: Offline AlertDialog before navigation - Negative button (cancelled navigation) -->
+    <string name="offline_navigation_dialog_negative_option">"Niet nu"</string>
+
+    <!-- NOTR: No translation needed, Label for entity state in offline -->
+	<string name="local_state">"Local"</string>
+
+    <!-- NOTR: No translation needed, Label for entity state in offline -->
+	<string name="error_state">"Error"</string>
+
+	<!-- NOTR: No translation needed, Label for entity state in offline -->
+	<string name="updated_state">"Updated"</string>
+
+	<!-- NOTR: No translation needed, Label for entity state in offline -->
+	<string name="download_state">"Download"</string>
+
+    <!-- XMIT: Menu item to trigger synchronization -->
+	<string name="synchronize_action">"Synchroniseren"</string>
+
+    <!-- offline -->
+
+    <!-- XTIT: The title of the settings dialog -->
+    <string name="settings_activity_name">"Instellingen"</string>
+    <!-- XTIT: The title of the settings menu -->
+    <string name="menu_item_settings">"Instellingen"</string>
+
+    <!-- XTIT: The title of the passcode group -->
+    <string name="passcode">"Toegangscode"</string>
+    <!-- XTIT: The title of the change passcode menu item -->
+    <string name="manage_passcode">"Toegangscode wijzigen"</string>
+    <!-- XTIT: The title of the reset group -->
+    <string name="reset">"Applicatie resetten"</string>
+    <!-- XTIT: The title of the reset app menu item -->
+    <string name="reset_app">"Appinstellingen wissen"</string>
+    <!-- XTIT: The title of a confirmation dialog -->
+    <string name="reset_app_confirmation">"Alle informatie met betrekking tot deze applicatie wordt verwijderd. Wilt u doorgaan?"</string>
+    <!-- XMSG: The message of reset client -->
+    <string name="reset_client">"Client resetten"</string>
+    <!-- XTIT: The title of the logout item -->
+    <string name="logout">"Afmelden"</string>
+    <!-- XTIT: The title of the delete registration item -->
+    <string name="delete_registration">"Registratie verwijderen"</string>
+    <!-- XTIT: The title of a warning dialog -->
+    <string name="delete_registration_warning">"Alle niet-gesynchroniseerde wijzigingen in behandeling met betrekking tot deze registratie worden verwijderd. Wilt u doorgaan?"</string>
+
+    <!-- XTIT: The title of a menu item -->
+    <string name="upload_usage">"Gebruiksgegevens uploaden"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="set_usage_consent">"Toestemming voor gebruiksverzameling"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="set_crash_report_consent">"Toestemming voor verzameling foutrapporten"</string>
+
+    <!-- XTIT: The title of a menu group -->
+    <string name="crash_report">"Foutrapport"</string>
+    <!-- XTIT: The title of a menu group -->
+    <string name="usage">"Gebruik"</string>
+    <!-- XTIT: The title of a menu group -->
+    <string name="logging">"Verslaglegging"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="upload_log">"Verslag uploaden"</string>
+    <!-- XTIT: The description of a menu item -->
+    <string name="upload_log_summary">"Verslag uploaden naar de server."</string>
+    <!-- XMSG: The message of a log level toast -->
+    <string name="log_level_changed">"Standaardverslagniveau gewijzigd conform serverbeleid in : %s"</string>
+    <!-- XMSG: The message of a log level toast -->
+    <string name="log_level_default">"Verslagbeleid niet ingesteld op de server; standaardverslagniveau is ingesteld op: %s"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="log_level">"Verslagniveau"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="dialog_title_choose_log_level">"Verslagniveau selecteren"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_none">"Geen"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_fatal">"Ernstig"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_error">"Fout"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_warning">"Waarschuwing"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_info">"Info"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_debug">"Debugging"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_path">"Pad"</string>
+    <!-- XMSG: Authentication error message -->
+    <string name="authentication_failed">"Verificatie is mislukt."</string>
+    <!-- XMSG: Authentication progress description -->
+    <string name="authentication_progress">"Bezig met verificatie met server..."</string>
+
+    <!-- restrictions -->
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="restriction_service_url_title">"Service-URL"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="restriction_service_url_description">"De URL van de OData-service."</string>
+    <!-- restrictions -->
+
+    <!-- XMSG: Detailed error description -->
+    <string name="error_back_navigation">"De applicatie is beveiligd met een toegangscode; de applicatie wordt pas gestart als de juiste toegangscode is opgegeven."</string>
+
+    <!-- XTIT: The id of the push notification channel -->
+    <string name="push_channel_id">"sap_btp_android_sdk_foundation_push_channel"</string>
+    <!-- XTIT: The name of the push notification channel -->
+    <string name="push_channel_name">"SAP BTP Android SDK"</string>
+    <!-- XTIT: The description of the badge channel -->
+    <string name="push_badge_channel_description">"Badgemeldingenbeheer"</string>
+    <!-- XTIT: The name of the badge channel -->
+    <string name="push_badge_channel_name">"SAP BTP Android SDK-badgekanaal"</string>
+    <!-- XMSG: push message alert -->
+    <string name="push_message_alert">"Melding"</string>
+    <!-- XMSG: push message title -->
+    <string name="push_message_title">"Pushmelding bericht ontvangen"</string>
+    <!-- XBUT: Text of the OK button -->
+    <string name="push_message_dlg_ok">"OK"</string>
+    <!-- XBUT: Text of the Cancel button -->
+    <string name="push_message_dlg_cancel">"Annuleren"</string>
+    <!-- XTIT: The title of Push topics -->
+    <string name="settings_push_topics">"Abonneer u op uw favoriete onderwerp"</string>
+
+    <!-- XTIT: The title of Eula dialog -->
+    <string name="launch_screen_dialog_title">"Serviceovereenkomst en privacybeleid"</string>
+    <!-- XBUT: Text of the Agree button -->
+    <string name="launch_screen_dialog_button_agree">"Akkoord"</string>
+    <!-- XBUT: Text of the Disagree button -->
+    <string name="launch_screen_dialog_button_disagree">"Niet akkoord"</string>
+    <!-- XBUT: Text of the Got it button -->
+    <string name="launch_screen_dialog_disagree_confirm">"Begrepen"</string>
+    <!-- XTIT: The content text of Eula dialog -->
+    <string name="launch_screen_dialog_eula_text">"Bedankt voor uw gebruik van deze app. Wanneer u deze app gebruikt, worden uw persoonsgegevens mogelijk vastgelegd en verwerkt. Lees de &lt;a href=http://www.sap.com&gt;End User License Agreement&lt;/a&gt; en &lt;a href=http://www.sap.com&gt;Privacyverklaring&lt;/a&gt; zorgvuldig, zodat u begrijpt hoe SAP uw persoonsgegevens verwerkt. Stemt u in met de End User License Agreement en de Privacyverklaring, klik dan op \'Akkoord\' om de app te starten. SAP zal ernaar streven uw persoonsgegevens te beschermen."</string>
+    <!-- XTIT: The content text of Eula dialog -->
+    <string name="launch_screen_dialog_disagree_text">"Stemt u niet in met de &lt;a href=http://www.sap.com&gt;End User License Agreement&lt;/a&gt; en het &lt;a href=http://www.sap.com&gt;Privacybeleid&lt;/a&gt;, dan kunt u de demomodus uitproberen."</string>
+    <!-- XTIT: The content text of Eula dialog -->
+    <string name="privacy_dialog_content">"Bedankt voor uw gebruik van deze app. Wanneer u deze app gebruikt, worden uw persoonsgegevens mogelijk vastgelegd en verwerkt. Lees de "<annotation key="eula">"End User License Agreement"</annotation>" en "<annotation key="term">"Privacyverklaring"</annotation>" zorgvuldig, zodat u begrijpt hoe SAP uw persoonsgegevens verwerkt. Stemt u in met de \'End User License Agreement\' en de \'Privacyverklaring\', klik dan op \'Akkoord\' om de app te starten. SAP zal ernaar streven uw persoonsgegevens te beschermen."</string>
+    <!-- XTIT: The content text of Eula dialog -->
+    <string name="privacy_confirmation_dialog_content">"Stemt u niet in met de "<annotation key="eula">"End User License Agreement"</annotation>" en het "<annotation key="term">"Privacybeleid"</annotation>", dan kunt u de demomodus uitproberen."</string>
+    <!-- XTIT: The title of Demo dialog -->
+    <string name="launch_screen_demo_dialog_title">"Demomodus"</string>
+    <!-- XTIT: The content text of demo dialog -->
+    <string name="launch_screen_demo_dialog_message">"De demomodus is niet geïmplementeerd in de algemene applicatie."</string>
+    <!-- XBUT: Text of the Go back button -->
+    <string name="launch_screen_demo_dialog_button_goback">"Terug"</string>
+</resources>

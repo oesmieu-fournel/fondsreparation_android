@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><resources>
+    <!-- XTIT: The title of the create Activity, will appear at the top of the screen -->
+    <string name="title_create_fragment">"Cipta %1$s Item"</string>
+
+    <!-- XTIT: The title of the update Activity, will appear at the top of the screen -->
+    <string name="title_update_fragment">"Kemas kini"</string>
+
+    <!-- XMSG: Error message for the mandatory input fields, will appear in the edit field left empty -->
+    <string name="mandatory_warning">"Ini ialah medan wajib"</string>
+
+    <!-- XTIT: The title of the welcome screen, will appear at the top of the screen -->
+    <string name="welcome_screen_headline_label">"Selamat Datang"</string>
+
+    <!-- YINS: Short description on the welcome screen -->
+    <string name="welcome_screen_detail_label">"Terokai SAP BTP SDK untuk Android dengan aplikasi dijanakan ini."</string>
+
+    <!-- XFLD: label at the bottom of the welcome screen -->
+    <string name="welcome_screen_footnote_label">"Anda boleh cuba ciri SDK dalam mod demonstrasi."</string>
+
+    <!-- XFLD: label of the primary button on the welcome screen -->
+    <string name="welcome_screen_primary_button_label">"Mulakan"</string>
+
+    <!-- XBUT: Text of the Save button -->
+    <string name="save">"Simpan"</string>
+
+    <!-- XBUT: Text of the Update button -->
+    <string name="update">"Kemas kini"</string>
+
+    <!-- XBUT: Text of the Delete button -->
+    <string name="delete">"Padam"</string>
+
+    <!-- XBUT: Text of the Cancel button -->
+    <string name="cancel">"Batal"</string>
+
+    <!-- XBUT: Text of the OK button -->
+    <string name="ok">"OK"</string>
+
+    <!-- XBUT: Text of the Delete button -->
+    <string name="yes">"Ya"</string>
+
+    <!-- XBUT: Text of the Add New button -->
+    <string name="add_new">"Tambah yang baharu"</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="delete_dialog_title">"Padam"</string>
+
+    <!-- XMSG: The message of the delete dialog -->
+    <string name="delete_one_item">"Adakah anda ingin memadam item dipilih?"</string>
+
+    <!-- XMSG: The message of the delete dialog in case of multiple selection -->
+    <string name="delete_more_items">"Adakah anda pasti mahu memadam item dipilih?"</string>
+
+    <!-- XMSG: Error message, can be presented in a Toast or Dialog -->
+    <string name="entity_download_error">"Ralat berlaku semasa operasi latar belakang."</string>
+
+    <!-- XMIT: Refresh menu item -->
+    <string name="menu_refresh">"Segar semula"</string>
+
+    <!-- XMIT: Refresh menu item -->
+    <string name="menu_home">"Utama"</string>
+
+    <!-- XMIT: Update menu item -->
+    <string name="menu_update">"Kemas kini"</string>
+
+    <!-- XMIT: Delete menu item -->
+    <string name="menu_delete">"Padam"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_headline">"Headline"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_subheadline">"Subheadline"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_body">"Body Text"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_footnote">"Footnote"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_tag1">"TAG1"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_tag2">"TAG2"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_tag3">"TAG3"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_description">"Item Description"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_status">"Status"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="error">"Error"</string>
+
+    <!-- error messages -->
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="read_failed">"Muat Turun Gagal"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="format_error">"Input tidak sesuai bagi jenis data."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="read_failed_detail">"Operasi muat turun gagal, sila cuba mulakan semula aplikasi."</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="create_failed">"Penciptaan Gagal"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="create_failed_detail">"Operasi penciptaan gagal, sila cuba laksanakannya sekali lagi kemudian."</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="update_failed">"Kemas Kini Gagal"</string>
+    <string name="update_failed_detail">"Operasi kemas kini gagal, sila segar semula data tempatan dan cuba jalankannya sekali lagi kemudian."</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="delete_failed">"Pemadaman Gagal"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="delete_failed_detail">"Operasi pemadaman gagal, sila segar semula data tempatan dan cuba jalankannya sekali lagi kemudian."</string>
+
+    <!-- XTIT: The message of the upload toast in case of success -->
+    <string name="log_upload_ok">"Log dimuat naik ke pelayan."</string>
+
+    <!-- XTIT: The message of the upload toast in case of failing -->
+    <string name="log_upload_failed">"Muat naik log gagal."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="log_upload_failed_detail">"URL tidak sah diterima untuk muat naik log. Aplikasi mungkin masih berfungsi, tetapi log tidak akan dimuat naik ke pelayan."</string>
+
+    <!-- XTIT: The message of the upload toast in case of success -->
+    <string name="usage_upload_ok">"Data penggunaan dimuat naik ke pelayan."</string>
+
+    <!-- XTIT: The message of the upload toast in case of failing -->
+    <string name="usage_upload_failed">"Muat naik data penggunaan gagal."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="usage_init_failed">"Penggunaan tidak dapat dimulakan."</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="push_error">"Ralat Semasa"</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="push_message">"Mesej Semasa Diterima"</string>
+
+    <!-- XTIT: The Notification Text -->
+    <string name="push_text">"Pemberitahuan"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="push_token_upload_failed_detail">"Token semasa tidak boleh dimuat naik ke pelayan SAP, ciri semasa tidak berfungsi. Anda tidak akan terima mesej semasa."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="push_invalid_push_format">"Mesej semasa diterima, tetapi formatnya tidak sah, jadi ia tidak boleh diproses."</string>
+
+    <!-- XMSG: AlertDialog before navigation - Title -->
+    <string name="before_navigation_dialog_title">"Data yang Berpotensi Hilang"</string>
+
+    <!-- XMSG: AlertDialog before navigation - Message -->
+    <string name="before_navigation_dialog_message">"Dengan meninggalkan halaman ini, tiada data akan disimpan."</string>
+
+    <!-- XMSG: AlertDialog before navigation - Positive button (navigation occurs) -->
+    <string name="before_navigation_dialog_positive_button">"Tinggalkan"</string>
+
+    <!-- XMSG: AlertDialog before navigation - Negative button (cancelled navigation) -->
+    <string name="before_navigation_dialog_negative_button">"Kekal"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_loader_complete_error_description">"Pemuat konfigurasi gagal mendapatkan data konfigurasi."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_loader_on_error_description">"Penyedia Konfigurasi, \"%1$s\", menghadapi ralat. %2$s"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_data_build_json_description">"Gagal membina objek JSON."</string>
+    <string name="error_unknown_app_config">"Gagal menyediakan konfigurasi aplikasi dengan ralat tidak diketahui."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="server_auth_not_supported_saml">"Ralat: Aplikasi ini tidak menyokong pengesahan SAML."</string>
+
+	<!-- XTIT: The title of the error dialog -->
+	<string name="bind_error">"Ralat Ikatan"</string>
+
+	<!-- XMSG: Detailed error description -->
+    <string name="bind_error_detail">"Gagal untuk mengikat ke Perkhidmatan Penyegerakan OData Luar Talian."</string>
+
+	<!-- XTIT: The title of the error dialog -->
+	<string name="offline_provider_error">"Ralat Pengawalan Luar Talian"</string>
+
+ 	<!-- XMSG: Detailed error description -->
+	<string name="offline_provider_error_detail">"Gagal memulakan penyedia OData luar talian."</string>
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="offline_initial_open_error">"Ralat Pembukaan Awal Luar Talian"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_initial_open_error_detail">"Gagal untuk menyelesaikan pembukaan awal bagi storan Luar Talian."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_backend_big_data_error_detail">"Muatan dari bahagian belakang terlalu besar, saiz lalai pengehadan muatan SAP Mobile Services ialah 64MB. Anda boleh cuba menyelesaikannya dengan satu daripada penyelesaian berikut:\n\t1) Tingkatkan had saiz untuk luar talian.ini;\n\t2) Laksanakan penghalamanan bahagian pelayan untuk mendayakan penyegerakan set data yang besar dalam bahagian yang kecil;\n\t3) Gunakan permintaan $top dalam mentakrifkan pertanyaan atau penapis untuk mengehadkan jumlah amaun data yang dimuat turun oleh pelanggan."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_backend_time_out_error_detail">"Tingkatkan tamat masa sambungan bahagian belakang untuk aplikasi ini dalam SAP Mobile Services dan cuba lagi."</string>
+
+    <!-- XTIT: The title of the error dialog -->
+	<string name="synchronize_failure">"Penyegerakan Gagal"</string>
+
+	<!-- XMSG: Detailed error description -->
+	<string name="synchronize_failure_detail">"Penyegerakan dengan Perkhidmatan Mudah Alih gagal."</string>
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="offline_reset_store_error">"Kegagalan Tetapan Semula Storan Luar Talian"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_reset_store_error_detail">"Gagal tetapkan semula/keluarkan storan data luar talian."</string>
+    <!-- error messages -->
+
+    <!-- offline -->
+
+    <!-- XTIT: The title of initial opening of offline store failed -->
+    <string name="initializing_offline_store_failed">"Penyegerakan Gagal"</string>
+
+    <!-- XMSG: Offline AlertDialog before navigation - Title -->
+    <string name="offline_navigation_dialog_title">"Batalkan Pengesahan Penyegerakan"</string>
+
+    <!-- XMSG: Offline AlertDialog before navigation - Message -->
+    <string name="offline_navigation_dialog_message">"Adakah anda pasti ingin membatalkan penyegerakan dalam proses dan kembali ke skrin Selamat Datang?"</string>
+
+    <!-- XMSG: Offline AlertDialog before navigation - Positive button (navigation occurs) -->
+    <string name="offline_navigation_dialog_positive_option">"Sahkan"</string>
+
+    <!-- XMSG: Offline AlertDialog before navigation - Negative button (cancelled navigation) -->
+    <string name="offline_navigation_dialog_negative_option">"Bukan Sekarang"</string>
+
+    <!-- NOTR: No translation needed, Label for entity state in offline -->
+	<string name="local_state">"Local"</string>
+
+    <!-- NOTR: No translation needed, Label for entity state in offline -->
+	<string name="error_state">"Error"</string>
+
+	<!-- NOTR: No translation needed, Label for entity state in offline -->
+	<string name="updated_state">"Updated"</string>
+
+	<!-- NOTR: No translation needed, Label for entity state in offline -->
+	<string name="download_state">"Download"</string>
+
+    <!-- XMIT: Menu item to trigger synchronization -->
+	<string name="synchronize_action">"Segerak"</string>
+
+    <!-- offline -->
+
+    <!-- XTIT: The title of the settings dialog -->
+    <string name="settings_activity_name">"Tetapan"</string>
+    <!-- XTIT: The title of the settings menu -->
+    <string name="menu_item_settings">"Tetapan"</string>
+
+    <!-- XTIT: The title of the passcode group -->
+    <string name="passcode">"Kod Laluan"</string>
+    <!-- XTIT: The title of the change passcode menu item -->
+    <string name="manage_passcode">"Ubah Kod Laluan"</string>
+    <!-- XTIT: The title of the reset group -->
+    <string name="reset">"Tetapkan Semula Aplikasi"</string>
+    <!-- XTIT: The title of the reset app menu item -->
+    <string name="reset_app">"Kosongkan Tetapan Aplikasi"</string>
+    <!-- XTIT: The title of a confirmation dialog -->
+    <string name="reset_app_confirmation">"Semua maklumat berkaitan aplikasi ini akan dikeluarkan. Adakah anda ingin teruskan?"</string>
+    <!-- XMSG: The message of reset client -->
+    <string name="reset_client">"Tetapkan Semula Pelanggan"</string>
+    <!-- XTIT: The title of the logout item -->
+    <string name="logout">"Log keluar"</string>
+    <!-- XTIT: The title of the delete registration item -->
+    <string name="delete_registration">"Padam Pendaftaran"</string>
+    <!-- XTIT: The title of a warning dialog -->
+    <string name="delete_registration_warning">"Semua perubahan yang belum dibatalkan penyegerakannya yang dikaitkan dengan pendaftaran ini akan dikeluarkan. Adakah anda ingin teruskan?"</string>
+
+    <!-- XTIT: The title of a menu item -->
+    <string name="upload_usage">"Muat Naik Data Penggunaan"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="set_usage_consent">"Persetujuan terhadap Koleksi Penggunaan"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="set_crash_report_consent">"Persetujuan terhadap Koleksi Laporan Kerosakan"</string>
+
+    <!-- XTIT: The title of a menu group -->
+    <string name="crash_report">"Laporan Kerosakan"</string>
+    <!-- XTIT: The title of a menu group -->
+    <string name="usage">"Penggunaan"</string>
+    <!-- XTIT: The title of a menu group -->
+    <string name="logging">"Pengelogan"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="upload_log">"Muat Naik Log"</string>
+    <!-- XTIT: The description of a menu item -->
+    <string name="upload_log_summary">"Muat naik log ke pelayan."</string>
+    <!-- XMSG: The message of a log level toast -->
+    <string name="log_level_changed">"Tahap log lalai diubah dari polisi pelayan ke: %s"</string>
+    <!-- XMSG: The message of a log level toast -->
+    <string name="log_level_default">"Polisi log tidak ditetapkan pada pelayan, tahap log lalai ditetapkan ke: %s"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="log_level">"Tahap Log"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="dialog_title_choose_log_level">"Pilih Tahap Log"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_none">"Tiada"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_fatal">"Kegagalan"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_error">"Ralat"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_warning">"Amaran"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_info">"Maklumat"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_debug">"Nyahpepijat"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_path">"Laluan"</string>
+    <!-- XMSG: Authentication error message -->
+    <string name="authentication_failed">"Pengesahan gagal."</string>
+    <!-- XMSG: Authentication progress description -->
+    <string name="authentication_progress">"Mengesahkan dengan pelayan..."</string>
+
+    <!-- restrictions -->
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="restriction_service_url_title">"URL Perkhidmatan"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="restriction_service_url_description">"URL bagi perkhidmatan OData."</string>
+    <!-- restrictions -->
+
+    <!-- XMSG: Detailed error description -->
+    <string name="error_back_navigation">"Aplikasi ini dilindungi kod laluan, ia tidak boleh dibuka tanpa menggunakan kod laluan yang betul."</string>
+
+    <!-- XTIT: The id of the push notification channel -->
+    <string name="push_channel_id">"sap_btp_android_sdk_foundation_push_channel"</string>
+    <!-- XTIT: The name of the push notification channel -->
+    <string name="push_channel_name">"SAP BTP Android SDK"</string>
+    <!-- XTIT: The description of the badge channel -->
+    <string name="push_badge_channel_description">"Pengurusan Pemberitahuan Lencana"</string>
+    <!-- XTIT: The name of the badge channel -->
+    <string name="push_badge_channel_name">"Saluran Lencana SAP BTP Android SDK"</string>
+    <!-- XMSG: push message alert -->
+    <string name="push_message_alert">"Pemberitahuan"</string>
+    <!-- XMSG: push message title -->
+    <string name="push_message_title">"Mesej pemberitahuan tolak diterima"</string>
+    <!-- XBUT: Text of the OK button -->
+    <string name="push_message_dlg_ok">"OK"</string>
+    <!-- XBUT: Text of the Cancel button -->
+    <string name="push_message_dlg_cancel">"Batal"</string>
+    <!-- XTIT: The title of Push topics -->
+    <string name="settings_push_topics">"Langgan topik kegemaran anda"</string>
+
+    <!-- XTIT: The title of Eula dialog -->
+    <string name="launch_screen_dialog_title">"Perjanjian Perkhidmatan dan Dasar Privasi"</string>
+    <!-- XBUT: Text of the Agree button -->
+    <string name="launch_screen_dialog_button_agree">"Setuju"</string>
+    <!-- XBUT: Text of the Disagree button -->
+    <string name="launch_screen_dialog_button_disagree">"Tidak bersetuju"</string>
+    <!-- XBUT: Text of the Got it button -->
+    <string name="launch_screen_dialog_disagree_confirm">"Faham"</string>
+    <!-- XTIT: The content text of Eula dialog -->
+    <string name="launch_screen_dialog_eula_text">"Terima kasih kerana menggunakan aplikasi ini. Apabila anda menggunakan aplikasi ini, maklumat peribadi anda mungkin dikumpul dan diproses. Sila patuhi &lt;a href=http://www.sap.com&gt;Perjanjian Lesen Pengguna Akhir&lt;/a&gt; dan &lt;a href=http://www.sap.com&gt;Pernyataan Privasi&lt;/a&gt; untuk memastikan anda memahami sepenuhnya cara SAP memproses maklumat peribadi anda. Jika anda bersetuju dengan Perjanjian Lesen Pengguna Akhir dan Pernyataan Privasi, sila klik setuju untuk memulakan aplikasi. SAP akan cuba sedaya upaya untuk melindungi maklumat peribadi anda."</string>
+    <!-- XTIT: The content text of Eula dialog -->
+    <string name="launch_screen_dialog_disagree_text">"Jika anda tidak bersetuju dengan &lt;a href=http://www.sap.com&gt;Perjanjian Lesen Pengguna Akhir&lt;/a&gt; dan &lt;a href=http://www.sap.com&gt;Dasar Privasi&lt;/a&gt;, anda hanya boleh mencuba mod demonstrasi."</string>
+    <!-- XTIT: The content text of Eula dialog -->
+    <string name="privacy_dialog_content">"Terima kasih kerana menggunakan aplikasi ini. Apabila anda menggunakan aplikasi ini, maklumat peribadi anda mungkin dikumpul dan diproses. Sila patuhi "<annotation key="eula">"Perjanjian Lesen Pengguna Akhir"</annotation>" dan "<annotation key="term">"Pernyataan Privasi"</annotation>" untuk memastikan anda memahami sepenuhnya cara SAP memproses maklumat peribadi anda. Jika anda bersetuju dengan \'Perjanjian Lesen Pengguna Akhir\' dan \'Pernyataan Privasi\', sila klik \'setuju\' untuk memulakan aplikasi. SAP akan cuba sedaya upaya untuk melindungi maklumat peribadi anda."</string>
+    <!-- XTIT: The content text of Eula dialog -->
+    <string name="privacy_confirmation_dialog_content">"Jika anda tidak bersetuju dengan "<annotation key="eula">"Perjanjian Lesen Pengguna Akhir"</annotation>" dan "<annotation key="term">"Pernyataan Privasi"</annotation>", anda hanya boleh mencuba mod demonstrasi."</string>
+    <!-- XTIT: The title of Demo dialog -->
+    <string name="launch_screen_demo_dialog_title">"Mod Demonstrasi"</string>
+    <!-- XTIT: The content text of demo dialog -->
+    <string name="launch_screen_demo_dialog_message">"Mod demonstrasi tidak dilaksanakan dalam aplikasi yang dijanakan."</string>
+    <!-- XBUT: Text of the Go back button -->
+    <string name="launch_screen_demo_dialog_button_goback">"Kembali"</string>
+</resources>

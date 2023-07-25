@@ -1,0 +1,22 @@
+{
+  "projectInfo": {
+    "projectName": "Reparation",
+    "createdDate": "Tuesday, July 25, 2023 at 11:19:12 AM",
+    "regenerateProxyClassDate": ""
+  },
+  "cloudApplication": {
+    "cloudApplicationId": "com.ecosystem.mobile.reparation",
+    "destinations": [
+      {
+        "id": "com.ecosystem.mobile.reparation"
+      },
+      {
+        "id": "com.ecosystem.mobile.bp"
+      },
+      {
+        "id": "com.ecosystem.mobile.product"
+      }
+    ]
+  },
+  "msServerConfigurationName": "eco"
+}

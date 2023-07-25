@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><resources>
+    <!-- XTIT: The title of the create Activity, will appear at the top of the screen -->
+    <string name="title_create_fragment">"Создать элемент %1$s"</string>
+
+    <!-- XTIT: The title of the update Activity, will appear at the top of the screen -->
+    <string name="title_update_fragment">"Обновить"</string>
+
+    <!-- XMSG: Error message for the mandatory input fields, will appear in the edit field left empty -->
+    <string name="mandatory_warning">"Обязательное поле"</string>
+
+    <!-- XTIT: The title of the welcome screen, will appear at the top of the screen -->
+    <string name="welcome_screen_headline_label">"Добро пожаловать"</string>
+
+    <!-- YINS: Short description on the welcome screen -->
+    <string name="welcome_screen_detail_label">"Откройте SAP BTP SDK для Android с помощью этого сгенерированного приложения"</string>
+
+    <!-- XFLD: label at the bottom of the welcome screen -->
+    <string name="welcome_screen_footnote_label">"Функции SDK можно протестировать в режиме демонстрации."</string>
+
+    <!-- XFLD: label of the primary button on the welcome screen -->
+    <string name="welcome_screen_primary_button_label">"Начало работы"</string>
+
+    <!-- XBUT: Text of the Save button -->
+    <string name="save">"Сохранить"</string>
+
+    <!-- XBUT: Text of the Update button -->
+    <string name="update">"Обновить"</string>
+
+    <!-- XBUT: Text of the Delete button -->
+    <string name="delete">"Удалить"</string>
+
+    <!-- XBUT: Text of the Cancel button -->
+    <string name="cancel">"Отменить"</string>
+
+    <!-- XBUT: Text of the OK button -->
+    <string name="ok">"ОК"</string>
+
+    <!-- XBUT: Text of the Delete button -->
+    <string name="yes">"Да"</string>
+
+    <!-- XBUT: Text of the Add New button -->
+    <string name="add_new">"Добавить новый"</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="delete_dialog_title">"Удалить"</string>
+
+    <!-- XMSG: The message of the delete dialog -->
+    <string name="delete_one_item">"Удалить выбранный элемент?"</string>
+
+    <!-- XMSG: The message of the delete dialog in case of multiple selection -->
+    <string name="delete_more_items">"Удалить выбранные элементы?"</string>
+
+    <!-- XMSG: Error message, can be presented in a Toast or Dialog -->
+    <string name="entity_download_error">"При выполнении фоновой операции произошла ошибка."</string>
+
+    <!-- XMIT: Refresh menu item -->
+    <string name="menu_refresh">"Обновить"</string>
+
+    <!-- XMIT: Refresh menu item -->
+    <string name="menu_home">"Начальная страница"</string>
+
+    <!-- XMIT: Update menu item -->
+    <string name="menu_update">"Обновить"</string>
+
+    <!-- XMIT: Delete menu item -->
+    <string name="menu_delete">"Удалить"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_headline">"Headline"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_subheadline">"Subheadline"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_body">"Body Text"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_footnote">"Footnote"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_tag1">"TAG1"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_tag2">"TAG2"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_tag3">"TAG3"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_description">"Item Description"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_status">"Status"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="error">"Error"</string>
+
+    <!-- error messages -->
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="read_failed">"Выгрузка не выполнена"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="format_error">"Введенные данные не соответствуют типу данных."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="read_failed_detail">"Операция выгрузки не выполнена, попробуйте перезапустить приложение."</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="create_failed">"Создание не удалось"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="create_failed_detail">"Операция создания не выполнена, попробуйте выполнить ее позднее."</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="update_failed">"Обновление не удалось"</string>
+    <string name="update_failed_detail">"Операция обновления не выполнена, обновите локальные данные и попробуйте выполнить ее позднее."</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="delete_failed">"Удаление не выполнено"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="delete_failed_detail">"Операция удаления не выполнена, обновите локальные данные и попробуйте выполнить ее позднее."</string>
+
+    <!-- XTIT: The message of the upload toast in case of success -->
+    <string name="log_upload_ok">"Журнал загружен на сервер."</string>
+
+    <!-- XTIT: The message of the upload toast in case of failing -->
+    <string name="log_upload_failed">"Загрузка журнала не выполнена."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="log_upload_failed_detail">"Для загрузки журнала получен некорректный URL-адрес. Приложение может работать дальше, но журналы не будут загружаться на сервер."</string>
+
+    <!-- XTIT: The message of the upload toast in case of success -->
+    <string name="usage_upload_ok">"Данные использования загружены на сервер."</string>
+
+    <!-- XTIT: The message of the upload toast in case of failing -->
+    <string name="usage_upload_failed">"Загрузка данных использования не выполнена."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="usage_init_failed">"Не удалось инициализировать использование."</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="push_error">"Ошибка push"</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="push_message">"Получено push-сообщение"</string>
+
+    <!-- XTIT: The Notification Text -->
+    <string name="push_text">"Уведомление"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="push_token_upload_failed_detail">"Не удалось загрузить маркер push на сервер SAP, функция push не работает. Вы не будете получать push-сообщения."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="push_invalid_push_format">"Получено push-сообщение, но его формат недействителен, поэтому обработать его невозможно."</string>
+
+    <!-- XMSG: AlertDialog before navigation - Title -->
+    <string name="before_navigation_dialog_title">"Возможна потеря данных"</string>
+
+    <!-- XMSG: AlertDialog before navigation - Message -->
+    <string name="before_navigation_dialog_message">"При выходе с этой страницы данные не сохранятся."</string>
+
+    <!-- XMSG: AlertDialog before navigation - Positive button (navigation occurs) -->
+    <string name="before_navigation_dialog_positive_button">"Выйти"</string>
+
+    <!-- XMSG: AlertDialog before navigation - Negative button (cancelled navigation) -->
+    <string name="before_navigation_dialog_negative_button">"Остаться"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_loader_complete_error_description">"Программе загрузки конфигурации не удалось получить данные конфигурации."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_loader_on_error_description">"Провайдер конфигурации, \"%1$s\", обнаружил ошибку. %2$s"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_data_build_json_description">"Сбой построения объекта JSON."</string>
+    <string name="error_unknown_app_config">"При подготовке конфигурации приложения произошла неизвестная ошибка."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="server_auth_not_supported_saml">"Ошибка: это приложение не поддерживает аутентификацию SAML."</string>
+
+	<!-- XTIT: The title of the error dialog -->
+	<string name="bind_error">"Ошибка привязки"</string>
+
+	<!-- XMSG: Detailed error description -->
+    <string name="bind_error_detail">"Сбой привязки к сервису синхронизации OData офлайн."</string>
+
+	<!-- XTIT: The title of the error dialog -->
+	<string name="offline_provider_error">"Ошибка инициализации офлайн"</string>
+
+ 	<!-- XMSG: Detailed error description -->
+	<string name="offline_provider_error_detail">"Сбой инициализации провайдера OData офлайн"</string>
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="offline_initial_open_error">"Ошибка начального открытия офлайн"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_initial_open_error_detail">"Сбой начального открытия хранилища офлайн"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_backend_big_data_error_detail">"Полезная нагрузка из бэкэнда была слишком большой, размер ограничения полезной нагрузки SAP Mobile Services по умолчанию составляет 64MБ. Решить проблему можно с помощью одного из следующих способов:\n\t1) увеличить ограничение размера в offline.ini;\n\t2) реализовать постраничную разбивку на стороне сервера для включения синхронизации больших наборов данных частями;\n\t3) использовать $top в определении запросов или фильтры для ограничения общего числа данных для выгрузки в мандант."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_backend_time_out_error_detail">"Увеличьте тайм-аут соединения с бэкэндом для этого приложения в SAP Mobile Services и повторите попытку."</string>
+
+    <!-- XTIT: The title of the error dialog -->
+	<string name="synchronize_failure">"Сбой синхронизации"</string>
+
+	<!-- XMSG: Detailed error description -->
+	<string name="synchronize_failure_detail">"Сбой синхронизации с мобильными сервисами."</string>
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="offline_reset_store_error">"Сбой сброса хранилища офлайн"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_reset_store_error_detail">"Сбой сброса/удаления хранилища данных офлайн."</string>
+    <!-- error messages -->
+
+    <!-- offline -->
+
+    <!-- XTIT: The title of initial opening of offline store failed -->
+    <string name="initializing_offline_store_failed">"Ошибка синхронизации"</string>
+
+    <!-- XMSG: Offline AlertDialog before navigation - Title -->
+    <string name="offline_navigation_dialog_title">"Подтверждение отмены синхронизации"</string>
+
+    <!-- XMSG: Offline AlertDialog before navigation - Message -->
+    <string name="offline_navigation_dialog_message">"Действительно отменить выполняющуюся синхронизацию и вернуться на первый экран?"</string>
+
+    <!-- XMSG: Offline AlertDialog before navigation - Positive button (navigation occurs) -->
+    <string name="offline_navigation_dialog_positive_option">"Подтвердить"</string>
+
+    <!-- XMSG: Offline AlertDialog before navigation - Negative button (cancelled navigation) -->
+    <string name="offline_navigation_dialog_negative_option">"Не сейчас"</string>
+
+    <!-- NOTR: No translation needed, Label for entity state in offline -->
+	<string name="local_state">"Local"</string>
+
+    <!-- NOTR: No translation needed, Label for entity state in offline -->
+	<string name="error_state">"Error"</string>
+
+	<!-- NOTR: No translation needed, Label for entity state in offline -->
+	<string name="updated_state">"Updated"</string>
+
+	<!-- NOTR: No translation needed, Label for entity state in offline -->
+	<string name="download_state">"Download"</string>
+
+    <!-- XMIT: Menu item to trigger synchronization -->
+	<string name="synchronize_action">"Синхронизировать"</string>
+
+    <!-- offline -->
+
+    <!-- XTIT: The title of the settings dialog -->
+    <string name="settings_activity_name">"Настройки"</string>
+    <!-- XTIT: The title of the settings menu -->
+    <string name="menu_item_settings">"Настройки"</string>
+
+    <!-- XTIT: The title of the passcode group -->
+    <string name="passcode">"Код доступа"</string>
+    <!-- XTIT: The title of the change passcode menu item -->
+    <string name="manage_passcode">"Изменить код доступа"</string>
+    <!-- XTIT: The title of the reset group -->
+    <string name="reset">"Сбросить приложение"</string>
+    <!-- XTIT: The title of the reset app menu item -->
+    <string name="reset_app">"Очистить настройки приложения"</string>
+    <!-- XTIT: The title of a confirmation dialog -->
+    <string name="reset_app_confirmation">"Вся информация, связанная с этим приложением, будет удалена. Продолжить?"</string>
+    <!-- XMSG: The message of reset client -->
+    <string name="reset_client">"Сброс клиента"</string>
+    <!-- XTIT: The title of the logout item -->
+    <string name="logout">"Выход"</string>
+    <!-- XTIT: The title of the delete registration item -->
+    <string name="delete_registration">"Удалить регистрацию"</string>
+    <!-- XTIT: The title of a warning dialog -->
+    <string name="delete_registration_warning">"Все несинхронизированные отложенные изменения, связанные с с этой регистрацией, будут удалены. Продолжить?"</string>
+
+    <!-- XTIT: The title of a menu item -->
+    <string name="upload_usage">"Загрузить данные использования"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="set_usage_consent">"Согласие на сбор данных использования"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="set_crash_report_consent">"Согласие на сбор отчетов о сбоях"</string>
+
+    <!-- XTIT: The title of a menu group -->
+    <string name="crash_report">"Отчет от сбоях"</string>
+    <!-- XTIT: The title of a menu group -->
+    <string name="usage">"Использование"</string>
+    <!-- XTIT: The title of a menu group -->
+    <string name="logging">"Запись в журнал"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="upload_log">"Загрузить журнал"</string>
+    <!-- XTIT: The description of a menu item -->
+    <string name="upload_log_summary">"Загрузить журнал на сервер."</string>
+    <!-- XMSG: The message of a log level toast -->
+    <string name="log_level_changed">"Уровень журнала по умолчанию изменен с политики сервера на: %s"</string>
+    <!-- XMSG: The message of a log level toast -->
+    <string name="log_level_default">"Политика журнала не установлена на сервере, уровень журнала по умолчанию установлен на: %s"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="log_level">"Уровень журнала"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="dialog_title_choose_log_level">"Выбрать уровень журнала"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_none">"Нет"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_fatal">"Фатальная ошибка"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_error">"Ошибка"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_warning">"Предупреждение"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_info">"Информация"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_debug">"Отладка"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_path">"Путь"</string>
+    <!-- XMSG: Authentication error message -->
+    <string name="authentication_failed">"Сбой аутентификации."</string>
+    <!-- XMSG: Authentication progress description -->
+    <string name="authentication_progress">"Аутентификация с сервером..."</string>
+
+    <!-- restrictions -->
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="restriction_service_url_title">"URL сервиса"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="restriction_service_url_description">"URL-адрес сервиса OData."</string>
+    <!-- restrictions -->
+
+    <!-- XMSG: Detailed error description -->
+    <string name="error_back_navigation">"Приложение защищено кодом доступа, оно не будет запущено без корректно введенного кода доступа."</string>
+
+    <!-- XTIT: The id of the push notification channel -->
+    <string name="push_channel_id">"sap_btp_android_sdk_foundation_push_channel"</string>
+    <!-- XTIT: The name of the push notification channel -->
+    <string name="push_channel_name">"SAP BTP Android SDK"</string>
+    <!-- XTIT: The description of the badge channel -->
+    <string name="push_badge_channel_description">"Управление уведомлениями бейджа"</string>
+    <!-- XTIT: The name of the badge channel -->
+    <string name="push_badge_channel_name">"Канал бейджа SAP BTP Android SDK"</string>
+    <!-- XMSG: push message alert -->
+    <string name="push_message_alert">"Уведомление"</string>
+    <!-- XMSG: push message title -->
+    <string name="push_message_title">"Получено push-сообщение"</string>
+    <!-- XBUT: Text of the OK button -->
+    <string name="push_message_dlg_ok">"ОК"</string>
+    <!-- XBUT: Text of the Cancel button -->
+    <string name="push_message_dlg_cancel">"Отменить"</string>
+    <!-- XTIT: The title of Push topics -->
+    <string name="settings_push_topics">"Подпишитесь на любимые темы"</string>
+
+    <!-- XTIT: The title of Eula dialog -->
+    <string name="launch_screen_dialog_title">"Соглашение об оказании услуг и политика конфиденциальности"</string>
+    <!-- XBUT: Text of the Agree button -->
+    <string name="launch_screen_dialog_button_agree">"Принимаю"</string>
+    <!-- XBUT: Text of the Disagree button -->
+    <string name="launch_screen_dialog_button_disagree">"Не принимаю"</string>
+    <!-- XBUT: Text of the Got it button -->
+    <string name="launch_screen_dialog_disagree_confirm">"Понятно"</string>
+    <!-- XTIT: The content text of Eula dialog -->
+    <string name="launch_screen_dialog_eula_text">"Спасибо, что пользуетесь нашим приложением. Во время использования этого приложения может собираться и обрабатываться ваша личная информация. Обязательно прочтите &lt;a href=http://www.sap.com&gt;Лицензионное соглашение с конечным пользователем&lt;/a&gt; и &lt;a href=http://www.sap.com&gt;Заявление о защите данных&lt;/a&gt;, чтобы детально узнать, как SAP обрабатывает вашу личную информацию. Если вы согласны с Лицензионным соглашением с конечным пользователем и с Заявлением о защите данных, нажмите здесь, чтобы запустить приложение. SAP принимает все меры для защиты вашей личной информации."</string>
+    <!-- XTIT: The content text of Eula dialog -->
+    <string name="launch_screen_dialog_disagree_text">"Если вы не приняли &lt;a href=http://www.sap.com&gt;Лицензионное соглашение с конечным пользователем&lt;/a&gt; или &lt;a href=http://www.sap.com&gt;Политику конфиденциальности&lt;/a&gt;, вам будет доступен только демонстрационный режим."</string>
+    <!-- XTIT: The content text of Eula dialog -->
+    <string name="privacy_dialog_content">"Спасибо, что пользуетесь нашим приложением. Во время использования этого приложения может собираться и обрабатываться ваша личная информация. Обязательно прочтите "<annotation key="eula">"Лицензионное соглашение с конечным пользователем"</annotation>" и "<annotation key="term">"Заявление о защите данных"</annotation>", чтобы детально узнать, как SAP обрабатывает вашу личную информацию. Если вы согласны с Лицензионным соглашением с конечным пользователем и с Заявлением о конфиденциальности, нажмите здесь, чтобы запустить приложение. SAP принимает все меры для защиты вашей личной информации."</string>
+    <!-- XTIT: The content text of Eula dialog -->
+    <string name="privacy_confirmation_dialog_content">"Если вы не приняли "<annotation key="eula">"Лицензионное соглашение с конечным пользователем"</annotation>" или "<annotation key="term">"Заявление о защите данных"</annotation>", вам будет доступен только демонстрационный режим."</string>
+    <!-- XTIT: The title of Demo dialog -->
+    <string name="launch_screen_demo_dialog_title">"Демонстрационный режим"</string>
+    <!-- XTIT: The content text of demo dialog -->
+    <string name="launch_screen_demo_dialog_message">"Демонстрационный режим не реализован в сгенерированном приложении."</string>
+    <!-- XBUT: Text of the Go back button -->
+    <string name="launch_screen_demo_dialog_button_goback">"Назад"</string>
+</resources>

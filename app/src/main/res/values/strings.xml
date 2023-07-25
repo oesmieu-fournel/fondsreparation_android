@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="application_name">Reparation</string>
+    <string name="eset_attachmentset">AttachmentSet</string>
+    <string name="eset_attachmentset_single">Attachment</string>
+    <string name="eset_customerset">CustomerSet</string>
+    <string name="eset_customerset_single">Customer</string>
+    <string name="eset_headercontactset">HeaderContactSet</string>
+    <string name="eset_headercontactset_single">HeaderContact</string>
+    <string name="eset_headerqueryset">HeaderQuerySet</string>
+    <string name="eset_headerqueryset_single">HeaderQuery</string>
+    <string name="eset_headerset">HeaderSet</string>
+    <string name="eset_headerset_single">Header</string>
+    <string name="eset_itemset">ItemSet</string>
+    <string name="eset_itemset_single">Item</string>
+    <string name="eset_partnerset">PartnerSet</string>
+    <string name="eset_partnerset_single">Partner</string>
+    <string name="eset_pricingset">PricingSet</string>
+    <string name="eset_pricingset_single">Pricing</string>
+</resources>

@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><resources>
+    <!-- XTIT: The title of the create Activity, will appear at the top of the screen -->
+    <string name="title_create_fragment">"Creu %1$s Eitem"</string>
+
+    <!-- XTIT: The title of the update Activity, will appear at the top of the screen -->
+    <string name="title_update_fragment">"Diweddaru"</string>
+
+    <!-- XMSG: Error message for the mandatory input fields, will appear in the edit field left empty -->
+    <string name="mandatory_warning">"Mae hwn yn faes gofynnol"</string>
+
+    <!-- XTIT: The title of the welcome screen, will appear at the top of the screen -->
+    <string name="welcome_screen_headline_label">"Croeso"</string>
+
+    <!-- YINS: Short description on the welcome screen -->
+    <string name="welcome_screen_detail_label">"Gallwch archwilio SAP BTP SDK ar gyfer Android gyda\'r ap hwn."</string>
+
+    <!-- XFLD: label at the bottom of the welcome screen -->
+    <string name="welcome_screen_footnote_label">"Gallwch roi cynnig ar y nodweddion SDK yn y modd demo."</string>
+
+    <!-- XFLD: label of the primary button on the welcome screen -->
+    <string name="welcome_screen_primary_button_label">"Dechrau Arni"</string>
+
+    <!-- XBUT: Text of the Save button -->
+    <string name="save">"Cadw"</string>
+
+    <!-- XBUT: Text of the Update button -->
+    <string name="update">"Diweddaru"</string>
+
+    <!-- XBUT: Text of the Delete button -->
+    <string name="delete">"Dileu"</string>
+
+    <!-- XBUT: Text of the Cancel button -->
+    <string name="cancel">"Canslo"</string>
+
+    <!-- XBUT: Text of the OK button -->
+    <string name="ok">"Iawn"</string>
+
+    <!-- XBUT: Text of the Delete button -->
+    <string name="yes">"Iawn"</string>
+
+    <!-- XBUT: Text of the Add New button -->
+    <string name="add_new">"Ychwanegu un newydd"</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="delete_dialog_title">"Dileu"</string>
+
+    <!-- XMSG: The message of the delete dialog -->
+    <string name="delete_one_item">"Ydych chi wir am ddileu\'r eitem yma?"</string>
+
+    <!-- XMSG: The message of the delete dialog in case of multiple selection -->
+    <string name="delete_more_items">"Ydych chi wir am ddileu\'r eitemau yma?"</string>
+
+    <!-- XMSG: Error message, can be presented in a Toast or Dialog -->
+    <string name="entity_download_error">"Roedd gwall mewn gweithrediad cefndir."</string>
+
+    <!-- XMIT: Refresh menu item -->
+    <string name="menu_refresh">"Adnewyddu"</string>
+
+    <!-- XMIT: Refresh menu item -->
+    <string name="menu_home">"Hafan"</string>
+
+    <!-- XMIT: Update menu item -->
+    <string name="menu_update">"Diweddaru"</string>
+
+    <!-- XMIT: Delete menu item -->
+    <string name="menu_delete">"Dileu"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_headline">"Headline"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_subheadline">"Subheadline"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_body">"Body Text"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_footnote">"Footnote"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_tag1">"TAG1"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_tag2">"TAG2"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_tag3">"TAG3"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_description">"Item Description"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_status">"Status"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="error">"Error"</string>
+
+    <!-- error messages -->
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="read_failed">"Lawrlwytho wedi Methu"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="format_error">"Dydy\'r mewnbwn ddim yn addas ar gyfer y math o ddata."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="read_failed_detail">"Mae\'r gweithrediad llwytho i lawr wedi methu, ceisiwch ailgychwyn y rhaglen."</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="create_failed">"Creu Wedi Methu"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="create_failed_detail">"Gweithrediad creu wedi methu, ceisiwch ei weithredu eto yn nes ymlaen."</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="update_failed">"Diweddaru wedi Methu"</string>
+    <string name="update_failed_detail">"Gweithrediad diweddaru wedi methu, rhowch gynnig ar adnewyddu\'r data lleol a cheisio gwneud hyn eto rywbryd eto."</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="delete_failed">"Dileu wedi Methu"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="delete_failed_detail">"Gweithrediad dileu wedi methu, rhowch gynnig ar adnewyddu\'r data lleol a cheisio gwneud hyn eto rywbryd eto."</string>
+
+    <!-- XTIT: The message of the upload toast in case of success -->
+    <string name="log_upload_ok">"Mae\'r log wedi cael ei lwytho i fyny i\'r gweinydd."</string>
+
+    <!-- XTIT: The message of the upload toast in case of failing -->
+    <string name="log_upload_failed">"Llwytho log i fyny wedi methu."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="log_upload_failed_detail">"Wedi cael URL heb ei ffurfio\'n iawn ar gyfer llwytho log i fyny. Efallai y bydd y rhaglen yn dal i weithio, ond fydd logiau ddim yn cael eu llwytho i fyny i\'r gweinydd."</string>
+
+    <!-- XTIT: The message of the upload toast in case of success -->
+    <string name="usage_upload_ok">"Mae data defnydd yn cael ei lwytho i fyny i\'r gweinydd."</string>
+
+    <!-- XTIT: The message of the upload toast in case of failing -->
+    <string name="usage_upload_failed">"Llwytho data defnydd i fyny wedi methu."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="usage_init_failed">"Doedd dim modd ymgychwyn y defnydd."</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="push_error">"Gwall Gwthio"</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="push_message">"Wedi cael hysbysiad gwthio"</string>
+
+    <!-- XTIT: The Notification Text -->
+    <string name="push_text">"Hysbysiad"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="push_token_upload_failed_detail">"Dim modd llwytho tocyn gwthio i weinydd SAP, fydd y nodwedd gwthio ddim yn gweithio. Fyddwch chi ddim yn cael negeseuon gwthio."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="push_invalid_push_format">"Wedi cael hysbysiad gwthio, ond mae\'r fformat yn annilys, felly doedd dim modd ei brosesu."</string>
+
+    <!-- XMSG: AlertDialog before navigation - Title -->
+    <string name="before_navigation_dialog_title">"Colli Data Posibl"</string>
+
+    <!-- XMSG: AlertDialog before navigation - Message -->
+    <string name="before_navigation_dialog_message">"Trwy adael y dudalen hon, fydd dim data yn cael ei gadw."</string>
+
+    <!-- XMSG: AlertDialog before navigation - Positive button (navigation occurs) -->
+    <string name="before_navigation_dialog_positive_button">"Gadael"</string>
+
+    <!-- XMSG: AlertDialog before navigation - Negative button (cancelled navigation) -->
+    <string name="before_navigation_dialog_negative_button">"Aros"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_loader_complete_error_description">"Llwythwr ffurfweddiad wedi methu â chael data ffurfweddu."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_loader_on_error_description">"Mae\'r darparwr ffurfweddiad \'%1$s\' wedi canfod gwall. %2$s"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_data_build_json_description">"Wedi methu adeiladu\'r gwrthrych JSON."</string>
+    <string name="error_unknown_app_config">"Wedi methu paratoi ffurfweddiad y rhaglen oherwydd gwall anhysbys."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="server_auth_not_supported_saml">"Gwall: Dydy\'r rhaglen hon ddim yn gallu delio â dilysiad SAML."</string>
+
+	<!-- XTIT: The title of the error dialog -->
+	<string name="bind_error">"Gwall Rhwymo"</string>
+
+	<!-- XMSG: Detailed error description -->
+    <string name="bind_error_detail">"Wedi methu rhwymo i\'r Gwasanaeth Cysoni ODdata All-lein."</string>
+
+	<!-- XTIT: The title of the error dialog -->
+	<string name="offline_provider_error">"Gwall Ymgychwyn All-lein"</string>
+
+ 	<!-- XMSG: Detailed error description -->
+	<string name="offline_provider_error_detail">"Wedi methu ymgychwyn darparwr ODdata all-lein."</string>
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="offline_initial_open_error">"Gwall Agor Cychwynnol All-lein"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_initial_open_error_detail">"Wedi methu cwblhau agor cychwynnol storfa all-lein."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_backend_big_data_error_detail">"Roedd y Llwyth Gwaith o\'r system gefn yn rhy fawr, maint rhagosodedig cyfyngiad llwyth gwaith SAP Mobile Services yw 64M. Gallwch geisio ei drwsio gydag un o\'r penderfyniadau canlynol:\n1) Cynyddu terfyn maint yn offline.ini;\n2) Gweithredu tudaleniad ochr y gweinydd i alluogi cysoni setiau data mawr mewn talpiau;\n3) Defnyddio ceisiadau $top wrth ddiffinio ymholiadau neu hidlwyr i gyfyngu ar gyfanswm y data y mae\'r cleient yn ei lwytho i lawr."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_backend_time_out_error_detail">"Cynyddwch derfyn amser cysylltiad ôl ar gyfer y rhaglen hon yn SAP Mobile Services a rhoi cynnig arall arni."</string>
+
+    <!-- XTIT: The title of the error dialog -->
+	<string name="synchronize_failure">"Methu Cysoni"</string>
+
+	<!-- XMSG: Detailed error description -->
+	<string name="synchronize_failure_detail">"Cysoni â Gwasanaethau Symudol wedi methu."</string>
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="offline_reset_store_error">"Methu Ailosod Storfa All-lein"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_reset_store_error_detail">"Wedi methu ailosod/tynnu storfa ddata all-lein."</string>
+    <!-- error messages -->
+
+    <!-- offline -->
+
+    <!-- XTIT: The title of initial opening of offline store failed -->
+    <string name="initializing_offline_store_failed">"Proses cysoni wedi methu"</string>
+
+    <!-- XMSG: Offline AlertDialog before navigation - Title -->
+    <string name="offline_navigation_dialog_title">"Canslo Cadarnhau Proses Cysoni"</string>
+
+    <!-- XMSG: Offline AlertDialog before navigation - Message -->
+    <string name="offline_navigation_dialog_message">"Ydych chi\'n siŵr eich bod am ganslo\'r broses cysoni sydd ar waith a dychwelyd i\'r sgrin Groeso?"</string>
+
+    <!-- XMSG: Offline AlertDialog before navigation - Positive button (navigation occurs) -->
+    <string name="offline_navigation_dialog_positive_option">"Cadarnhau"</string>
+
+    <!-- XMSG: Offline AlertDialog before navigation - Negative button (cancelled navigation) -->
+    <string name="offline_navigation_dialog_negative_option">"Dim nawr"</string>
+
+    <!-- NOTR: No translation needed, Label for entity state in offline -->
+	<string name="local_state">"Local"</string>
+
+    <!-- NOTR: No translation needed, Label for entity state in offline -->
+	<string name="error_state">"Error"</string>
+
+	<!-- NOTR: No translation needed, Label for entity state in offline -->
+	<string name="updated_state">"Updated"</string>
+
+	<!-- NOTR: No translation needed, Label for entity state in offline -->
+	<string name="download_state">"Download"</string>
+
+    <!-- XMIT: Menu item to trigger synchronization -->
+	<string name="synchronize_action">"Cysoni"</string>
+
+    <!-- offline -->
+
+    <!-- XTIT: The title of the settings dialog -->
+    <string name="settings_activity_name">"Gosodiadau"</string>
+    <!-- XTIT: The title of the settings menu -->
+    <string name="menu_item_settings">"Gosodiadau"</string>
+
+    <!-- XTIT: The title of the passcode group -->
+    <string name="passcode">"Cod cyfrin"</string>
+    <!-- XTIT: The title of the change passcode menu item -->
+    <string name="manage_passcode">"Newid Cod Cyfrin"</string>
+    <!-- XTIT: The title of the reset group -->
+    <string name="reset">"Ailosod y Rhaglen"</string>
+    <!-- XTIT: The title of the reset app menu item -->
+    <string name="reset_app">"Clirio Gosodiadau\'r Ap"</string>
+    <!-- XTIT: The title of a confirmation dialog -->
+    <string name="reset_app_confirmation">"Bydd yr holl wybodaeth yn gysylltiedig â\'r rhaglen hon yn cael ei thynnu. Bwrw ymlaen?"</string>
+    <!-- XMSG: The message of reset client -->
+    <string name="reset_client">"Ailosod y Cleient"</string>
+    <!-- XTIT: The title of the logout item -->
+    <string name="logout">"Allgofnodi"</string>
+    <!-- XTIT: The title of the delete registration item -->
+    <string name="delete_registration">"Dileu Cofrestriad"</string>
+    <!-- XTIT: The title of a warning dialog -->
+    <string name="delete_registration_warning">"Bydd yr holl newidiadau sy\'n aros sy\'n gysylltiedig â\'r cofrestriad yn cael eu tynnu. Bwrw ymlaen?"</string>
+
+    <!-- XTIT: The title of a menu item -->
+    <string name="upload_usage">"Llwytho Data Defnydd i Fyny"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="set_usage_consent">"Caniatâd i Gasglu Defnydd"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="set_crash_report_consent">"Caniatâd i Gasglu Adroddiadau Chwalu"</string>
+
+    <!-- XTIT: The title of a menu group -->
+    <string name="crash_report">"Adroddiad Chwalu"</string>
+    <!-- XTIT: The title of a menu group -->
+    <string name="usage">"Defnydd"</string>
+    <!-- XTIT: The title of a menu group -->
+    <string name="logging">"Logio"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="upload_log">"Llwytho Log i Fyny"</string>
+    <!-- XTIT: The description of a menu item -->
+    <string name="upload_log_summary">"Llwytho log i fyny i\'r gweinydd."</string>
+    <!-- XMSG: The message of a log level toast -->
+    <string name="log_level_changed">"Mae\'r lefel log diofyn wedi cael ei newid o\'r polisi gweinydd i: %s"</string>
+    <!-- XMSG: The message of a log level toast -->
+    <string name="log_level_default">"Dydy\'r polisi logio heb ei osod ar y gweinydd, mae\'r lefel log diofyn wedi\'i osod yn: %s"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="log_level">"Lefel Log"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="dialog_title_choose_log_level">"Dewis Lefel Log"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_none">"Dim"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_fatal">"Di-droi\'n-ôl"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_error">"Gwall"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_warning">"Rhybudd"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_info">"Gwybodaeth"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_debug">"Difa Chwilod"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_path">"Llwybr"</string>
+    <!-- XMSG: Authentication error message -->
+    <string name="authentication_failed">"Dilysu wedi methu."</string>
+    <!-- XMSG: Authentication progress description -->
+    <string name="authentication_progress">"Diysu gyda gweinydd..."</string>
+
+    <!-- restrictions -->
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="restriction_service_url_title">"URL Gwasanaeth"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="restriction_service_url_description">"URL y gwasanaeth ODdata."</string>
+    <!-- restrictions -->
+
+    <!-- XMSG: Detailed error description -->
+    <string name="error_back_navigation">"Mae\'r rhaglen yn cael ei gwarchod gan gyfrinair, ni fydd yn dechrau heb i chi roi\'r cod cyfrin cywir."</string>
+
+    <!-- XTIT: The id of the push notification channel -->
+    <string name="push_channel_id">"sap_btp_android_sdk_foundation_push_channel"</string>
+    <!-- XTIT: The name of the push notification channel -->
+    <string name="push_channel_name">"SAP BTP Android SDK"</string>
+    <!-- XTIT: The description of the badge channel -->
+    <string name="push_badge_channel_description">"Rheoli Hysbysiadau Bathodyn"</string>
+    <!-- XTIT: The name of the badge channel -->
+    <string name="push_badge_channel_name">"Sianel Bathodyn SDK SAP BTP Android"</string>
+    <!-- XMSG: push message alert -->
+    <string name="push_message_alert">"Hysbysiad"</string>
+    <!-- XMSG: push message title -->
+    <string name="push_message_title">"Neges hysbysiad gwthio wedi\'i dderbyn"</string>
+    <!-- XBUT: Text of the OK button -->
+    <string name="push_message_dlg_ok">"Iawn"</string>
+    <!-- XBUT: Text of the Cancel button -->
+    <string name="push_message_dlg_cancel">"Canslo"</string>
+    <!-- XTIT: The title of Push topics -->
+    <string name="settings_push_topics">"Tanysgrifiwch i\'ch hoff bwnc"</string>
+
+    <!-- XTIT: The title of Eula dialog -->
+    <string name="launch_screen_dialog_title">"Cytundeb Gwasanaeth a Pholisi Preifatrwydd"</string>
+    <!-- XBUT: Text of the Agree button -->
+    <string name="launch_screen_dialog_button_agree">"Cytuno"</string>
+    <!-- XBUT: Text of the Disagree button -->
+    <string name="launch_screen_dialog_button_disagree">"Anghytuno"</string>
+    <!-- XBUT: Text of the Got it button -->
+    <string name="launch_screen_dialog_disagree_confirm">"Ydych chi\'n deall"</string>
+    <!-- XTIT: The content text of Eula dialog -->
+    <string name="launch_screen_dialog_eula_text">"Diolch am ddefnyddio\'r ap hwn. Pan fyddwch chi\'n defnyddio\'r ap hwn, efallai y bydd eich gwybodaeth bersonol yn cael ei chasglu a\'i phrosesu. Cadwch at y &lt;a href=http://www.sap.com&gt;Cytundeb Trwydded Defnyddiwr&lt;/a&gt; a\'r &lt;a href=http://www.sap.com&gt;Datganiad Preifatrwydd&lt;/a&gt; i wneud yn siŵr eich bod chi\'n deall sut mae SAP yn prosesu eich gwybodaeth bersonol. Os ydych chi\'n cytuno â\'r Cytundeb Trwydded Defnyddiwr a\'r Datganiad Preifatrwydd, cliciwch cytuno i ddechrau\'r ap. Bydd SAP yn gwneud ein gorau i ddiogelu eich gwybodaeth bersonol"</string>
+    <!-- XTIT: The content text of Eula dialog -->
+    <string name="launch_screen_dialog_disagree_text">"Os nad ydych chi\'n cytuno â\'r &lt;a href=http://www.sap.com&gt;Cytundeb Trwydded Defnyddiwr&lt;/a&gt; a\'r &lt;a href=http://www.sap.com&gt;Polisi Preifatrwydd&lt;/a&gt;, dim ond y modd demo gallwch chi ei ddefnyddio."</string>
+    <!-- XTIT: The content text of Eula dialog -->
+    <string name="privacy_dialog_content">"Diolch am ddefnyddio\'r ap hwn. Pan fyddwch chi\'n defnyddio\'r ap hwn, efallai y bydd eich gwybodaeth bersonol yn cael ei chasglu a\'i phrosesu. Cadwch at y "<annotation key="eula">"Cytundeb Trwydded Defnyddiwr"</annotation>" a\'r "<annotation key="term">"Datganiad Preifatrwydd"</annotation>" i wneud yn siŵr eich bod chi\'n deall sut mae SAP yn prosesu eich gwybodaeth bersonol. Os ydych chi\'n cytuno â\'r Cytundeb Trwydded Defnyddiwr a\'r Datganiad Preifatrwydd, cliciwch cytuno i ddechrau\'r ap. Bydd SAP yn gwneud ein gorau i ddiogelu eich gwybodaeth bersonol"</string>
+    <!-- XTIT: The content text of Eula dialog -->
+    <string name="privacy_confirmation_dialog_content">"Os nad ydych chi\'n cytuno â\'r "<annotation key="eula">"Cytundeb Trwydded Defnyddiwr"</annotation>" a\'r "<annotation key="term">"Polisi Preifatrwydd"</annotation>", dim ond y modd demo gallwch chi ei ddefnyddio."</string>
+    <!-- XTIT: The title of Demo dialog -->
+    <string name="launch_screen_demo_dialog_title">"Modd Demo"</string>
+    <!-- XTIT: The content text of demo dialog -->
+    <string name="launch_screen_demo_dialog_message">"Nid yw\'r Modd Demo\'n cael ei roi ar waith yn y rhaglen sy\'n cael ei chreu."</string>
+    <!-- XBUT: Text of the Go back button -->
+    <string name="launch_screen_demo_dialog_button_goback">"Mynd yn ôl"</string>
+</resources>

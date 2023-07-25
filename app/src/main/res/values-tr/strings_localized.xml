@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><resources>
+    <!-- XTIT: The title of the create Activity, will appear at the top of the screen -->
+    <string name="title_create_fragment">"%1$s öğesi oluştur"</string>
+
+    <!-- XTIT: The title of the update Activity, will appear at the top of the screen -->
+    <string name="title_update_fragment">"Güncelle"</string>
+
+    <!-- XMSG: Error message for the mandatory input fields, will appear in the edit field left empty -->
+    <string name="mandatory_warning">"Bu zorunlu alandır"</string>
+
+    <!-- XTIT: The title of the welcome screen, will appear at the top of the screen -->
+    <string name="welcome_screen_headline_label">"Hoş geldiniz"</string>
+
+    <!-- YINS: Short description on the welcome screen -->
+    <string name="welcome_screen_detail_label">"Bu üretilen uygulama ile Android için SAP BTP SDK\'yi keşfedin."</string>
+
+    <!-- XFLD: label at the bottom of the welcome screen -->
+    <string name="welcome_screen_footnote_label">"SDK özelliklerini demo modunda deneyebilirsiniz"</string>
+
+    <!-- XFLD: label of the primary button on the welcome screen -->
+    <string name="welcome_screen_primary_button_label">"Başlangıç"</string>
+
+    <!-- XBUT: Text of the Save button -->
+    <string name="save">"Kaydet"</string>
+
+    <!-- XBUT: Text of the Update button -->
+    <string name="update">"Güncelle"</string>
+
+    <!-- XBUT: Text of the Delete button -->
+    <string name="delete">"Sil"</string>
+
+    <!-- XBUT: Text of the Cancel button -->
+    <string name="cancel">"İptal et"</string>
+
+    <!-- XBUT: Text of the OK button -->
+    <string name="ok">"Tamam"</string>
+
+    <!-- XBUT: Text of the Delete button -->
+    <string name="yes">"Evet"</string>
+
+    <!-- XBUT: Text of the Add New button -->
+    <string name="add_new">"Yeni ekle"</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="delete_dialog_title">"Sil"</string>
+
+    <!-- XMSG: The message of the delete dialog -->
+    <string name="delete_one_item">"Seçilen öğeyi gerçekten silmek istiyor musunuz?"</string>
+
+    <!-- XMSG: The message of the delete dialog in case of multiple selection -->
+    <string name="delete_more_items">"Seçilen öğeleri gerçekten silmek istiyor musunuz?"</string>
+
+    <!-- XMSG: Error message, can be presented in a Toast or Dialog -->
+    <string name="entity_download_error">"Artalan işlemi sırasında hata oluştu."</string>
+
+    <!-- XMIT: Refresh menu item -->
+    <string name="menu_refresh">"Yenile"</string>
+
+    <!-- XMIT: Refresh menu item -->
+    <string name="menu_home">"Ana sayfa"</string>
+
+    <!-- XMIT: Update menu item -->
+    <string name="menu_update">"Güncelle"</string>
+
+    <!-- XMIT: Delete menu item -->
+    <string name="menu_delete">"Sil"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_headline">"Headline"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_subheadline">"Subheadline"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_body">"Body Text"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_footnote">"Footnote"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_tag1">"TAG1"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_tag2">"TAG2"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_tag3">"TAG3"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_description">"Item Description"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_status">"Status"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="error">"Error"</string>
+
+    <!-- error messages -->
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="read_failed">"İndirme başarısız oldu"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="format_error">"Giriş, veri türü için uygun değil."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="read_failed_detail">"İndirme işlemi başarısız oldu, uygulamayı yeniden başlatmayı deneyin."</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="create_failed">"Oluşturma başarısız oldu"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="create_failed_detail">"Oluşturma işlemi başarısız oldu, yürütmeyi daha sonra tekrar deneyin."</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="update_failed">"Güncelleme başarısız oldu"</string>
+    <string name="update_failed_detail">"Güncelleme işlemi başarısız oldu, yerel verileri yenileyin ve yürütmeyi daha sonra tekrar deneyin."</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="delete_failed">"Silme başarısız oldu"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="delete_failed_detail">"Silme işlemi başarısız oldu, yerel verileri yenileyin ve yürütmeyi daha sonra tekrar deneyin."</string>
+
+    <!-- XTIT: The message of the upload toast in case of success -->
+    <string name="log_upload_ok">"Günlük, sunucuya yüklendi."</string>
+
+    <!-- XTIT: The message of the upload toast in case of failing -->
+    <string name="log_upload_failed">"Günlük yükleme başarısız oldu."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="log_upload_failed_detail">"Günlük yükleme için yanlış biçimli URL alındı. Uygulama yine de çalışabilir ancak günlükler sunucuya yüklenmez."</string>
+
+    <!-- XTIT: The message of the upload toast in case of success -->
+    <string name="usage_upload_ok">"Kullanım verileri sunucuya yüklendi."</string>
+
+    <!-- XTIT: The message of the upload toast in case of failing -->
+    <string name="usage_upload_failed">"Kullanımı verilerini yükleme başarısız oldu."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="usage_init_failed">"Kullanım başlangıç durumuna getirilemedi."</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="push_error">"Push hatası"</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="push_message">"Push iletisi alındı"</string>
+
+    <!-- XTIT: The Notification Text -->
+    <string name="push_text">"Bildirim"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="push_token_upload_failed_detail">"Push simgesi SAP sunucusuna yüklenemedi, push özelliği çalışmayacak. Push iletileri almayacaksınız."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="push_invalid_push_format">"Push iletisi alındı ancak biçimi geçersizdi, bu nedenle işlenemedi."</string>
+
+    <!-- XMSG: AlertDialog before navigation - Title -->
+    <string name="before_navigation_dialog_title">"Potansiyel veri kaybı"</string>
+
+    <!-- XMSG: AlertDialog before navigation - Message -->
+    <string name="before_navigation_dialog_message">"Bu sayfadan çıkıldığında hiçbir veri kaydedilmez."</string>
+
+    <!-- XMSG: AlertDialog before navigation - Positive button (navigation occurs) -->
+    <string name="before_navigation_dialog_positive_button">"Çık"</string>
+
+    <!-- XMSG: AlertDialog before navigation - Negative button (cancelled navigation) -->
+    <string name="before_navigation_dialog_negative_button">"Kal"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_loader_complete_error_description">"Konfigürasyon yükleyici, konfigürasyon verilerini getiremedi."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_loader_on_error_description">"Konfigürasyon sağlayıcı \"%1$s\", hata ile karşılaştı. %2$s"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_data_build_json_description">"JSON nesnesi oluşturulamadı."</string>
+    <string name="error_unknown_app_config">"Uygulama konfigürasyonunu hazırlama, bilinmeyen hata ile başarısız oldu."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="server_auth_not_supported_saml">"Hata: Bu uygulama SAML kimlik doğrulamasını desteklemiyor."</string>
+
+	<!-- XTIT: The title of the error dialog -->
+	<string name="bind_error">"Bağlama hatası"</string>
+
+	<!-- XMSG: Detailed error description -->
+    <string name="bind_error_detail">"Çevrimdışı OData senkronizasyon hizmetine bağlanılamadı"</string>
+
+	<!-- XTIT: The title of the error dialog -->
+	<string name="offline_provider_error">"Çevrimdışı başlangıç durumuna getirme hatası"</string>
+
+ 	<!-- XMSG: Detailed error description -->
+	<string name="offline_provider_error_detail">"Çevrimdışı OData sağlayıcısı başlangıç durumuna getirilemedi."</string>
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="offline_initial_open_error">"Çevrimdışı ilk açma hatası"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_initial_open_error_detail">"Harici arşivi ilk açma tamamlanamadı."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_backend_big_data_error_detail">"Arka uçtan gelen payload çok büyük, SAP Mobile Services payload sınırlamasının varsayılan boyutu 64M. Bunu aşağıdaki çözümlerden biriyle düzeltmeyi deneyebilirsiniz:\n\t1) offline.ini\'deki büyüklük sınırını artırmak;\n\t2) Öbeklerdeki büyük veri kümelerini senkronize edebilmek için sunucu tarafı sayfalandırma uygulamak;\n\t3) İstemcinin indirdiği toplam veri miktarını sınırlamak için sorguları veya filtreleri tanımlarken $top taleplerini kullanmak."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_backend_time_out_error_detail">"Bu uygulama için SAP Mobile Services içinde arka uç bağlantısı zaman aşımı süresini artırın ve tekrar deneyin."</string>
+
+    <!-- XTIT: The title of the error dialog -->
+	<string name="synchronize_failure">"Senkronizasyon hatası"</string>
+
+	<!-- XMSG: Detailed error description -->
+	<string name="synchronize_failure_detail">"Mobil hizmetlerle senkronizasyon başarısız oldu."</string>
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="offline_reset_store_error">"Harici arşiv sıfırlama hatası"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_reset_store_error_detail">"Harici veri arşivi sıfırlanamadı/kaldırılamadı."</string>
+    <!-- error messages -->
+
+    <!-- offline -->
+
+    <!-- XTIT: The title of initial opening of offline store failed -->
+    <string name="initializing_offline_store_failed">"Senkronizasyon başarısız oldu"</string>
+
+    <!-- XMSG: Offline AlertDialog before navigation - Title -->
+    <string name="offline_navigation_dialog_title">"Senkronizasyon teyidini iptal et"</string>
+
+    <!-- XMSG: Offline AlertDialog before navigation - Message -->
+    <string name="offline_navigation_dialog_message">"Devam eden senkronizasyonu iptal etmek ve karşılama ekranına geri dönmek istediğinizden emin misiniz?"</string>
+
+    <!-- XMSG: Offline AlertDialog before navigation - Positive button (navigation occurs) -->
+    <string name="offline_navigation_dialog_positive_option">"Teyit et"</string>
+
+    <!-- XMSG: Offline AlertDialog before navigation - Negative button (cancelled navigation) -->
+    <string name="offline_navigation_dialog_negative_option">"Şimdi değil"</string>
+
+    <!-- NOTR: No translation needed, Label for entity state in offline -->
+	<string name="local_state">"Local"</string>
+
+    <!-- NOTR: No translation needed, Label for entity state in offline -->
+	<string name="error_state">"Error"</string>
+
+	<!-- NOTR: No translation needed, Label for entity state in offline -->
+	<string name="updated_state">"Updated"</string>
+
+	<!-- NOTR: No translation needed, Label for entity state in offline -->
+	<string name="download_state">"Download"</string>
+
+    <!-- XMIT: Menu item to trigger synchronization -->
+	<string name="synchronize_action">"Senkronize et"</string>
+
+    <!-- offline -->
+
+    <!-- XTIT: The title of the settings dialog -->
+    <string name="settings_activity_name">"Ayarlar"</string>
+    <!-- XTIT: The title of the settings menu -->
+    <string name="menu_item_settings">"Ayarlar"</string>
+
+    <!-- XTIT: The title of the passcode group -->
+    <string name="passcode">"Giriş kodu"</string>
+    <!-- XTIT: The title of the change passcode menu item -->
+    <string name="manage_passcode">"Giriş kodunu değiştir"</string>
+    <!-- XTIT: The title of the reset group -->
+    <string name="reset">"Uygulamayı sıfırla"</string>
+    <!-- XTIT: The title of the reset app menu item -->
+    <string name="reset_app">"Uygulamayı sıfırla"</string>
+    <!-- XTIT: The title of a confirmation dialog -->
+    <string name="reset_app_confirmation">"Bu uygulama ile ilişkili tüm bilgiler kaldırılacak. Devam etmek istiyor musunuz?"</string>
+    <!-- XMSG: The message of reset client -->
+    <string name="reset_client">"İstemciyi sıfırla"</string>
+    <!-- XTIT: The title of the logout item -->
+    <string name="logout">"Oturumu kapat"</string>
+    <!-- XTIT: The title of the delete registration item -->
+    <string name="delete_registration">"Kaydı sil"</string>
+    <!-- XTIT: The title of a warning dialog -->
+    <string name="delete_registration_warning">"Bu kayıt ile ilişkili tüm senkronize edilmemiş bekleyen değişiklikler kaldırılacak. Devam etmek istiyor musunuz?"</string>
+
+    <!-- XTIT: The title of a menu item -->
+    <string name="upload_usage">"Kullanım verilerini yükle"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="set_usage_consent">"Kullanım toplama izni"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="set_crash_report_consent">"Çökme raporu toplama izni"</string>
+
+    <!-- XTIT: The title of a menu group -->
+    <string name="crash_report">"Çökme raporu"</string>
+    <!-- XTIT: The title of a menu group -->
+    <string name="usage">"Kullanım"</string>
+    <!-- XTIT: The title of a menu group -->
+    <string name="logging">"Günlük çıkarma"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="upload_log">"Günlük yükle"</string>
+    <!-- XTIT: The description of a menu item -->
+    <string name="upload_log_summary">"Sunucuya günlük yükle."</string>
+    <!-- XMSG: The message of a log level toast -->
+    <string name="log_level_changed">"Varsayılan günlük düzeyi sunucu ilkesinden şu olarak değiştirildi: %s"</string>
+    <!-- XMSG: The message of a log level toast -->
+    <string name="log_level_default">"Günlük ilkesi sunucuda belirlenmedi, varsayılan günlük düzeyi şu şekilde belirlendi: %s"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="log_level">"Günlük düzeyi"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="dialog_title_choose_log_level">"Günlük düzeyi seç"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_none">"Hiçbiri"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_fatal">"Ciddi"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_error">"Hata"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_warning">"Uyarı"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_info">"Bilgi"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_debug">"Hata ayıklama"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_path">"Yol"</string>
+    <!-- XMSG: Authentication error message -->
+    <string name="authentication_failed">"Kimlik doğrulama başarısız oldu."</string>
+    <!-- XMSG: Authentication progress description -->
+    <string name="authentication_progress">"Sunucu ile kimlik doğrulanıyor..."</string>
+
+    <!-- restrictions -->
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="restriction_service_url_title">"Hizmet URL\'si"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="restriction_service_url_description">"OData servisi URL\'si."</string>
+    <!-- restrictions -->
+
+    <!-- XMSG: Detailed error description -->
+    <string name="error_back_navigation">"Bu uygulama giriş koduyla korunuyor, doğru giriş kodu sağlanmadan başlatılmaz."</string>
+
+    <!-- XTIT: The id of the push notification channel -->
+    <string name="push_channel_id">"sap_btp_android_sdk_foundation_push_channel"</string>
+    <!-- XTIT: The name of the push notification channel -->
+    <string name="push_channel_name">"SAP BTP Android SDK"</string>
+    <!-- XTIT: The description of the badge channel -->
+    <string name="push_badge_channel_description">"Gösterge bildirimleri yönetimi"</string>
+    <!-- XTIT: The name of the badge channel -->
+    <string name="push_badge_channel_name">"SAP BTP Android SDK gösterge kanalı"</string>
+    <!-- XMSG: push message alert -->
+    <string name="push_message_alert">"Bildirim"</string>
+    <!-- XMSG: push message title -->
+    <string name="push_message_title">"Push bildirimi iletisi alındı"</string>
+    <!-- XBUT: Text of the OK button -->
+    <string name="push_message_dlg_ok">"Tamam"</string>
+    <!-- XBUT: Text of the Cancel button -->
+    <string name="push_message_dlg_cancel">"İptal"</string>
+    <!-- XTIT: The title of Push topics -->
+    <string name="settings_push_topics">"En sevdiğiniz konuya abone olun"</string>
+
+    <!-- XTIT: The title of Eula dialog -->
+    <string name="launch_screen_dialog_title">"Hizmet anlaşması ve gizlilik ilkesi"</string>
+    <!-- XBUT: Text of the Agree button -->
+    <string name="launch_screen_dialog_button_agree">"Kabul et"</string>
+    <!-- XBUT: Text of the Disagree button -->
+    <string name="launch_screen_dialog_button_disagree">"Reddet"</string>
+    <!-- XBUT: Text of the Got it button -->
+    <string name="launch_screen_dialog_disagree_confirm">"Anladım"</string>
+    <!-- XTIT: The content text of Eula dialog -->
+    <string name="launch_screen_dialog_eula_text">"Bu uygulamayı kullandığınız için teşekkür ederiz. Bu uygulamayı kullandığınızda, kişisel bilgileriniz toplanabilir ve işlenebilir. SAP\'nin kişisel bilgilerinizi nasıl işlediğini tam olarak anladığınızdan emin olmak için lütfen &lt;a href=http://www.sap.com&gt;Son kullanıcı lisans anlaşması&lt;/a&gt; ve &lt;a href=http://www.sap.com&gt;Gizlilik bildirimi&lt;/a&gt; belgelerine başvurun. Son kullanıcı lisans anlaşması ve Gizlilik bildirimi belgelerini kabul ediyorsanız uygulamayı başlatmak için lütfen Kabul et seçeneğine tıklayın. SAP olarak, kişisel bilgilerinizi korumak için elimizden gelen tüm çabayı göstereceğiz."</string>
+    <!-- XTIT: The content text of Eula dialog -->
+    <string name="launch_screen_dialog_disagree_text">"&lt;a href=http://www.sap.com&gt;Son kullanıcı lisans anlaşması&lt;/a&gt; ve &lt;a href=http://www.sap.com&gt;Gizlilik bildirimi&lt;/a&gt; belgelerini kabul etmiyorsanız demo modumuzu deneyebilirsiniz."</string>
+    <!-- XTIT: The content text of Eula dialog -->
+    <string name="privacy_dialog_content">"Bu uygulamayı kullandığınız için teşekkür ederiz. Bu uygulamayı kullandığınızda, kişisel bilgileriniz toplanabilir ve işlenebilir. SAP\'nin kişisel bilgilerinizi nasıl işlediğini tam olarak anladığınızdan emin olmak için lütfen "<annotation key="eula">"Son kullanıcı lisans anlaşması"</annotation>" ve "<annotation key="term">"Gizlilik bildirimi"</annotation>" belgelerine başvurun. \"Son kullanıcı lisans anlaşması\" ve \"Gizlilik bildirimi\" belgelerini kabul ediyorsanız uygulamayı başlatmak için lütfen \"Kabul et\" seçeneğine tıklayın. SAP olarak, kişisel bilgilerinizi korumak için elimizden gelen tüm çabayı göstereceğiz."</string>
+    <!-- XTIT: The content text of Eula dialog -->
+    <string name="privacy_confirmation_dialog_content"><annotation key="eula">"Son kullanıcı lisans anlaşması"</annotation>" ve "<annotation key="term">"Gizlilik bildirimi"</annotation>" belgelerini kabul etmiyorsanız demo modumuzu deneyebilirsiniz."</string>
+    <!-- XTIT: The title of Demo dialog -->
+    <string name="launch_screen_demo_dialog_title">"Demo modu"</string>
+    <!-- XTIT: The content text of demo dialog -->
+    <string name="launch_screen_demo_dialog_message">"Oluşturulan uygulamada demo modu uygulanmamış."</string>
+    <!-- XBUT: Text of the Go back button -->
+    <string name="launch_screen_demo_dialog_button_goback">"Geri dön"</string>
+</resources>

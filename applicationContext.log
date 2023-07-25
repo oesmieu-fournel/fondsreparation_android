@@ -1,0 +1,17 @@
+   ______________________________
+ / \                             \.
+|   | This log file was created  |.
+ \_ | by the Wizard, it contains |.
+    | the configuration data     |.
+    | used for the application   |.
+    | generation.                |.
+    |                            |.
+    | It shouldn't be edited     |.
+    | manually, changing it      |.
+    | won't affect the generated |.
+    | sample.                    |.
+    |   _________________________|___
+    |  /                            /.
+    \_/____________________________/.
+
+{"projectName":"Reparation","projectLocation":"C:\\Users\\YohannWEBER\\AndroidStudioProjects\\Reparation","projectNamespace":"com.ecosystem.mobile.reparation","accountName":"eco","serviceURL":"https://ecosystem-dev-space-com-ecosystem-mobile-reparation.cfapps.eu10.hana.ondemand.com/","serverURL":"https://mobile-service-cockpit-web.cfapps.eu10.hana.ondemand.com/cockpit/v1/org/8f66940a-3e20-48e4-b5ee-f25277fe9262/space/60d16e49-32b6-4720-b21d-c98cb1db9c68/","applicationID":"com.ecosystem.mobile.reparation","applicationSecurityConfig":"BASIC","jsonPath":null,"senderID":null,"serverKey":null,"isLogEnabled":true,"isLogUploadEnabled":true,"SAPSDKLocation":"MAVEN_LOCAL","activationType":"appConfigFile","generateJavaCode":false,"generateOnlineApp":true,"isUsageIncluded":false,"isCrashReportIncluded":false,"isMultipleUserMode":false,"isViewBaseFramework":false}

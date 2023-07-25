@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><resources>
+    <!-- XTIT: The title of the create Activity, will appear at the top of the screen -->
+    <string name="title_create_fragment">"Izveidot %1$s pozīciju"</string>
+
+    <!-- XTIT: The title of the update Activity, will appear at the top of the screen -->
+    <string name="title_update_fragment">"Atjaunināt"</string>
+
+    <!-- XMSG: Error message for the mandatory input fields, will appear in the edit field left empty -->
+    <string name="mandatory_warning">"Šis lauks ir jāaizpilda obligāti"</string>
+
+    <!-- XTIT: The title of the welcome screen, will appear at the top of the screen -->
+    <string name="welcome_screen_headline_label">"Esiet sveicināts!"</string>
+
+    <!-- YINS: Short description on the welcome screen -->
+    <string name="welcome_screen_detail_label">"Iepazīstiet SAP BTP SDK operētājsistēmai Android ar šo ģenerēto lietojumprogrammu."</string>
+
+    <!-- XFLD: label at the bottom of the welcome screen -->
+    <string name="welcome_screen_footnote_label">"Varat izmēģināt SDK funkcijas demonstrācijas režīmā."</string>
+
+    <!-- XFLD: label of the primary button on the welcome screen -->
+    <string name="welcome_screen_primary_button_label">"Sākt darbu"</string>
+
+    <!-- XBUT: Text of the Save button -->
+    <string name="save">"Saglabāt"</string>
+
+    <!-- XBUT: Text of the Update button -->
+    <string name="update">"Atjaunināt"</string>
+
+    <!-- XBUT: Text of the Delete button -->
+    <string name="delete">"Dzēst"</string>
+
+    <!-- XBUT: Text of the Cancel button -->
+    <string name="cancel">"Atcelt"</string>
+
+    <!-- XBUT: Text of the OK button -->
+    <string name="ok">"Labi"</string>
+
+    <!-- XBUT: Text of the Delete button -->
+    <string name="yes">"Jā"</string>
+
+    <!-- XBUT: Text of the Add New button -->
+    <string name="add_new">"Pievienot jaunu"</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="delete_dialog_title">"Dzēst"</string>
+
+    <!-- XMSG: The message of the delete dialog -->
+    <string name="delete_one_item">"Vai tiešām vēlaties dzēst atlasīto pozīciju?"</string>
+
+    <!-- XMSG: The message of the delete dialog in case of multiple selection -->
+    <string name="delete_more_items">"Vai tiešām vēlaties dzēst atlasītās pozīcijas?"</string>
+
+    <!-- XMSG: Error message, can be presented in a Toast or Dialog -->
+    <string name="entity_download_error">"Fona darbības laikā radās kļūda."</string>
+
+    <!-- XMIT: Refresh menu item -->
+    <string name="menu_refresh">"Atsvaidzināt"</string>
+
+    <!-- XMIT: Refresh menu item -->
+    <string name="menu_home">"Sākums"</string>
+
+    <!-- XMIT: Update menu item -->
+    <string name="menu_update">"Atjaunināt"</string>
+
+    <!-- XMIT: Delete menu item -->
+    <string name="menu_delete">"Dzēst"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_headline">"Headline"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_subheadline">"Subheadline"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_body">"Body Text"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_footnote">"Footnote"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_tag1">"TAG1"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_tag2">"TAG2"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_tag3">"TAG3"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_description">"Item Description"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_status">"Status"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="error">"Error"</string>
+
+    <!-- error messages -->
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="read_failed">"Lejupielāde neizdevās"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="format_error">"Ievade nav piemērota datu tipam."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="read_failed_detail">"Lejupielādes darbība neizdevās. Lūdzu, mēģiniet restartēt lietojumprogrammu."</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="create_failed">"Izveide neizdevās"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="create_failed_detail">"Izveides darbība neizdevās. Lūdzu, mēģiniet to izpildīt vēlāk."</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="update_failed">"Atjaunināšana neizdevās"</string>
+    <string name="update_failed_detail">"Atjaunināšanas darbība neizdevās. Lūdzu, atsvaidziniet lokālos datus un mēģiniet to veikt vēlreiz vēlāk."</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="delete_failed">"Dzēšana neizdevās"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="delete_failed_detail">"Dzēšanas darbība neizdevās. Lūdzu, atsvaidziniet lokālos datus un mēģiniet to veikt vēlreiz vēlāk."</string>
+
+    <!-- XTIT: The message of the upload toast in case of success -->
+    <string name="log_upload_ok">"Žurnāls ir augšupielādēts serverī."</string>
+
+    <!-- XTIT: The message of the upload toast in case of failing -->
+    <string name="log_upload_failed">"Žurnāla augšupielāde neizdevās."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="log_upload_failed_detail">"Žurnāla augšupielādei tika saņemts nepareizi veidots URL. Lietojumprogramma, iespējams, joprojām darbosies, bet žurnāli netiks augšupielādēti serverī."</string>
+
+    <!-- XTIT: The message of the upload toast in case of success -->
+    <string name="usage_upload_ok">"Lietojuma dati ir augšupielādēti serverī."</string>
+
+    <!-- XTIT: The message of the upload toast in case of failing -->
+    <string name="usage_upload_failed">"Lietojuma datu augšupielāde neizdevās."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="usage_init_failed">"Lietojumu nevarēja inicializēt."</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="push_error">"Stumšanas kļūda"</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="push_message">"Saņemts stūmējziņojums"</string>
+
+    <!-- XTIT: The Notification Text -->
+    <string name="push_text">"Paziņojums"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="push_token_upload_failed_detail">"Stumšanas marķieri nevarēja augšupielādēt SAP serverī, stumšanas funkcija nedarbosies. Jūs nesaņemsit stūmējziņojumus."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="push_invalid_push_format">"Saņemts stūmējziņojums, bet tā formāts nebija derīgs, tādēļ to nevarēja apstrādāt."</string>
+
+    <!-- XMSG: AlertDialog before navigation - Title -->
+    <string name="before_navigation_dialog_title">"Iespējams datu zudums"</string>
+
+    <!-- XMSG: AlertDialog before navigation - Message -->
+    <string name="before_navigation_dialog_message">"Atstājot šo lapu, nekādi dati netiks saglabāti."</string>
+
+    <!-- XMSG: AlertDialog before navigation - Positive button (navigation occurs) -->
+    <string name="before_navigation_dialog_positive_button">"Atstāt"</string>
+
+    <!-- XMSG: AlertDialog before navigation - Negative button (cancelled navigation) -->
+    <string name="before_navigation_dialog_negative_button">"Palikt"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_loader_complete_error_description">"Konfigurācijas ielādētājam neizdevās iegūt konfigurācijas datus."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_loader_on_error_description">"Konfigurācijas nodrošinātājam \"%1$s” radās kļūda. %2$s"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_data_build_json_description">"Neizdevās būvēt JSON objektu."</string>
+    <string name="error_unknown_app_config">"Neizdevās sagatavot lietojumprogrammas konfigurāciju ar nezināmu kļūdu."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="server_auth_not_supported_saml">"Kļūda: šī lietojumprogramma neatbalsta SAML autentifikāciju."</string>
+
+	<!-- XTIT: The title of the error dialog -->
+	<string name="bind_error">"Saistīšanas kļūda"</string>
+
+	<!-- XMSG: Detailed error description -->
+    <string name="bind_error_detail">"Neizdevās saistīt ar bezsaistes OData sinhronizācijas pakalpojumu."</string>
+
+	<!-- XTIT: The title of the error dialog -->
+	<string name="offline_provider_error">"Bezsaistes inicializācijas kļūda"</string>
+
+ 	<!-- XMSG: Detailed error description -->
+	<string name="offline_provider_error_detail">"Neizdevās inicializēt OData nodrošinātāju."</string>
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="offline_initial_open_error">"Bezsaistes sākotnējās atvēršanas kļūda"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_initial_open_error_detail">"Neizdevās pabeigt bezsaistes krātuves sākotnējo atvēršanu."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_backend_big_data_error_detail">"Vērtums no aizmugursistēmas bija pārāk liels, SAP Mobile Services vērtuma ierobežojuma noklusējuma lielums ir 64M. Varat mēģināt to labot ar kādu no šiem risinājumiem:\n\t1) Palielināt lieluma ierobežojumu failā offline.ini;\n\t2) Ieviest servera puses lapdali, lai iespējotu lielu datu kopu sinhronizāciju porcijās;\n\t3) Izmantot $top pieprasījumus vaicājumu vai filtru definēšanā, lai ierobežotu kopējo datu apjomu, ko klients lejupielādē."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_backend_time_out_error_detail">"Palieliniet aizmugursistēmas savienojuma taimautu šai lietojumprogrammai SAP Mobile Services un mēģiniet vēlreiz."</string>
+
+    <!-- XTIT: The title of the error dialog -->
+	<string name="synchronize_failure">"Sinhronizācijas kļūme"</string>
+
+	<!-- XMSG: Detailed error description -->
+	<string name="synchronize_failure_detail">"Sinhronizācija ar Mobile Services neizdevās."</string>
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="offline_reset_store_error">"Bezsaistes krātuves atiestatīšanas kļūme"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_reset_store_error_detail">"Neizdevās atiestatīt/noņemt bezsaistes datu krātuvi."</string>
+    <!-- error messages -->
+
+    <!-- offline -->
+
+    <!-- XTIT: The title of initial opening of offline store failed -->
+    <string name="initializing_offline_store_failed">"Sinhronizācija neizdevās"</string>
+
+    <!-- XMSG: Offline AlertDialog before navigation - Title -->
+    <string name="offline_navigation_dialog_title">"Sinhronizācijas atcelšanas apstiprinājums"</string>
+
+    <!-- XMSG: Offline AlertDialog before navigation - Message -->
+    <string name="offline_navigation_dialog_message">"Vai tiešām vēlaties atcelt notiekošo sinhronizāciju un atgriezties sveiciena ekrānā?"</string>
+
+    <!-- XMSG: Offline AlertDialog before navigation - Positive button (navigation occurs) -->
+    <string name="offline_navigation_dialog_positive_option">"Apstiprināt"</string>
+
+    <!-- XMSG: Offline AlertDialog before navigation - Negative button (cancelled navigation) -->
+    <string name="offline_navigation_dialog_negative_option">"Ne tagad"</string>
+
+    <!-- NOTR: No translation needed, Label for entity state in offline -->
+	<string name="local_state">"Local"</string>
+
+    <!-- NOTR: No translation needed, Label for entity state in offline -->
+	<string name="error_state">"Error"</string>
+
+	<!-- NOTR: No translation needed, Label for entity state in offline -->
+	<string name="updated_state">"Updated"</string>
+
+	<!-- NOTR: No translation needed, Label for entity state in offline -->
+	<string name="download_state">"Download"</string>
+
+    <!-- XMIT: Menu item to trigger synchronization -->
+	<string name="synchronize_action">"Sinhronizēt"</string>
+
+    <!-- offline -->
+
+    <!-- XTIT: The title of the settings dialog -->
+    <string name="settings_activity_name">"Iestatījumi"</string>
+    <!-- XTIT: The title of the settings menu -->
+    <string name="menu_item_settings">"Iestatījumi"</string>
+
+    <!-- XTIT: The title of the passcode group -->
+    <string name="passcode">"Ieejas kods"</string>
+    <!-- XTIT: The title of the change passcode menu item -->
+    <string name="manage_passcode">"Mainīt ieejas kodu"</string>
+    <!-- XTIT: The title of the reset group -->
+    <string name="reset">"Atiestatīt lietojumprogrammu"</string>
+    <!-- XTIT: The title of the reset app menu item -->
+    <string name="reset_app">"Notīrīt lietojumprogrammas iestatījumus"</string>
+    <!-- XTIT: The title of a confirmation dialog -->
+    <string name="reset_app_confirmation">"Visa ar šo lietojumprogrammu saistītā informācija tiks noņemta. Vai vēlaties turpināt?"</string>
+    <!-- XMSG: The message of reset client -->
+    <string name="reset_client">"Atiestatīt klientu"</string>
+    <!-- XTIT: The title of the logout item -->
+    <string name="logout">"Atteikties"</string>
+    <!-- XTIT: The title of the delete registration item -->
+    <string name="delete_registration">"Dzēst reģistrāciju"</string>
+    <!-- XTIT: The title of a warning dialog -->
+    <string name="delete_registration_warning">"Visas ar šo reģistrāciju saistītās nesinhronizētās gaidošās izmaiņas tiks noņemtas. Vai vēlaties turpināt?"</string>
+
+    <!-- XTIT: The title of a menu item -->
+    <string name="upload_usage">"Augšupielādēt lietojuma datus"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="set_usage_consent">"Piekrišana lietojuma apkopošanai"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="set_crash_report_consent">"Piekrišana avārijas atskaišu apkopošanai"</string>
+
+    <!-- XTIT: The title of a menu group -->
+    <string name="crash_report">"Avārijas atskaite"</string>
+    <!-- XTIT: The title of a menu group -->
+    <string name="usage">"Lietojums"</string>
+    <!-- XTIT: The title of a menu group -->
+    <string name="logging">"Reģistrēšana"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="upload_log">"Augšupielādēt žurnālu"</string>
+    <!-- XTIT: The description of a menu item -->
+    <string name="upload_log_summary">"Augšupielādējiet žurnālu serverī."</string>
+    <!-- XMSG: The message of a log level toast -->
+    <string name="log_level_changed">"Noklusējuma žurnāla līmenis mainīts no servera politikas uz: %s"</string>
+    <!-- XMSG: The message of a log level toast -->
+    <string name="log_level_default">"Žurnāla politika nav iestatīta serverī, noklusējuma žurnāla līmenis ir iestatīts uz: %s"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="log_level">"Žurnāla līmenis"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="dialog_title_choose_log_level">"Izvēlēties žurnāla līmeni"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_none">"Nav"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_fatal">"Fatāla"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_error">"Kļūda"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_warning">"Brīdināt"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_info">"Informācija"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_debug">"Atkļūdot"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_path">"Ceļš"</string>
+    <!-- XMSG: Authentication error message -->
+    <string name="authentication_failed">"Autentifikācija neizdevās."</string>
+    <!-- XMSG: Authentication progress description -->
+    <string name="authentication_progress">"Autentifikācija ar serveri..."</string>
+
+    <!-- restrictions -->
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="restriction_service_url_title">"Pakalpojuma URL"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="restriction_service_url_description">"OData pakalpojuma URL."</string>
+    <!-- restrictions -->
+
+    <!-- XMSG: Detailed error description -->
+    <string name="error_back_navigation">"Lietojumprogramma ir aizsargāta ar ieejas kodu, tā netiks startēta, nenodrošinot pareizu ieejas kodu."</string>
+
+    <!-- XTIT: The id of the push notification channel -->
+    <string name="push_channel_id">"sap_btp_android_sdk_foundation_push_channel"</string>
+    <!-- XTIT: The name of the push notification channel -->
+    <string name="push_channel_name">"SAP BTP Android SDK"</string>
+    <!-- XTIT: The description of the badge channel -->
+    <string name="push_badge_channel_description">"Nozīmīšu paziņojumu pārvaldība"</string>
+    <!-- XTIT: The name of the badge channel -->
+    <string name="push_badge_channel_name">"SAP BTP Android SDK nozīmītes kanāls"</string>
+    <!-- XMSG: push message alert -->
+    <string name="push_message_alert">"Paziņojums"</string>
+    <!-- XMSG: push message title -->
+    <string name="push_message_title">"Saņemts stūmējziņojums"</string>
+    <!-- XBUT: Text of the OK button -->
+    <string name="push_message_dlg_ok">"Labi"</string>
+    <!-- XBUT: Text of the Cancel button -->
+    <string name="push_message_dlg_cancel">"Atcelt"</string>
+    <!-- XTIT: The title of Push topics -->
+    <string name="settings_push_topics">"Abonēt savu iecienīto tēmu"</string>
+
+    <!-- XTIT: The title of Eula dialog -->
+    <string name="launch_screen_dialog_title">"Pakalpojuma līgums un konfidencialitātes politika"</string>
+    <!-- XBUT: Text of the Agree button -->
+    <string name="launch_screen_dialog_button_agree">"Piekrītu"</string>
+    <!-- XBUT: Text of the Disagree button -->
+    <string name="launch_screen_dialog_button_disagree">"Nepiekrītu"</string>
+    <!-- XBUT: Text of the Got it button -->
+    <string name="launch_screen_dialog_disagree_confirm">"Sapratu"</string>
+    <!-- XTIT: The content text of Eula dialog -->
+    <string name="launch_screen_dialog_eula_text">"Paldies, ka izmantojat šo lietotni. Kad lietotni izmantojat, var tikt vākta un apstrādāta jūsu personas informācija. Lūdzu, izskatiet &lt;a href=http://www.sap.com&gt;gala lietotāja licences līgumu&lt;/a&gt; un &lt;a href=http://www.sap.com&gt;paziņojumu par konfidencialitāti&lt;/a&gt;, lai pilnībā saprastu, kā SAP apstrādā jūsu personas informāciju. Ja piekrītat gala lietotāja licences līgumam un paziņojumam par konfidencialitāti, lūdzu, noklikšķiniet uz Piekrītu, lai lietotni sāktu izmantot. SAP ļoti rūpēsies par jūsu personas informācijas aizsardzību."</string>
+    <!-- XTIT: The content text of Eula dialog -->
+    <string name="launch_screen_dialog_disagree_text">"Ja nepiekrītat &lt;a href=http://www.sap.com&gt;gala lietotāja licences līgumam&lt;/a&gt; un &lt;a href=http://www.sap.com&gt;konfidencialitātes politikai&lt;/a&gt;, varat izmēģināt tikai demonstrācijas režīmu."</string>
+    <!-- XTIT: The content text of Eula dialog -->
+    <string name="privacy_dialog_content">"Paldies, ka izmantojat šo lietotni. Kad lietotni izmantojat, var tikt vākta un apstrādāta jūsu personas informācija. Lūdzu, izskatiet "<annotation key="eula">"gala lietotāja licences līgumu"</annotation>" un "<annotation key="term">"paziņojumu par konfidencialitāti"</annotation>", lai pilnībā saprastu, kā SAP apstrādā jūsu personas informāciju. Ja piekrītat gala lietotāja licences līgumam un paziņojumam par konfidencialitāti, lūdzu, noklikšķiniet uz “Piekrītu”, lai lietotni sāktu izmantot. SAP ļoti rūpēsies par jūsu personas informācijas aizsardzību."</string>
+    <!-- XTIT: The content text of Eula dialog -->
+    <string name="privacy_confirmation_dialog_content">"Ja nepiekrītat "<annotation key="eula">"gala lietotāja licences līgumam"</annotation>" un "<annotation key="term">"paziņojumam par konfidencialitāti"</annotation>", varat izmēģināt tikai demonstrācijas režīmu."</string>
+    <!-- XTIT: The title of Demo dialog -->
+    <string name="launch_screen_demo_dialog_title">"Demonstrācijas režīms"</string>
+    <!-- XTIT: The content text of demo dialog -->
+    <string name="launch_screen_demo_dialog_message">"Demonstrācijas režīms nav ieviests ģenerētajā lietojumprogrammā."</string>
+    <!-- XBUT: Text of the Go back button -->
+    <string name="launch_screen_demo_dialog_button_goback">"Doties atpakaļ"</string>
+</resources>

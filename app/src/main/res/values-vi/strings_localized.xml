@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><resources>
+    <!-- XTIT: The title of the create Activity, will appear at the top of the screen -->
+    <string name="title_create_fragment">"Tạo mục %1$s"</string>
+
+    <!-- XTIT: The title of the update Activity, will appear at the top of the screen -->
+    <string name="title_update_fragment">"Cập nhật"</string>
+
+    <!-- XMSG: Error message for the mandatory input fields, will appear in the edit field left empty -->
+    <string name="mandatory_warning">"Đây là trường bắt buộc"</string>
+
+    <!-- XTIT: The title of the welcome screen, will appear at the top of the screen -->
+    <string name="welcome_screen_headline_label">"Chào mừng"</string>
+
+    <!-- YINS: Short description on the welcome screen -->
+    <string name="welcome_screen_detail_label">"Khám phá SAP BTP SDK dành cho Android với ứng dụng được tạo này."</string>
+
+    <!-- XFLD: label at the bottom of the welcome screen -->
+    <string name="welcome_screen_footnote_label">"Bạn có thể thử các tính năng SDK trong chế độ demo."</string>
+
+    <!-- XFLD: label of the primary button on the welcome screen -->
+    <string name="welcome_screen_primary_button_label">"Bắt đầu"</string>
+
+    <!-- XBUT: Text of the Save button -->
+    <string name="save">"Lưu"</string>
+
+    <!-- XBUT: Text of the Update button -->
+    <string name="update">"Cập nhật"</string>
+
+    <!-- XBUT: Text of the Delete button -->
+    <string name="delete">"Xóa"</string>
+
+    <!-- XBUT: Text of the Cancel button -->
+    <string name="cancel">"Hủy"</string>
+
+    <!-- XBUT: Text of the OK button -->
+    <string name="ok">"OK"</string>
+
+    <!-- XBUT: Text of the Delete button -->
+    <string name="yes">"Có"</string>
+
+    <!-- XBUT: Text of the Add New button -->
+    <string name="add_new">"Thêm mới"</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="delete_dialog_title">"Xóa"</string>
+
+    <!-- XMSG: The message of the delete dialog -->
+    <string name="delete_one_item">"Bạn có thật sự muốn xóa mục đã chọn?"</string>
+
+    <!-- XMSG: The message of the delete dialog in case of multiple selection -->
+    <string name="delete_more_items">"Bạn có thật sự muốn xóa mục đã chọn?"</string>
+
+    <!-- XMSG: Error message, can be presented in a Toast or Dialog -->
+    <string name="entity_download_error">"Đã xảy ra lỗi trong hoạt động nền."</string>
+
+    <!-- XMIT: Refresh menu item -->
+    <string name="menu_refresh">"Làm mới"</string>
+
+    <!-- XMIT: Refresh menu item -->
+    <string name="menu_home">"Trang chủ"</string>
+
+    <!-- XMIT: Update menu item -->
+    <string name="menu_update">"Cập nhật"</string>
+
+    <!-- XMIT: Delete menu item -->
+    <string name="menu_delete">"Xóa"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_headline">"Headline"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_subheadline">"Subheadline"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_body">"Body Text"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_footnote">"Footnote"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_tag1">"TAG1"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_tag2">"TAG2"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_tag3">"TAG3"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_description">"Item Description"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_status">"Status"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="error">"Error"</string>
+
+    <!-- error messages -->
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="read_failed">"Tải xuống không thành công"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="format_error">"Đầu vào không phù hợp với kiểu dữ liệu."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="read_failed_detail">"Tải hoạt động xuống không thành công, vui lòng thử khởi động lại ứng dụng."</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="create_failed">"Tạo không thành công"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="create_failed_detail">"Tạo hoạt động không thành công, vui lòng thử thực hiện lại sau."</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="update_failed">"Cập nhật không thành công"</string>
+    <string name="update_failed_detail">"Cập nhật hoạt động không thành công, vui lòng làm mới dữ liệu cục bộ và thử thực hiện lại sau."</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="delete_failed">"Xóa không thành công"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="delete_failed_detail">"Xóa hoạt động không thành công, vui lòng làm mới dữ liệu cục bộ và thử thực hiện lại sau."</string>
+
+    <!-- XTIT: The message of the upload toast in case of success -->
+    <string name="log_upload_ok">"Nhật ký được tải lên máy chủ."</string>
+
+    <!-- XTIT: The message of the upload toast in case of failing -->
+    <string name="log_upload_failed">"Tải nhật ký lên không thành công."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="log_upload_failed_detail">"Đã nhận được URL không đúng định dạng để tải nhật ký lên. Ứng dụng có thể vẫn hoạt động nhưng sẽ không thể tải nhật ký lên máy chủ."</string>
+
+    <!-- XTIT: The message of the upload toast in case of success -->
+    <string name="usage_upload_ok">"Dữ liệu sử dụng được tải lên máy chủ."</string>
+
+    <!-- XTIT: The message of the upload toast in case of failing -->
+    <string name="usage_upload_failed">"Tải dữ liệu sử dụng lên không thành công."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="usage_init_failed">"Không thể khởi tạo sử dụng."</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="push_error">"Lỗi đẩy"</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="push_message">"Đã nhận thông báo đẩy"</string>
+
+    <!-- XTIT: The Notification Text -->
+    <string name="push_text">"Thông báo"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="push_token_upload_failed_detail">"Không thể tải token đẩy lên máy chủ SAP, tính năng đẩy sẽ không hoạt động. Bạn sẽ không nhận được thông báo đẩy."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="push_invalid_push_format">"Đã nhận thông báo đẩy nhưng định dạng của nó không hợp lệ, vì thế không thể xử lý thông báo đẩy."</string>
+
+    <!-- XMSG: AlertDialog before navigation - Title -->
+    <string name="before_navigation_dialog_title">"Mất dữ liệu tiềm ẩn"</string>
+
+    <!-- XMSG: AlertDialog before navigation - Message -->
+    <string name="before_navigation_dialog_message">"Bằng việc rời khỏi trang này, sẽ không có dữ liệu nào được lưu."</string>
+
+    <!-- XMSG: AlertDialog before navigation - Positive button (navigation occurs) -->
+    <string name="before_navigation_dialog_positive_button">"Rời khỏi"</string>
+
+    <!-- XMSG: AlertDialog before navigation - Negative button (cancelled navigation) -->
+    <string name="before_navigation_dialog_negative_button">"Ở lại"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_loader_complete_error_description">"Trình tải cấu hình không thể lấy dữ liệu cấu hình."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_loader_on_error_description">"Trình cung cấp cấu hình, \"%1$s\", đã gặp lỗi. %2$s"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_data_build_json_description">"Không thể tạo đối tượng JSON."</string>
+    <string name="error_unknown_app_config">"Không thể chuẩn bị cấu hình ứng dụng có lỗi chưa biết."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="server_auth_not_supported_saml">"Lỗi: Ứng dụng này không hỗ trợ xác thực SAML."</string>
+
+	<!-- XTIT: The title of the error dialog -->
+	<string name="bind_error">"Lỗi liên kết"</string>
+
+	<!-- XMSG: Detailed error description -->
+    <string name="bind_error_detail">"Không thể liên kết với dịch vụ đồng bộ OData ngoại tuyến."</string>
+
+	<!-- XTIT: The title of the error dialog -->
+	<string name="offline_provider_error">"Lỗi khởi tạo ngoại tuyến"</string>
+
+ 	<!-- XMSG: Detailed error description -->
+	<string name="offline_provider_error_detail">"Không thể khởi tạo trình cung cấp OData ngoại tuyến."</string>
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="offline_initial_open_error">"Lỗi chưa xử lý ban đầu ngoại tuyến"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_initial_open_error_detail">"Không thể hoàn tất việc xử lý ban đầu của lưu trữ ngoại tuyến."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_backend_big_data_error_detail">"Tải trọng từ đầu cuối quá lớn, kích thước giới hạn tải trọng mặc định của SAP Mobile Services là 64M. Bạn có thể cố gắng khắc phục bằng một trong các giải pháp sau đây:\n\t1) Tăng giới hạn kích thước trong offline.ini;\n\t2) Thực hiện phân trang phía máy chủ để cho phép bật đồng bộ hóa bộ dữ liệu lớn trong khúc dữ liệu;\n\t3) Sử dụng các yêu cầu $top trong việc xác định các truy vấn hoặc bộ lọc để giới hạn tổng số lượng dữ liệu mà máy khách tải xuống."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_backend_time_out_error_detail">"Tăng thời gian hết giờ của kết nối đầu cuối cho ứng dụng này trong SAP Mobile Services và thử lại."</string>
+
+    <!-- XTIT: The title of the error dialog -->
+	<string name="synchronize_failure">"Lỗi đồng bộ hóa"</string>
+
+	<!-- XMSG: Detailed error description -->
+	<string name="synchronize_failure_detail">"Đồng bộ hóa với dịch vụ di động không thành công."</string>
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="offline_reset_store_error">"Lỗi thiết lập lại lưu trữ ngoại tuyến"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_reset_store_error_detail">"Không thể thiết lập lại/loại bỏ lưu trữ dữ liệu ngoại tuyến."</string>
+    <!-- error messages -->
+
+    <!-- offline -->
+
+    <!-- XTIT: The title of initial opening of offline store failed -->
+    <string name="initializing_offline_store_failed">"Đồng bộ không thành công"</string>
+
+    <!-- XMSG: Offline AlertDialog before navigation - Title -->
+    <string name="offline_navigation_dialog_title">"Hủy xác nhận đồng bộ"</string>
+
+    <!-- XMSG: Offline AlertDialog before navigation - Message -->
+    <string name="offline_navigation_dialog_message">"Bạn có chắc là bạn muốn hủy đồng bộ đang được tiến hành và quay lại màn hình Chào mừng?"</string>
+
+    <!-- XMSG: Offline AlertDialog before navigation - Positive button (navigation occurs) -->
+    <string name="offline_navigation_dialog_positive_option">"Xác nhận"</string>
+
+    <!-- XMSG: Offline AlertDialog before navigation - Negative button (cancelled navigation) -->
+    <string name="offline_navigation_dialog_negative_option">"Không phải bây giờ"</string>
+
+    <!-- NOTR: No translation needed, Label for entity state in offline -->
+	<string name="local_state">"Local"</string>
+
+    <!-- NOTR: No translation needed, Label for entity state in offline -->
+	<string name="error_state">"Error"</string>
+
+	<!-- NOTR: No translation needed, Label for entity state in offline -->
+	<string name="updated_state">"Updated"</string>
+
+	<!-- NOTR: No translation needed, Label for entity state in offline -->
+	<string name="download_state">"Download"</string>
+
+    <!-- XMIT: Menu item to trigger synchronization -->
+	<string name="synchronize_action">"Đồng bộ hóa"</string>
+
+    <!-- offline -->
+
+    <!-- XTIT: The title of the settings dialog -->
+    <string name="settings_activity_name">"Thiết lập"</string>
+    <!-- XTIT: The title of the settings menu -->
+    <string name="menu_item_settings">"Thiết lập"</string>
+
+    <!-- XTIT: The title of the passcode group -->
+    <string name="passcode">"Mã truy cập"</string>
+    <!-- XTIT: The title of the change passcode menu item -->
+    <string name="manage_passcode">"Thay đổi mã truy cập"</string>
+    <!-- XTIT: The title of the reset group -->
+    <string name="reset">"Thiết lập lại ứng dụng"</string>
+    <!-- XTIT: The title of the reset app menu item -->
+    <string name="reset_app">"Xóa thiết lập ứng dụng"</string>
+    <!-- XTIT: The title of a confirmation dialog -->
+    <string name="reset_app_confirmation">"Tất cả thông tin được liên kết với ứng dụng này sẽ bị xóa. Bạn có muốn tiếp tục không?"</string>
+    <!-- XMSG: The message of reset client -->
+    <string name="reset_client">"Thiết lập lại máy khách"</string>
+    <!-- XTIT: The title of the logout item -->
+    <string name="logout">"Đăng xuất"</string>
+    <!-- XTIT: The title of the delete registration item -->
+    <string name="delete_registration">"Xóa đăng ký"</string>
+    <!-- XTIT: The title of a warning dialog -->
+    <string name="delete_registration_warning">"Tất cả thay đổi không đồng bộ đang chờ xử lý được liên kết với đăng ký này sẽ bị xóa. Bạn có muốn tiếp tục không?"</string>
+
+    <!-- XTIT: The title of a menu item -->
+    <string name="upload_usage">"Tải dữ liệu sử dụng lên"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="set_usage_consent">"Đồng ý thu thập sử dụng"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="set_crash_report_consent">"Đồng ý thu thập báo cáo sự cố"</string>
+
+    <!-- XTIT: The title of a menu group -->
+    <string name="crash_report">"Báo cáo sự cố"</string>
+    <!-- XTIT: The title of a menu group -->
+    <string name="usage">"Sử dụng"</string>
+    <!-- XTIT: The title of a menu group -->
+    <string name="logging">"Ghi chép"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="upload_log">"Tải nhật ký lên"</string>
+    <!-- XTIT: The description of a menu item -->
+    <string name="upload_log_summary">"Tải nhật ký lên máy chủ."</string>
+    <!-- XMSG: The message of a log level toast -->
+    <string name="log_level_changed">"Mức nhật ký mặc định được thay đổi từ chính sách máy chủ đến: %s"</string>
+    <!-- XMSG: The message of a log level toast -->
+    <string name="log_level_default">"Chính sách nhật ký không được thiết lập trên máy chủ, mức nhật ký mặc định được thiết lập thành: %s"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="log_level">"Mức nhật ký"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="dialog_title_choose_log_level">"Chọn mức nhật ký"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_none">"Không có"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_fatal">"Nghiêm trọng"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_error">"Lỗi"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_warning">"Cảnh báo"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_info">"Thông tin"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_debug">"Gỡ lỗi"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_path">"Đường dẫn"</string>
+    <!-- XMSG: Authentication error message -->
+    <string name="authentication_failed">"Xác thực không thành công."</string>
+    <!-- XMSG: Authentication progress description -->
+    <string name="authentication_progress">"Đang xác thực với máy chủ..."</string>
+
+    <!-- restrictions -->
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="restriction_service_url_title">"URL dịch vụ"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="restriction_service_url_description">"URL của dịch vụ OData."</string>
+    <!-- restrictions -->
+
+    <!-- XMSG: Detailed error description -->
+    <string name="error_back_navigation">"Ứng dụng được bảo vệ bằng mã truy cập, nó sẽ không khởi động nếu không cung cấp mã truy cập đúng."</string>
+
+    <!-- XTIT: The id of the push notification channel -->
+    <string name="push_channel_id">"sap_btp_android_sdk_foundation_push_channel"</string>
+    <!-- XTIT: The name of the push notification channel -->
+    <string name="push_channel_name">"SAP BTP Android SDK"</string>
+    <!-- XTIT: The description of the badge channel -->
+    <string name="push_badge_channel_description">"Quản lý thông báo huy hiệu"</string>
+    <!-- XTIT: The name of the badge channel -->
+    <string name="push_badge_channel_name">"Kênh huy hiệu SAP BTP Android SDK"</string>
+    <!-- XMSG: push message alert -->
+    <string name="push_message_alert">"Thông báo"</string>
+    <!-- XMSG: push message title -->
+    <string name="push_message_title">"Đã nhận được tin nhắn thông báo đẩy"</string>
+    <!-- XBUT: Text of the OK button -->
+    <string name="push_message_dlg_ok">"OK"</string>
+    <!-- XBUT: Text of the Cancel button -->
+    <string name="push_message_dlg_cancel">"Hủy"</string>
+    <!-- XTIT: The title of Push topics -->
+    <string name="settings_push_topics">"Đăng ký chủ đề yêu thích của bạn"</string>
+
+    <!-- XTIT: The title of Eula dialog -->
+    <string name="launch_screen_dialog_title">"Thỏa thuận dịch vụ và Chính sách quyền riêng tư"</string>
+    <!-- XBUT: Text of the Agree button -->
+    <string name="launch_screen_dialog_button_agree">"Đồng ý"</string>
+    <!-- XBUT: Text of the Disagree button -->
+    <string name="launch_screen_dialog_button_disagree">"Không đồng ý"</string>
+    <!-- XBUT: Text of the Got it button -->
+    <string name="launch_screen_dialog_disagree_confirm">"Đã hiểu"</string>
+    <!-- XTIT: The content text of Eula dialog -->
+    <string name="launch_screen_dialog_eula_text">"Cảm ơn bạn đã sử dụng ứng dụng này. Khi sử dụng ứng dụng này, thông tin cá nhân của bạn có thể được thu thập và xử lý. Vui lòng tuân thủ &lt;a href=http://www.sap.com&gt;Thỏa thuận cấp phép người dùng cuối&lt;/a&gt; và &lt;a href=http://www.sap.com&gt;Tuyên bố về quyền riêng tư&lt;/a&gt; để đảm bảo rằng bạn hiểu đầy đủ cách SAP xử lý thông tin cá nhân của bạn. Nếu bạn đồng ý với Thỏa thuận cấp phép người dùng cuối và Tuyên bố về quyền riêng tư, vui lòng nhấp vào đồng ý để khởi động ứng dụng. SAP sẽ nỗ lực tối đa để bảo vệ thông tin cá nhân của bạn."</string>
+    <!-- XTIT: The content text of Eula dialog -->
+    <string name="launch_screen_dialog_disagree_text">"Nếu không đồng ý với &lt;a href=http://www.sap.com&gt;Thỏa thuận cấp phép người dùng cuối&lt;/a&gt; và &lt;a href=http://www.sap.com&gt;Chính sách quyền riêng tư&lt;/a&gt;, bạn chỉ có thể dùng thử chế độ demo."</string>
+    <!-- XTIT: The content text of Eula dialog -->
+    <string name="privacy_dialog_content">"Cảm ơn bạn đã sử dụng ứng dụng này. Khi sử dụng ứng dụng này, thông tin cá nhân của bạn có thể được thu thập và xử lý. Vui lòng tuân thủ "<annotation key="eula">"Thỏa thuận cấp phép người dùng cuối"</annotation>" và "<annotation key="term">"Tuyên bố về quyền riêng tư"</annotation>" để đảm bảo rằng bạn hiểu đầy đủ cách SAP xử lý thông tin cá nhân của bạn. Nếu bạn đồng ý với \'Thỏa thuận cấp phép người dùng cuối\' và \'Tuyên bố về quyền riêng tư\', vui lòng nhấp vào \'đồng ý\' để khởi động ứng dụng. SAP sẽ nỗ lực tối đa để bảo vệ thông tin cá nhân của bạn."</string>
+    <!-- XTIT: The content text of Eula dialog -->
+    <string name="privacy_confirmation_dialog_content">"Nếu không đồng ý với "<annotation key="eula">"Thỏa thuận cấp phép người dùng cuối"</annotation>" và "<annotation key="term">"Tuyên bố về quyền riêng tư"</annotation>", bạn chỉ có thể dùng thử chế độ demo."</string>
+    <!-- XTIT: The title of Demo dialog -->
+    <string name="launch_screen_demo_dialog_title">"Chế độ demo"</string>
+    <!-- XTIT: The content text of demo dialog -->
+    <string name="launch_screen_demo_dialog_message">"Chế độ Demo không được triển khai trong ứng dụng đã tạo."</string>
+    <!-- XBUT: Text of the Go back button -->
+    <string name="launch_screen_demo_dialog_button_goback">"Quay lại"</string>
+</resources>

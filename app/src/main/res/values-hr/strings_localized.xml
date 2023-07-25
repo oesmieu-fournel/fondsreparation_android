@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><resources>
+    <!-- XTIT: The title of the create Activity, will appear at the top of the screen -->
+    <string name="title_create_fragment">"Stvori stavku %1$s"</string>
+
+    <!-- XTIT: The title of the update Activity, will appear at the top of the screen -->
+    <string name="title_update_fragment">"Ažuriraj"</string>
+
+    <!-- XMSG: Error message for the mandatory input fields, will appear in the edit field left empty -->
+    <string name="mandatory_warning">"Ovo je obvezno polje"</string>
+
+    <!-- XTIT: The title of the welcome screen, will appear at the top of the screen -->
+    <string name="welcome_screen_headline_label">"Dobro došli"</string>
+
+    <!-- YINS: Short description on the welcome screen -->
+    <string name="welcome_screen_detail_label">"Istražite SAP BTP SDK za Android s pomoću ove generirane aplikacije."</string>
+
+    <!-- XFLD: label at the bottom of the welcome screen -->
+    <string name="welcome_screen_footnote_label">"Ove značajke SDK možete isprobati u pokaznom načinu."</string>
+
+    <!-- XFLD: label of the primary button on the welcome screen -->
+    <string name="welcome_screen_primary_button_label">"Započni"</string>
+
+    <!-- XBUT: Text of the Save button -->
+    <string name="save">"Spremi"</string>
+
+    <!-- XBUT: Text of the Update button -->
+    <string name="update">"Ažuriraj"</string>
+
+    <!-- XBUT: Text of the Delete button -->
+    <string name="delete">"Izbriši"</string>
+
+    <!-- XBUT: Text of the Cancel button -->
+    <string name="cancel">"Odustani"</string>
+
+    <!-- XBUT: Text of the OK button -->
+    <string name="ok">"OK"</string>
+
+    <!-- XBUT: Text of the Delete button -->
+    <string name="yes">"Da"</string>
+
+    <!-- XBUT: Text of the Add New button -->
+    <string name="add_new">"Dodaj novo"</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="delete_dialog_title">"Izbriši"</string>
+
+    <!-- XMSG: The message of the delete dialog -->
+    <string name="delete_one_item">"Želite li zaista izbrisati odabranu stavku?"</string>
+
+    <!-- XMSG: The message of the delete dialog in case of multiple selection -->
+    <string name="delete_more_items">"Želite li zaista izbrisati odabrane stavke?"</string>
+
+    <!-- XMSG: Error message, can be presented in a Toast or Dialog -->
+    <string name="entity_download_error">"Došlo je do pogreške tijekom operacije u pozadini."</string>
+
+    <!-- XMIT: Refresh menu item -->
+    <string name="menu_refresh">"Osvježi"</string>
+
+    <!-- XMIT: Refresh menu item -->
+    <string name="menu_home">"Početna stranica"</string>
+
+    <!-- XMIT: Update menu item -->
+    <string name="menu_update">"Ažuriraj"</string>
+
+    <!-- XMIT: Delete menu item -->
+    <string name="menu_delete">"Izbriši"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_headline">"Headline"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_subheadline">"Subheadline"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_body">"Body Text"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_footnote">"Footnote"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_tag1">"TAG1"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_tag2">"TAG2"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_tag3">"TAG3"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_description">"Item Description"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_status">"Status"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="error">"Error"</string>
+
+    <!-- error messages -->
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="read_failed">"Preuzimanje nije uspjelo"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="format_error">"Unos nije odgovarajući za tip podataka."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="read_failed_detail">"Operacija preuzimanja nije uspjela, pokušajte ponovo pokrenuti aplikaciju."</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="create_failed">"Stvaranje nije uspjelo"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="create_failed_detail">"Operacija stvaranja nije uspjela, pokušajte je kasnije ponovo izvršiti."</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="update_failed">"Ažuriranje nije uspjelo"</string>
+    <string name="update_failed_detail">"Operacija ažuriranja nije uspjela, osvježite lokalne podatke i pokušajte je kasnije ponovo izvršiti."</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="delete_failed">"Brisanje nije uspjelo"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="delete_failed_detail">"Operacija brisanja nije uspjela, osvježite lokalne podatke i pokušajte je kasnije ponovo izvršiti."</string>
+
+    <!-- XTIT: The message of the upload toast in case of success -->
+    <string name="log_upload_ok">"Zapisnik je prenesen na poslužitelj."</string>
+
+    <!-- XTIT: The message of the upload toast in case of failing -->
+    <string name="log_upload_failed">"Prijenos zapisnika nije uspio."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="log_upload_failed_detail">"Primljen je nepravilno oblikovani URL pri prijenosu zapisnika. Aplikacija svakako može raditi, ali se zapisnici neće prenositi na poslužitelj."</string>
+
+    <!-- XTIT: The message of the upload toast in case of success -->
+    <string name="usage_upload_ok">"Podaci upotrebe preneseni na poslužitelj."</string>
+
+    <!-- XTIT: The message of the upload toast in case of failing -->
+    <string name="usage_upload_failed">"Prijenos podataka upotrebe nije uspio."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="usage_init_failed">"Upotrebu nije moguće inicijalizirati."</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="push_error">"Pogreška automatske poruke"</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="push_message">"Automatska poruka primljena"</string>
+
+    <!-- XTIT: The Notification Text -->
+    <string name="push_text">"Obavijest"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="push_token_upload_failed_detail">"Token za automatske poruke nije moguće prenijeti na SAP-ov poslužitelj, jer značajka za automatske poruke ne radi. Nećete primati automatske poruke."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="push_invalid_push_format">"Automatska poruka primljena, ali je njezin format nevaljan pa je nije moguće obraditi."</string>
+
+    <!-- XMSG: AlertDialog before navigation - Title -->
+    <string name="before_navigation_dialog_title">"Potencijalni gubitak podataka"</string>
+
+    <!-- XMSG: AlertDialog before navigation - Message -->
+    <string name="before_navigation_dialog_message">"Ako napustite ovu stranicu, podaci se neće spremiti."</string>
+
+    <!-- XMSG: AlertDialog before navigation - Positive button (navigation occurs) -->
+    <string name="before_navigation_dialog_positive_button">"Napusti"</string>
+
+    <!-- XMSG: AlertDialog before navigation - Negative button (cancelled navigation) -->
+    <string name="before_navigation_dialog_negative_button">"Ostani"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_loader_complete_error_description">"Učitavač konfiguracije nije uspio dohvatiti podatke konfiguracije."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_loader_on_error_description">"U dobavljaču konfiguracije, \"%1$s\", došlo je do pogreške. %2$s"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_data_build_json_description">"Stvaranje objekta JSON nije uspjelo."</string>
+    <string name="error_unknown_app_config">"Priprema konfiguracije aplikacije nije uspjela uz nepoznatu pogrešku."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="server_auth_not_supported_saml">"Pogreška: u ovoj aplikaciji nije podržana provjera autentičnosti SAML."</string>
+
+	<!-- XTIT: The title of the error dialog -->
+	<string name="bind_error">"Pogreška povezivanja"</string>
+
+	<!-- XMSG: Detailed error description -->
+    <string name="bind_error_detail">"Povezivanje s izvanmrežnim servisom sinkronizacije OData nije uspjelo."</string>
+
+	<!-- XTIT: The title of the error dialog -->
+	<string name="offline_provider_error">"Pogreška izvanmrežne inicijalizacije"</string>
+
+ 	<!-- XMSG: Detailed error description -->
+	<string name="offline_provider_error_detail">"Inicijalizacija izvanmrežnog dobavljača OData nije uspjela."</string>
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="offline_initial_open_error">"Pogreška izvanmrežnog prvog otvaranja"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_initial_open_error_detail">"Dovršavanje prvog otvaranja izvanmrežne pohrane nije uspjelo."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_backend_big_data_error_detail">"Korisni podaci iz pozadine bili su preveliki, zadana veličina ograničenja korisnih podataka za SAP Cloud Platform Mobile Services jest 64 MB. To možete pokušati popraviti s pomoću jednog od sljedećih rješenja:\n\t1) povećati ograničenje veličine u offline.ini\n\t2) implementirati numeriranje stranica na strani poslužitelja kako bi se omogućila sinkronizacija velikih skupova podataka u blokovima\n\t3) upotrijebiti zahtjeve $top u definiranju upita ili filtra za ograničenje ukupne količine podataka koje klijent preuzima."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_backend_time_out_error_detail">"Povećajte vremensko ograničenje povezivanja pozadine za ovu aplikaciju u SAP Cloud Platform Mobile Services i pokušajte ponovno."</string>
+
+    <!-- XTIT: The title of the error dialog -->
+	<string name="synchronize_failure">"Pogreška sinkronizacije"</string>
+
+	<!-- XMSG: Detailed error description -->
+	<string name="synchronize_failure_detail">"Sinkronizacija s mobilnim uslugama nije uspjela."</string>
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="offline_reset_store_error">"Pogreška pri ponovnom postavljanju izvanmrežne pohrane"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_reset_store_error_detail">"Ponovno postavljanje/uklanjanje izvanmrežne pohrane podataka nije uspjelo."</string>
+    <!-- error messages -->
+
+    <!-- offline -->
+
+    <!-- XTIT: The title of initial opening of offline store failed -->
+    <string name="initializing_offline_store_failed">"Sinkronizacija nije uspjela"</string>
+
+    <!-- XMSG: Offline AlertDialog before navigation - Title -->
+    <string name="offline_navigation_dialog_title">"Odustani od potvrde sinkronizacije"</string>
+
+    <!-- XMSG: Offline AlertDialog before navigation - Message -->
+    <string name="offline_navigation_dialog_message">"Želite li zaista odustati od sinkronizacije u tijeku i vratiti se na zaslon dobrodošlice?"</string>
+
+    <!-- XMSG: Offline AlertDialog before navigation - Positive button (navigation occurs) -->
+    <string name="offline_navigation_dialog_positive_option">"Potvrdi"</string>
+
+    <!-- XMSG: Offline AlertDialog before navigation - Negative button (cancelled navigation) -->
+    <string name="offline_navigation_dialog_negative_option">"Ne sada"</string>
+
+    <!-- NOTR: No translation needed, Label for entity state in offline -->
+	<string name="local_state">"Local"</string>
+
+    <!-- NOTR: No translation needed, Label for entity state in offline -->
+	<string name="error_state">"Error"</string>
+
+	<!-- NOTR: No translation needed, Label for entity state in offline -->
+	<string name="updated_state">"Updated"</string>
+
+	<!-- NOTR: No translation needed, Label for entity state in offline -->
+	<string name="download_state">"Download"</string>
+
+    <!-- XMIT: Menu item to trigger synchronization -->
+	<string name="synchronize_action">"Sinkroniziraj"</string>
+
+    <!-- offline -->
+
+    <!-- XTIT: The title of the settings dialog -->
+    <string name="settings_activity_name">"Postavke"</string>
+    <!-- XTIT: The title of the settings menu -->
+    <string name="menu_item_settings">"Postavke"</string>
+
+    <!-- XTIT: The title of the passcode group -->
+    <string name="passcode">"Šifra"</string>
+    <!-- XTIT: The title of the change passcode menu item -->
+    <string name="manage_passcode">"Promijeni šifru"</string>
+    <!-- XTIT: The title of the reset group -->
+    <string name="reset">"Ponovo postavi aplikaciju"</string>
+    <!-- XTIT: The title of the reset app menu item -->
+    <string name="reset_app">"Izbriši postavke aplikacije"</string>
+    <!-- XTIT: The title of a confirmation dialog -->
+    <string name="reset_app_confirmation">"Sve informacije u vezi s ovom aplikacijom izbrisat će se. Želite li nastaviti?"</string>
+    <!-- XMSG: The message of reset client -->
+    <string name="reset_client">"Ponovo postavi klijent"</string>
+    <!-- XTIT: The title of the logout item -->
+    <string name="logout">"Odjava"</string>
+    <!-- XTIT: The title of the delete registration item -->
+    <string name="delete_registration">"Izbriši registraciju"</string>
+    <!-- XTIT: The title of a warning dialog -->
+    <string name="delete_registration_warning">"Sve nesinkronizirane promjene na čekanju povezane s ovom registracijom uklonit će se. Želite li nastaviti?"</string>
+
+    <!-- XTIT: The title of a menu item -->
+    <string name="upload_usage">"Prenesi podatke o upotrebi"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="set_usage_consent">"Pristanak na prikupljanje podataka"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="set_crash_report_consent">"Pristanak na prikupljanje izvješća o prekidu rada"</string>
+
+    <!-- XTIT: The title of a menu group -->
+    <string name="crash_report">"Izvješće o prekidu rada"</string>
+    <!-- XTIT: The title of a menu group -->
+    <string name="usage">"Upotreba"</string>
+    <!-- XTIT: The title of a menu group -->
+    <string name="logging">"Zapisivanje"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="upload_log">"Prenesi zapisnik"</string>
+    <!-- XTIT: The description of a menu item -->
+    <string name="upload_log_summary">"Prenesi zapisnik na poslužitelj."</string>
+    <!-- XMSG: The message of a log level toast -->
+    <string name="log_level_changed">"Zadana razina zapisnika promijenjena prema smjernici za poslužitelj u: %s"</string>
+    <!-- XMSG: The message of a log level toast -->
+    <string name="log_level_default">"Smjernica za zapisnik nije postavljena na poslužitelju, zadana razina zapisnika postavljena na: %s"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="log_level">"Razina zapisnika"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="dialog_title_choose_log_level">"Izaberi razinu zapisnika"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_none">"Nema"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_fatal">"Fatalno"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_error">"Pogreška"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_warning">"Upozorenje"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_info">"Informacije"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_debug">"Ispravljanje pogrešaka"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_path">"Staza"</string>
+    <!-- XMSG: Authentication error message -->
+    <string name="authentication_failed">"Provjera autentičnosti nije uspjela."</string>
+    <!-- XMSG: Authentication progress description -->
+    <string name="authentication_progress">"Provjera autentičnosti s poslužiteljem..."</string>
+
+    <!-- restrictions -->
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="restriction_service_url_title">"URL usluge"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="restriction_service_url_description">"URL usluge OData."</string>
+    <!-- restrictions -->
+
+    <!-- XMSG: Detailed error description -->
+    <string name="error_back_navigation">"Ova je aplikacija zaštićena šifrom i neće se pokrenuti dok ne unesete odgovarajuću šifru."</string>
+
+    <!-- XTIT: The id of the push notification channel -->
+    <string name="push_channel_id">"sap_btp_android_sdk_foundation_push_channel"</string>
+    <!-- XTIT: The name of the push notification channel -->
+    <string name="push_channel_name">"SAP BTP Android SDK"</string>
+    <!-- XTIT: The description of the badge channel -->
+    <string name="push_badge_channel_description">"Upravljanje obavijestima o značkama"</string>
+    <!-- XTIT: The name of the badge channel -->
+    <string name="push_badge_channel_name">"Kanal značke za SAP BTP Android SDK"</string>
+    <!-- XMSG: push message alert -->
+    <string name="push_message_alert">"Obavijest"</string>
+    <!-- XMSG: push message title -->
+    <string name="push_message_title">"Automatska poruka primljena"</string>
+    <!-- XBUT: Text of the OK button -->
+    <string name="push_message_dlg_ok">"OK"</string>
+    <!-- XBUT: Text of the Cancel button -->
+    <string name="push_message_dlg_cancel">"Odustani"</string>
+    <!-- XTIT: The title of Push topics -->
+    <string name="settings_push_topics">"Pretplata na omiljenu temu"</string>
+
+    <!-- XTIT: The title of Eula dialog -->
+    <string name="launch_screen_dialog_title">"Ugovor o usluzi i Pravilnik o zaštiti privatnosti"</string>
+    <!-- XBUT: Text of the Agree button -->
+    <string name="launch_screen_dialog_button_agree">"Suglasan sam"</string>
+    <!-- XBUT: Text of the Disagree button -->
+    <string name="launch_screen_dialog_button_disagree">"Nisam suglasan"</string>
+    <!-- XBUT: Text of the Got it button -->
+    <string name="launch_screen_dialog_disagree_confirm">"Shvaćam"</string>
+    <!-- XTIT: The content text of Eula dialog -->
+    <string name="launch_screen_dialog_eula_text">"Hvala što upotrebljavate ovu aplikaciju. Pri upotrebi aplikacije, vaši se osobni podaci mogu prikupljati i obrađivati. Pridržavajte se &lt;a href=http://www.sap.com&gt;Licencnog ugovora s krajnjim korisnikom&lt;/a&gt; i &lt;a href=http://www.sap.com&gt;Izjave o privatnosti&lt;/a&gt; da biste bili sigurni da u potpunosti razumijete kako SAP obrađuje vaše osobne podatke. Ako se slažete s Licencnim ugovorom s krajnjim korisnikom i Izjavom o privatnosti, kliknite Suglasan sam za pokretanje aplikacije. SAP će dati sve od sebe kako bi zaštitio vaše osobne podatke."</string>
+    <!-- XTIT: The content text of Eula dialog -->
+    <string name="launch_screen_dialog_disagree_text">"Ako niste suglasni s &lt;a href=http://www.sap.com&gt;Licencnim ugovorom s krajnjim korisnikom&lt;/a&gt; i &lt;a href=http://www.sap.com&gt;Pravilnikom o zaštiti privatnosti&lt;/a&gt;, možete isprobati samo pokazni način."</string>
+    <!-- XTIT: The content text of Eula dialog -->
+    <string name="privacy_dialog_content">"Hvala što upotrebljavate ovu aplikaciju. Pri upotrebi aplikacije, vaši se osobni podaci mogu prikupljati i obrađivati. Pridržavajte se "<annotation key="eula">"Licencnog ugovora s krajnjim korisnikom"</annotation>" i "<annotation key="term">"Izjave o privatnosti"</annotation>" da biste bili sigurni da u potpunosti razumijete kako SAP obrađuje vaše osobne podatke. Ako se slažete s \'Licencnim ugovorom s krajnjim korisnikom\' i \'Izjavom o privatnosti\', kliknite \'Suglasan sam\' za pokretanje aplikacije. SAP će dati sve od sebe kako bi zaštitio vaše osobne podatke."</string>
+    <!-- XTIT: The content text of Eula dialog -->
+    <string name="privacy_confirmation_dialog_content">"Ako niste suglasni s "<annotation key="eula">"Licencnim ugovorom s krajnjim korisnikom"</annotation>" i "<annotation key="term">"Izjavom o privatnosti"</annotation>", možete isprobati samo pokazni način."</string>
+    <!-- XTIT: The title of Demo dialog -->
+    <string name="launch_screen_demo_dialog_title">"Pokazni način"</string>
+    <!-- XTIT: The content text of demo dialog -->
+    <string name="launch_screen_demo_dialog_message">"Pokazni način rada nije implementiran u generiranoj aplikaciji."</string>
+    <!-- XBUT: Text of the Go back button -->
+    <string name="launch_screen_demo_dialog_button_goback">"Idi natrag"</string>
+</resources>

@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><resources>
+    <!-- XTIT: The title of the create Activity, will appear at the top of the screen -->
+    <string name="title_create_fragment">"建立 %1$s 項目"</string>
+
+    <!-- XTIT: The title of the update Activity, will appear at the top of the screen -->
+    <string name="title_update_fragment">"更新"</string>
+
+    <!-- XMSG: Error message for the mandatory input fields, will appear in the edit field left empty -->
+    <string name="mandatory_warning">"此為必要欄位"</string>
+
+    <!-- XTIT: The title of the welcome screen, will appear at the top of the screen -->
+    <string name="welcome_screen_headline_label">"歡迎"</string>
+
+    <!-- YINS: Short description on the welcome screen -->
+    <string name="welcome_screen_detail_label">"使用此產生的應用程式探索 SAP BTP SDK (適用於 Android)。"</string>
+
+    <!-- XFLD: label at the bottom of the welcome screen -->
+    <string name="welcome_screen_footnote_label">"您可在示範模式中試 SDK 功能。"</string>
+
+    <!-- XFLD: label of the primary button on the welcome screen -->
+    <string name="welcome_screen_primary_button_label">"開始使用"</string>
+
+    <!-- XBUT: Text of the Save button -->
+    <string name="save">"儲存"</string>
+
+    <!-- XBUT: Text of the Update button -->
+    <string name="update">"更新"</string>
+
+    <!-- XBUT: Text of the Delete button -->
+    <string name="delete">"刪除"</string>
+
+    <!-- XBUT: Text of the Cancel button -->
+    <string name="cancel">"取消"</string>
+
+    <!-- XBUT: Text of the OK button -->
+    <string name="ok">"確定"</string>
+
+    <!-- XBUT: Text of the Delete button -->
+    <string name="yes">"是"</string>
+
+    <!-- XBUT: Text of the Add New button -->
+    <string name="add_new">"新增"</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="delete_dialog_title">"刪除"</string>
+
+    <!-- XMSG: The message of the delete dialog -->
+    <string name="delete_one_item">"您確定要刪除所選項目嗎？"</string>
+
+    <!-- XMSG: The message of the delete dialog in case of multiple selection -->
+    <string name="delete_more_items">"您確定要刪除所選項目嗎？"</string>
+
+    <!-- XMSG: Error message, can be presented in a Toast or Dialog -->
+    <string name="entity_download_error">"背景作業期間發生錯誤。"</string>
+
+    <!-- XMIT: Refresh menu item -->
+    <string name="menu_refresh">"重新整理"</string>
+
+    <!-- XMIT: Refresh menu item -->
+    <string name="menu_home">"首頁"</string>
+
+    <!-- XMIT: Update menu item -->
+    <string name="menu_update">"更新"</string>
+
+    <!-- XMIT: Delete menu item -->
+    <string name="menu_delete">"刪除"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_headline">"Headline"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_subheadline">"Subheadline"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_body">"Body Text"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_footnote">"Footnote"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_tag1">"TAG1"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_tag2">"TAG2"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_tag3">"TAG3"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_description">"Item Description"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_status">"Status"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="error">"Error"</string>
+
+    <!-- error messages -->
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="read_failed">"下載失敗"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="format_error">"輸入的資料類型不合適。"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="read_failed_detail">"下載作業失敗，請嘗試重新啟動應用程式。"</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="create_failed">"建立失敗"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="create_failed_detail">"建立作業失敗，請稍後再次執行。"</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="update_failed">"更新失敗"</string>
+    <string name="update_failed_detail">"更新作業失敗，請重新整理本端資料並於稍後再次執行。"</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="delete_failed">"刪除失敗"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="delete_failed_detail">"刪除作業失敗，請重新整理本端資料並於稍後再次執行。"</string>
+
+    <!-- XTIT: The message of the upload toast in case of success -->
+    <string name="log_upload_ok">"已將日誌上傳至伺服器。"</string>
+
+    <!-- XTIT: The message of the upload toast in case of failing -->
+    <string name="log_upload_failed">"日誌上傳失敗。"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="log_upload_failed_detail">"進行日誌上傳時收到錯誤格式的 URL。應用程式仍運作，但日誌將不會上傳到伺服器。"</string>
+
+    <!-- XTIT: The message of the upload toast in case of success -->
+    <string name="usage_upload_ok">"已將使用資料上傳至伺服器。"</string>
+
+    <!-- XTIT: The message of the upload toast in case of failing -->
+    <string name="usage_upload_failed">"使用資料上傳失敗。"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="usage_init_failed">"無法初始化使用。"</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="push_error">"推播錯誤"</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="push_message">"已收到推播訊息"</string>
+
+    <!-- XTIT: The Notification Text -->
+    <string name="push_text">"通知"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="push_token_upload_failed_detail">"由於推播功能故障，因此無法將推播權杖上傳至 SAP 伺服器。您將不會收到推播訊息。"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="push_invalid_push_format">"已收到格式無效的推播訊息，因此無法進行處理。"</string>
+
+    <!-- XMSG: AlertDialog before navigation - Title -->
+    <string name="before_navigation_dialog_title">"潛在資料遺失"</string>
+
+    <!-- XMSG: AlertDialog before navigation - Message -->
+    <string name="before_navigation_dialog_message">"若離開此頁面，將不會儲存任何資料。"</string>
+
+    <!-- XMSG: AlertDialog before navigation - Positive button (navigation occurs) -->
+    <string name="before_navigation_dialog_positive_button">"離開"</string>
+
+    <!-- XMSG: AlertDialog before navigation - Negative button (cancelled navigation) -->
+    <string name="before_navigation_dialog_negative_button">"停留"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_loader_complete_error_description">"組態載入器無法取得組態資料。"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_loader_on_error_description">"組態提供者 \"%1$s\" 發生錯誤。%2$s"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_data_build_json_description">"無法建立 JSON 物件。"</string>
+    <string name="error_unknown_app_config">"無法準備含未知錯誤的應用程式組態。"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="server_auth_not_supported_saml">"錯誤：此應用程式不支援 SAML 驗證。"</string>
+
+	<!-- XTIT: The title of the error dialog -->
+	<string name="bind_error">"連結錯誤"</string>
+
+	<!-- XMSG: Detailed error description -->
+    <string name="bind_error_detail">"無法連結至離線 OData 同步服務。"</string>
+
+	<!-- XTIT: The title of the error dialog -->
+	<string name="offline_provider_error">"離線初始化錯誤"</string>
+
+ 	<!-- XMSG: Detailed error description -->
+	<string name="offline_provider_error_detail">"無法初始離線 OData 提供者。"</string>
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="offline_initial_open_error">"離線初始開啟錯誤"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_initial_open_error_detail">"無法完成離線儲存的初始開啟。"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_backend_big_data_error_detail">"後端的承載資料過大，預設 SAP Mobile Service 承載資料大小限制為 64M。您可以透過下列其中一個解決方案嘗試修復：\n\t1) 在 offline.ini 增加大小限制；\n\t2) 建置伺服器端的分頁功能，啟用大量資料集區塊同步；\n\t3) 使用 $top 請求定義查詢或篩選，限制用戶端下載總資料總。"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_backend_time_out_error_detail">"針對 SAP Mobile Service 中的此應用程式增加後端連線逾時，並再試一次。"</string>
+
+    <!-- XTIT: The title of the error dialog -->
+	<string name="synchronize_failure">"同步化錯誤"</string>
+
+	<!-- XMSG: Detailed error description -->
+	<string name="synchronize_failure_detail">"與 Mobile Services 同步失敗"</string>
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="offline_reset_store_error">"離線儲存重設失敗"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_reset_store_error_detail">"無法重設/移除離線資料儲存。"</string>
+    <!-- error messages -->
+
+    <!-- offline -->
+
+    <!-- XTIT: The title of initial opening of offline store failed -->
+    <string name="initializing_offline_store_failed">"同步失敗"</string>
+
+    <!-- XMSG: Offline AlertDialog before navigation - Title -->
+    <string name="offline_navigation_dialog_title">"取消同步確認"</string>
+
+    <!-- XMSG: Offline AlertDialog before navigation - Message -->
+    <string name="offline_navigation_dialog_message">"您確定要取消進行中同步，並返回歡迎畫面嗎？"</string>
+
+    <!-- XMSG: Offline AlertDialog before navigation - Positive button (navigation occurs) -->
+    <string name="offline_navigation_dialog_positive_option">"確認"</string>
+
+    <!-- XMSG: Offline AlertDialog before navigation - Negative button (cancelled navigation) -->
+    <string name="offline_navigation_dialog_negative_option">"現在不要"</string>
+
+    <!-- NOTR: No translation needed, Label for entity state in offline -->
+	<string name="local_state">"Local"</string>
+
+    <!-- NOTR: No translation needed, Label for entity state in offline -->
+	<string name="error_state">"Error"</string>
+
+	<!-- NOTR: No translation needed, Label for entity state in offline -->
+	<string name="updated_state">"Updated"</string>
+
+	<!-- NOTR: No translation needed, Label for entity state in offline -->
+	<string name="download_state">"Download"</string>
+
+    <!-- XMIT: Menu item to trigger synchronization -->
+	<string name="synchronize_action">"同步化"</string>
+
+    <!-- offline -->
+
+    <!-- XTIT: The title of the settings dialog -->
+    <string name="settings_activity_name">"設定"</string>
+    <!-- XTIT: The title of the settings menu -->
+    <string name="menu_item_settings">"設定"</string>
+
+    <!-- XTIT: The title of the passcode group -->
+    <string name="passcode">"密碼"</string>
+    <!-- XTIT: The title of the change passcode menu item -->
+    <string name="manage_passcode">"更改密碼"</string>
+    <!-- XTIT: The title of the reset group -->
+    <string name="reset">"重設應用程式"</string>
+    <!-- XTIT: The title of the reset app menu item -->
+    <string name="reset_app">"清除應用程式設定"</string>
+    <!-- XTIT: The title of a confirmation dialog -->
+    <string name="reset_app_confirmation">"將移除所有與此應用程式相關的資訊。您要繼續嗎？"</string>
+    <!-- XMSG: The message of reset client -->
+    <string name="reset_client">"重設用戶端"</string>
+    <!-- XTIT: The title of the logout item -->
+    <string name="logout">"登出"</string>
+    <!-- XTIT: The title of the delete registration item -->
+    <string name="delete_registration">"刪除註冊"</string>
+    <!-- XTIT: The title of a warning dialog -->
+    <string name="delete_registration_warning">"將移除所有與此註冊相關的所有未同步待處理更改內容。您要繼續嗎？"</string>
+
+    <!-- XTIT: The title of a menu item -->
+    <string name="upload_usage">"上傳使用資料"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="set_usage_consent">"使用集合的同意"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="set_crash_report_consent">"當機報告收集的同意"</string>
+
+    <!-- XTIT: The title of a menu group -->
+    <string name="crash_report">"當機報告"</string>
+    <!-- XTIT: The title of a menu group -->
+    <string name="usage">"使用"</string>
+    <!-- XTIT: The title of a menu group -->
+    <string name="logging">"日誌記錄"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="upload_log">"上傳日誌記錄"</string>
+    <!-- XTIT: The description of a menu item -->
+    <string name="upload_log_summary">"將日誌上傳至伺服器。"</string>
+    <!-- XMSG: The message of a log level toast -->
+    <string name="log_level_changed">"已將預設日誌層級從伺服器原則更改為：%s"</string>
+    <!-- XMSG: The message of a log level toast -->
+    <string name="log_level_default">"未在伺服器上設定日誌層級，已將預設日誌層級設為：%s"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="log_level">"日誌層級"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="dialog_title_choose_log_level">"選擇日誌層級"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_none">"無"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_fatal">"嚴重"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_error">"錯誤"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_warning">"警告"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_info">"資訊"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_debug">"除錯"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_path">"路徑"</string>
+    <!-- XMSG: Authentication error message -->
+    <string name="authentication_failed">"驗證失敗。"</string>
+    <!-- XMSG: Authentication progress description -->
+    <string name="authentication_progress">"正在與伺服器進行驗證..."</string>
+
+    <!-- restrictions -->
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="restriction_service_url_title">"服務 URL"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="restriction_service_url_description">"OData 服務的 URL。"</string>
+    <!-- restrictions -->
+
+    <!-- XMSG: Detailed error description -->
+    <string name="error_back_navigation">"應用程式受密碼保護，若未提供適當密碼則不會啟動。"</string>
+
+    <!-- XTIT: The id of the push notification channel -->
+    <string name="push_channel_id">"sap_btp_android_sdk_foundation_push_channel"</string>
+    <!-- XTIT: The name of the push notification channel -->
+    <string name="push_channel_name">"SAP BTP Android SDK"</string>
+    <!-- XTIT: The description of the badge channel -->
+    <string name="push_badge_channel_description">"徽章通知管理"</string>
+    <!-- XTIT: The name of the badge channel -->
+    <string name="push_badge_channel_name">"SAP BTP Android SDK 徽章管道"</string>
+    <!-- XMSG: push message alert -->
+    <string name="push_message_alert">"通知"</string>
+    <!-- XMSG: push message title -->
+    <string name="push_message_title">"已收到推播通知訊息"</string>
+    <!-- XBUT: Text of the OK button -->
+    <string name="push_message_dlg_ok">"確定"</string>
+    <!-- XBUT: Text of the Cancel button -->
+    <string name="push_message_dlg_cancel">"取消"</string>
+    <!-- XTIT: The title of Push topics -->
+    <string name="settings_push_topics">"訂閱最愛主題"</string>
+
+    <!-- XTIT: The title of Eula dialog -->
+    <string name="launch_screen_dialog_title">"服務協議和隱私權政策"</string>
+    <!-- XBUT: Text of the Agree button -->
+    <string name="launch_screen_dialog_button_agree">"同意"</string>
+    <!-- XBUT: Text of the Disagree button -->
+    <string name="launch_screen_dialog_button_disagree">"不同意"</string>
+    <!-- XBUT: Text of the Got it button -->
+    <string name="launch_screen_dialog_disagree_confirm">"瞭解"</string>
+    <!-- XTIT: The content text of Eula dialog -->
+    <string name="launch_screen_dialog_eula_text">"感謝使用此應用程式。使用此應用程式時，系統可能收集並處理您的個人資訊。請遵守&lt;a href=http://www.sap.com&gt;使用者授權協議&lt;/a&gt;和&lt;a href=http://www.sap.com&gt;隱私權聲明&lt;/a&gt;，確保您完全瞭解 SAP 處理個人資訊的方式。若同意使用者授權協議和隱私權聲明，請按一下同意開始應用程式。SAP 將盡力保護您的個人資料。"</string>
+    <!-- XTIT: The content text of Eula dialog -->
+    <string name="launch_screen_dialog_disagree_text">"若不同意&lt;a href=http://www.sap.com&gt;使用者授權協議&lt;/a&gt;和&lt;a href=http://www.sap.com&gt;隱私權政策&lt;/a&gt;，則只能嘗試展示模式。"</string>
+    <!-- XTIT: The content text of Eula dialog -->
+    <string name="privacy_dialog_content">"感謝使用此應用程式。使用此應用程式時，系統可能收集並處理您的個人資訊。請遵守"<annotation key="eula">"使用者授權協議"</annotation>"和"<annotation key="term">"隱私權聲明"</annotation>"，確保您完全瞭解 SAP 處理個人資訊的方式。若同意「使用者授權協議」和「隱私權聲明」，請按一下「同意」開始應用程式。SAP 將盡力保護您的個人資料。"</string>
+    <!-- XTIT: The content text of Eula dialog -->
+    <string name="privacy_confirmation_dialog_content">"若不同意"<annotation key="eula">"使用者授權協議"</annotation>"和"<annotation key="term">"隱私權聲明"</annotation>"，則只能嘗試展示模式。"</string>
+    <!-- XTIT: The title of Demo dialog -->
+    <string name="launch_screen_demo_dialog_title">"展示模式"</string>
+    <!-- XTIT: The content text of demo dialog -->
+    <string name="launch_screen_demo_dialog_message">"未在產生的應用程式中建置展示模式。"</string>
+    <!-- XBUT: Text of the Go back button -->
+    <string name="launch_screen_demo_dialog_button_goback">"返回"</string>
+</resources>

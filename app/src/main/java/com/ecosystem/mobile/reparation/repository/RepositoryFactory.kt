@@ -17,6 +17,11 @@ object RepositoryFactory
  */
 {
     private val repositories: WeakHashMap<String, Repository> = WeakHashMap()
+    val customRepository : CustomRepository by lazy {
+        CustomRepository(SAPServiceManager.z_API_SERVICE_ORDER_SRV_Entities!!,
+        SAPServiceManager.z_BUSINESS_PARTNER_SRV_Entities!!,
+        SAPServiceManager.z_API_PRODUITS_MARQUES_SRV_Entities!!)
+    }
 
     /**
      * Construct or return an existing repository for the specified entity set

@@ -106,6 +106,11 @@ fun startOnboarding(context: Context, appConfig: AppConfig) {
                 )
             }*/
 			SAPServiceManager.openODataStore() {
+                /*context.startActivity(
+                    FlutterActivity.CachedEngineIntentBuilder(
+                        CustomFlutterActivity::class.java,
+                        "flutter_engine"
+                    ).build(context) )*/
                 context.startActivity(FlutterActivity.NewEngineIntentBuilder(CustomFlutterActivity::class.java,).build(context))
 			}
 			PainterBuilder.setupImageLoader(

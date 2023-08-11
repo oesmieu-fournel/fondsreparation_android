@@ -18,6 +18,7 @@ import kotlinx.coroutines.flow.first
 import com.ecosystem.mobile.reparation.service.SAPServiceManager
 import com.sap.cloud.mobile.fiori.compose.common.PainterBuilder
 import com.sap.cloud.mobile.foundation.common.ClientProvider
+import okhttp3.OkHttpClient
 
 
 class WizardFlowStateListener(private val application: SAPWizardApplication) :
@@ -26,10 +27,16 @@ class WizardFlowStateListener(private val application: SAPWizardApplication) :
     override suspend fun onAppConfigRetrieved(appConfig: AppConfig) {
         logger.debug("onAppConfigRetrieved: $appConfig")
 		SAPServiceManager.initSAPServiceManager(appConfig)
+        application.appConfig = appConfig
     }
 
     override suspend fun onApplicationReset() {
         this.application.resetApplication()
+    }
+
+    override suspend fun onHttpClientReady(httpClient: OkHttpClient) {
+        super.onHttpClientReady(httpClient)
+        application.httpClient = httpClient
     }
 
     override suspend fun onApplicationLocked() {
@@ -46,6 +53,8 @@ class WizardFlowStateListener(private val application: SAPWizardApplication) :
 		PainterBuilder.setupImageLoader(
             application, ClientProvider.get()
         )
+
+        val cookieJar = application.httpClient.cookieJar
     }
 
     override suspend fun onClientPolicyRetrieved(policies: ClientPolicies) {

@@ -3,19 +3,30 @@ package com.ecosystem.mobile.reparation.app
 import android.app.Application
 import com.ecosystem.mobile.reparation.data.SharedPreferenceRepository
 import com.ecosystem.mobile.reparation.repository.RepositoryFactory
+import com.sap.cloud.mobile.foundation.logging.LoggingService
 import com.sap.cloud.mobile.foundation.mobileservices.MobileService
 import com.sap.cloud.mobile.foundation.mobileservices.SDKInitializer
-import com.sap.cloud.mobile.foundation.logging.LoggingService
+import com.sap.cloud.mobile.foundation.model.AppConfig
 import com.sap.cloud.mobile.foundation.settings.policies.LogPolicy
 import com.sap.cloud.mobile.foundation.theme.ThemeDownloadService
+import io.flutter.embedding.engine.FlutterEngine
+import io.flutter.embedding.engine.FlutterEngineCache
+import io.flutter.embedding.engine.dart.DartExecutor
+import okhttp3.OkHttpClient
+
 
 class SAPWizardApplication: Application() {
 
     internal var isApplicationUnlocked = false
 
+    lateinit var httpClient : OkHttpClient
+    lateinit var appConfig: AppConfig
+    lateinit var flutterEngine : FlutterEngine
+
 
     override fun onCreate() {
         super.onCreate()
+        initFlutterEngine()
         initServices()
     }
 
@@ -57,6 +68,21 @@ class SAPWizardApplication: Application() {
         })
 
         SDKInitializer.start(this, * services.toTypedArray())
+    }
+
+    private fun initFlutterEngine(){
+        // Instantiate a FlutterEngine.
+        flutterEngine = FlutterEngine(this)
+
+        // Start executing Dart code to pre-warm the FlutterEngine.
+        flutterEngine.dartExecutor.executeDartEntrypoint(
+            DartExecutor.DartEntrypoint.createDefault()
+        )
+
+        // Cache the FlutterEngine to be used by FlutterActivity.
+        FlutterEngineCache
+            .getInstance()
+            .put("flutter_engine", flutterEngine)
     }
 
 

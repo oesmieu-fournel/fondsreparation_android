@@ -1,105 +1,529 @@
 <?xml version="1.0" encoding="utf-8"?>
-<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData">
+<edmx:Edmx xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx"
+    xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+    xmlns:sap="http://www.sap.com/Protocols/SAPData"
+    Version="1.0">
     <edmx:DataServices m:DataServiceVersion="2.0">
-        <Schema Namespace="Z_API_PRODUITS_MARQUES_SRV" xml:lang="fr" sap:schema-version="1" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
-            <EntityType Name="Products" sap:content-version="1">
+        <Schema Namespace="Z_API_PRODUITS_MARQUES_SRV"
+            xmlns="http://schemas.microsoft.com/ado/2008/09/edm"
+            sap:schema-version="1"
+            xml:lang="fr">
+            <EntityType
+                Name="Products"
+                sap:content-version="1">
                 <Key>
-                    <PropertyRef Name="Product"/>
+                    <PropertyRef Name="Product" />
                 </Key>
-                <Property Name="Product" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Article" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
-                <Property Name="ProductName" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Désignation" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
-                <Property Name="ProductEligibleFrom" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Du" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
-                <Property Name="ProductEligibleUntil" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Au" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
-                <Property Name="ExpectedIdType" Type="Edm.String" Nullable="false" MaxLength="70" sap:unicode="false" sap:label="Valeur caract." sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
-                <Property Name="DefectIdType" Type="Edm.String" Nullable="false" MaxLength="70" sap:unicode="false" sap:label="Valeur caract." sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
-                <Property Name="Category" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Désignation" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
-                <Property Name="SubCategory" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Désignation" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
-                <NavigationProperty Name="ToMinimumInvoiced" Relationship="Z_API_PRODUITS_MARQUES_SRV.Product_MinimumInvoice" FromRole="FromRole_Product_MinimumInvoice" ToRole="ToRole_Product_MinimumInvoice"/>
-                <NavigationProperty Name="ToAmount" Relationship="Z_API_PRODUITS_MARQUES_SRV.Product_Amount" FromRole="FromRole_Product_Amount" ToRole="ToRole_Product_Amount"/>
-                <NavigationProperty Name="ToDefect" Relationship="Z_API_PRODUITS_MARQUES_SRV.Product_Defect" FromRole="FromRole_Product_Defect" ToRole="ToRole_Product_Defect"/>
-                <NavigationProperty Name="ToBrand" Relationship="Z_API_PRODUITS_MARQUES_SRV.Product_Brand" FromRole="FromRole_Product_Brand" ToRole="ToRole_Product_Brand"/>
+                <Property
+                    MaxLength="40"
+                    Name="Product"
+                    Nullable="false"
+                    Type="Edm.String"
+                    sap:creatable="false"
+                    sap:filterable="false"
+                    sap:label="Article"
+                    sap:sortable="false"
+                    sap:unicode="false"
+                    sap:updatable="false" />
+                <Property
+                    MaxLength="40"
+                    Name="ProductName"
+                    Nullable="false"
+                    Type="Edm.String"
+                    sap:creatable="false"
+                    sap:filterable="false"
+                    sap:label="Désignation"
+                    sap:sortable="false"
+                    sap:unicode="false"
+                    sap:updatable="false" />
+                <Property
+                    MaxLength="10"
+                    Name="ProductEligibleFrom"
+                    Nullable="false"
+                    Type="Edm.String"
+                    sap:creatable="false"
+                    sap:filterable="false"
+                    sap:label="Du"
+                    sap:sortable="false"
+                    sap:unicode="false"
+                    sap:updatable="false" />
+                <Property
+                    MaxLength="10"
+                    Name="ProductEligibleUntil"
+                    Nullable="false"
+                    Type="Edm.String"
+                    sap:creatable="false"
+                    sap:filterable="false"
+                    sap:label="Au"
+                    sap:sortable="false"
+                    sap:unicode="false"
+                    sap:updatable="false" />
+                <Property
+                    MaxLength="70"
+                    Name="ExpectedIdType"
+                    Nullable="false"
+                    Type="Edm.String"
+                    sap:creatable="false"
+                    sap:filterable="false"
+                    sap:label="Valeur caract."
+                    sap:sortable="false"
+                    sap:unicode="false"
+                    sap:updatable="false" />
+                <Property
+                    MaxLength="70"
+                    Name="DefectIdType"
+                    Nullable="false"
+                    Type="Edm.String"
+                    sap:creatable="false"
+                    sap:filterable="false"
+                    sap:label="Valeur caract."
+                    sap:sortable="false"
+                    sap:unicode="false"
+                    sap:updatable="false" />
+                <Property
+                    MaxLength="40"
+                    Name="Category"
+                    Nullable="false"
+                    Type="Edm.String"
+                    sap:creatable="false"
+                    sap:filterable="false"
+                    sap:label="Désignation"
+                    sap:sortable="false"
+                    sap:unicode="false"
+                    sap:updatable="false" />
+                <Property
+                    MaxLength="40"
+                    Name="SubCategory"
+                    Nullable="false"
+                    Type="Edm.String"
+                    sap:creatable="false"
+                    sap:filterable="false"
+                    sap:label="Désignation"
+                    sap:sortable="false"
+                    sap:unicode="false"
+                    sap:updatable="false" />
+                <Property
+                    Name="PhotoRequired"
+                    Nullable="false"
+                    Type="Edm.Boolean"
+                    sap:creatable="false"
+                    sap:filterable="false"
+                    sap:label="Valeur caract."
+                    sap:sortable="false"
+                    sap:unicode="false"
+                    sap:updatable="false" />
+                <NavigationProperty
+                    FromRole="FromRole_Product_Defect"
+                    Name="ToDefect"
+                    Relationship="Z_API_PRODUITS_MARQUES_SRV.Product_Defect"
+                    ToRole="ToRole_Product_Defect" />
+                <NavigationProperty
+                    FromRole="FromRole_Product_Brand"
+                    Name="ToBrand"
+                    Relationship="Z_API_PRODUITS_MARQUES_SRV.Product_Brand"
+                    ToRole="ToRole_Product_Brand" />
+                <NavigationProperty
+                    FromRole="FromRole_Product_Amount"
+                    Name="ToAmount"
+                    Relationship="Z_API_PRODUITS_MARQUES_SRV.Product_Amount"
+                    ToRole="ToRole_Product_Amount" />
+                <NavigationProperty
+                    FromRole="FromRole_Product_MinimumInvoice"
+                    Name="ToMinimumInvoiced"
+                    Relationship="Z_API_PRODUITS_MARQUES_SRV.Product_MinimumInvoice"
+                    ToRole="ToRole_Product_MinimumInvoice" />
             </EntityType>
-            <EntityType Name="Defects" sap:content-version="1">
+            <EntityType
+                Name="Defects"
+                sap:content-version="1">
                 <Key>
-                    <PropertyRef Name="Product"/>
-                    <PropertyRef Name="DefectCategory"/>
+                    <PropertyRef Name="Product" />
+                    <PropertyRef Name="DefectCategory" />
                 </Key>
-                <Property Name="Product" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Article" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
-                <Property Name="DefectCategory" Type="Edm.String" Nullable="false" MaxLength="70" sap:unicode="false" sap:label="Valeur caract." sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
-                <Property Name="DefectDescription" Type="Edm.String" Nullable="false" MaxLength="50" sap:unicode="false" sap:label="Descr. catégorie" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property
+                    MaxLength="40"
+                    Name="Product"
+                    Nullable="false"
+                    Type="Edm.String"
+                    sap:creatable="false"
+                    sap:filterable="false"
+                    sap:label="Article"
+                    sap:sortable="false"
+                    sap:unicode="false"
+                    sap:updatable="false" />
+                <Property
+                    MaxLength="70"
+                    Name="DefectCategory"
+                    Nullable="false"
+                    Type="Edm.String"
+                    sap:creatable="false"
+                    sap:filterable="false"
+                    sap:label="Valeur caract."
+                    sap:sortable="false"
+                    sap:unicode="false"
+                    sap:updatable="false" />
+                <Property
+                    MaxLength="50"
+                    Name="DefectDescription"
+                    Nullable="false"
+                    Type="Edm.String"
+                    sap:creatable="false"
+                    sap:filterable="false"
+                    sap:label="Descr. catégorie"
+                    sap:sortable="false"
+                    sap:unicode="false"
+                    sap:updatable="false" />
             </EntityType>
-            <EntityType Name="Brands" sap:content-version="1">
+            <EntityType
+                Name="Brands"
+                sap:content-version="1">
                 <Key>
-                    <PropertyRef Name="Product"/>
-                    <PropertyRef Name="Brand"/>
+                    <PropertyRef Name="Product" />
+                    <PropertyRef Name="Brand" />
                 </Key>
-                <Property Name="Product" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Article" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
-                <Property Name="Brand" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="ID de marque" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
-                <Property Name="BrandName" Type="Edm.String" Nullable="false" MaxLength="50" sap:unicode="false" sap:label="Descr. catégorie" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
-                <Property Name="NoCheckSN" Type="Edm.String" Nullable="false" MaxLength="1" sap:unicode="false" sap:label="N°ID NA Portail" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
-                <Property Name="EcologicBrand" Type="Edm.String" Nullable="false" MaxLength="1" sap:unicode="false" sap:label="Marque Ecologic" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property
+                    MaxLength="40"
+                    Name="Product"
+                    Nullable="false"
+                    Type="Edm.String"
+                    sap:creatable="false"
+                    sap:filterable="false"
+                    sap:label="Article"
+                    sap:sortable="false"
+                    sap:unicode="false"
+                    sap:updatable="false" />
+                <Property
+                    MaxLength="40"
+                    Name="Brand"
+                    Nullable="false"
+                    Type="Edm.String"
+                    sap:creatable="false"
+                    sap:filterable="false"
+                    sap:label="ID de marque"
+                    sap:sortable="false"
+                    sap:unicode="false"
+                    sap:updatable="false" />
+                <Property
+                    MaxLength="50"
+                    Name="BrandName"
+                    Nullable="false"
+                    Type="Edm.String"
+                    sap:creatable="false"
+                    sap:filterable="false"
+                    sap:label="Descr. catégorie"
+                    sap:sortable="false"
+                    sap:unicode="false"
+                    sap:updatable="false" />
+                <Property
+                    MaxLength="1"
+                    Name="NoCheckSN"
+                    Nullable="false"
+                    Type="Edm.String"
+                    sap:creatable="false"
+                    sap:filterable="false"
+                    sap:label="N°ID NA Portail"
+                    sap:sortable="false"
+                    sap:unicode="false"
+                    sap:updatable="false" />
+                <Property
+                    MaxLength="1"
+                    Name="EcologicBrand"
+                    Nullable="false"
+                    Type="Edm.String"
+                    sap:creatable="false"
+                    sap:filterable="false"
+                    sap:label="Marque Ecologic"
+                    sap:sortable="false"
+                    sap:unicode="false"
+                    sap:updatable="false" />
             </EntityType>
-            <EntityType Name="Amounts" sap:content-version="1">
+            <EntityType
+                Name="Amounts"
+                sap:content-version="1">
                 <Key>
-                    <PropertyRef Name="Product"/>
+                    <PropertyRef Name="Product" />
                 </Key>
-                <Property Name="Product" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Article" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
-                <Property Name="AmountValidFrom" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Début validité" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
-                <Property Name="AmountValidTo" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Fin de validité" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
-                <Property Name="Amount" Type="Edm.String" Nullable="false" MaxLength="11" sap:unicode="false" sap:unit="Currency" sap:label="Montant" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
-                <Property Name="Currency" Type="Edm.String" Nullable="false" MaxLength="5" sap:unicode="false" sap:label="Devise condit." sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="currency-code"/>
+                <Property
+                    MaxLength="40"
+                    Name="Product"
+                    Nullable="false"
+                    Type="Edm.String"
+                    sap:creatable="false"
+                    sap:filterable="false"
+                    sap:label="Article"
+                    sap:sortable="false"
+                    sap:unicode="false"
+                    sap:updatable="false" />
+                <Property
+                    MaxLength="10"
+                    Name="AmountValidFrom"
+                    Nullable="false"
+                    Type="Edm.String"
+                    sap:creatable="false"
+                    sap:filterable="false"
+                    sap:label="Début validité"
+                    sap:sortable="false"
+                    sap:unicode="false"
+                    sap:updatable="false" />
+                <Property
+                    MaxLength="10"
+                    Name="AmountValidTo"
+                    Nullable="false"
+                    Type="Edm.String"
+                    sap:creatable="false"
+                    sap:filterable="false"
+                    sap:label="Fin de validité"
+                    sap:sortable="false"
+                    sap:unicode="false"
+                    sap:updatable="false" />
+                <Property
+                    MaxLength="11"
+                    Name="Amount"
+                    Nullable="false"
+                    Type="Edm.String"
+                    sap:creatable="false"
+                    sap:filterable="false"
+                    sap:label="Montant"
+                    sap:sortable="false"
+                    sap:unicode="false"
+                    sap:unit="Currency"
+                    sap:updatable="false" />
+                <Property
+                    MaxLength="5"
+                    Name="Currency"
+                    Nullable="false"
+                    Type="Edm.String"
+                    sap:creatable="false"
+                    sap:filterable="false"
+                    sap:label="Devise condit."
+                    sap:semantics="currency-code"
+                    sap:sortable="false"
+                    sap:unicode="false"
+                    sap:updatable="false" />
             </EntityType>
-            <EntityType Name="MinimumInvoice" sap:content-version="1">
+            <EntityType
+                Name="MinimumInvoice"
+                sap:content-version="1">
                 <Key>
-                    <PropertyRef Name="Product"/>
+                    <PropertyRef Name="Product" />
                 </Key>
-                <Property Name="Product" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Article" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
-                <Property Name="Amountvalidfrom" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Début validité" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
-                <Property Name="Amountvalidto" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Fin de validité" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
-                <Property Name="MinimumInvoiced" Type="Edm.String" Nullable="false" MaxLength="11" sap:unicode="false" sap:unit="Currency" sap:label="Montant" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
-                <Property Name="Currency" Type="Edm.String" Nullable="false" MaxLength="5" sap:unicode="false" sap:label="Devise condit." sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="currency-code"/>
+                <Property
+                    MaxLength="40"
+                    Name="Product"
+                    Nullable="false"
+                    Type="Edm.String"
+                    sap:creatable="false"
+                    sap:filterable="false"
+                    sap:label="Article"
+                    sap:sortable="false"
+                    sap:unicode="false"
+                    sap:updatable="false" />
+                <Property
+                    MaxLength="10"
+                    Name="Amountvalidfrom"
+                    Nullable="false"
+                    Type="Edm.String"
+                    sap:creatable="false"
+                    sap:filterable="false"
+                    sap:label="Début validité"
+                    sap:sortable="false"
+                    sap:unicode="false"
+                    sap:updatable="false" />
+                <Property
+                    MaxLength="10"
+                    Name="Amountvalidto"
+                    Nullable="false"
+                    Type="Edm.String"
+                    sap:creatable="false"
+                    sap:filterable="false"
+                    sap:label="Fin de validité"
+                    sap:sortable="false"
+                    sap:unicode="false"
+                    sap:updatable="false" />
+                <Property
+                    MaxLength="11"
+                    Name="MinimumInvoiced"
+                    Nullable="false"
+                    Type="Edm.String"
+                    sap:creatable="false"
+                    sap:filterable="false"
+                    sap:label="Montant"
+                    sap:sortable="false"
+                    sap:unicode="false"
+                    sap:unit="Currency"
+                    sap:updatable="false" />
+                <Property
+                    MaxLength="5"
+                    Name="Currency"
+                    Nullable="false"
+                    Type="Edm.String"
+                    sap:creatable="false"
+                    sap:filterable="false"
+                    sap:label="Devise condit."
+                    sap:semantics="currency-code"
+                    sap:sortable="false"
+                    sap:unicode="false"
+                    sap:updatable="false" />
             </EntityType>
-            <Association Name="Product_Brand" sap:content-version="1">
-                <End Type="Z_API_PRODUITS_MARQUES_SRV.Products" Multiplicity="1" Role="FromRole_Product_Brand"/>
-                <End Type="Z_API_PRODUITS_MARQUES_SRV.Brands" Multiplicity="*" Role="ToRole_Product_Brand"/>
+            <Association
+                Name="Product_Brand"
+                sap:content-version="1">
+                <End
+                    Multiplicity="1"
+                    Role="FromRole_Product_Brand"
+                    Type="Z_API_PRODUITS_MARQUES_SRV.Products" />
+                <End
+                    Multiplicity="*"
+                    Role="ToRole_Product_Brand"
+                    Type="Z_API_PRODUITS_MARQUES_SRV.Brands" />
             </Association>
-            <Association Name="Product_Amount" sap:content-version="1">
-                <End Type="Z_API_PRODUITS_MARQUES_SRV.Products" Multiplicity="1" Role="FromRole_Product_Amount"/>
-                <End Type="Z_API_PRODUITS_MARQUES_SRV.Amounts" Multiplicity="*" Role="ToRole_Product_Amount"/>
+            <Association
+                Name="Product_Amount"
+                sap:content-version="1">
+                <End
+                    Multiplicity="1"
+                    Role="FromRole_Product_Amount"
+                    Type="Z_API_PRODUITS_MARQUES_SRV.Products" />
+                <End
+                    Multiplicity="*"
+                    Role="ToRole_Product_Amount"
+                    Type="Z_API_PRODUITS_MARQUES_SRV.Amounts" />
             </Association>
-            <Association Name="Product_MinimumInvoice" sap:content-version="1">
-                <End Type="Z_API_PRODUITS_MARQUES_SRV.Products" Multiplicity="1" Role="FromRole_Product_MinimumInvoice"/>
-                <End Type="Z_API_PRODUITS_MARQUES_SRV.MinimumInvoice" Multiplicity="*" Role="ToRole_Product_MinimumInvoice"/>
+            <Association
+                Name="Product_MinimumInvoice"
+                sap:content-version="1">
+                <End
+                    Multiplicity="1"
+                    Role="FromRole_Product_MinimumInvoice"
+                    Type="Z_API_PRODUITS_MARQUES_SRV.Products" />
+                <End
+                    Multiplicity="*"
+                    Role="ToRole_Product_MinimumInvoice"
+                    Type="Z_API_PRODUITS_MARQUES_SRV.MinimumInvoice" />
             </Association>
-            <Association Name="Product_Defect" sap:content-version="1">
-                <End Type="Z_API_PRODUITS_MARQUES_SRV.Products" Multiplicity="1" Role="FromRole_Product_Defect"/>
-                <End Type="Z_API_PRODUITS_MARQUES_SRV.Defects" Multiplicity="*" Role="ToRole_Product_Defect"/>
+            <Association
+                Name="Product_Defect"
+                sap:content-version="1">
+                <End
+                    Multiplicity="1"
+                    Role="FromRole_Product_Defect"
+                    Type="Z_API_PRODUITS_MARQUES_SRV.Products" />
+                <End
+                    Multiplicity="*"
+                    Role="ToRole_Product_Defect"
+                    Type="Z_API_PRODUITS_MARQUES_SRV.Defects" />
             </Association>
-            <EntityContainer Name="Z_API_PRODUITS_MARQUES_SRV_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx">
-                <EntitySet Name="ProductSet" EntityType="Z_API_PRODUITS_MARQUES_SRV.Products" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
-                <EntitySet Name="DefectSet" EntityType="Z_API_PRODUITS_MARQUES_SRV.Defects" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
-                <EntitySet Name="BrandSet" EntityType="Z_API_PRODUITS_MARQUES_SRV.Brands" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
-                <EntitySet Name="AmountSet" EntityType="Z_API_PRODUITS_MARQUES_SRV.Amounts" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
-                <EntitySet Name="MinimumInvoicedSet" EntityType="Z_API_PRODUITS_MARQUES_SRV.MinimumInvoice" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
-                <AssociationSet Name="Product_Brand_AssocSet" Association="Z_API_PRODUITS_MARQUES_SRV.Product_Brand" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
-                    <End EntitySet="ProductSet" Role="FromRole_Product_Brand"/>
-                    <End EntitySet="BrandSet" Role="ToRole_Product_Brand"/>
+            <EntityContainer
+                Name="Z_API_PRODUITS_MARQUES_SRV_Entities"
+                m:IsDefaultEntityContainer="true"
+                sap:supported-formats="atom json xlsx">
+                <EntitySet
+                    EntityType="Z_API_PRODUITS_MARQUES_SRV.Products"
+                    Name="ProductSet"
+                    sap:addressable="false"
+                    sap:content-version="1"
+                    sap:creatable="false"
+                    sap:deletable="false"
+                    sap:pageable="false"
+                    sap:updatable="false" />
+                <EntitySet
+                    EntityType="Z_API_PRODUITS_MARQUES_SRV.Defects"
+                    Name="DefectSet"
+                    sap:addressable="false"
+                    sap:content-version="1"
+                    sap:creatable="false"
+                    sap:deletable="false"
+                    sap:pageable="false"
+                    sap:updatable="false" />
+                <EntitySet
+                    EntityType="Z_API_PRODUITS_MARQUES_SRV.Brands"
+                    Name="BrandSet"
+                    sap:addressable="false"
+                    sap:content-version="1"
+                    sap:creatable="false"
+                    sap:deletable="false"
+                    sap:pageable="false"
+                    sap:updatable="false" />
+                <EntitySet
+                    EntityType="Z_API_PRODUITS_MARQUES_SRV.Amounts"
+                    Name="AmountSet"
+                    sap:addressable="false"
+                    sap:content-version="1"
+                    sap:creatable="false"
+                    sap:deletable="false"
+                    sap:pageable="false"
+                    sap:updatable="false" />
+                <EntitySet
+                    EntityType="Z_API_PRODUITS_MARQUES_SRV.MinimumInvoice"
+                    Name="MinimumInvoicedSet"
+                    sap:content-version="1"
+                    sap:creatable="false"
+                    sap:deletable="false"
+                    sap:pageable="false"
+                    sap:updatable="false" />
+                <AssociationSet
+                    Association="Z_API_PRODUITS_MARQUES_SRV.Product_Brand"
+                    Name="Product_Brand_AssocSet"
+                    sap:content-version="1"
+                    sap:creatable="false"
+                    sap:deletable="false"
+                    sap:updatable="false">
+                    <End
+                        EntitySet="ProductSet"
+                        Role="FromRole_Product_Brand" />
+                    <End
+                        EntitySet="BrandSet"
+                        Role="ToRole_Product_Brand" />
                 </AssociationSet>
-                <AssociationSet Name="Product_Amount_AssocSet" Association="Z_API_PRODUITS_MARQUES_SRV.Product_Amount" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
-                    <End EntitySet="ProductSet" Role="FromRole_Product_Amount"/>
-                    <End EntitySet="AmountSet" Role="ToRole_Product_Amount"/>
+                <AssociationSet
+                    Association="Z_API_PRODUITS_MARQUES_SRV.Product_Amount"
+                    Name="Product_Amount_AssocSet"
+                    sap:content-version="1"
+                    sap:creatable="false"
+                    sap:deletable="false"
+                    sap:updatable="false">
+                    <End
+                        EntitySet="ProductSet"
+                        Role="FromRole_Product_Amount" />
+                    <End
+                        EntitySet="AmountSet"
+                        Role="ToRole_Product_Amount" />
                 </AssociationSet>
-                <AssociationSet Name="Product_DefectSet" Association="Z_API_PRODUITS_MARQUES_SRV.Product_Defect" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
-                    <End EntitySet="ProductSet" Role="FromRole_Product_Defect"/>
-                    <End EntitySet="DefectSet" Role="ToRole_Product_Defect"/>
+                <AssociationSet
+                    Association="Z_API_PRODUITS_MARQUES_SRV.Product_Defect"
+                    Name="Product_DefectSet"
+                    sap:content-version="1"
+                    sap:creatable="false"
+                    sap:deletable="false"
+                    sap:updatable="false">
+                    <End
+                        EntitySet="ProductSet"
+                        Role="FromRole_Product_Defect" />
+                    <End
+                        EntitySet="DefectSet"
+                        Role="ToRole_Product_Defect" />
                 </AssociationSet>
-                <AssociationSet Name="Product_MinimumInvoice_AssocSet" Association="Z_API_PRODUITS_MARQUES_SRV.Product_MinimumInvoice" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
-                    <End EntitySet="ProductSet" Role="FromRole_Product_MinimumInvoice"/>
-                    <End EntitySet="MinimumInvoicedSet" Role="ToRole_Product_MinimumInvoice"/>
+                <AssociationSet
+                    Association="Z_API_PRODUITS_MARQUES_SRV.Product_MinimumInvoice"
+                    Name="Product_MinimumInvoice_AssocSet"
+                    sap:content-version="1"
+                    sap:creatable="false"
+                    sap:deletable="false"
+                    sap:updatable="false">
+                    <End
+                        EntitySet="ProductSet"
+                        Role="FromRole_Product_MinimumInvoice" />
+                    <End
+                        EntitySet="MinimumInvoicedSet"
+                        Role="ToRole_Product_MinimumInvoice" />
                 </AssociationSet>
             </EntityContainer>
-            <atom:link rel="self" href="https://vhesyd1sci.sap.ecosystem.eco:44300/sap/opu/odata/sap/Z_API_PRODUITS_MARQUES_SRV/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>
-            <atom:link rel="latest-version" href="https://vhesyd1sci.sap.ecosystem.eco:44300/sap/opu/odata/sap/Z_API_PRODUITS_MARQUES_SRV/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>
+            <atom:link xmlns:atom="http://www.w3.org/2005/Atom"
+                href="https://vhesyd1sci.sap.ecosystem.eco:44300/sap/opu/odata/sap/Z_API_PRODUITS_MARQUES_SRV/$metadata"
+                rel="self" />
+            <atom:link xmlns:atom="http://www.w3.org/2005/Atom"
+                href="https://vhesyd1sci.sap.ecosystem.eco:44300/sap/opu/odata/sap/Z_API_PRODUITS_MARQUES_SRV/$metadata"
+                rel="latest-version" />
         </Schema>
     </edmx:DataServices>
 </edmx:Edmx>

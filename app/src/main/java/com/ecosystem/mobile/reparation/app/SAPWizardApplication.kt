@@ -1,14 +1,20 @@
 package com.ecosystem.mobile.reparation.app
 
 import android.app.Application
+import android.util.Log
 import com.ecosystem.mobile.reparation.data.SharedPreferenceRepository
 import com.ecosystem.mobile.reparation.repository.RepositoryFactory
 import com.sap.cloud.mobile.foundation.logging.LoggingService
 import com.sap.cloud.mobile.foundation.mobileservices.MobileService
 import com.sap.cloud.mobile.foundation.mobileservices.SDKInitializer
+import com.sap.cloud.mobile.foundation.mobileservices.ServiceListener
+import com.sap.cloud.mobile.foundation.mobileservices.ServiceResult
 import com.sap.cloud.mobile.foundation.model.AppConfig
 import com.sap.cloud.mobile.foundation.settings.policies.LogPolicy
 import com.sap.cloud.mobile.foundation.theme.ThemeDownloadService
+import com.sap.cloud.mobile.foundation.user.DeviceUser
+import com.sap.cloud.mobile.foundation.user.User
+import com.sap.cloud.mobile.foundation.user.UserService
 import io.flutter.embedding.engine.FlutterEngine
 import io.flutter.embedding.engine.FlutterEngineCache
 import io.flutter.embedding.engine.dart.DartExecutor
@@ -26,7 +32,7 @@ class SAPWizardApplication: Application() {
 
     override fun onCreate() {
         super.onCreate()
-        initFlutterEngine()
+        //initFlutterEngine()
         initServices()
     }
 
@@ -67,11 +73,22 @@ class SAPWizardApplication: Application() {
             logToConsole = true
         })
 
+        val userService = UserService(object : ServiceListener<User> {
+            override fun onServiceDone(result: ServiceResult<User>) {
+                when (result) {
+                    is ServiceResult.SUCCESS -> Log.d("TEST", "User: ${result.data?.toString()}")
+                    is ServiceResult.FAILURE -> Log.e("TEST", "Error: ${result.message}")
+                }
+            }
+        })
+        services.add(userService)
+        //SDKInitializer.start(this, * services.toTypedArray())
+
         SDKInitializer.start(this, * services.toTypedArray())
     }
 
     private fun initFlutterEngine(){
-        // Instantiate a FlutterEngine.
+        /*// Instantiate a FlutterEngine.
         flutterEngine = FlutterEngine(this)
 
         // Start executing Dart code to pre-warm the FlutterEngine.
@@ -82,7 +99,7 @@ class SAPWizardApplication: Application() {
         // Cache the FlutterEngine to be used by FlutterActivity.
         FlutterEngineCache
             .getInstance()
-            .put("flutter_engine", flutterEngine)
+            .put("flutter_engine", flutterEngine)*/
     }
 
 

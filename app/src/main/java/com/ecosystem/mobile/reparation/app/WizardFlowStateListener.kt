@@ -54,7 +54,6 @@ class WizardFlowStateListener(private val application: SAPWizardApplication) :
             application, ClientProvider.get()
         )
 
-        val cookieJar = application.httpClient.cookieJar
     }
 
     override suspend fun onClientPolicyRetrieved(policies: ClientPolicies) {
@@ -101,7 +100,6 @@ class WizardFlowStateListener(private val application: SAPWizardApplication) :
         private val logger = LoggerFactory.getLogger(WizardFlowStateListener::class.java)
     }
 }
-
 fun FlowContext.isUserSwitch(): Boolean {
     return getPreviousUser()?.let {
         getCurrentUser() != it

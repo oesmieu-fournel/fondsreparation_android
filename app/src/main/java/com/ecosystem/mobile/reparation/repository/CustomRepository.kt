@@ -15,7 +15,6 @@ import com.sap.cloud.android.odata.z_business_partner_srv_entities.Z_BUSINESS_PA
 import com.sap.cloud.mobile.odata.DataQuery
 import com.sap.cloud.mobile.odata.EntitySet
 import com.sap.cloud.mobile.odata.EntityValue
-import com.sap.cloud.mobile.odata.EntityValueList
 import com.sap.cloud.mobile.odata.FromJSON
 import com.sap.cloud.mobile.odata.SortOrder
 import com.sap.cloud.mobile.odata.http.HttpHeaders
@@ -24,6 +23,8 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOn
 import org.slf4j.LoggerFactory
+import java.text.SimpleDateFormat
+import java.util.Calendar
 import kotlin.coroutines.resume
 import kotlin.coroutines.resumeWithException
 import kotlin.coroutines.suspendCoroutine
@@ -43,14 +44,19 @@ class CustomRepository(
 
         //HeaderQuerySet?sap-client=110&sap-language=fr&%24filter=ContactNo+eq+%27500009%27+and+CreationDate+gt+%2720.04.2023%27+and+CreationDate+lt+%2720.07.2023%27
         val orderByProperty = HeaderQuery.creationDate
+
+        val calendar = Calendar.getInstance()
+        val formatter = SimpleDateFormat("dd.MM.yyyy")
+        val strDateEnd: String = formatter.format(calendar.time)
+        calendar.add(Calendar.MONTH, -3)
+        val strDateBegin: String = formatter.format(calendar.time)
         val items = suspendCoroutine<List<EntityValue>> { continuation ->
             var dataQuery =
                 DataQuery().from(Z_API_SERVICE_ORDER_SRV_EntitiesMetadata.EntitySets.headerQuerySet)
                     .page(pageSize).skip(page * pageSize)
-                    //var dataQuery = DataQuery().from(entitySet)
                     .filter(HeaderQuery.contactNo.equal(contactNo))
-                    .filter(HeaderQuery.creationDate.greaterThan("20.04.2023"))
-                    .filter(HeaderQuery.creationDate.lessThan("20.07.2023"))
+                    .filter(HeaderQuery.creationDate.greaterThan(strDateBegin))
+                    .filter(HeaderQuery.creationDate.lessThan(strDateEnd))
 
             orderByProperty?.also {
                 dataQuery = dataQuery.orderBy(orderByProperty, SortOrder.ASCENDING)
@@ -87,7 +93,6 @@ class CustomRepository(
                         Header.pricing,
                         Header.attachments
                     )
-
             z_API_SERVICE_ORDER_SRV_Entities.executeQueryAsync(
                 dataQuery,
                 { result ->
@@ -104,8 +109,33 @@ class CustomRepository(
         emit(items)
     }.flowOn(Dispatchers.IO)
 
+
+    suspend fun updateHeaderStatus(serviceOrderNumber: String, status : String): Repository.SuspendOperationResult
+    {
+        return suspendCoroutine { continuation ->
+            z_API_SERVICE_ORDER_SRV_Entities.updateStatusAsync(
+                serviceOrderNumber,
+                status,
+                null,
+                { headerEntity ->
+                    val operationSuccess: Repository.SuspendOperationResult =
+                    Repository.SuspendOperationResult.SuspendOperationSuccess(
+                        headerEntity
+                    )
+                    continuation.resume(operationSuccess)
+                },
+                { error ->
+                    LOGGER.debug("Error encountered during fetch of Category collection", error)
+                    val operationFail =
+                    Repository.SuspendOperationResult.SuspendOperationFail(error)
+                    continuation.resume(operationFail) // will propagate the throwable
+                },
+            )
+        }
+    }
+
     suspend fun readPartner(contactNo: String): Flow<EntityValue> = flow {
-        ///Z_BUSINESS_PARTNER_SRV/ContactSet('500009')?sap-client=110&sap-language=fr&%24expand=ToRepairer/ToRepairPlaces,ToRepairer/ToSubContractor
+        ///Z_BUSINESS_PARTNER_SRV/ContactSet('contactNo')?sap-client=110&sap-language=fr&%24expand=ToRepairer/ToRepairPlaces,ToRepairer/ToSubContractor
         val items = suspendCoroutine { continuation ->
             var dataQuery =
                 DataQuery().from(Z_BUSINESS_PARTNER_SRV_EntitiesMetadata.EntitySets.contactSet)
@@ -146,6 +176,8 @@ class CustomRepository(
                 },
                 { error ->
                     LOGGER.debug("Error encountered during fetch of Category collection", error)
+                    val operationFail =
+                    Repository.SuspendOperationResult.SuspendOperationFail(error)
                     continuation.resumeWithException(error) // will propagate the throwable
                 },
                 getHttpHeaders(Z_API_SERVICE_ORDER_SRV_EntitiesMetadata.EntitySets.headerQuerySet)
@@ -205,21 +237,6 @@ class CustomRepository(
                 })
         }
     }
-
-    /*val header2 = Header()
-
-        val headerEntity = Header().apply {
-                serviceObjectType = "Z001"
-                origin = "ZR2"
-                soldToParty = "dummy01"
-                purchaseOrderByCustomer = "dummyPO"
-        }
-
-        headerEntity.partners = mutableListOf(Partner().apply{
-            partnerFct = "Y0000001"
-            partnerNumber = "2000209"
-        })*/
-
 
     private fun needFullMetadata(entitySet: EntitySet): Boolean {
         return EntityMediaResource.isV4(z_API_SERVICE_ORDER_SRV_Entities.metadata.versionCode) && EntityMediaResource.hasMediaResources(

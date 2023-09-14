@@ -1,21 +1,23 @@
 package com.ecosystem.mobile.reparation.ui
 
+import android.widget.Toast
 import androidx.annotation.NonNull
 import com.ecosystem.mobile.reparation.app.SAPWizardApplication
 import com.ecosystem.mobile.reparation.repository.Repository
 import com.ecosystem.mobile.reparation.repository.RepositoryFactory
-import com.ecosystem.mobile.reparation.service.SAPServiceManager.z_API_SERVICE_ORDER_SRV_Entities
+import com.ecosystem.mobile.reparation.service.mobile_service.RetrieveUser
 import com.sap.cloud.android.odata.z_api_service_order_srv_entities.Header
 import com.sap.cloud.mobile.flows.compose.core.FlowContextRegistry
-import com.sap.cloud.mobile.odata.FromJSON
 import io.flutter.embedding.android.FlutterActivity
 import io.flutter.embedding.engine.FlutterEngine
 import io.flutter.plugin.common.MethodChannel
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
+import kotlinx.coroutines.async
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 import okhttp3.HttpUrl.Companion.toHttpUrlOrNull
 import org.slf4j.LoggerFactory
 import kotlin.coroutines.CoroutineContext
@@ -27,20 +29,20 @@ class CustomFlutterActivity : FlutterActivity() {
         get() = parentJob + Dispatchers.Main
     private val scope = CoroutineScope(coroutineContext)
     private val customRepository = RepositoryFactory.customRepository
+    private var currentUserId : String = "UNKNOWN"
 
 
     override fun configureFlutterEngine(@NonNull flutterEngine: FlutterEngine) {
         super.configureFlutterEngine(flutterEngine)
 
+        scope.launch {
+            currentUserId = RetrieveUser(this@CustomFlutterActivity).userName()
+        }
 
         MethodChannel(
             flutterEngine.dartExecutor.binaryMessenger,
             CHANNEL
         ).setMethodCallHandler { call, result ->
-
-            var currentUser =  FlowContextRegistry.flowContext.getCurrentUser()
-            //var currentUserId =  FlowContextRegistry.flowContext.getCurrentUser()?.id!!
-            var currentUserId =  "500081"
             when (call.method) {
                 "getOrdersList" -> {
 
@@ -162,6 +164,15 @@ class CustomFlutterActivity : FlutterActivity() {
                     result.notImplemented()
             }
         }
+    }
+
+
+    private fun makeToast() {
+        Toast.makeText(
+            application,
+            "SCM user not ready yet.",
+            Toast.LENGTH_SHORT
+        ).show()
     }
 
     companion object {

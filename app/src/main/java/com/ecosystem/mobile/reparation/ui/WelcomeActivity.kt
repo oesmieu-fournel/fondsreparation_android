@@ -13,6 +13,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.res.stringResource
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.lifecycle.lifecycleScope
+import com.ecosystem.mobile.reparation.BuildConfig
 import com.ecosystem.mobile.reparation.R
 import com.ecosystem.mobile.reparation.app.SAPWizardApplication
 import com.ecosystem.mobile.reparation.app.WizardFlowActionHandler
@@ -84,7 +85,7 @@ class WelcomeActivity : ComponentActivity() {
 
 private fun loadConfiguration(context: Context): ProviderConfiguration {
     return FileConfigurationProvider(
-        context, "sap_mobile_services"
+        context, BuildConfig.FILE_CONFIGURATION
     ).provideConfiguration(
         ProviderInputs()
     )
@@ -98,13 +99,6 @@ fun startOnboarding(context: Context, appConfig: AppConfig) {
         flowContext = getOnboardingFlowContext(context, appConfig)
     ) { resultCode, _ ->
         if (resultCode == Activity.RESULT_OK) {
-            /*val intent = Intent(context, MainBusinessActivity::class.java).apply {
-                addFlags(
-                    Intent.FLAG_ACTIVITY_NEW_TASK or
-                            Intent.FLAG_ACTIVITY_CLEAR_TASK or
-                            Intent.FLAG_ACTIVITY_CLEAR_TOP
-                )
-            }*/
 			SAPServiceManager.openODataStore() {
                 /*context.startActivity(
                     FlutterActivity.CachedEngineIntentBuilder(

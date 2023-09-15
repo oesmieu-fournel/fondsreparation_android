@@ -1,0 +1,12 @@
+{
+  "__comment": "When modifying this file, you need to reset or reinstall all current client installations",
+  "auth": [{
+    "type": "saml2.web.post",
+    "config": {
+    },
+    "requireOtp": false
+  }],
+  "ServiceUrl" : "https://pre-prod-cf-ld9d5fos-pre-prod-space-com-ecosystem-mobi-9xrgv0y0.cfapps.eu10.hana.ondemand.com",
+  "appID": "com.ecosystem.mobile.reparation",
+  "multiUser": false
+}

@@ -12,7 +12,6 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class UserClient {
 
-    //https://ecosystem-dev-space-com-ecosystem-mobile-reparation.cfapps.eu10.hana.ondemand.com/
     private val endPoint : String = FlowContextRegistry.flowContext.appConfig?.serviceUrl ?: ""
 
     /* Destinations */

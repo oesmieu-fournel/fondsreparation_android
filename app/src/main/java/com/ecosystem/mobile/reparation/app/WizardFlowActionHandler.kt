@@ -20,7 +20,6 @@ import androidx.compose.ui.text.buildAnnotatedString
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextDecoration
 import androidx.core.text.getSpans
-import com.ecosystem.mobile.reparation.BuildConfig
 import com.sap.cloud.mobile.fiori.compose.dialog.FioriAlertDialog
 import com.sap.cloud.mobile.fiori.compose.theme.fioriHorizonAttributes
 import com.ecosystem.mobile.reparation.R
@@ -141,7 +140,7 @@ class WizardFlowActionHandler(val application: SAPWizardApplication): FlowAction
                                 }
                             )
                         }
-                        if (BuildConfig.FLAVOR == "tencentAppStoreforChinaMarket") {
+                        /*if (BuildConfig.FLAVOR == "tencentAppStoreforChinaMarket") {
                             var showPrivacyDialog by remember { mutableStateOf(true) }
                             var closeCount by remember { mutableStateOf(0) }
                             var title by remember { mutableStateOf("") }
@@ -190,7 +189,7 @@ class WizardFlowActionHandler(val application: SAPWizardApplication): FlowAction
                                     onDismissButtonClick = { onClose(false) }
                                 )
                             }
-                        }
+                        }*/
                     }
                 }
                 else -> Unit

@@ -57,9 +57,10 @@ class CustomRepository(
                     .filter(HeaderQuery.contactNo.equal(contactNo))
                     .filter(HeaderQuery.creationDate.greaterThan(strDateBegin))
                     .filter(HeaderQuery.creationDate.lessThan(strDateEnd))
+                    .orderBy(orderByProperty, SortOrder.DESCENDING)
 
             orderByProperty?.also {
-                dataQuery = dataQuery.orderBy(orderByProperty, SortOrder.ASCENDING)
+                dataQuery = dataQuery.orderBy(orderByProperty, SortOrder.DESCENDING)
             }
 
             z_API_SERVICE_ORDER_SRV_Entities.executeQueryAsync(

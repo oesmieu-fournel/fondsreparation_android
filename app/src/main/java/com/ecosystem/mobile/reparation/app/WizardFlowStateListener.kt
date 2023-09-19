@@ -5,19 +5,17 @@ import ch.qos.logback.classic.Level
 import com.ecosystem.mobile.reparation.R
 import com.ecosystem.mobile.reparation.data.SharedPreferenceRepository
 import com.ecosystem.mobile.reparation.service.SAPServiceManager
+import com.ecosystem.mobile.reparation.service.api.mobile_service.RetrieveUserInfos
 import com.sap.cloud.mobile.fiori.compose.common.PainterBuilder
 import com.sap.cloud.mobile.flows.compose.core.FlowContext
-import com.sap.cloud.mobile.flows.compose.core.FlowContextRegistry.flowContext
 import com.sap.cloud.mobile.flows.compose.ext.FlowStateListener
 import com.sap.cloud.mobile.foundation.authentication.AppLifecycleCallbackHandler
 import com.sap.cloud.mobile.foundation.common.ClientProvider
-import com.sap.cloud.mobile.foundation.common.addUniqueInterceptor
 import com.sap.cloud.mobile.foundation.model.AppConfig
 import com.sap.cloud.mobile.foundation.settings.policies.ClientPolicies
 import com.sap.cloud.mobile.foundation.settings.policies.LogPolicy
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.runBlocking
-import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import org.slf4j.LoggerFactory
 
@@ -94,27 +92,8 @@ class WizardFlowStateListener(private val application: SAPWizardApplication) :
                 }
             }
         }
+        RetrieveUserInfos(application).userName()
 
-        //val user =  flowContext.getCurrentUser().
-        /*RetrieveUser(
-            object : ServiceListener<ScimUser> {
-                override fun onResponse(response: ApiResult<ScimUser>) {
-                    when (response) {
-                        is ApiResult.Error -> makeToast()
-                        is ApiResult.Success<ScimUser> -> {
-                            val username = response.data?.userName
-                            if (username.isNullOrEmpty())
-                                makeToast()
-                            else {
-                                runBlocking {
-                                    SharedPreferenceRepository(application).updateUsername(username)
-                                }
-                            }
-                        }
-                    }
-                }
-
-            })*/
     }
 
     private fun makeToast() {

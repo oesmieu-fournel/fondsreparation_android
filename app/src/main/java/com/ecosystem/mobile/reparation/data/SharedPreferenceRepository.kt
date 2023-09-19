@@ -16,7 +16,7 @@ import kotlinx.coroutines.flow.map
 import java.io.IOException
 
 const val KEY_LOG_SETTING_PREFERENCE = "key.log.settings.preference"
-const val KEY_SCIM_USERNAME = "key.scim_username"
+const val KEY_USERNAME = "username"
 
 val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "settings")
 
@@ -32,7 +32,7 @@ class SharedPreferenceRepository(private val context: Context) {
 
     private object PreferencesKeys {
         val PREF_LOG_SETTING = stringPreferencesKey(KEY_LOG_SETTING_PREFERENCE)
-        val USERNAME = stringPreferencesKey(KEY_SCIM_USERNAME)
+        val USERNAME = stringPreferencesKey(KEY_USERNAME)
     }
 
     suspend fun resetSharedPreference() {
@@ -67,7 +67,7 @@ class SharedPreferenceRepository(private val context: Context) {
     suspend fun updateUsername(username : String) {
         dataStore.edit { preferences ->
             Log.d("log", "update username as $username")
-            preferences[PreferencesKeys.PREF_LOG_SETTING] = username
+            preferences[PreferencesKeys.USERNAME] = username
         }
     }
 

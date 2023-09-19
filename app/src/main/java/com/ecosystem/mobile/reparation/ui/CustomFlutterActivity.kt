@@ -5,19 +5,16 @@ import androidx.annotation.NonNull
 import com.ecosystem.mobile.reparation.app.SAPWizardApplication
 import com.ecosystem.mobile.reparation.repository.Repository
 import com.ecosystem.mobile.reparation.repository.RepositoryFactory
-import com.ecosystem.mobile.reparation.service.mobile_service.RetrieveUser
+import com.ecosystem.mobile.reparation.service.api.mobile_service.RetrieveUserInfos
 import com.sap.cloud.android.odata.z_api_service_order_srv_entities.Header
-import com.sap.cloud.mobile.flows.compose.core.FlowContextRegistry
 import io.flutter.embedding.android.FlutterActivity
 import io.flutter.embedding.engine.FlutterEngine
 import io.flutter.plugin.common.MethodChannel
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
-import kotlinx.coroutines.async
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
 import okhttp3.HttpUrl.Companion.toHttpUrlOrNull
 import org.slf4j.LoggerFactory
 import kotlin.coroutines.CoroutineContext
@@ -29,15 +26,13 @@ class CustomFlutterActivity : FlutterActivity() {
         get() = parentJob + Dispatchers.Main
     private val scope = CoroutineScope(coroutineContext)
     private val customRepository = RepositoryFactory.customRepository
-    private var currentUserId : String = "UNKNOWN"
+    private var currentUserId: String = "UNKNOWN"
 
 
     override fun configureFlutterEngine(@NonNull flutterEngine: FlutterEngine) {
         super.configureFlutterEngine(flutterEngine)
 
-        scope.launch {
-            currentUserId = RetrieveUser(this@CustomFlutterActivity).userName()
-        }
+        currentUserId = RetrieveUserInfos(this@CustomFlutterActivity).userName()
 
         MethodChannel(
             flutterEngine.dartExecutor.binaryMessenger,
@@ -48,7 +43,8 @@ class CustomFlutterActivity : FlutterActivity() {
 
                     val page = call.argument<Int>("page") ?: 0
                     scope.launch {
-                        val headerListFlow = customRepository.readHeaderList(currentUserId, page = page)
+                        val headerListFlow =
+                            customRepository.readHeaderList(currentUserId, page = page)
                         headerListFlow.collectLatest {
                             val headListJson = com.sap.cloud.mobile.odata.ToJSON.entityList(it)
                             result.success(headListJson)

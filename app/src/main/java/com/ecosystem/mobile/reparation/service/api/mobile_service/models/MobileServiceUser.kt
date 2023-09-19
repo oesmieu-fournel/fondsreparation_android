@@ -1,4 +1,4 @@
-package com.ecosystem.mobile.reparation.service.api.scim_user.models.mobile_service
+package com.ecosystem.mobile.reparation.service.api.mobile_service.models
 
 data class MobileServiceUser(
     val detail: Detail,

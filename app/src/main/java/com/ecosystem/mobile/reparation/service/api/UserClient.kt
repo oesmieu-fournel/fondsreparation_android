@@ -1,8 +1,7 @@
-package com.ecosystem.mobile.reparation.service.api.scim_user
+package com.ecosystem.mobile.reparation.service.api
 
 import com.sap.cloud.mobile.flows.compose.core.FlowContextRegistry
 import com.sap.cloud.mobile.foundation.common.ClientProvider
-import okhttp3.Credentials
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
@@ -16,23 +15,11 @@ class UserClient {
 
     /* Destinations */
     private val mobileServiveDestination : String = "mobileservices/application/com.ecosystem.mobile.reparation/roleservice/application/com.ecosystem.mobile.reparation/v2/"
-    private val idpDestination : String = "com.ecosystem.mobile.idp/scim/"
 
     val msUserInfosService: UserApi by lazy {
 
         return@lazy Retrofit.Builder()
             .baseUrl(endPoint + mobileServiveDestination)
-            .client(getClient())
-            .addConverterFactory(GsonConverterFactory.create())
-            .build()
-            .create(UserApi::class.java)
-    }
-
-
-    val scimUserInfosService: UserApi by lazy {
-
-        return@lazy Retrofit.Builder()
-            .baseUrl(endPoint + idpDestination)
             .client(getClient())
             .addConverterFactory(GsonConverterFactory.create())
             .build()

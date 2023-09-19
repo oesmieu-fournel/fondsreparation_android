@@ -76,7 +76,9 @@ class SAPWizardApplication: Application() {
         val userService = UserService(object : ServiceListener<User> {
             override fun onServiceDone(result: ServiceResult<User>) {
                 when (result) {
-                    is ServiceResult.SUCCESS -> Log.d("TEST", "User: ${result.data?.toString()}")
+                    is ServiceResult.SUCCESS -> {
+                        Log.d("TEST", "User: ${result.data?.toString()}")
+                    }
                     is ServiceResult.FAILURE -> Log.e("TEST", "Error: ${result.message}")
                 }
             }

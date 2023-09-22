@@ -115,8 +115,8 @@ class CustomRepository(
     {
         return suspendCoroutine { continuation ->
             z_API_SERVICE_ORDER_SRV_Entities.updateStatusAsync(
-                serviceOrderNumber,
                 status,
+                serviceOrderNumber,
                 null,
                 { headerEntity ->
                     val operationSuccess: Repository.SuspendOperationResult =

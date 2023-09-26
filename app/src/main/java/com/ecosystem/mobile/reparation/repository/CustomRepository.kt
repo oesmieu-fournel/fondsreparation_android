@@ -169,6 +169,7 @@ class CustomRepository(
                 DataQuery().from(Z_API_PRODUITS_MARQUES_SRV_EntitiesMetadata.EntitySets.productSet)
                     .expand(Products.toDefect)
                     .expand(Products.toBrand)
+                    .expand(Products.toAmount)
 
             z_API_PRODUITS_MARQUES_SRV_Entities.executeQueryAsync(
                 dataQuery,

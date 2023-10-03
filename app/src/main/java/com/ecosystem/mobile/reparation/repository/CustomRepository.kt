@@ -23,6 +23,7 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOn
 import org.slf4j.LoggerFactory
+import java.io.File
 import java.text.SimpleDateFormat
 import java.util.Calendar
 import kotlin.coroutines.resume
@@ -246,6 +247,24 @@ class CustomRepository(
             entitySet
         )
     }
+
+    /*suspend fun putS3Object(bucketName: String, objectKey: String, objectPath: String) {
+
+       *//* val metadataVal = mutableMapOf<String, String>()
+        metadataVal["myVal"] = "test"*//*
+
+        val request = PutObjectRequest {
+            bucket = bucketName
+            key = objectKey
+            //metadata = metadataVal
+            body = File(objectPath).asByteStream()
+        }
+
+        S3Client { region = "us-east-1" }.use { s3 ->
+            val response = s3.putObject(request)
+            println("Tag information is ${response.eTag}")
+        }
+    }*/
 
     private fun getHttpHeaders(entitySet: EntitySet): HttpHeaders {
         val httpHeaders: HttpHeaders

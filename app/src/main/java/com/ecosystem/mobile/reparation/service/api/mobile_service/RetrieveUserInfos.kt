@@ -32,7 +32,7 @@ class RetrieveUserInfos(private val context: Context) {
             val mobileServiceUserResult =
                 withContext(Dispatchers.IO) { getMobileServiceUserData() }
             if (mobileServiceUserResult is ApiResult.Success<MobileServiceUser>) {
-                Log.i("log", mobileServiceUserResult.data.toString())
+                Log.d("log", mobileServiceUserResult.data.toString())
                 mobileServiceUserResult.data?.detail?.login_name?.firstOrNull()
                     ?.let { login_name ->
                         SharedPreferenceRepository(context).updateUsername(

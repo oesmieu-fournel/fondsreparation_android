@@ -45,8 +45,8 @@ android {
         applicationId "com.ecosystem.mobile.reparation"
         minSdkVersion 26
         targetSdkVersion 33
-        versionCode 4
-        versionName "v0.4.0"
+        versionCode 5
+        versionName "v0.5.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         testInstrumentationRunnerArguments clearPackageData: 'true'
 		vectorDrawables {
@@ -200,6 +200,9 @@ dependencies {
     //Java code also need this library to convert java class to kotlin class
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
+
+    /*// Amazon S3 storage
+    implementation("aws.sdk.kotlin:s3:0.25.0-beta")*/
 
     implementation project(':flutter')
 }

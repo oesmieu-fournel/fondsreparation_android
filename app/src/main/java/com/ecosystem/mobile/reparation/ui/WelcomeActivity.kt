@@ -100,12 +100,12 @@ fun startOnboarding(context: Context, appConfig: AppConfig) {
     ) { resultCode, _ ->
         if (resultCode == Activity.RESULT_OK) {
 			SAPServiceManager.openODataStore() {
-                /*context.startActivity(
+                context.startActivity(
                     FlutterActivity.CachedEngineIntentBuilder(
                         CustomFlutterActivity::class.java,
                         "flutter_engine"
-                    ).build(context) )*/
-                context.startActivity(FlutterActivity.NewEngineIntentBuilder(CustomFlutterActivity::class.java,).build(context))
+                    ).build(context) )
+                //context.startActivity(FlutterActivity.NewEngineIntentBuilder(CustomFlutterActivity::class.java,).build(context))
 			}
 			PainterBuilder.setupImageLoader(
                 context, ClientProvider.get()

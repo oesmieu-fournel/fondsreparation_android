@@ -32,7 +32,7 @@ class SAPWizardApplication: Application() {
 
     override fun onCreate() {
         super.onCreate()
-        //initFlutterEngine()
+        initFlutterEngine()
         initServices()
     }
 
@@ -90,7 +90,7 @@ class SAPWizardApplication: Application() {
     }
 
     private fun initFlutterEngine(){
-        /*// Instantiate a FlutterEngine.
+        // Instantiate a FlutterEngine.
         flutterEngine = FlutterEngine(this)
 
         // Start executing Dart code to pre-warm the FlutterEngine.
@@ -101,7 +101,7 @@ class SAPWizardApplication: Application() {
         // Cache the FlutterEngine to be used by FlutterActivity.
         FlutterEngineCache
             .getInstance()
-            .put("flutter_engine", flutterEngine)*/
+            .put("flutter_engine", flutterEngine)
     }
 
 

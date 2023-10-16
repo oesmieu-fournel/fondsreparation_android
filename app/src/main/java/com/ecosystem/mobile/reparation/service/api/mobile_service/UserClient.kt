@@ -1,4 +1,4 @@
-package com.ecosystem.mobile.reparation.service.api
+package com.ecosystem.mobile.reparation.service.api.mobile_service
 
 import com.sap.cloud.mobile.flows.compose.core.FlowContextRegistry
 import com.sap.cloud.mobile.foundation.common.ClientProvider

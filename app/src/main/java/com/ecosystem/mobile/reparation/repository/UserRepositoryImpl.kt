@@ -1,7 +1,7 @@
 package com.ecosystem.mobile.reparation.repository
 
 import com.ecosystem.mobile.reparation.model.user.UserRepository
-import com.ecosystem.mobile.reparation.service.api.UserClient
+import com.ecosystem.mobile.reparation.service.api.mobile_service.UserClient
 import com.ecosystem.mobile.reparation.service.api.mobile_service.models.MobileServiceUser
 
 class UserRepositoryImpl : UserRepository {

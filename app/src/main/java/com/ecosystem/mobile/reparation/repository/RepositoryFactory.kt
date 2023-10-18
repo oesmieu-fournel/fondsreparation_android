@@ -1,5 +1,6 @@
 package com.ecosystem.mobile.reparation.repository
 
+import com.ecosystem.mobile.reparation.model.files.FilesRepository
 import com.ecosystem.mobile.reparation.service.SAPServiceManager
 import com.sap.cloud.android.odata.z_api_service_order_srv_entities.Z_API_SERVICE_ORDER_SRV_EntitiesMetadata.EntitySets
 import com.sap.cloud.mobile.odata.EntitySet
@@ -21,6 +22,10 @@ object RepositoryFactory
         CustomRepository(SAPServiceManager.z_API_SERVICE_ORDER_SRV_Entities!!,
         SAPServiceManager.z_BUSINESS_PARTNER_SRV_Entities!!,
         SAPServiceManager.z_API_PRODUITS_MARQUES_SRV_Entities!!)
+    }
+
+    val filesRepository : FilesRepository by lazy {
+        AWSFileRepositoryImpl()
     }
 
     /**

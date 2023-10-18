@@ -10,21 +10,29 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 
-class AWSFileUploadClient {
+object AWSFilesClient {
 
     private val endPoint : String = FlowContextRegistry.flowContext.appConfig?.serviceUrl ?: ""
 
     /* Destinations */
-    private val mobileServiveDestination : String = "com.ecosystem.mobile.reparation.fileupload"
+    private val mobileServiveDestination : String = "com.ecosystem.mobile.reparation.files/"
 
-    val msUserInfosService: AWSFileUploadApi by lazy {
+    val awsCertifiedFilesService: AWSCertifiedFilesApi by lazy {
 
         return@lazy Retrofit.Builder()
             .baseUrl(endPoint + mobileServiveDestination)
             .client(getClient())
             .addConverterFactory(GsonConverterFactory.create())
             .build()
-            .create(AWSFileUploadApi::class.java)
+            .create(AWSCertifiedFilesApi::class.java)
+    }
+    fun awsFileUploadClient(certifiedUploadBaseUrl : String): AWSUploadFileApi{
+        return Retrofit.Builder()
+            .baseUrl(certifiedUploadBaseUrl)
+            .client(getClient())
+            .addConverterFactory(GsonConverterFactory.create())
+            .build()
+            .create(AWSUploadFileApi::class.java)
     }
 
     private fun getClient(): OkHttpClient {

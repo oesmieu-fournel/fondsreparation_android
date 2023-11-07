@@ -2,23 +2,37 @@ package com.ecosystem.mobile.reparation.app
 
 import android.app.Activity
 import android.text.SpannedString
+import androidx.compose.foundation.Image
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.wrapContentHeight
 import androidx.compose.foundation.text.ClickableText
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.SpanStyle
 import androidx.compose.ui.text.buildAnnotatedString
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextDecoration
+import androidx.compose.ui.unit.dp
 import androidx.core.text.getSpans
 import com.sap.cloud.mobile.fiori.compose.dialog.FioriAlertDialog
 import com.sap.cloud.mobile.fiori.compose.theme.fioriHorizonAttributes
@@ -33,12 +47,12 @@ import com.sap.cloud.mobile.onboarding.compose.screens.LaunchScreen
 import com.sap.cloud.mobile.onboarding.compose.screens.rememberLaunchScreenState
 import com.sap.cloud.mobile.onboarding.compose.settings.LocalScreenSettings
 
-class WizardFlowActionHandler(val application: SAPWizardApplication): FlowActionHandler() {
+class WizardFlowActionHandler(val application: SAPWizardApplication) : FlowActionHandler() {
     private var showDemoDialog by mutableStateOf(false)
 
 
     @Composable
-    private fun getAnnotatedString(rId: Int) : AnnotatedString {
+    private fun getAnnotatedString(rId: Int): AnnotatedString {
         val context = LocalContext.current
         val settings = LocalScreenSettings.current.launchScreenSettings
         val spannedString = context.getText(rId) as SpannedString
@@ -116,7 +130,7 @@ class WizardFlowActionHandler(val application: SAPWizardApplication): FlowAction
                             showTermLinks = true,
                             defaultAgreeStatus = false
                         )
-                        LaunchScreen(
+                        /*LaunchScreen(
                             primaryViewClickListener = {
                                 flow.flowDone(step_welcome)
                             },
@@ -129,11 +143,21 @@ class WizardFlowActionHandler(val application: SAPWizardApplication): FlowAction
                                     SDKCustomTabsLauncher.launchCustomTabs(context, url)
                                 }
                             }
+                        )*/
+                        CustomLaunchScreen(
+                            primaryViewClickListener = {
+                                flow.flowDone(step_welcome)
+                            },
+                            secondaryViewClickListener = {
+                                showDemoDialog = true
+                            },
+                            state = state,
+                            launchScreenSettings = null
                         )
                         if (showDemoDialog) {
-                            FioriAlertDialog (
+                            FioriAlertDialog(
                                 title = context.getString(R.string.launch_screen_demo_dialog_title),
-                                text = context.getString(R.string.launch_screen_demo_dialog_message) ,
+                                text = context.getString(R.string.launch_screen_demo_dialog_message),
                                 confirmButtonText = context.getString(R.string.launch_screen_demo_dialog_button_goback),
                                 onConfirmButtonClick = {
                                     showDemoDialog = false
@@ -192,7 +216,52 @@ class WizardFlowActionHandler(val application: SAPWizardApplication): FlowAction
                         }*/
                     }
                 }
+
                 else -> Unit
+            }
+        }
+    }
+
+
+    @Composable
+    fun CustomLaunchScreen(
+        state: com.sap.cloud.mobile.onboarding.compose.screens.LaunchScreenState,
+        primaryViewClickListener: com.sap.cloud.mobile.onboarding.compose.settings.ViewClickListener,
+        secondaryViewClickListener: com.sap.cloud.mobile.onboarding.compose.settings.ViewClickListener?,
+        launchScreenSettings: com.sap.cloud.mobile.onboarding.compose.settings.LaunchScreenSettings?,
+    ): kotlin.Unit {
+        Image(
+            painter = painterResource(id = R.drawable.ic_half_grey_circle),
+            contentDescription = stringResource(R.string.half_grey_circle)
+        )
+        Column(
+            modifier = Modifier
+                .fillMaxWidth()
+                .fillMaxHeight(),
+            verticalArrangement = Arrangement.Top,
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+            Image(
+                painter = painterResource(id = R.drawable.portail_reparateurs_picto),
+                contentDescription = stringResource(R.string.reparateur_picto),
+                modifier = Modifier
+                    .padding(vertical = 50.dp)
+                    .size(250.dp)
+            )
+            Image(
+                painter = painterResource(id = R.drawable.portail_reparateurs_logo),
+                contentDescription = stringResource(R.string.reparateur_logo)
+            )
+            Button(
+                onClick = { primaryViewClickListener() },
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = Color(0x0FF002E50),
+                    contentColor = Color.White
+                ),
+                modifier = Modifier
+                    .padding(vertical = 50.dp)
+            ) {
+                Text(text = stringResource(R.string.se_connecter))
             }
         }
     }

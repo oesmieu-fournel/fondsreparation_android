@@ -130,20 +130,6 @@ class WizardFlowActionHandler(val application: SAPWizardApplication) : FlowActio
                             showTermLinks = true,
                             defaultAgreeStatus = false
                         )
-                        /*LaunchScreen(
-                            primaryViewClickListener = {
-                                flow.flowDone(step_welcome)
-                            },
-                            secondaryViewClickListener = {
-                                showDemoDialog = true
-                            },
-                            state = state,
-                            linkClickListener = { url ->
-                                if (SDKCustomTabsLauncher.customTabsSupported(context)) {
-                                    SDKCustomTabsLauncher.launchCustomTabs(context, url)
-                                }
-                            }
-                        )*/
                         CustomLaunchScreen(
                             primaryViewClickListener = {
                                 flow.flowDone(step_welcome)
@@ -164,56 +150,6 @@ class WizardFlowActionHandler(val application: SAPWizardApplication) : FlowActio
                                 }
                             )
                         }
-                        /*if (BuildConfig.FLAVOR == "tencentAppStoreforChinaMarket") {
-                            var showPrivacyDialog by remember { mutableStateOf(true) }
-                            var closeCount by remember { mutableStateOf(0) }
-                            var title by remember { mutableStateOf("") }
-                            var contentText by remember { mutableStateOf(AnnotatedString("")) }
-                            var cBtnText by remember { mutableStateOf("") }
-                            var dBtnText by remember { mutableStateOf("") }
-                            var dBtnVisible by remember { mutableStateOf(false) }
-                            if (closeCount == 0) {
-                                val annotatedString : AnnotatedString = getAnnotatedString(R.string.privacy_dialog_content)
-                                title = context.getString(R.string.launch_screen_dialog_title)
-                                contentText = annotatedString
-                                cBtnText = context.getString(R.string.launch_screen_dialog_button_agree)
-                                dBtnVisible = true
-                                dBtnText = context.getString(R.string.launch_screen_dialog_button_disagree)
-                            } else {
-                                val confirmationAnnotatedString : AnnotatedString = getAnnotatedString(R.string.privacy_confirmation_dialog_content)
-                                title = context.getString(R.string.launch_screen_dialog_title)
-                                contentText = confirmationAnnotatedString
-                                cBtnText = context.getString(R.string.launch_screen_dialog_disagree_confirm)
-                                dBtnVisible = false
-                            }
-                            if (showPrivacyDialog) {
-                                val onClose: (Boolean) -> Unit = { agreed ->
-                                    if (closeCount == 0) {
-                                        state.agreeState.value = agreed
-                                        state.showTermLinksState.value = !agreed
-                                    }
-                                    if (agreed) {
-                                        showPrivacyDialog = false
-                                    } else {
-                                        if (closeCount !=0) showPrivacyDialog = false
-                                        if (closeCount == 0) closeCount = 1 else closeCount = 0
-                                    }
-                                }
-                                FioriAlertDialog (
-                                    modifier = Modifier.wrapContentHeight(),
-                                    title = title,
-                                    text = { PrivacyDialogContent(contentText) },
-                                    confirmButtonText = cBtnText,
-                                    onConfirmButtonClick = { onClose(true) },
-                                    dismissButtonText = if (dBtnVisible) {
-                                        dBtnText
-                                    } else {
-                                        null
-                                    },
-                                    onDismissButtonClick = { onClose(false) }
-                                )
-                            }
-                        }*/
                     }
                 }
 

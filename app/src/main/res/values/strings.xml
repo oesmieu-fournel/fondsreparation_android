@@ -16,4 +16,8 @@
     <string name="eset_partnerset_single">Partner</string>
     <string name="eset_pricingset">PricingSet</string>
     <string name="eset_pricingset_single">Pricing</string>
+    <string name="reparateur_picto">Réparateur picto</string>
+    <string name="reparateur_logo">Réparateur logo</string>
+    <string name="se_connecter">SE CONNECTER</string>
+    <string name="half_grey_circle">half grey circle</string>
 </resources>

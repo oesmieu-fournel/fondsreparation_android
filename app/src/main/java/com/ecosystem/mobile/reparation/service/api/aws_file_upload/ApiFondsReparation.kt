@@ -7,9 +7,12 @@ import retrofit2.http.Body
 import retrofit2.http.POST
 import retrofit2.http.Path
 
-interface AWSCertifiedFilesApi {
+interface ApiFondsReparation {
 
-        @POST("{serviceOrder}")
+        @POST("admin/upload/serviceOrder/{serviceOrder}")
         suspend fun generateCertifiedUploadLink(@Path(value = "serviceOrder") serviceOrder : String, @Body fileInformation : AWSFileInformations) : Response<AWSCertifiedUploadLink>
+
+        @POST("admin/claim_to_analyze")
+        suspend fun sendToAnalyze( @Body bodyPayload : HashMap<String, Any>) : Response<Object>
 
 }

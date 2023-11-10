@@ -15,7 +15,7 @@ import java.net.MalformedURLException
 import java.net.URL
 
 class AWSFileRepositoryImpl : FilesRepository {
-    private val awsFilesService = AWSFilesClient.awsCertifiedFilesService
+    private val apiFondsReparation = AWSFilesClient.apiFondsReparation
 
     override suspend fun uploadFiles(
         serviceOrder: String,
@@ -25,7 +25,7 @@ class AWSFileRepositoryImpl : FilesRepository {
 
         filesInformations.data.forEach { fileInformation ->
 
-            val certifiedLinkResponse = awsFilesService.generateCertifiedUploadLink(
+            val certifiedLinkResponse = apiFondsReparation.generateCertifiedUploadLink(
                 serviceOrder,
                 AWSFileInformations(
                     FileName = fileInformation.fileName,
@@ -86,5 +86,10 @@ class AWSFileRepositoryImpl : FilesRepository {
 
         } else
             null
+    }
+
+    override suspend fun sendDataToAnalyze(bodyPayload : HashMap<String, Any>) : Boolean{
+        val result = apiFondsReparation.sendToAnalyze(bodyPayload)
+        return result.isSuccessful
     }
 }

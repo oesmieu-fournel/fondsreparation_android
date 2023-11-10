@@ -46,10 +46,14 @@ class OrderChannelHandler(val currentUserId : String) : MethodChannel.MethodCall
                 createUpdateOrder(call, result)
             }
 
+            "sendToAnalyze" ->{
+                sendToAnalyze(call, result)
+            }
 
             "updateOrderStatus" -> {
                 updateOrderStatus(call, result)
             }
+
             "uploadFiles" -> {
                 uploadFiles(call, result)
             }
@@ -82,6 +86,30 @@ class OrderChannelHandler(val currentUserId : String) : MethodChannel.MethodCall
                     result.error(
                         "400",
                         "Error during attachments upload",
+                        null
+                    )
+                }
+            }
+        }
+    }
+
+
+    private fun sendToAnalyze(
+        call: MethodCall,
+        result: MethodChannel.Result
+    ) {
+        scope.launch {
+            call.argument<HashMap<String, Any>>("body")?.let { bodyPayload ->
+                try {
+                    if (filesRepository.sendDataToAnalyze(bodyPayload))
+                        result.success("succeed sendToAnalyse")
+                    else
+                        result.error("500", "Error during send to analyze request", null)
+
+                } catch (exception: JsonSyntaxException) {
+                    result.error(
+                        "400",
+                        "Error during send to analyze request",
                         null
                     )
                 }

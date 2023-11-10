@@ -17,14 +17,14 @@ object AWSFilesClient {
     /* Destinations */
     private val mobileServiveDestination : String = "com.ecosystem.mobile.reparation.files/"
 
-    val awsCertifiedFilesService: AWSCertifiedFilesApi by lazy {
+    val apiFondsReparation: ApiFondsReparation by lazy {
 
         return@lazy Retrofit.Builder()
             .baseUrl(endPoint + mobileServiveDestination)
             .client(getClient())
             .addConverterFactory(GsonConverterFactory.create())
             .build()
-            .create(AWSCertifiedFilesApi::class.java)
+            .create(ApiFondsReparation::class.java)
     }
     fun awsFileUploadClient(certifiedUploadBaseUrl : String): AWSUploadFileApi{
         return Retrofit.Builder()

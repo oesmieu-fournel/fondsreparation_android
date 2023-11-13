@@ -34,6 +34,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.unit.dp
 import androidx.core.text.getSpans
+import com.ecosystem.mobile.reparation.BuildConfig
 import com.sap.cloud.mobile.fiori.compose.dialog.FioriAlertDialog
 import com.sap.cloud.mobile.fiori.compose.theme.fioriHorizonAttributes
 import com.ecosystem.mobile.reparation.R
@@ -188,6 +189,7 @@ class WizardFlowActionHandler(val application: SAPWizardApplication) : FlowActio
                 painter = painterResource(id = R.drawable.portail_reparateurs_logo),
                 contentDescription = stringResource(R.string.reparateur_logo)
             )
+            Text(text = BuildConfig.VERSION_NAME)
             Button(
                 onClick = { primaryViewClickListener() },
                 colors = ButtonDefaults.buttonColors(

@@ -2,6 +2,7 @@ package com.ecosystem.mobile.reparation.app
 
 import android.app.Application
 import android.util.Log
+import com.ecosystem.mobile.reparation.BuildConfig
 import com.ecosystem.mobile.reparation.data.SharedPreferenceRepository
 import com.ecosystem.mobile.reparation.repository.RepositoryFactory
 import com.sap.cloud.mobile.foundation.logging.LoggingService
@@ -18,6 +19,8 @@ import com.sap.cloud.mobile.foundation.user.UserService
 import io.flutter.embedding.engine.FlutterEngine
 import io.flutter.embedding.engine.FlutterEngineCache
 import io.flutter.embedding.engine.dart.DartExecutor
+import io.flutter.embedding.engine.loader.FlutterLoader
+import io.flutter.view.FlutterMain
 import okhttp3.OkHttpClient
 
 
@@ -95,7 +98,10 @@ class SAPWizardApplication: Application() {
 
         // Start executing Dart code to pre-warm the FlutterEngine.
         flutterEngine.dartExecutor.executeDartEntrypoint(
-            DartExecutor.DartEntrypoint.createDefault()
+            //DartExecutor.DartEntrypoint.createDefault()
+            DartExecutor.DartEntrypoint(
+                FlutterMain.findAppBundlePath(),
+                BuildConfig.FLAVOR)
         )
 
         // Cache the FlutterEngine to be used by FlutterActivity.

@@ -45,8 +45,8 @@ android {
         applicationId "com.ecosystem.mobile.reparation"
         minSdkVersion 26
         targetSdkVersion 33
-        versionCode 13
-        versionName "v0.13.0"
+        versionCode 14
+        versionName "v0.14.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         testInstrumentationRunnerArguments clearPackageData: 'true'
 		vectorDrawables {

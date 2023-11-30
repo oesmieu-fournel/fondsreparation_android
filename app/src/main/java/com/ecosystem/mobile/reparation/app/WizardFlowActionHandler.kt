@@ -5,7 +5,6 @@ import android.text.SpannedString
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -19,12 +18,12 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.platform.LocalUriHandler
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.AnnotatedString
@@ -33,6 +32,7 @@ import androidx.compose.ui.text.buildAnnotatedString
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.core.text.getSpans
 import com.ecosystem.mobile.reparation.BuildConfig
 import com.sap.cloud.mobile.fiori.compose.dialog.FioriAlertDialog
@@ -127,6 +127,7 @@ class WizardFlowActionHandler(val application: SAPWizardApplication) : FlowActio
                 CustomStepInsertionPoint.BeforeEula -> {
                     flow.addSingleStep(step_welcome, secure = false) {
                         val context = LocalContext.current
+                        val settings = LocalScreenSettings.current.launchScreenSettings
                         val state = rememberLaunchScreenState(
                             showTermLinks = true,
                             defaultAgreeStatus = false
@@ -139,7 +140,7 @@ class WizardFlowActionHandler(val application: SAPWizardApplication) : FlowActio
                                 showDemoDialog = true
                             },
                             state = state,
-                            launchScreenSettings = null
+                            launchScreenSettings = settings
                         )
                         if (showDemoDialog) {
                             FioriAlertDialog(
@@ -201,6 +202,44 @@ class WizardFlowActionHandler(val application: SAPWizardApplication) : FlowActio
             ) {
                 Text(text = stringResource(R.string.se_connecter))
             }
+            val annotatedString = buildAnnotatedString {
+                val text = "Retrouvez nos CGU"
+                val startIndex = text.indexOf("CGU")
+                val endIndex = startIndex + 3
+                append(text)
+                addStyle(
+                    style = SpanStyle(
+                        fontSize = 12.sp,
+                    ), start = 0, end = text.length - 1
+                )
+                addStyle(
+                    style = SpanStyle(
+                        color = Color(0xff64B5F6),
+                        fontSize = 13.sp,
+                        textDecoration = TextDecoration.Underline
+                    ), start = startIndex, end = endIndex
+                )
+
+                addStringAnnotation(
+                    tag = "URL",
+                    annotation = launchScreenSettings?.eulaUrl ?: "",
+                    start = startIndex,
+                    end = endIndex
+                )
+            }
+
+            val uriHandler = LocalUriHandler.current
+            ClickableText(text = annotatedString, onClick = {
+                annotatedString
+                    .getStringAnnotations("URL", it, it)
+                    .firstOrNull()?.let { stringAnnotation ->
+                        try {
+                            uriHandler.openUri(stringAnnotation.item)
+                        } catch (e: Exception) {
+                            // handle it
+                        }
+                    }
+            })
         }
     }
 

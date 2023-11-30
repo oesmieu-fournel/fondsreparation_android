@@ -31,6 +31,7 @@ import com.sap.cloud.mobile.foundation.mobileservices.ApplicationStates
 import com.sap.cloud.mobile.foundation.mobileservices.TimeoutLockService
 import com.sap.cloud.mobile.foundation.model.AppConfig
 import com.sap.cloud.mobile.onboarding.compose.settings.CustomScreenSettings
+import com.sap.cloud.mobile.onboarding.compose.settings.EulaScreenSettings
 import com.sap.cloud.mobile.onboarding.compose.settings.LaunchScreenContentSettings
 import com.sap.cloud.mobile.onboarding.compose.settings.LaunchScreenSettings
 import com.sap.cloud.mobile.onboarding.compose.settings.QRCodeReaderScreenSettings
@@ -122,11 +123,13 @@ private fun prepareScreenSettings() =
             contentSettings = LaunchScreenContentSettings(
                 contentImage = R.drawable.graphic_cloud_3x,
             ),
+            eulaUrl = "https://portail-reparateurs.ecosystem.eco/cgu",
             bottomPrivacyUrl = "http://www.sap.com"
         ),
         qrCodeReaderScreenSettings = QRCodeReaderScreenSettings(
             scanInternal = 50L
-        )
+        ),
+        eulaSettings = EulaScreenSettings(eulaUrl = "file:///android_asset/CGU_Mobile.html")
     )
 
 /** Returns the flow context for onboarding.*/
@@ -136,7 +139,7 @@ fun getOnboardingFlowContext(context: Context, appConfig: AppConfig) = FlowConte
     flowStateListener = WizardFlowStateListener(context.applicationContext as SAPWizardApplication),
     flowOptions = FlowOptions(
 //                oAuthAuthenticationOption = OAuth2WebOption.WEB_VIEW,
-        useDefaultEulaScreen = false,
+        useDefaultEulaScreen = true,
         screenSettings = prepareScreenSettings(),
         fullScreen = false
     )

@@ -13,7 +13,6 @@
                 sap:content-version="1">
                 <Key>
                     <PropertyRef Name="Product" />
-                    <PropertyRef Name="Piec" />
                 </Key>
                 <Property
                     MaxLength="40"
@@ -110,16 +109,6 @@
                     sap:creatable="false"
                     sap:filterable="false"
                     sap:label="Valeur caract."
-                    sap:sortable="false"
-                    sap:unicode="false"
-                    sap:updatable="false" />
-                <Property
-                    Name="Piec"
-                    Nullable="false"
-                    Type="Edm.Boolean"
-                    sap:creatable="false"
-                    sap:filterable="false"
-                    sap:label="Caractère 1"
                     sap:sortable="false"
                     sap:unicode="false"
                     sap:updatable="false" />

@@ -43,10 +43,10 @@ android {
             }
         multiDexEnabled true
         applicationId "com.ecosystem.mobile.reparation.dev"
-        minSdkVersion 26
+        minSdkVersion 29
         targetSdkVersion 33
-        versionCode 17
-        versionName "v1.2.0"
+        versionCode 18
+        versionName "v1.3.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         testInstrumentationRunnerArguments clearPackageData: 'true'
 		vectorDrawables {

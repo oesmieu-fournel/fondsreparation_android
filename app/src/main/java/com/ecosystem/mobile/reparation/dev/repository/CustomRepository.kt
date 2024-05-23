@@ -8,6 +8,7 @@ import com.sap.cloud.android.odata.z_api_service_order_srv_entities.Header
 import com.sap.cloud.android.odata.z_api_service_order_srv_entities.HeaderQuery
 import com.sap.cloud.android.odata.z_api_service_order_srv_entities.Z_API_SERVICE_ORDER_SRV_Entities
 import com.sap.cloud.android.odata.z_api_service_order_srv_entities.Z_API_SERVICE_ORDER_SRV_EntitiesMetadata
+import com.sap.cloud.android.odata.z_business_partner_srv_entities.BusinessSheets
 import com.sap.cloud.android.odata.z_business_partner_srv_entities.Contact
 import com.sap.cloud.android.odata.z_business_partner_srv_entities.Repairer
 import com.sap.cloud.android.odata.z_business_partner_srv_entities.Z_BUSINESS_PARTNER_SRV_Entities
@@ -144,6 +145,7 @@ class CustomRepository(
                     .expand(Contact.toRepairer)
                     .expand(Contact.toRepairer.path(Repairer.toRepairPlaces))
                     .expand(Contact.toRepairer.path(Repairer.toSubContractor))
+                    .expand(Contact.toRepairer.path(Repairer.toBusinessSheets).path(BusinessSheets.toProductSheets))
 
             z_BUSINESS_PARTNER_SRV_Entities.executeQueryAsync(
                 dataQuery,

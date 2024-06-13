@@ -112,6 +112,16 @@
                     sap:sortable="false"
                     sap:unicode="false"
                     sap:updatable="false" />
+                <Property
+                    Name="PiecAuthorized"
+                    Nullable="false"
+                    Type="Edm.Boolean"
+                    sap:creatable="false"
+                    sap:filterable="false"
+                    sap:label="PIEC_AUTHORIZED"
+                    sap:sortable="false"
+                    sap:unicode="false"
+                    sap:updatable="false" />
                 <NavigationProperty
                     FromRole="FromRole_Product_Defect"
                     Name="ToDefect"
@@ -365,6 +375,73 @@
                     sap:unicode="false"
                     sap:updatable="false" />
             </EntityType>
+            <EntityType
+                Name="AmountsBonus"
+                sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Product" />
+                    <PropertyRef Name="AmountDate" />
+                    <PropertyRef Name="Type" />
+                </Key>
+                <Property
+                    MaxLength="40"
+                    Name="Product"
+                    Nullable="false"
+                    Type="Edm.String"
+                    sap:creatable="false"
+                    sap:filterable="false"
+                    sap:label="Article"
+                    sap:sortable="false"
+                    sap:unicode="false"
+                    sap:updatable="false" />
+                <Property
+                    Name="AmountDate"
+                    Nullable="false"
+                    Precision="7"
+                    Type="Edm.DateTime"
+                    sap:creatable="false"
+                    sap:filterable="false"
+                    sap:label="Début validité"
+                    sap:sortable="false"
+                    sap:unicode="false"
+                    sap:updatable="false" />
+                <Property
+                    MaxLength="20"
+                    Name="Type"
+                    Nullable="false"
+                    Type="Edm.String"
+                    sap:creatable="false"
+                    sap:filterable="false"
+                    sap:label="char 20"
+                    sap:sortable="false"
+                    sap:unicode="false"
+                    sap:updatable="false" />
+                <Property
+                    Name="Amount"
+                    Nullable="false"
+                    Precision="12"
+                    Scale="3"
+                    Type="Edm.Decimal"
+                    sap:creatable="false"
+                    sap:filterable="false"
+                    sap:label="Montant"
+                    sap:sortable="false"
+                    sap:unicode="false"
+                    sap:unit="Currency"
+                    sap:updatable="false" />
+                <Property
+                    MaxLength="5"
+                    Name="Currency"
+                    Nullable="false"
+                    Type="Edm.String"
+                    sap:creatable="false"
+                    sap:filterable="false"
+                    sap:label="Devise condit."
+                    sap:semantics="currency-code"
+                    sap:sortable="false"
+                    sap:unicode="false"
+                    sap:updatable="false" />
+            </EntityType>
             <Association
                 Name="Product_Brand"
                 sap:content-version="1">
@@ -456,6 +533,15 @@
                 <EntitySet
                     EntityType="Z_API_PRODUITS_MARQUES_SRV.MinimumInvoice"
                     Name="MinimumInvoicedSet"
+                    sap:content-version="1"
+                    sap:creatable="false"
+                    sap:deletable="false"
+                    sap:pageable="false"
+                    sap:updatable="false" />
+                <EntitySet
+                    EntityType="Z_API_PRODUITS_MARQUES_SRV.AmountsBonus"
+                    Name="AmountsBonusSet"
+                    sap:addressable="false"
                     sap:content-version="1"
                     sap:creatable="false"
                     sap:deletable="false"

@@ -45,7 +45,7 @@ android {
         applicationId "com.ecosystem.mobile.reparation.dev"
         minSdkVersion 29
         targetSdkVersion 33
-        versionCode 23
+        versionCode 24
         versionName "v1.3.5"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         testInstrumentationRunnerArguments clearPackageData: 'true'

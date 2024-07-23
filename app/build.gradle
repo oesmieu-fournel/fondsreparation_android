@@ -35,7 +35,7 @@ odata {
 }
 
 android {
-    compileSdkVersion 33
+    compileSdk 34
     defaultConfig {
         ndk {
         // Filter for architectures supported by Flutter.
@@ -44,7 +44,7 @@ android {
         multiDexEnabled true
         applicationId "com.ecosystem.mobile.reparation.dev"
         minSdkVersion 29
-        targetSdkVersion 33
+        targetSdkVersion 34
         versionCode 24
         versionName "v1.3.5"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -67,12 +67,12 @@ android {
 	    kotlinCompilerExtensionVersion "1.4.7"
 	}
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_11
-        targetCompatibility JavaVersion.VERSION_11
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
 
     kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_11.toString()
+        jvmTarget = JavaVersion.VERSION_17.toString()
     }
 	
 	packagingOptions {
@@ -121,6 +121,7 @@ android {
             buildConfigField "String", 'FILE_CONFIGURATION', '"' + fileConfig + '_' + suffix + '"'
         }
     }
+    namespace 'com.ecosystem.mobile.reparation.dev'
 }
 
 configurations {
@@ -179,8 +180,8 @@ dependencies {
     implementation group:'com.sap.cloud.android', name:'odata', version: sdkVersion
 
     // Logging dependency
-    implementation 'org.slf4j:slf4j-api:1.7.30'
-    implementation 'com.github.tony19:logback-android:2.0.0'
+    implementation 'org.slf4j:slf4j-api:2.0.12'
+    implementation 'com.github.tony19:logback-android:3.0.0'
 
     //retrofit
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'

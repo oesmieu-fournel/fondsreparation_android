@@ -43,7 +43,7 @@ android {
             }
         multiDexEnabled true
         applicationId "com.ecosystem.mobile.reparation.dev"
-        minSdkVersion 29
+        minSdkVersion 30
         targetSdkVersion 34
         versionCode 24
         versionName "v1.3.5"

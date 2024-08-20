@@ -25,6 +25,18 @@ allprojects {
     repositories repos
 }
 
+subprojects { sub ->
+    sub.afterEvaluate { proj ->
+        if (proj.name == 'flutter') {
+            def flutterProject = project(':flutter')
+            flutterProject.afterEvaluate {
+                bundleDebugLocalLintAar.dependsOn "copyFlutterAssetsDebug"
+                bundleReleaseLocalLintAar.dependsOn "copyFlutterAssetsRelease"
+            }
+        }
+    }
+}
+
 task clean(type: Delete) {
     delete rootProject.buildDir
 }

@@ -55,30 +55,6 @@ class CustomFlutterActivity : FlutterActivity() {
         (application as SAPWizardApplication)?.pushRemoteMessage = null
     }
 
-    private fun pushNotificationAlertDialog(
-        context: Context,
-        message: PushRemoteMessage,
-        pushService: FirebasePushService,
-    ): AlertDialog.Builder = AlertDialog.Builder(context)
-        .setMessage(
-            message.alert?.replaceFirstChar { it.uppercaseChar() }
-                ?: "Attention, votre application sera disponible, veuillez ne pas essayer de synchroniser l'application pendant cette période.\n" +
-                "Merci de votre compréhension.",
-        )
-        .setTitle(
-            message.title?.replaceFirstChar { it.uppercaseChar() }
-                ?: "MEP prévue aujourd'hui de 12H-14H",
-        )
-        .setPositiveButton("C'est noté !") { dialog, which ->
-            message.notificationID?.let {
-                pushService.updatePushMessageStatus(
-                    it,
-                    PushRemoteMessage.NotificationStatus.CONSUMED
-                )
-            }
-        }
-
-
     companion object {
         internal val logger = LoggerFactory.getLogger(CustomFlutterActivity::class.java)
     }

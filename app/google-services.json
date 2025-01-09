@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "37499154342",
+    "project_id": "app-reparations",
+    "storage_bucket": "app-reparations.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:37499154342:android:95e98f4c112441a0382967",
+        "android_client_info": {
+          "package_name": "com.ecosystem.mobile.reparation.dev"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBz2CEbKcgA5QN-scKEADYwyh2tJpFuRs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:37499154342:android:2d89e11dea980bfd382967",
+        "android_client_info": {
+          "package_name": "com.ecosystem.mobile.reparation.dev.dev"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBz2CEbKcgA5QN-scKEADYwyh2tJpFuRs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:37499154342:android:dbc00fa3c4723dae382967",
+        "android_client_info": {
+          "package_name": "com.ecosystem.mobile.reparation.dev.pprod"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBz2CEbKcgA5QN-scKEADYwyh2tJpFuRs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

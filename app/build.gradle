@@ -2,6 +2,7 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
 apply plugin: 'com.sap.odata.android'
+apply plugin: 'com.google.gms.google-services'
 
 buildscript {
     repositories rootProject.ext.repos
@@ -43,7 +44,7 @@ android {
             }
         resConfigs "en", "fr"
         multiDexEnabled true
-        applicationId "com.ecosystem.mobile.reparation.dev"
+        applicationId "com.ecosystem.mobile.reparation"
         minSdkVersion 30
         targetSdkVersion 34
         versionCode 25
@@ -179,6 +180,7 @@ dependencies {
 	implementation group: 'com.sap.cloud.android', name: 'fiori-composable-theme', version: sdkVersion
 	implementation group: 'com.sap.cloud.android', name: 'fiori-compose-ui', version: sdkVersion
     implementation group:'com.sap.cloud.android', name:'odata', version: sdkVersion
+    implementation group: 'com.sap.cloud.android', name: 'foundation-push-fcm', version: sdkVersion
 
     // Logging dependency
     implementation 'org.slf4j:slf4j-api:2.0.12'

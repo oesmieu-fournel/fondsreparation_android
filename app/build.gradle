@@ -44,7 +44,7 @@ android {
             }
         resConfigs "en", "fr"
         multiDexEnabled true
-        applicationId "com.ecosystem.mobile.reparation"
+        applicationId "com.ecosystem.mobile.reparation.dev"
         minSdkVersion 30
         targetSdkVersion 34
         versionCode 26

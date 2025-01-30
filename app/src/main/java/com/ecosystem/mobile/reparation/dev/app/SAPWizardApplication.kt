@@ -24,6 +24,7 @@ import com.sap.cloud.mobile.foundation.remotenotification.PushCallbackListener
 import com.sap.cloud.mobile.foundation.remotenotification.PushRemoteMessage
 import com.sap.cloud.mobile.foundation.settings.policies.LogPolicy
 import com.sap.cloud.mobile.foundation.theme.ThemeDownloadService
+import com.sap.cloud.mobile.foundation.usage.UsageService
 import io.flutter.embedding.android.FlutterActivity
 import io.flutter.embedding.engine.FlutterEngine
 import io.flutter.embedding.engine.FlutterEngineCache
@@ -86,6 +87,11 @@ class SAPWizardApplication : Application() {
             policy = LogPolicy(logLevel = "WARN", entryExpiry = 0, maxFileNumber = 4)
             logToConsole = true
         })
+
+        val usageService = UsageService().apply {
+            setAutoSession(true)
+        }
+        services.add(usageService)
 
         firebasePushService = FirebasePushService().apply {
             isEnableAutoMessageHandling = true
